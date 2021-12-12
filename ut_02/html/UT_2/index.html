@@ -1,0 +1,2052 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>1º DAW - Programación - UT 1</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="César San Juan Pastor" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<meta name="description" content="Unidad introductoria sobre programación que sirve de base al resto de unidades." />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+<body class="exe-single-page"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<header id="header">
+<div id="headerContent">
+<h1>1º DAW - Programación - UT 1</h1>
+</div>
+</header>
+<section id="main">
+<article class="node level-1-node" id="exe-node-0">
+<header class="nodeDecoration">
+<h1 id="exenode_0_UT2Elementosdeunprogramainformtico" class="nodeTitle">U.T. 2 Elementos de un programa informático</h1>
+</header>
+</article>
+<article class="node level-2-node" id="exe-node-3">
+<header class="nodeDecoration">
+<h1 id="exenode_3_Orientaciones" class="nodeTitle">Orientaciones</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id5-3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Orientaciones</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta5_116_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Se introducirán los conceptos básicos de la programación, el lenguaje y el entorno de programación a usar.</p>
+<p style="text-align: justify;">Esta unidad es eminentemente teórica, por la que se recomienda que se haga un primer estudio superficial, entendiendo los conceptos y en un segundo estudio profundizar en los conocimientos de forma más profunda. Se introducirán los primeros ejemplos de programas para explicar el uso del entorno de programación que utilizaremos todo el año.</p>
+<p style="text-align: justify;">No es necesario ningún tipo de conocimiento anterior y el nivel de partida es básico, siendo accesible a todos el alumnado.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-1">
+<header class="nodeDecoration">
+<h1 id="exenode_1_21Introduccin" class="nodeTitle">2.1 Introducción</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id1-1">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1_112_2" class="block iDevice_content">
+<div class="exe-text"><p>La elección de un lenguaje de programación para aprender los entresijos de la programación es una elección muy importante y que no se debe tomar a la ligera. Tradicionalmente se usaban lenguajes muy estructurados para el aprendizaje como era Pascal o Basic, pero con el tiempo se impuso java como lenguaje de aprendizaje. Si bien, java está ampliamente extendido, no es un lenguaje sencillo ni fácil de aprender, la curva de aprendizaje al principio es muy grande, lo que hace difícil la aproximación a la programación a través de este entorno. No quiero decir ni mucho menos que no sea posible, sino que no es el lenguaje para aprender para neófitos.</p>
+<p>Por el contrario, Python incorpora muchas características que hacen que su curva de aprendizaje sea más plana y por tanto más fácil de aprender por parte de los nuevos programadores. De hecho, una gran mayoría de centros de estudios y universidades están utilizando ya Python como el lenguaje de aprendizaje para la programación.</p>
+<p>Después de más de veinte años programando, y pasando por muchos lenguajes diferentes: C, C++, Lisp, Cobol, Pascal, Delphi, Basic, C#, Java, PHP, Python y Perl entre otros, me parece que Python reúne todas las características para que un alumno aprenda programación de manera sencilla, e impone restricciones que evitarán vicios difícilmente subsanables posteriormente, añadiendo una gran cantidad de utilidades y herramientas.</p>
+<p>Un último dato para afianzar más que es el lenguaje actual que mejor se adapta a la enseñanza, en el año 2020 ha pasado a ser el segundo lenguaje más utilizado en proyecto, por delante de Java, continuando con su ascenso meteórico desde su creación.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-38">
+<header class="nodeDecoration">
+<h1 id="exenode_38_22HistoriadePython" class="nodeTitle">2.2. Historia de Python</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id68-38">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta68_113_2" class="block iDevice_content">
+<div class="exe-text"><p>Guido Van Rossum es el creador y responsable de que Python exista. Se trata de un informático de origen holandés que fue el encargado de diseñar Python y de pensar y definir todas las vías posibles de evolución de este popular lenguaje de programación.</p>
+<p>En las navidades de 1989 Van Rossum decidió empezar un nuevo proyecto como pasatiempo personal. Pensó en darle continuidad a ABC, un lenguaje de programación que se desarrolló en el mismo centro en el que estaba trabajando.  ABC fue desarrollado a principios de los ochenta como alternativa a BASIC. Se trata de un lenguaje pensado para principiantes por su facilidad de aprendizaje y uso. Su código era compacto pero legible. Sin embargo, el proyecto no llegó mucho más lejos por las limitaciones del hardware de la época, así que Van Rossum decidió darle una segunda vida a su idea y partiendo de la base que tenía, empezó a trabajar en Python.</p>
+<p style="background-color: #cccccc; padding: 5px; border-style: solid;">¿Por qué se llama Python? El nombre de este lenguaje de programación es en honor a los Monty Python, el famoso grupo de cómicos británicos.</p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-39">
+<header class="nodeDecoration">
+<h1 id="exenode_39_221Versiones" class="nodeTitle">2.2.1 Versiones</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id69-39">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta69_114_2" class="block iDevice_content">
+<div class="exe-text"><p>La versión 1.0, que se publicó en enero de 1994, la versión 2.0 se publicó en octubre de 2000 y la versión 3.0 se publicó en diciembre de 2008. Esta primera versión de Python ya incluía clases con herencias, manejo de excepciones, funciones y una de sus características fundamentales: funcionamiento modular. Esto permitía que fuese un lenguaje mucho más limpio y accesible para la gente con pocos conocimientos de programación, una característica que se mantiene hasta el día de hoy. Hasta el año 2018, el desarrollo de este popular lenguaje de programación estaba dirigido personalmente por Van Rossum, pero decidió apartarse y, desde 2019, son cinco las personas que deciden cómo evoluciona y se desarrolla Python. Un consejo que se renueva de forma anual.</p>
+<p><strong>Versión 1.0</strong><br />Python es un lenguaje de programación que Van Rossum empezó a desarrollar mientras trabajaba en CWI. Fue este centro de investigación quien liberó, en 1995 la versión 1.2 de Python. A partir de este momento, ya desvinculado de CWI, Van Rossum hizo aún más accesible el código y para el año 2000, el equipo principal de desarrolladores de Python se cambió a BeOpen.com para formar el equipo de BeOpen Python Labs.</p>
+<p>Python 1.6.1 es exactamente lo mismo que 1.6, con algunos bugs arreglados y una nueva licencia compatible con GPL. La versión 1.6 de Python tuvo algunos problemas con su tipo de licencia hasta que la Free Software Foundation (FSF) consiguió cambiar Python a una licencia de Software Libre, que lo haría compatible con GPL.</p>
+<p><strong>Versión 2.0</strong><br />En octubre del año 2000 se publica la segunda versión de Python. Una nueva versión en la que se incluyó la generación de listas, una de las características más importantes del lenguaje.</p>
+<p>En 2001, se crea la Python Software Foundation, la cual a partir de Python 2.1 es dueña de todo el código, documentación y especificaciones del lenguaje.  A mayores de esta nueva característica, esta nueva versión de Python también incluyó un nuevo sistema gracias al cual los programadores eran capaces de hacer referencias cíclicas y, de esta manera, Python podía recolectar basura dentro del código.</p>
+<p><strong>Versión 3.0</strong><br />La última gran actualización de la historia de Python se produjo en el año 2008 con el lanzamiento de la versión 3.0, que venía a solucionar los principales fallos en el diseño de este lenguaje de programación.</p>
+<p>Aunque Python mantiene su filosofía en esta última versión, como lenguaje de programación ha ido acumulando formas nuevas y redundantes de programar un mismo elemento. De ahí la necesidad de nuevas versiones que eliminen estos constructores duplicados.</p>
+<p>Python 3.0 rompe la compatibilidad hacia atrás del lenguaje, ya que el código de Python 2.x no necesariamente debe correr en Python 3.0 sin modificación alguna. La última actualización de la versión 3 de Python a la hora de escribir estos apuntes se trata de la versión 3.9.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-40">
+<header class="nodeDecoration">
+<h1 id="exenode_40_23CaractersticasdePython" class="nodeTitle">2.3. Características de Python</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id71-40">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta71_116_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Es un lenguaje fuertemente tipado, en concreto todos los elementos son objetos: los tipos, las funciones, etc.</li>
+<li><span style="font-size: 0.95em;">Es un lenguaje con tipado dinámico, lo que significa que el tipo de una variable se puede cambiar durante la ejecución. Esto implica que la definición de una variable no tendrá nunca un tipo, pero será necesaria su inicialización antes de usarla.</span></li>
+<li><span style="font-size: 0.95em;"></span>El lenguaje incorpora un gestor de paquetes propio: pip que se utiliza para añadir funcionalidades al sistema. Se accederá desde una sesión de consola.</li>
+</ul>
+<p style="padding-left: 60px;">pip search cadena -&gt; buscar paquetes<br />pip install paquete -&gt; instalar un paquete<br />pip install –U paquete -&gt; actualizar un paquete<br />pip uninstall paquete -&gt; desinstalar un paquete</p>
+<p style="padding-left: 60px;"><img src="00.png" alt="Uso pip" width="526" height="282" /></p>
+<p style="padding-left: 60px;"></p>
+<ul>
+<li>Es un lenguaje interpretado, pero que se compila a una representación intermedia: byte code. Es un concepto similar a Java.</li>
+<li>El lenguaje está dirigido a todos los sistemas. Web, desktop, Programación de sistemas, Big data, programación científica.</li>
+<li>Es un lenguaje que se ejecuta en diversos sistemas operativos: Unix, Windows, etc.</li>
+<li>Se caracteriza por tener una gran librería. Es imprescindible estudiar la documentación.</li>
+<li>El lenguaje incorpora una gestión automática de recursos y de memoria, con un recolector de la misma.</li>
+<li>Es un lenguaje libre con varias implementaciones, la más conocida es la basada en C.</li>
+<li>El lenguaje impone pocas restricciones al programador.</li>
+<li>El lenguaje incorpora las facilidades de docstring para documentación del código generado.</li>
+<li>Por último, se asegura la compatibilidad a nivel de código dentro de la misma rama. Es decir, todo código de la versión 3.1 se ejecutará en cualquier 3.X, pero no bajo 4.X.</li>
+<li>La curva de aprendizaje para los no conocedores de la programación es muy suave, por el contrario, para aquellos con conocimientos arraigados puede costar cambiar la metodología.</li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-41">
+<header class="nodeDecoration">
+<h1 id="exenode_41_24UnvistazorpidoalinteriordePython" class="nodeTitle">2.4. Un vistazo rápido al interior de Python</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id73-41">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta73_113_2" class="block iDevice_content">
+<div class="exe-text"><p>El lenguaje está compuesto por los siguientes elementos: Gramática y sintaxis, implementaciones, librería estándar, librerías de terceros y Frameworks. Todo programa cuando se ejecuta pasa por las siguientes fases:</p>
+<ul>
+<li>Carga de la máquina virtual (Python.exe).</li>
+<li>Compilación en Byte Code. Se compila cada módulo y se guarda en caché dicha compilación (.pyc) no recompilándose nada a menos que sea necesario (La caché se guarda dentro del directorio: <strong style="color: #333333; font-size: 1.1em;">__pycache__</strong><span style="color: #333333; font-size: 1.1em;">).</span></li>
+<li>Ejecución del programa.
+<ul>
+<li>Se puede crear un entorno virtual de ejecución para cada proyecto, de tal manera que no interfieran unos en otros.</li>
+</ul>
+</li>
+</ul>
+<p style="background-color: #cccccc; padding: 5px; border-style: solid;">Es recomendable que cada proyecto tenga su propio entorno de ejecución. A La hora de crear el proyecto se debe inicializar este entorno y después instalar las librerías necesarias solo en el proyecto, no en el sistema.</p>
+<p>En Python existen utilidades para crear estos entornos virtuales: venv, pyvenv o virtualenv. En caso de usar un IDE será en el momento de la creación del proyecto cuando elegiremos si se usa el entorno general o se crea uno virtual. Veremos más adelante el uso y creación de estos entornos virtuales.</p>
+<p><img src="01.png" alt="Entorno virtual" width="779" height="492" /></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id74-41">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Entornos virtuales</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta74_114_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Python se instala por defecto en el sistema para todos los usuarios.</li>
+<li>Cada proyecto puede tener diferentes dependencias.</li>
+<li>Hay dos aproximaciones: instalar todo en el sistema principal, o crear una caja negra propia de cada proyecto.</li>
+<li>Lo general es crear una caja negra para cada proyecto: entorno virtual.</li>
+<li>Para usar un entorno virtual en un proyecto hay varios pasos
+<ul>
+<li>Creación del entorno virtual con: virtualenv, pipenv o venv</li>
+</ul>
+</li>
+</ul>
+<pre style="padding-left: 90px;">python -m venv c:\ruta\al\entorno\virtual</pre>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Activación del entorno virtual bajo Windows</li>
+</ul>
+</li>
+</ul>
+<pre style="padding-left: 90px;">C:\&gt;c:\ruta\al\entorno\virtual\scripts\activate.bat</pre>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Instalación de las librerías necesarias con pip dentro del entorno virtual</li>
+<li>Desarrollar de forma normal.
+<p><strong>No hacen falta los pasos anteriores si usamos un IDE</strong></p>
+</li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-42">
+<header class="nodeDecoration">
+<h1 id="exenode_42_25InstalacindePython" class="nodeTitle">2.5. Instalación de Python</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id75-42">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta75_115_2" class="block iDevice_content">
+<div class="exe-text"><p>La instalación está dirigida sobre todo a Windows sabiendo que la mayoría del alumnado usa este tipo de sistemas, pero para otros sistemas operativos la instalación es igual o más sencilla.</p>
+<p>Desde la página <a href="La instalación está dirigida sobre todo a Windows sabiendo que la mayoría del alumnado usa este tipo de sistemas, pero para otros sistemas operativos la instalación es igual o más sencilla.  Desde la página https://www.python.org/downloads/ nos descargamos el ejecutable correspondiente (generalmente x64) y lo instalamos. Una vez finalizado sería recomendable establecer las variables de entorno (PATH del sistema) de forma adecuada si no se hace en la instalación:" target="_blank" rel="noopener">https://www.python.org/downloads/</a> nos descargamos el ejecutable correspondiente (generalmente x64) y lo instalamos. Una vez finalizado sería recomendable establecer las variables de entorno (PATH del sistema) de forma adecuada si no se hace en la instalación:</p>
+<p><img src="02.png" alt="Path" width="423" height="159" /></p>
+<p>Con estas configuraciones, podremos acceder a una consola Python desde el símbolo de sistema o un terminal ejecutando simplemente <strong>Python</strong>.</p>
+<p><img src="03.png" alt="Ejecución Python" width="979" height="512" /></p>
+<p>En caso que no deseemos instalar todo desde cero, se puede utilizar la distribución Anaconda de Python, si bien está orientada a la programación científica se puede usar como plataforma de aprendizaje: <a href="https://www.anaconda.com/" target="_blank" rel="noopener">https://www.anaconda.com/</a>.</p>
+<p>En un entorno Unix, la propia distribución incluirá los paquetes necesarios para la instalación. Así en sistemas Debian/Ubuntu será tan sencillo como <strong>apt-get install python.</strong></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id76-42">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta76_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b76" class="block iDevice_content">
+<p>Crear Mi primer programa Python: Hola Mundo</p>
+<ul>
+<li>Abrir una consola del sistema: cmd.exe y ejecutar Python
+<ul>
+<li>Escribir Python en la caja de búsqueda de Windows</li>
+</ul>
+</li>
+</ul>
+<p><img src="04.png" alt="Consola cmd.exe" width="567" height="101" /></p>
+</section>
+<form name="feedback-form-quesFeedback0b76" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b76text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b76" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b76" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<ul>
+<li>Escribir: print(“Hola Mundo”)</li>
+<li>Pulsar Enter</li>
+</ul>
+<p><img src="05.png" alt="Hola Mundo" width="634" height="122" /></p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-43">
+<header class="nodeDecoration">
+<h1 id="exenode_43_26EntornosIDE" class="nodeTitle">2.6. Entornos IDE</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id77-43">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta77_117_2" class="block iDevice_content">
+<div class="exe-text"><p>Para el desarrollo de un proyecto Python es altamente recomendable utilizar un IDE que nos proporcione todas las características, si bien no es imprescindible y es posible usar: atom, sublime, etc. como entornos de desarrollo, lo más indicado es utilizar uno. Los IDEs más extendidos a día de hoy son: PyCharm y Microsoft Visual Studio. Este curso usaremos PyCharm.</p>
+<p style="background-color: #cccccc; padding: 5px; border-style: solid;">Si nos encontramos que PyCharm no muestra ni llaves, corchetes, etc. hay que añadir "actionSystem.force.alt.gr=true" al final del fichero bin\idea.properties en el directorio de instalación.</p>
+<p><br />La instalación de PyCharm es bastante sencilla no siendo necesaria ninguna configuración si tenemos instalado antes Python en el sistema.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id78-43">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Resumen</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta78_118_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Un IDE es un entorno de desarrollo que incluye todas las necesidades de programación</li>
+<li>No son imprescindibles, se pude usar un editor avanzado de textos</li>
+<li>Facilitan la labor</li>
+<li>Hay muchos entornos: Microsoft Visual Studio, Eclipse, PyDev, Sypeder, Idle, Sublime, Atom, Pycharm</li>
+<li>Usaremos Pycharm: Licencia educativa.</li>
+</ul>
+<p style="background-color: #cccccc; padding: 5px; border-style: solid;">Instalar PyCharm desde: <a href="https://www.jetbrains.com/es-es/pycharm/download/" target="_blank" rel="noopener">https://www.jetbrains.com/es-es/pycharm/download/</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-44">
+<header class="nodeDecoration">
+<h1 id="exenode_44_261PyCharm" class="nodeTitle">2.6.1. PyCharm</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id79-44">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><h2 class="iDeviceTitle">Uso de Pycharm</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta79_119_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>IDE Pycharm</strong></p>
+<p><img src="06.png" alt="IDE" width="1014" height="538" /></p>
+<p><strong>Creación del proyecto</strong></p>
+<p><img src="07.png" alt="Uso IDE 1" width="1434" height="804" /></p>
+<p><strong>Creación del fichero fuente</strong></p>
+<p><img src="08.png" alt="Uso IDE 2" width="1706" height="535" /></p>
+<p><strong>Ejecución y resultado del programa</strong></p>
+<p><img src="09.png" alt="Uso IDE 4" width="1660" height="577" /></p>
+<p><strong>Barras de herramientas de Pycharm</strong></p>
+<p><img src="10.png" alt="Uso IDE 5" width="1519" height="681" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-45">
+<header class="nodeDecoration">
+<h1 id="exenode_45_27Estructurageneral" class="nodeTitle">2.7. Estructura general</h1>
+</header>
+</article>
+<article class="node level-3-node" id="exe-node-46">
+<header class="nodeDecoration">
+<h1 id="exenode_46_271Introducin" class="nodeTitle">2.7.1. Introdución</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id81-46">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta81_121_2" class="block iDevice_content">
+<div class="exe-text"><p>Un programa de Python es un fichero de texto (normalmente guardado con el juego de caracteres UTF-8) que contiene expresiones y sentencias del lenguaje Python. Esas expresiones y sentencias se consiguen combinando los elementos básicos del lenguaje.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-47">
+<header class="nodeDecoration">
+<h1 id="exenode_47_272Conceptosbsicos" class="nodeTitle">2.7.2. Conceptos básicos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id82-47">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta82_122_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Los ficheros bajo Python se codifican en formato UTF-8 de forma general, pero se puede cambiar añadiendo en la primera línea del fichero fuente la codificación deseada: # -*- coding: cp-1252</li>
+<li><strong>Cada línea representará una instrucción</strong>, no hace falta un delimitador final (como en otros lenguajes) ya que la indentación es parte imprescindible de la sintaxis. Así para crear un bloque sintáctico simplemente se <strong>indentarán</strong> todas las líneas del bloque <strong>el mismo número de espacios</strong>, marcando la línea principal de bloque con (:) dos puntos. A la hora de indentar <strong>no</strong> se pueden mezclar tabuladores y espacios, se recomienda usar cuatro espacios para indentar.</li>
+<li>Python usa comentarios de fin de línea exclusivamente, no existe ningún otro tipo de comentario (#). Es posible simular comentarios multilíneas con la notación extendida de representación de cadenas en varias líneas: “““  ”””</li>
+<li>El lenguaje diferencia entre mayúsculas y minúsculas tanto en las palabras clave como en los nombres de variables y funciones.</li>
+</ul>
+<pre style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print("Hola Mundo") # mi primer comentario<br /># Los comentarios son sólo de fin de línea<br />for cnt in [1, 2, 3, 4]:<br />    print(cnt)<br />"""<br /> Aunque de esta manera se puede simular<br /> un comentario de varias líneas sin serlo.<br />"""        </pre></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-48">
+<header class="nodeDecoration">
+<h1 id="exenode_48_273Funcionesintroductorias" class="nodeTitle">2.7.3. Funciones introductorias</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id83-48">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta83_123_2" class="block iDevice_content">
+<div class="exe-text"><p>Para poder desarrollar los ejemplos y avanzar de forma adecuada en el conocimiento del lenguaje debemos introducir varias funciones que nos servirán de ayuda.</p>
+<ul>
+<li><strong>print(,,,end=’’)</strong>. Esta función imprimirá un conjunto de parámetros en una línea por la salida estándar del programa, generalmente la pantalla. El parámetro <strong>end</strong> indica el último carácter a añadir a la línea en la salida, por defecto \n que hará que salte de línea el siguiente texto.</li>
+<li><strong>input(“texto”)</strong>. Esta función se utiliza para recoger una cadena de texto del usuario. En caso que el valor a tratar sea numérico es imprescindible realizar la conversión. Utilizará por defecto la entrada estándar del programa.</li>
+<li><strong>str(valor), int(valor) e float(valor)</strong> convierten respectivamente a cadena un objeto cualquiera, a entero cualquier valor no numérico y a decimal. En el último caso no convertirá si el valor contiene alguna letra.</li>
+<li><strong>dir(objeto)</strong> devuelve la lista de los métodos y propiedades existentes en el objeto.</li>
+<li><strong>type(objeto)</strong> devuelve el tipo del objeto.</li>
+<li><strong>pass</strong>. No ejecución. Se utiliza para crear bloques vacíos ya que no es posible que se deje un bloque sin instrucciones.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-49">
+<header class="nodeDecoration">
+<h1 id="exenode_49_274EjemploEjecutarunprograma" class="nodeTitle">2.7.4. Ejemplo: Ejecutar un programa</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id84-49">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Código Fuente</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta84_124_2" class="block iDevice_content">
+<div class="exe-text"><pre style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print("Prueba de entrada")<br /><br />num1 = int(input("Primer Valor:"))<br />num2 = int(input("Segundo Valor:"))<br /><br />print("La suma es:", str(num1 + num2))</pre>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id85-49">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Creación del proyecto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta85_125_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="11.png" alt="Creación del proyecto" width="1746" height="725" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id86-49">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Creación del fichero</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta86_126_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="12.png" alt="Fichero y ejecución" width="1860" height="724" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id87-49">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Ejecución</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta87_127_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="13.png" alt="Ejecución" width="419" height="146" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-50">
+<header class="nodeDecoration">
+<h1 id="exenode_50_SinusarunIDE" class="nodeTitle">Sin usar un IDE</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id88-50">
+<div class="iDevice emphasis0" >
+<div id="ta88_128_2" class="block iDevice_content">
+<div class="exe-text"><p>Hemos procedido a crear un fichero y todas las estructuras necesarias para la ejecución del código, pero no es necesario utilizar un IDE tal y como dijimos anteriormente. Se puede hacer la programación en cualquier editor de texto y ejecutarlo llamando a la orden python nombre_archivo, veámoslo.</p>
+<ol>
+<li>Se abre el editor de texto preferido (write.exe, Notepad.exe, vi, joe, etc.) y se escribe el fichero fuente, almacenándolo en formato UTF-8. Esto último es obligatorio si no queremos que de un error de sintaxis.</li>
+<li>Se abre una consola del sistema (cmd.exe en Windows, bash en Linux).</li>
+<li>Se localiza el fichero fuente con la ruta completa.</li>
+<li>Se ejecuta pasándolo como parámetro a la orden Python.</li>
+</ol></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-51">
+<header class="nodeDecoration">
+<h1 id="exenode_51_Explicacindelcdigo" class="nodeTitle">Explicación del código</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id89-51">
+<div class="iDevice emphasis0" >
+<div id="ta89_129_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li><strong>print("Prueba de entrada")</strong>. Muestra por pantalla un texto.</li>
+<li><strong>num1 = int(input("Primer Valor:"))</strong>. Crea una variable llamada num1 y le asigna el valor entero que el usuario introduzca por teclado, si no puede convertirlo dará error.</li>
+<li><strong>num2 = int(input("Segundo Valor:"))</strong>. Similar pero llamada num2.</li>
+<li><strong>print("La suma es:", str(num1 + num2))</strong>. Imprime un texto y el resultado de la operación de sumar las dos variables.</li>
+</ul></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-52">
+<header class="nodeDecoration">
+<h1 id="exenode_52_Ejercicios" class="nodeTitle">Ejercicios</h1>
+</header>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id91-52">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta91_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b91" class="block iDevice_content">
+<p>Hacer un programa que imprima 5</p>
+</section>
+<form name="feedback-form-quesFeedback0b91" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b91text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b91" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b91" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>print(5)</p></section>
+</form>
+<section id="taquesQuestion1b91" class="block iDevice_content">
+<p>Hacer un programa que pida un número</p>
+</section>
+<form name="feedback-form-quesFeedback1b91" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback1b91text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback1b91" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback1b91" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>numero = int(input("¿Número?"))</p></section>
+</form>
+<section id="taquesQuestion2b91" class="block iDevice_content">
+<p>Hacer un programa que pida un número lo convierta a entero y lo vuelva imprimir</p>
+</section>
+<form name="feedback-form-quesFeedback2b91" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback2b91text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback2b91" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback2b91" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>numero = int(input("¿Número?"))</p>
+<p>print(numero)</p></section>
+</form>
+<section id="taquesQuestion3b91" class="block iDevice_content">
+<p>Hacer un programa que muestre los métodos y propiedades de int, str y float</p>
+</section>
+<form name="feedback-form-quesFeedback3b91" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback3b91text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback3b91" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback3b91" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>print("int:", dir(int))</p>
+<p>print("float:", dir(float))</p>
+<p>print("str:", dir(str))</p></section>
+</form>
+<section id="taquesQuestion4b91" class="block iDevice_content">
+<p>Hacer un programa que muestre los tipo de un número pedido por teclado</p>
+</section>
+<form name="feedback-form-quesFeedback4b91" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback4b91text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback4b91" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback4b91" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>numero = input("¿Número?")</p>
+<p>print(type(numero))</p></section>
+</form>
+<section id="taquesQuestion5b91" class="block iDevice_content">
+<p>Hacer un programa que muestre los tipo de un número pedido por teclado convirtiéndolo a int</p>
+</section>
+<form name="feedback-form-quesFeedback5b91" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback5b91text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback5b91" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback5b91" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>numero = int(input("¿Número?"))</p>
+<p>print(type(numero)) </p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-53">
+<header class="nodeDecoration">
+<h1 id="exenode_53_275Lneasyespaciosenblanco" class="nodeTitle">2.7.5. Líneas y espacios en blanco</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id92-53">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta92_132_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>Líneas</strong></p>
+<ul>
+<li>Python interpreta el código a través de líneas lógicas.
+<ul>
+<li>El final de la línea lógica se marca con un <strong>ENTER</strong>.</li>
+<li>Una línea lógica puede estar compuesta por varias líneas físicas</li>
+</ul>
+</li>
+<li>Una línea física es una secuencia de caracteres terminadas con <strong>ENTER</strong>.</li>
+<li>La unión de una o más líneas físicas en una lógica se hace a través del carácter <strong>\</strong>
+<ul>
+<li>En este caso no puede llevar comentario <strong>#</strong></li>
+</ul>
+</li>
+</ul>
+<pre style="background-color: #cccccc; padding-left: 65px; border-left-style: solid;">   if 1900 &lt; year &lt; 2100 and 1 &lt;= month &lt;= 12 \<br />       and 1 &lt;= day &lt;= 31 and 0 &lt;= hour &lt; 24 \<br />       and 0 &lt;= minute &lt; 60 and 0 &lt;= second &lt; 60:<br />           return 1</pre>
+<ul>
+<li>Las expresiones separadas por comas, corchetes, llaves no hace falta el uso de <strong>\</strong></li>
+</ul>
+<pre style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">month_names = ['Januari', 'Februari', 'Maart',      # These are the <br />               'April', 'Mei', 'Juni’]              # Dutch names</pre></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id93-53">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Espacios en blanco</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta93_133_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Se pueden utilizar tantos espacios en blanco como se desee para separar elementos.</li>
+<li>El número de espacios en blanco en un bloque tiene que ser el mismo pero no está determinado.</li>
+<li>Vamos a usar 4 espacios en blanco para indentar bloques.</li>
+<li>El bloque viene delimitado en la primera línea por <strong>:</strong></li>
+<li>Se recomienda no mezclar ni cambiar el número de espacios en un mismo programa.</li>
+</ul>
+<pre style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def perm(l):<br />    # Compute the list of all permutations of l<br />    if len(l) &lt;= 1:<br />        return [l]<br />    r = []<br />    for i in range(len(l)):<br />        s = l[:i] + l[i+1:]<br />        p = perm(s)<br />        for x in p:<br />            r.append(l[i:i+1] + x)<br />    return r</pre></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-54">
+<header class="nodeDecoration">
+<h1 id="exenode_54_276Comentarios" class="nodeTitle">2.7.6. Comentarios</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id94-54">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta94_134_2" class="block iDevice_content">
+<div class="exe-text"><p>Un comentario comienza con un carácter de almohadilla (#) que no es parte de un literal de cadena y termina al final de la línea física. Los comentarios son ignorados por la sintaxis y se utiliza para documentar o explicar el código fuente.</p>
+<pre style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def perm(l):<br /><span style="color: #ff0000;">    <strong># Compute the list of all permutations of l</strong></span><br />    if len(l) &lt;= 1:<br />        return [l]<br />    r = []<br />    for i in range(len(l)):<br />        s = l[:i] + l[i+1:]<br />        p = perm(s)<br />        for x in p:<br />            r.append(l[i:i+1] + x)<br />    return r</pre></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-55">
+<header class="nodeDecoration">
+<h1 id="exenode_55_277Ejercicios" class="nodeTitle">2.7.7. Ejercicios</h1>
+</header>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id95-55">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta95_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b95" class="block iDevice_content">
+<p>Diseña un programa que calcule la media de cinco números.</p>
+<p><img src="14.png" alt="Media de un número" width="571" height="107" /></p>
+</section>
+<form name="feedback-form-quesFeedback0b95" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b95text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b95" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b95" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>nota_1 = nota_2 = nota_3 = nota_4 = nota_5 = varianza = media = 0</p>
+<p>nota_1 = float(input("Nota 1:"))<br />nota_2 = float(input("Nota 2:"))<br />nota_3 = float(input("Nota 3:"))<br />nota_4 = float(input("Nota 4:"))<br />nota_5 = float(input("Nota 5:"))</p>
+<p>media = (nota_1 + nota_2 + nota_3 + nota_4 + nota_5) / 5</p></section>
+</form>
+<section id="taquesQuestion1b95" class="block iDevice_content">
+<p>Diseña un programa que calcule la varianza de cinco números.</p>
+<p><img src="15.png" alt="Desviación estándar" width="286" height="95" /></p>
+</section>
+<form name="feedback-form-quesFeedback1b95" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback1b95text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback1b95" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback1b95" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>varianza = varianza + (nota_1 - media) ** 2<br />varianza += (nota_2 - media) ** 2<br />varianza += (nota_3 - media) ** 2<br />varianza += (nota_4 - media) ** 2<br />varianza += (nota_5 - media) ** 2<br />varianza /= 5</p>
+<p>print(f"La media es {media} y su varianza={varianza}")<br />print("La media es ", media, "y su varianza=", varianza)</p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-56">
+<header class="nodeDecoration">
+<h1 id="exenode_56_278Identificadores" class="nodeTitle">2.7.8. Identificadores</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id96-56">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta96_136_2" class="block iDevice_content">
+<div class="exe-text"><p>Un identificador es una secuencia de uno o más caracteres asignada por el programador a un elemento del programa (constante, variable, método, clase, paquete...).</p>
+<p>Un identificador en Python comienza con una letra (de la A a la Z o de la a a la z) o con un guion bajo (_) seguido de cero o más letras, guiones bajos y números. Python distingue mayúsculas de minúsculas en el nombrado de los identificadores y Python NO permite signos de puntuación como @, $ y %, excepto el guion bajo (_).</p>
+<p>Se recomienda nombrar las clases comenzando por una letra mayúscula cada palabra sin espacios y el resto de los identificadores por una letra minúscula separando las palabras con guiones bajos, excepto aquellos que funcionen como constantes que se escribirán en mayúsculas y los identificadores que se definan en las clases como privados empezarán por el guion bajo</p>
+<p></p>
+<pre style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def perm(l):<br />    # Compute the list of all permutations of l<br />    if len(l) &lt;= 1:<br />        return [l]<br />    <span style="color: #ff0000;"><strong>r</strong></span> = []<br />    for <span style="color: #ff0000;"><strong>i</strong></span> in range(len(l)):<br />        <span style="color: #ff0000;"><strong>s</strong></span> = l[:i] + l[i+1:]<br />        <span style="color: #ff0000;"><strong>p</strong></span> = perm(s)<br />        for <span style="color: #ff0000;"><strong>x</strong></span> in p:<br />            r.append(l[i:i+1] + x)<br />    return r</pre></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-57">
+<header class="nodeDecoration">
+<h1 id="exenode_57_Ejemplos" class="nodeTitle">Ejemplos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id97-57">
+<div class="iDevice emphasis0" >
+<div id="ta97_137_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-layout-2-cols exe-layout-2-50-50 exe-clear">
+<div class="exe-col exe-col-1">
+<p><em><strong>Son o no identificadores</strong></em></p>
+_abc<br />Abc<br />a2387_#_rt<br />Mi-variable<br />_<br />Hola_mundo<br />1_palabra</div>
+<div class="exe-col exe-col-2">
+<p><strong><em>Son o no identificadores</em></strong></p>
+<p>_abc<br />Abc<br />a2387_#_rt<strong> No se permite #</strong><br />Mi-variable <strong>no se permite -</strong><br />_<br />Hola_mundo<br />1_palabra <strong>no puede empezar por numero</strong></p>
+</div>
+</div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-58">
+<header class="nodeDecoration">
+<h1 id="exenode_58_Nombrado" class="nodeTitle">Nombrado</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id98-58">
+<div class="iDevice emphasis0" >
+<div id="ta98_138_2" class="block iDevice_content">
+<div class="exe-text"><p>Todos los identificadores del programa deben seguir las normas que aparecen en la <a href="https://www.python.org/dev/peps/pep-0008/" target="_blank" rel="noopener">Pep 8</a>.</p>
+<ul>
+<li>Las clases se nombrarán según la siguiente nomenclatura: <strong>MiPunto</strong>.</li>
+<li>Las variables o propiedades usando nombres: <strong>nombre_alumno</strong>.</li>
+<li>Las funciones o métodos usando verbos: <strong>guardar_datos</strong>.</li>
+<li>Las constantes usando nombres en mayúsculas: <strong>PI</strong>.</li>
+</ul></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-59">
+<header class="nodeDecoration">
+<h1 id="exenode_59_279Palabrasreservadas" class="nodeTitle">2.7.9. Palabras reservadas</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id99-59">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta99_139_2" class="block iDevice_content">
+<div class="exe-text"><p>Los siguientes identificadores se utilizan como palabras reservadas o palabras clave del lenguaje y no pueden utilizarse como identificadores ordinarios. Deben escribirse exactamente como están escritas aquí:</p>
+<p><img src="16.png" alt="Palabras reservadas" width="784" height="284" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-60">
+<header class="nodeDecoration">
+<h1 id="exenode_60_2710Operadoresyexpresiones" class="nodeTitle">2.7.10. Operadores y expresiones</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id100-60">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta100_140_2" class="block iDevice_content">
+<div class="exe-text"><p>Un operador es un token que realiza alguna operación sobre uno o más operandos. Los operadores se clasifican según su tipo.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-61">
+<header class="nodeDecoration">
+<h1 id="exenode_61_Concatenacin" class="nodeTitle">Concatenación</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id101-61">
+<div class="iDevice emphasis0" >
+<div id="ta101_141_2" class="block iDevice_content">
+<div class="exe-text"><p>Una de las operaciones más básicas cuando se trabaja con cadenas de caracteres es la concatenación. Esto consiste en unir dos cadenas en una sola, siendo el resultado una nueva cadena.</p>
+<p>La forma más simple de concatenar dos cadenas en Python es utilizando el operador de concatenación +:</p>
+<pre style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">&gt;&gt;&gt; hola = 'Hola'<br />&gt;&gt;&gt; python = 'Pythonista'<br />&gt;&gt;&gt; hola_python = hola + ' ' + python # concatenamos 3 strings<br />&gt;&gt;&gt; print(hola_python)<br />Hola Pythonista </pre></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-62">
+<header class="nodeDecoration">
+<h1 id="exenode_62_Operadoreslgicosobooleanos" class="nodeTitle">Operadores lógicos o booleanos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id102-62">
+<div class="iDevice emphasis0" >
+<div id="ta102_142_2" class="block iDevice_content">
+<div class="exe-text"><table>
+<tbody>
+<tr>
+<td width="76">
+<p><strong>Operación</strong></p>
+</td>
+<td width="226">
+<p><strong>Resultado</strong></p>
+</td>
+<td width="284">
+<p><strong>Descripción</strong></p>
+</td>
+</tr>
+<tr>
+<td width="76">
+<p>a or b</p>
+</td>
+<td width="226">
+<p>Si a se evalúa a falso, entonces devuelve b, si no devuelve a</p>
+</td>
+<td width="284">
+<p>Solo se evalúa el segundo operando si el primero es falso</p>
+</td>
+</tr>
+<tr>
+<td width="76">
+<p>a and b</p>
+</td>
+<td width="226">
+<p>Si a se evalúa a falso, entonces devuelve a, si no devuelve b</p>
+</td>
+<td width="284">
+<p>Solo se evalúa el segundo operando si el primero es verdadero</p>
+</td>
+</tr>
+<tr>
+<td width="76">
+<p>not a</p>
+</td>
+<td width="226">
+<p>Si a se evalúa a falso, entonces devuelve True, si no devuelve False</p>
+</td>
+<td width="284">
+<p>Tiene menos prioridad que otros operadores no booleanos</p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id103-62">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Ejemplo</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta103_143_2" class="block iDevice_content">
+<div class="exe-text"><pre>&gt;&gt;&gt; x = True<br />&gt;&gt;&gt; y = False<br />&gt;&gt;&gt; x or y<br />True<br />&gt;&gt;&gt; x and y<br />False<br />&gt;&gt;&gt; not x<br />False<br />&gt;&gt;&gt; x = 0<br />&gt;&gt;&gt; y = 10<br />&gt;&gt;&gt; x or y<br />10<br />&gt;&gt;&gt; x and y<br />0<br />&gt;&gt;&gt; not x<br />True</pre></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-63">
+<header class="nodeDecoration">
+<h1 id="exenode_63_Operadoresdecomparacin" class="nodeTitle">Operadores de comparación</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id104-63">
+<div class="iDevice emphasis0" >
+<div id="ta104_144_2" class="block iDevice_content">
+<div class="exe-text"><p>Los operadores de comparación se utilizan para comparar dos o más valores. El resultado de estos operadores siempre es True o False.</p>
+<table width="1097" height="443" style="height: 94px;">
+<tbody>
+<tr style="height: 10px;">
+<td style="width: 151.797px; height: 10px;">
+<p><strong>Operador</strong></p>
+</td>
+<td style="width: 929.203px; height: 10px;">
+<p><strong>Descripción</strong></p>
+</td>
+</tr>
+<tr style="height: 28px;">
+<td style="width: 151.797px; height: 28px;">
+<p>&gt; </p>
+</td>
+<td style="width: 929.203px; height: 28px;">
+<p>Mayor que. True si el operando de la izquierda es estrictamente mayor que el de la derecha; False en caso contrario.</p>
+</td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 151.797px; height: 10px;">
+<p>&gt;=</p>
+</td>
+<td style="width: 929.203px; height: 10px;">
+<p>Mayor o igual que. True si el operando de la izquierda es mayor o igual que el de la derecha; False en caso contrario.</p>
+</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 151.797px; height: 16px;">
+<p>&lt; </p>
+</td>
+<td style="width: 929.203px; height: 16px;">
+<p>Menor que. True si el operando de la izquierda es estrictamente menor que el de la derecha; False en caso contrario.</p>
+</td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 151.797px; height: 10px;">
+<p>&lt;=</p>
+</td>
+<td style="width: 929.203px; height: 10px;">
+<p>Menor o igual que. True si el operando de la izquierda es menor o igual que el de la derecha; False en caso contrario.</p>
+</td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 151.797px; height: 10px;">
+<p>==</p>
+</td>
+<td style="width: 929.203px; height: 10px;">
+<p>Igual. True si el operando de la izquierda es igual que el de la derecha; False en caso contrario.</p>
+</td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 151.797px; height: 10px;">
+<p>!=</p>
+</td>
+<td style="width: 929.203px; height: 10px;">
+<p>Distinto. True si los operandos son distintos; False en caso contrario.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id106-63">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Ejemplo</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta106_146_2" class="block iDevice_content">
+<div class="exe-text"><pre>&gt;&gt;&gt; x = 9<br />&gt;&gt;&gt; y = 1<br />&gt;&gt;&gt; x &lt; y<br />False<br />&gt;&gt;&gt; x &gt; y<br />True<br />&gt;&gt;&gt; x == y<br />False</pre></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-64">
+<header class="nodeDecoration">
+<h1 id="exenode_64_Operadoresaritmticos" class="nodeTitle">Operadores aritméticos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id107-64">
+<div class="iDevice emphasis0" >
+<div id="ta107_147_2" class="block iDevice_content">
+<div class="exe-text"><p>Permiten realizar las diferentes operaciones aritméticas del álgebra: suma, resta, producto, división, …</p>
+<table style="width: 794px; height: 319px;">
+<tbody>
+<tr style="height: 13px;">
+<td style="width: 77.875px; height: 13px;">
+<p><strong>Operador</strong></p>
+</td>
+<td style="width: 700.125px; height: 13px;">
+<p><strong>Descripción</strong></p>
+</td>
+</tr>
+<tr style="height: 28px;">
+<td style="width: 77.875px; height: 28px;">
+<p>+</p>
+</td>
+<td style="width: 700.125px; height: 28px;">
+<p>Suma dos operandos.</p>
+</td>
+</tr>
+<tr style="height: 61px;">
+<td style="width: 77.875px; height: 61px;">
+<p>-</p>
+</td>
+<td style="width: 700.125px; height: 61px;">
+<p>Resta al operando de la izquierda el valor del operando de la derecha. Utilizado sobre un único operando, le cambia el signo.</p>
+</td>
+</tr>
+<tr style="height: 39px;">
+<td style="width: 77.875px; height: 39px;">
+<p>*</p>
+</td>
+<td style="width: 700.125px; height: 39px;">
+<p>Producto/Multiplicación de dos operandos.</p>
+</td>
+</tr>
+<tr style="height: 39px;">
+<td style="width: 77.875px; height: 39px;">
+<p>/</p>
+</td>
+<td style="width: 700.125px; height: 39px;">
+<p>Divide el operando de la izquierda por el de la derecha (el resultado siempre es un float).</p>
+</td>
+</tr>
+<tr style="height: 39px;">
+<td style="width: 77.875px; height: 39px;">
+<p>%</p>
+</td>
+<td style="width: 700.125px; height: 39px;">
+<p>Operador módulo. Obtiene el resto de dividir el operando de la izquierda por el de la derecha.</p>
+</td>
+</tr>
+<tr style="height: 39px;">
+<td style="width: 77.875px; height: 39px;">
+<p>//</p>
+</td>
+<td style="width: 700.125px; height: 39px;">
+<p>Obtiene el cociente entero de dividir el operando de la izquierda por el de la derecha.</p>
+</td>
+</tr>
+<tr style="height: 61px;">
+<td style="width: 77.875px; height: 61px;">
+<p>**</p>
+</td>
+<td style="width: 700.125px; height: 61px;">
+<p>Potencia. El resultado es el operando de la izquierda elevado a la potencia del operando de la derecha.</p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id108-64">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Ejemplo</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta108_148_2" class="block iDevice_content">
+<div class="exe-text"><pre style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">&gt;&gt;&gt; x = 7<br />&gt;&gt;&gt; y = 2<br />&gt;&gt;&gt; x + y # Suma<br />9<br />&gt;&gt;&gt; x - y # Resta<br />5<br />&gt;&gt;&gt; x * y # Producto<br />14<br />&gt;&gt;&gt; x / y # División<br />3.5<br />&gt;&gt;&gt; x % y # Resto<br />1<br />&gt;&gt;&gt; x // y # Cociente<br />3<br />&gt;&gt;&gt; x ** y # Potencia<br />49</pre></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-65">
+<header class="nodeDecoration">
+<h1 id="exenode_65_Operadoresaniveldebits" class="nodeTitle">Operadores a nivel de bits</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id109-65">
+<div class="iDevice emphasis0" >
+<div id="ta109_149_2" class="block iDevice_content">
+<div class="exe-text"><p>Los operadores a nivel de bits actúan sobre los operandos como si fueran una cadena de dígitos binarios. Actúan sobre los operandos bit a bit.</p>
+<table>
+<tbody>
+<tr>
+<td width="76">
+<p><strong>Operación</strong></p>
+</td>
+<td width="510">
+<p><strong>Descripción</strong></p>
+</td>
+</tr>
+<tr>
+<td width="76">
+<p>x | y</p>
+</td>
+<td width="510">
+<p>or bit a bit de x e y.</p>
+</td>
+</tr>
+<tr>
+<td width="76">
+<p>x ^ y</p>
+</td>
+<td width="510">
+<p>or exclusivo bit a bit de x e y.</p>
+</td>
+</tr>
+<tr>
+<td width="76">
+<p>x &amp; y</p>
+</td>
+<td width="510">
+<p>and bit a bit de x e y.</p>
+</td>
+</tr>
+<tr>
+<td width="76">
+<p>x &lt;&lt; n</p>
+</td>
+<td width="510">
+<p>Desplaza x n bits a la izquierda.</p>
+</td>
+</tr>
+<tr>
+<td width="76">
+<p>x &gt;&gt; n</p>
+</td>
+<td width="510">
+<p>Desplaza x n bits a la derecha.</p>
+</td>
+</tr>
+<tr>
+<td width="76">
+<p>~x</p>
+</td>
+<td width="510">
+<p>not x. Obtiene los bits de x invertidos.</p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id110-65">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Ejemplo</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta110_150_2" class="block iDevice_content">
+<div class="exe-text"><pre>&gt;&gt;&gt; x = 2<br />&gt;&gt;&gt; y = 7<br />&gt;&gt;&gt; x | y<br />7<br />&gt;&gt;&gt; x ^ y<br />5<br />&gt;&gt;&gt; x &amp; y<br />2<br />&gt;&gt;&gt; x &lt;&lt; 1<br />4<br />&gt;&gt;&gt; x &gt;&gt; 1<br />1<br />&gt;&gt;&gt; ~x<br />-3</pre></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-66">
+<header class="nodeDecoration">
+<h1 id="exenode_66_Operadoresdeasignacin" class="nodeTitle">Operadores de asignación</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id111-66">
+<div class="iDevice emphasis0" >
+<div id="ta111_151_2" class="block iDevice_content">
+<div class="exe-text"><p>El operador de asignación se utiliza para asignar un valor a una variable. Como se ha mencionado en otras secciones, este operador es el signo =.</p>
+<p>Además del operador de asignación, existen otros operadores de asignación compuestos que realizan una operación básica sobre la variable a la que se le asigna el valor.</p>
+<p>Por ejemplo, x += 1 es lo mismo que x = x + 1. Los operadores compuestos realizan la operación que hay antes del signo igual, tomando como operandos la propia variable y el valor a la derecha del signo igual.</p>
+<table style="height: 478px;">
+<tbody>
+<tr style="height: 10px;">
+<td style="height: 10px; width: 186px;">
+<p><strong>Operador</strong></p>
+</td>
+<td style="height: 10px; width: 214px;">
+<p><strong>Ejemplo</strong></p>
+</td>
+<td style="height: 10px; width: 186px;">
+<p><strong>Equivalencia</strong></p>
+</td>
+</tr>
+<tr style="height: 39px;">
+<td style="height: 39px; width: 186px;">
+<p>+=</p>
+</td>
+<td style="height: 39px; width: 214px;">
+<p>x += 2</p>
+</td>
+<td style="height: 39px; width: 186px;">
+<p>x = x + 2</p>
+</td>
+</tr>
+<tr style="height: 39px;">
+<td style="height: 39px; width: 186px;">
+<p>-=</p>
+</td>
+<td style="height: 39px; width: 214px;">
+<p>x -= 2</p>
+</td>
+<td style="height: 39px; width: 186px;">
+<p>x = x - 2</p>
+</td>
+</tr>
+<tr style="height: 39px;">
+<td style="height: 39px; width: 186px;">
+<p>*=</p>
+</td>
+<td style="height: 39px; width: 214px;">
+<p>x *= 2</p>
+</td>
+<td style="height: 39px; width: 186px;">
+<p>x = x * 2</p>
+</td>
+</tr>
+<tr style="height: 39px;">
+<td style="height: 39px; width: 186px;">
+<p>/=</p>
+</td>
+<td style="height: 39px; width: 214px;">
+<p>x /= 2</p>
+</td>
+<td style="height: 39px; width: 186px;">
+<p>x = x / 2</p>
+</td>
+</tr>
+<tr style="height: 39px;">
+<td style="height: 39px; width: 186px;">
+<p>%=</p>
+</td>
+<td style="height: 39px; width: 214px;">
+<p>x %= 2</p>
+</td>
+<td style="height: 39px; width: 186px;">
+<p>x = x % 2</p>
+</td>
+</tr>
+<tr style="height: 39px;">
+<td style="height: 39px; width: 186px;">
+<p>//=</p>
+</td>
+<td style="height: 39px; width: 214px;">
+<p>x //= 2</p>
+</td>
+<td style="height: 39px; width: 186px;">
+<p>x = x // 2</p>
+</td>
+</tr>
+<tr style="height: 39px;">
+<td style="height: 39px; width: 186px;">
+<p>**=</p>
+</td>
+<td style="height: 39px; width: 214px;">
+<p>x **= 2</p>
+</td>
+<td style="height: 39px; width: 186px;">
+<p>x = x ** 2</p>
+</td>
+</tr>
+<tr style="height: 39px;">
+<td style="height: 39px; width: 186px;">
+<p>&amp;=</p>
+</td>
+<td style="height: 39px; width: 214px;">
+<p>x &amp;= 2</p>
+</td>
+<td style="height: 39px; width: 186px;">
+<p>x = x &amp; 2</p>
+</td>
+</tr>
+<tr style="height: 39px;">
+<td style="height: 39px; width: 186px;">
+<p>|=</p>
+</td>
+<td style="height: 39px; width: 214px;">
+<p>x |= 2</p>
+</td>
+<td style="height: 39px; width: 186px;">
+<p>x = x | 2</p>
+</td>
+</tr>
+<tr style="height: 39px;">
+<td style="height: 39px; width: 186px;">
+<p>^=</p>
+</td>
+<td style="height: 39px; width: 214px;">
+<p>x ^= 2</p>
+</td>
+<td style="height: 39px; width: 186px;">
+<p>x = x ^ 2</p>
+</td>
+</tr>
+<tr style="height: 39px;">
+<td style="height: 39px; width: 186px;">
+<p>&lt;&lt;=</p>
+</td>
+<td style="height: 39px; width: 214px;">
+<p>x &lt;&lt;= 2</p>
+</td>
+<td style="height: 39px; width: 186px;">
+<p>x = x &lt;&lt; 2</p>
+</td>
+</tr>
+<tr style="height: 39px;">
+<td style="height: 39px; width: 186px;">
+<p>&gt;&gt;=</p>
+</td>
+<td style="height: 39px; width: 214px;">
+<p>x &gt;&gt;= 2</p>
+</td>
+<td style="height: 39px; width: 186px;">
+<p>x = x &gt;&gt; 2</p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-67">
+<header class="nodeDecoration">
+<h1 id="exenode_67_Operadormorsa" class="nodeTitle">Operador morsa</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id113-67">
+<div class="iDevice emphasis0" >
+<div id="ta113_153_2" class="block iDevice_content">
+<div class="exe-text"><p>Python ha creado un operador de morsa (:=) en la versión 3.8 que permite asignar valores a una variable como parte de una expresión. Se puede realizar gran cantidad de cosas interesantes, pero el mejor aspecto es la reducción de líneas necesarias para tareas muy comunes.</p>
+<p>Ahora, en vez de escribir esto:</p>
+<pre style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">line = f.readline()<br />while line:<br />    line = f.readline()<br /><br /></pre>
+<p>Puedes escribir esto:   </p>
+<pre style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">while line := f.readline():</pre></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-68">
+<header class="nodeDecoration">
+<h1 id="exenode_68_Operadoresdepertenencia" class="nodeTitle">Operadores de pertenencia</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id114-68">
+<div class="iDevice emphasis0" >
+<div id="ta114_154_2" class="block iDevice_content">
+<div class="exe-text"><p>Los operadores de pertenencia se utilizan para comprobar si un valor o variable se encuentran en una secuencia (list, tuple, dict, set o str).</p>
+<table style="width: 819px; height: 59px;">
+<tbody>
+<tr style="height: 10px;">
+<td style="width: 79.8438px; height: 10px;">
+<p><strong>Operador</strong></p>
+</td>
+<td style="width: 723.156px; height: 10px;">
+<p><strong>Descripción</strong></p>
+</td>
+</tr>
+<tr style="height: 10px;">
+<td style="width: 79.8438px; height: 10px;">
+<p>in</p>
+</td>
+<td style="width: 723.156px; height: 10px;">
+<p>Devuelve True si el valor se encuentra en una secuencia; False en caso contrario.</p>
+</td>
+</tr>
+<tr style="height: 39px;">
+<td style="width: 79.8438px; height: 39px;">
+<p>not in</p>
+</td>
+<td style="width: 723.156px; height: 39px;">
+<p>Devuelve True si el valor no se encuentra en una secuencia; False en caso contrario.</p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id115-68">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Ejemplo</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta115_155_2" class="block iDevice_content">
+<div class="exe-text"><pre>&gt;&gt;&gt; lista = [1, 3, 2, 7, 9, 8, 6]<br />&gt;&gt;&gt; 4 in lista<br />False<br />&gt;&gt;&gt; 3 in lista<br />True<br />&gt;&gt;&gt; 4 not in lista<br />True</pre></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-69">
+<header class="nodeDecoration">
+<h1 id="exenode_69_Operadoresdeidentidad" class="nodeTitle">Operadores de identidad</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id116-69">
+<div class="iDevice emphasis0" >
+<div id="ta116_156_2" class="block iDevice_content">
+<div class="exe-text"><p>Por último, los operadores de identidad se utilizan para comprobar si dos variables son, o no, el mismo objeto.</p>
+<table style="width: 842px;">
+<tbody>
+<tr>
+<td style="width: 77.9062px;">
+<p><strong>Operador</strong></p>
+</td>
+<td style="width: 748.094px;">
+<p><strong>Descripción</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 77.9062px;">
+<p>is</p>
+</td>
+<td style="width: 748.094px;">
+<p>Devuelve True si ambos operandos hacen referencia al mismo objeto; False en caso contrario.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 77.9062px;">
+<p>is not</p>
+</td>
+<td style="width: 748.094px;">
+<p>Devuelve True si ambos operandos no hacen referencia al mismo objeto; False en caso contrario.</p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id117-69">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Ejemplo</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta117_157_2" class="block iDevice_content">
+<div class="exe-text"><pre>&gt;&gt;&gt; x = 4<br />&gt;&gt;&gt; y = 2<br />&gt;&gt;&gt; lista = [1, 5]<br />&gt;&gt;&gt; x is lista<br />False<br />&gt;&gt;&gt; x is y<br />False<br />&gt;&gt;&gt; x is 4<br />True</pre></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-70">
+<header class="nodeDecoration">
+<h1 id="exenode_70_PrioridaddelosoperadoresenPython" class="nodeTitle">Prioridad de los operadores en Python</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id118-70">
+<div class="iDevice emphasis0" >
+<div id="ta118_158_2" class="block iDevice_content">
+<div class="exe-text"><p>Al igual que ocurre en las matemáticas, los operadores en Python tienen un orden de prioridad. Este orden es el siguiente, de menos prioritario a más prioritario: asignación; operadores booleanos; operadores de comparación, identidad y pertenencia; a nivel de bits y finalmente los aritméticos (con el mismo orden de prioridad que en las matemáticas). </p>
+<p>Este orden de prioridad se puede alterar con el uso de los paréntesis ()</p>
+<p><img src="17.jpg" alt="Prioridad de operadores" width="638" height="479" /></p>
+<p></p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-71">
+<header class="nodeDecoration">
+<h1 id="exenode_71_Expresiones" class="nodeTitle">Expresiones</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id119-71">
+<div class="iDevice emphasis0" >
+<div id="ta119_159_2" class="block iDevice_content">
+<div class="exe-text"><p>Una expresión es una combinación de valores, variables y operadores. La evaluación de una expresión produce un valor, esta es la razón por la que las expresiones pueden aparecer en el lado derecho de las sentencias de asignación.</p>
+<p>Un valor, por sí mismo, se considera como una expresión, lo mismo ocurre para las variables.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id122-71">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Ejemplos</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta122_162_2" class="block iDevice_content">
+<div class="exe-text"><pre>&gt;&gt;&gt; x = 4<br />&gt;&gt;&gt; y = 2* x + 3 ** 7<br />&gt;&gt;&gt; x &gt; 5 and y &lt; 7</pre></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-5-node" id="exe-node-72">
+<header class="nodeDecoration">
+<h1 id="exenode_72_Ejercicios" class="nodeTitle">Ejercicios</h1>
+</header>
+<article class="iDevice_wrapper CasopracticofpdIdevice em_iDevice em_iDevice_casopracticofpd" id="id121-72">
+<div class="iDevice emphasis_casopracticofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Caso práctico</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta121_147" class="block iDevice_content">
+<ol>
+<li>Mayor de edad y cinco años o más cotizados</li>
+<li>Una manzana es seleccionada si el color es amarillo o rojo y además el diámetro está entre 15 y 25 cm.</li>
+<li>La presión de un balón debe estar entre 3 y 5 bares y la circunferencia no debe pasar de 45 cm</li>
+<li>El número de bolas rojas serán tres si el de amarillas es dos, debe ser cinco si el de amarillas es cinco.</li>
+<li>Para seleccionar un jugador debe medir entre 180 y 210 cm. Si es más alto de 210cm tiene que pesar menos de 120kg. Si es menor de 180cm tiene que saltar más de 50cm.</li>
+<li>Para comprar un vehículo debe ser azul si es un deportivo o verde si es un 4x4, pero si quiero una moto la compraré roja o negra.</li>
+<li>La jubilación se produce a los 67 años con 35 cotizados. a partir de 65 con 40 cotizados y 20 o más continuos</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-73">
+<header class="nodeDecoration">
+<h1 id="exenode_73_2711Ejercicios" class="nodeTitle">2.7.11. Ejercicios</h1>
+</header>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id123-73">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta123_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b123" class="block iDevice_content">
+<p>1. Escribe un programa que dé los “buenos días”.<br />2. Escribe un programa que calcule y muestre el área de un cuadrado de lado igual a 5.<br />3. Escribe un programa que calcule el área de un cuadrado cuyo lado se introduce por teclado.<br />4. Escribe un programa que lea dos números, calcule y muestre el valor de sus suma, resta, producto y división.<br />5. Escribe un programa que toma como dato de entrada un número que corresponde a la longitud de un radio y nos escribe la longitud de la circunferencia, el área del círculo y el volumen de la esfera que corresponden con dicho radio.</p>
+</section>
+<form name="feedback-form-quesFeedback0b123" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b123text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b123" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b123" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p># 1º<br />print("Buenos días")</p>
+<p># 2º<br />lado = 5<br />area = lado ** 2 # lado * lado<br />print("El área es", area) # a la hora de imprimir, generalmente no es necesaria la conversión a cadena</p>
+<p># 3º<br />lado = input("Introduce el valor del lado:")<br />lado = int(lado)<br />area = lado ** 2 # lado * lado<br />print("El área es", area)</p>
+<p># 4º<br />num_uno = int(input("Primer número:"))<br />num_dos = int(input("Segundo número:"))<br />print("La suma es:", num_uno + num_dos)<br />print("La resta es:", num_uno - num_dos)<br />print("La multiplicación es:", num_uno * num_dos)<br />print("La división es:", num_uno / num_dos)</p>
+<p># 5º<br />PI = 3.14159<br />radio = int(input("Radio de la esfera:"))<br />print("La longitud es:", 2 * PI * radio)<br />print("El área es:", PI * radio ** 2)<br />print("El volumne de la esfera es:", 4 * PI * radio ** 3 / 3)</p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id124-73">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta124_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b124" class="block iDevice_content">
+<p>6. Escribe un programa que dado el precio de un artículo y el precio de venta real nos muestre el porcentaje de descuento realizado.<br />7. Escribe un programa que lea un valor correspondiente a una distancia en millas marinas y escriba la distancia en metros. Sabiendo que una milla marina equivale a 1.852 metros.<br />8. Calcular el consumo de un coche a los 100 kilómetros dados el gasto en dinero realizado, el precio del litro y el número de kilómetros recorridos.<br />9. Calcular el coste de la vida dados los precios de tres productos este año y el año pasado.<br />10. Escribir un programa que pregunte al usuario por el número de horas trabajadas y el coste por hora. Después debe mostrar por pantalla la paga que le corresponde.</p>
+</section>
+<form name="feedback-form-quesFeedback0b124" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b124text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b124" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b124" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p># 6ª<br />precio_venta = int(input("Introduce el precio de venta:"))<br />precio_real = int(input("Introduce el precio real:"))<br />print("Descuento aplicado (%):", (1 - precio_venta / precio_real) * 100)</p>
+<p># 7º<br />conversion_millas_marinas_a_kilometros = 1852<br />distancia_millas = int(input("Distancia en millas marinas:"))<br />print("Distancia en km:", distancia_millas / conversion_millas_marinas_a_kilometros)</p>
+<p># 8º<br />dinero_gastado = int(input("Gasto de dinero:"))<br />kilometros_recorridos = int(input("Kilómetros:"))<br />precio_por_litro = float(input("Precio por litro:"))<br />litros_consumidos = dinero_gastado / precio_por_litro<br />consumo = litros_consumidos / kilometros_recorridos * 100<br />print("Consumo a los 100:", consumo)</p>
+<p># 9º<br />producto_uno_precio_ahora = int(input("Precio Primer producto ahora:"))<br />producto_dos_precio_ahora = int(input("Precio Segundo producto ahora:"))<br />producto_tres_precio_ahora = int(input("Precio Tercer producto ahora:"))<br />producto_uno_precio_anterior = int(input("Precio Primer producto antes:"))<br />producto_dos_precio_anterior = int(input("Precio Segundo producto antes:"))<br />producto_tres_precio_anterior = int(input("Precio Tercer producto antes:"))<br />gasto_ahora = producto_uno_precio_ahora + producto_dos_precio_ahora + producto_tres_precio_ahora<br />gasto_anterior = producto_uno_precio_anterior + producto_dos_precio_anterior + producto_tres_precio_anterior<br />print("El aumento de la vida es:", (gasto_ahora - gasto_anterior) / gasto_anterior * 100)</p>
+<p># 10º<br />horas_trabajadas = int(input("Horas trabajadas:"))<br />euros_por_hora = int(input("Precio la hora:"))<br />print("Le corresponden", horas_trabajadas * euros_por_hora, "€")</p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-75">
+<header class="nodeDecoration">
+<h1 id="exenode_75_2712Manejodelosdatos" class="nodeTitle">2.7.12 Manejo de los datos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id126-75">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta126_166_2" class="block iDevice_content">
+<div class="exe-text"><p>Los literales son notaciones para los valores constantes de algunos tipos incorporados, son la representación escrita de los datos.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-76">
+<header class="nodeDecoration">
+<h1 id="exenode_76_Literalesnumricos" class="nodeTitle">Literales numéricos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id127-76">
+<div class="iDevice emphasis0" >
+<div id="ta127_167_2" class="block iDevice_content">
+<div class="exe-text"><p>Hay tres tipos de literales numéricos: números enteros, números de punto flotante y números imaginarios. No hay literales complejos (los números complejos pueden formarse sumando un número real y un número imaginario: 4 + 3j).</p>
+<ul>
+<li>Enteros. (enteros, octales 0o, binarios 0b y hexadecimales 0x)</li>
+</ul>
+<pre style="padding-left: 30px;">7    2147483647    0o177    0b100110111    3    79228162514264337593543950336    0o377    0xdeadbeef    100000000000    100_000_000_000    0b_1110_0101</pre>
+<ul>
+<li>Coma flotante. (notación tradicional o notación científica)</li>
+</ul>
+<pre style="padding-left: 30px;">3.14    10.    .001    1e100    3.14e-10    0e0    3.14_15_93</pre>
+<ul>
+<li>Imaginarios.</li>
+</ul>
+<pre style="padding-left: 30px;">3.14j   10.j    10j     .001j   1e100j   3.14e-10j   3.14_15_93j  </pre></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-77">
+<header class="nodeDecoration">
+<h1 id="exenode_77_Literalesdebytes" class="nodeTitle">Literales de bytes</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id128-77">
+<div class="iDevice emphasis0" >
+<div id="ta128_168_2" class="block iDevice_content">
+<div class="exe-text"><p>Los literales de bytes siempre se prefijan con 'b' o 'B'; y producen una instancia del tipo bytes en lugar del tipo str, por lo que solo pueden contener caracteres ASCII. Los bytes con un valor numérico de 128 o mayor deben ser expresados con secuencias numéricas (\xxxx). Además, los literales de bytes pueden ser prefijados con una letra 'r' o 'R', tales cadenas se llaman raw strings y consideran las barras inversas como caracteres literales.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id129-77">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Ejemplo</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta129_169_2" class="block iDevice_content">
+<div class="exe-text"><pre>b'Espa\xc3\xb1a'.decode(“UTF-8”)    # España<br />b'Espa\xc3\xb1a'.decode(“Latin1”)   # España<br />rb'spam\xddegg'                     # spam\xddegg</pre></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-78">
+<header class="nodeDecoration">
+<h1 id="exenode_78_LiteralesCadena" class="nodeTitle">Literales Cadena</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id130-78">
+<div class="iDevice emphasis0" >
+<div id="ta130_170_2" class="block iDevice_content">
+<div class="exe-text"><p>Las cadenas (tipo <strong>str</strong>) en Python pueden ser encerrados entre comillas simples (') o dobles (") pero no se pueden mezclar los delimitadores. También pueden estar encerrados en grupos de tres comillas simples o dobles (a las que generalmente se les llama cadenas de tres comillas) para dividir la cadena en varias líneas físicas.</p>
+<p>El carácter de la barra inversa (\) se utiliza para escapar los caracteres que de otra manera tienen un significado especial, como la línea nueva, la barra inversa en sí misma, o el carácter de comillas.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id131-78">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Ejemplo</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta131_171_2" class="block iDevice_content">
+<div class="exe-text"><pre>print('Hola Mundo')<br />mi_cadena = """Clase que representa<br />una Persona"""<br />print(mi_cadena)<br />print("hola \n \" mundo \" ")<br />print('hola \n \" mundo \" ')<br /> <br />cadena = "Hola"<br />cadena[2] = "a"   #  error son inmutables</pre></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id132-78">
+<div class="iDevice emphasis0" >
+<div id="ta132_172_2" class="block iDevice_content">
+<div class="exe-text"><p>Los literales de cadena pueden ser prefijados con una letra 'r' o 'R'; tales cadenas se llaman raw strings y consideran las barras inversas como caracteres literales. A menos que un prefijo 'r' o 'R' esté presente, las secuencias de escape en literales de cadena y bytes se interpretan según reglas similares a las usadas por C estándar. Las secuencias de escape reconocidas son:</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Secuencia de escape</strong></p>
+</td>
+<td>
+<p><strong>Significado</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>\newline</strong></p>
+</td>
+<td>
+<p>Barra inversa y línea nueva ignoradas</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>\\</strong></p>
+</td>
+<td>
+<p>Barra inversa (\)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>\'</strong></p>
+</td>
+<td>
+<p>Comilla simple (')</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>\"</strong></p>
+</td>
+<td>
+<p>Comilla doble (")</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>\a</strong></p>
+</td>
+<td>
+<p>ASCII Bell (BEL)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>\b</strong></p>
+</td>
+<td>
+<p>ASCII Retroceso (BS)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>\f</strong></p>
+</td>
+<td>
+<p>ASCII Formfeed (FF)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>\n</strong></p>
+</td>
+<td>
+<p>ASCII Linefeed (LF)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>\r</strong></p>
+</td>
+<td>
+<p>ASCII Retorno de carro (CR)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>\t</strong></p>
+</td>
+<td>
+<p>ASCII Sangría horizontal (TAB)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>\v</strong></p>
+</td>
+<td>
+<p>ASCII Sangría vertical (VT)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>\ooo</strong></p>
+</td>
+<td>
+<p>Carácter con valor octal <em>oo</em></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>\xhh</strong></p>
+</td>
+<td>
+<p>Carácter con valor hexadecimal <em>hh</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id133-78">
+<div class="iDevice emphasis0" >
+<div id="ta133_173_2" class="block iDevice_content">
+<div class="exe-text"><p>Se permiten múltiples literales de cadenas adyacentes (delimitados por espacios en blanco), utilizando diferentes convenciones y su significado es el mismo que su concatenación. Por lo tanto, "hola" 'mundo' es equivalente a "holamundo". Esta característica puede ser utilizada para reducir el número de barras inversas necesarias, para dividir largas cadenas convenientemente a través de largas líneas, o incluso para añadir comentarios a partes de las cadenas</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-79">
+<header class="nodeDecoration">
+<h1 id="exenode_79_2713Ejercicios" class="nodeTitle">2.7.13. Ejercicios</h1>
+</header>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id135-79">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta135_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b135" class="block iDevice_content">
+<p>11. Escribir un programa que lea un entero positivo, introducido por el usuario y después muestre en pantalla la suma de todos los enteros desde 1 hasta el número. La suma de los primeros enteros positivos puede ser calculada de la siguiente forma n(n+1)/2</p>
+<p><br />12. Escribir un programa que pida al usuario su peso (en kg) y estatura (en metros), calcule el índice de masa corporal, lo almacene en una variable y muestre por pantalla la frase Tu índice de masa corporal es &lt;imc&gt; donde &lt;imc&gt; es el índice de masa corporal calculado redondeado con dos decimales.</p>
+<p><br />13. Escribir un programa que pida al usuario dos números enteros y muestre por pantalla la &lt;n&gt; entre &lt;m&gt; da un cociente &lt;c&gt; y un resto &lt;r&gt; donde &lt;n&gt; y &lt;m&gt; son los números introducidos por el usuario, y &lt;c&gt; y &lt;r&gt; son el cociente y el resto de la división entera respectivamente.</p>
+<p><br />14. Una juguetería tiene mucho éxito en dos de sus productos: payasos y muñecas. Suele hacer venta por correo y la empresa de logística les cobra por peso de cada paquete así que deben calcular el peso de los payasos y muñecas que saldrán en cada paquete a demanda. Cada payaso pesa 112 g y cada muñeca 75 g. Escribir un programa que lea el número de payasos y muñecas vendidos en el último pedido y calcule el peso total del paquete que será enviado.</p>
+<p><br />15. Imagina que acabas de abrir una nueva cuenta de ahorros que te ofrece el 4% de interés al año. Estos ahorros debido a intereses, que no se cobran hasta finales de año, se te añaden al balance final de tu cuenta de ahorros. Escribir un programa que comience leyendo la cantidad de dinero depositada en la cuenta de ahorros, introducida por el usuario. Después el programa debe calcular y mostrar por pantalla la cantidad de ahorros tras el primer, segundo y tercer años. Redondear cada cantidad a dos decimales.</p>
+<p><br />16. Una panadería vende barras de pan a 3.49€ cada una. El pan que no es el día tiene un descuento del 60%. Escribir un programa que comience leyendo el número de barras vendidas que no son del día. Después el programa debe mostrar el precio habitual de una barra de pan, el descuento que se le hace por no ser fresca y el coste final total.</p>
+<p><br />17. Escribir un programa que solicite al usuario ingresar un número con decimales y almacenarlo en una variable. A continuación, el programa debe solicitar al usuario que ingrese un número entero y guardarlo en otra variable. En una tercera variable se deberá guardar el resultado de la suma de los dos números ingresados por el usuario.<br />Por último, se debe mostrar en pantalla el texto “El resultado de la suma es [suma]”, donde “[suma]” se reemplazará por el resultado de la operación.</p>
+<p><br />18. Escribir un programa que solicite al usuario el ingreso de una temperatura en escala Fahrenheit (debe permitir decimales) y le muestre el equivalente en grados Celsius. La fórmula de conversión que se usa para este cálculo es: Celsius = (5/9) * (Fahrenheit-32).</p>
+<p><br />19. Escribir un programa que solicite al usuario el ingreso de dos palabras, las cuales se guardarán en dos variables distintas. A continuación, almacenará en una variable la concatenación de la primera palabra, más un espacio, más la segunda palabra. Mostrará este resultado en pantalla.</p>
+<p><br />20. Escribir un programa que solicite al usuario el ingreso de un texto y almacene ese texto en una variable. A continuación, mostrar en pantalla la primera letra del texto ingresado. Luego, solicitar al usuario que ingrese un número positivo menor a la cantidad de caracteres que tiene el texto que ingresó (por ejemplo, si escribió la palabra “HOLA”, tendrá que ser un número entre 0 y 4) y almacenar este número en una variable llamada índice. Mostrar en pantalla el carácter del texto ubicado en la posición dada por índice.</p>
+</section>
+<form name="feedback-form-quesFeedback0b135" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b135text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b135" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b135" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p># 11º<br />numumero = int(input("Introduce un número:"))<br />print("La suma es", numumero * (numumero + 1) / 2)</p>
+<p># 12º<br />estatura = float(input("Estatura en metros:"))<br />peso = float(input("Peso en kg.:"))<br />print(f"ICM:{peso / estatura ** 2:.2}:")</p>
+<p># 13º<br />num_uno = int(input("Primer número:"))<br />num_dos = int(input("Segundo número:"))<br />print("El cociente es ", num_uno // num_dos, "el resto es ", num_uno % num_dos)</p>
+<p># 14º<br />muniecas = int(input("Cantidad de muñecas:"))<br />payasos = int(input("Cantidad de payasos:"))<br />PESO_MUNIECAS = 75<br />PESO_PAYASOS = 112<br />print("El peso total es:", muniecas * PESO_MUNIECAS + payasos * PESO_PAYASOS)</p>
+<p># 15º<br />INTERES_ANUAL = 0.04<br />cantidad_efectivo = int(input("Cantidad en la cuenta:"))<br />cantidad_efectivo += INTERES_ANUAL * cantidad_efectivo<br />print("Al cabo de un año:", cantidad_efectivo)<br />cantidad_efectivo += INTERES_ANUAL * cantidad_efectivo<br />print("Al cabo de dos años:", cantidad_efectivo)<br />cantidad_efectivo += INTERES_ANUAL * cantidad_efectivo<br />print("Al cabo de tres años:", cantidad_efectivo)</p>
+<p># 16º<br />PRECIO_BARRA = 3.49<br />DESCUENTO = 0.6<br />barras = int(input("Número de barras vendidas:"))<br />print("El precio de una barra es:", PRECIO_BARRA,<br />"El descuento aplicado es:", DESCUENTO * 100, "%",<br />"Precio de venta:", barras * PRECIO_BARRA * (1 - DESCUENTO))</p>
+<p># 17º<br />num_uno = float(input("Número decimal:"))<br />num_dos = int(input("Número entero:"))<br />print("El resultado de la suma es ", num_uno + num_dos)</p>
+<p># 18º Celsius = (5/9) * (Fahrenheit-32)<br />temperatura_fahrenheit = float(input("Temperatura en Fahrenheit:"))<br />print("Temperatura en grados centígradps es ", 5 / 9 * (temperatura_fahrenheit - 32))</p>
+<p># 19º<br />palabra_uno = input("Primera palabra:")<br />palabra_dos = input("Segunda palabra:")<br />concatena = palabra_uno + " " + palabra_dos<br />print(concatena)</p>
+<p># 20º<br />texto = input("Introduce un texto:")<br />print("Primera letra", texto[0])<br />indice = int(input("Introduce un número menor que " + str(len(texto)) + ":"))<br />print("Letra", texto[indice])</p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-80">
+<header class="nodeDecoration">
+<h1 id="exenode_80_2714Tiposdedatos" class="nodeTitle">2.7.14. Tipos de datos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id136-80">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta136_176_2" class="block iDevice_content">
+<div class="exe-text"><p>En cualquier lenguaje de programación de alto nivel se manejan tipos de datos. Los tipos de datos definen un conjunto de valores que tienen una serie de características y propiedades determinadas. Los tipos de datos básicos de Python son los booleanos, los numéricos (enteros, punto flotante y complejos), el tipo nulo y las cadenas de caracteres. Los tipos de datos complejos los veremos en unidades posteriores.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id137-80">
+<div class="iDevice emphasis0" >
+<div id="ta137_177_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Booleanos: True o False</li>
+<li>Nulo</li>
+<li>Numéricos
+<ul>
+<li>Int</li>
+<li>Float</li>
+<li>Irracionales</li>
+<li>Conversiones de tipos: (hex(), oct(), bool(), int(), float(), complex())</li>
+<li>Decimal, precisión necesaria para cálculos financieros y científicos</li>
+</ul>
+</li>
+<li>Cadenas
+<ul>
+<li>Inicialización con literales</li>
+<li>No existe el concepto de carácter, es una cadena de longitud uno</li>
+<li>Longitud de una cadena: len(cadena)</li>
+<li>El índice de las cadenas empieza en cero</li>
+<li>Son inmutables</li>
+<li>La notación de corchetes se utiliza para rebanadas: [inicio, fin]
+<ul>
+<li>Números positivos desde el principio</li>
+<li>Números negativos desde el fin de la cadena</li>
+<li>Invertir una cadena [::-1]</li>
+<li>Se puede omitir tanto inicio como fin, indicando el primero y el último</li>
+</ul>
+</li>
+<li>Se pueden usar los operadores + (concatenación) y * (repetición)</li>
+</ul>
+</li>
+</ul>
+<pre style="padding-left: 90px;">print("la" in "!Hola")           # True<br />pal="Una palabra"<br />print(pal, pal[0],pal[-2])  # Una palabra U r<br />print(pal[0:2])                   # Un<br />print(pal[4:])                     # palabra<br />print(pal[-3:-1])                # br<br />print("Una" "Palabra")      # UnaPalabra<br />pal[3]="b"                         # 'str' object does not support item assignment<br />print(len(pal))<br />print(pal*2)         # Una PalabraUna Palabra</pre>
+<ul>
+<li>Cadenas: formato<br />
+<ul>
+<li>Hay un formato antiguo tipo printf (%) no se aconseja</li>
+<li>El nuevo formato usar el método .format() o los {} en la cadena</li>
+<li>Se antepone la letra f a la cadena para indicar que se debe formatear</li>
+<li>Si no se usa la letra f, se debe llamar al método format con los parámetros</li>
+</ul>
+</li>
+<li>Cadenas: Formatos: dentro de las llaves
+<ul>
+<li>Un nombre de variable</li>
+<li>Una expresión</li>
+<li>Acceso a un objeto y sus propiedades</li>
+<li>Acceso a los formatos de fecha</li>
+</ul>
+</li>
+</ul>
+<pre style="padding-left: 90px;">import decimal<br />from datetime import datetime<br />width = 10<br />precision = 4<br />value = decimal.Decimal("12.34567")<br />print(f"result: {value}")<br />print(f"result: {value =}")  # escribe number_var = valor<br />print(f"result: {value:{width}.{precision}}")  # nested fields<br />today = datetime(year=2017, month=1, day=27)<br />print(f"{today:%B %d, %Y}")  # using date format specifier</pre></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-81">
+<header class="nodeDecoration">
+<h1 id="exenode_81_2715Variablesyconstantes" class="nodeTitle">2.7.15. Variables y constantes</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id138-81">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta138_178_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Una variable es un contenedor de valores (generalmente un puntero a una dirección de memoria).</li>
+<li> Las variables son objetos.</li>
+<li>Las reglas de nombrado dictan que deben empezar por letra siempre y que pueden contener números y subrayado (_). Las reglas de estilo de nombrado de variables indican que serán siempre en minúsculas y separadas por un subrayado.</li>
+<li>Las variables no son tipadas, el tipo del contenido de una variable viene determinado en tiempo de ejecución por el contenido, no en tiempo de compilación. Por tanto, no es necesario especificar un tipo a la hora de definir una variable.</li>
+<li>No es necesario definir de forma explícita una variable, se define en el momento del primer uso cuando se le asigne valor, pero vamos a inicializar todas las variables que necesitemos antes de usarlas al comienzo del bloque correspondiente.</li>
+<li>Una variable puede ser eliminada con la función del nombre_variable.</li>
+<li>No se pueden usar las palabras clave de la sintaxis como nombres de variables.</li>
+<li>El contenido de una variable es inmutable, por lo que cuando cambiamos su valor se crea un nuevo objeto con el nuevo valor, se cambia el puntero al nuevo objeto y se libera la memoria del valor (objeto) anterior.</li>
+<li>Existen tipos de datos inmutables: números, cadenas, tuplas que una modificación implicará una creación del nuevo objeto y una asignación a la variable; y tipos mutables que se modifica el objeto directamente: diccionario, lista, conjunto.</li>
+<li>Se pueden definir varias variables en una misma línea usando el operador coma (,) y usar el operador empaquetar (*) en la asignación.</li>
+<li>No existen los valores constantes, se usa la nomenclatura en mayúsculas para indicar un valor que no cambia, pero no se implementa ningún control.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id139-81">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Ejemplo</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta139_179_2" class="block iDevice_content">
+<div class="exe-text"><pre>a, b = 3.5, "Hola"<br />c = d = 3<br />a, c = c, a<br />e, *f = 3, 4, 5, 6   # el asterisco es el resto de valores<br />*g, h = 7, 8, 9   # el asterisco es el resto de valores<br />del b<br />print(a, c , d, e, f, g, h) # 3 3.5 3 3 [4, 5, 6] [7, 8] 9<br />a, b  = b, a  # intercambio de variables<br />VALOR_CTE = 23  # es solo nomenclatura no se controla<br />print(VALOR_CTE)<br />VALOR_CTE = 22<br />print(VALOR_CTE)</pre></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-82">
+<header class="nodeDecoration">
+<h1 id="exenode_82_2716Bibliotecas" class="nodeTitle">2.7.16. Bibliotecas</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id140-82">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta140_180_2" class="block iDevice_content">
+<div class="exe-text"><p>La biblioteca estándar de Python es muy amplia y ofrece una gran cantidad de facilidades. La biblioteca contiene módulos incorporados que brindan acceso a las funcionalidades del sistema como entrada y salida de archivos que serían de otra forma inaccesibles para los programadores en Python, así como módulos escritos en Python que proveen soluciones estandarizadas para los diversos problemas que pueden ocurrir en el día a día en la programación. Veremos elementos de esta biblioteca a lo largo de todo el curso.</p>
+<p><a href="https://docs.python.org/es/3/library/index.html" target="_blank" rel="noopener" style="background-color: #cccccc; padding: 5px; border-style: solid;">https://docs.python.org/es/3/library/index.html</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-83">
+<header class="nodeDecoration">
+<h1 id="exenode_83_2718Ejercicios" class="nodeTitle">2.7.18. Ejercicios</h1>
+</header>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id141-83">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta141_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b141" class="block iDevice_content">
+<p>21. Escribir un programa que solicite al usuario que ingrese cuántos shows musicales ha visto en el último año y almacene ese número en una variable. A continuación, mostrar en pantalla un valor de verdad (True o False) que indique si el usuario ha visto más de 3 shows.</p>
+<p><br />22. Escribir un programa que le solicite al usuario ingresar una fecha formada por 8 números, donde los primeros dos representan el día, los siguientes dos el mes y los últimos cuatro el año (DDMMAAAA). Este dato debe guardarse en una variable con tipo int (número entero). Finalmente, mostrar al usuario la fecha con el formato DD / MM / AAAA.</p>
+<p><br />23. Escribir un programa para solicitar al usuario el ingreso de un número entero y que luego imprima un valor booleano dependiendo de si el número es par o no. Recordar que un número es par si el resto al dividirlo por 2, es 0.</p>
+<p><br />24. Escribí un programa que le solicite al usuario su edad y la guarde en una variable. Que luego solicite la cantidad de artículos comprados en una tienda y la guarde en otra variable. Finalmente, mostrar en pantalla un valor de verdad (True o False) que indique si el usuario es mayor de 18 años de edad y además compró más de 1 artículo.</p>
+<p><br />25. Escribí un programa que, dada una cadena de texto por el usuario, imprima True si la cantidad de caracteres en la cadena es un número impar, o False si no lo es.</p>
+<p><br />26. Escribir un programa para pedir al usuario su nombre y luego el nombre de otra persona, almacenando cada nombre en una variable. Luego mostrar en pantalla un valor de verdad que indique si: los nombres de ambas personas comienzan con la misma letra ó si terminan con la misma letra. Por ejemplo, si los nombres ingresados son María y Marcos, se mostrará True, ya que ambos comienzan con la misma letra. Si los nombres son Ricardo y Gonzalo se mostrará True, ya que ambos terminan con la misma letra. Si los nombres son Florencia y Lautaro se mostrará False, ya que no coinciden ni la primera ni la última letra.</p>
+</section>
+<form name="feedback-form-quesFeedback0b141" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b141text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b141" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b141" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p># 21º<br />numero_shows = int(input("Número de shows vistos:"))<br />print("¿Más de tres?", numero_shows &gt; 3)</p>
+<p># 22º<br />fecha = int(input("Fecha en formato DDMMAAAA:"))<br />anio = fecha % 10000<br />dia = fecha // 1000000<br />mes = (fecha // 10000) % 100<br />print(dia, "/", mes, "/", anio)</p>
+<p># 23º<br />numero = int(input("Número entero:"))<br />print((numero % 2) == 0)</p>
+<p># 24º<br />edad = int(input("Tu edad:"))<br />articulos = int(input("Artículos comprados:"))<br />print((edad &gt; 18) and (articulos &gt; 1))</p>
+<p># 25º<br />cadena = input("Ingresá una frase:")<br />longitud = len(cadena)<br />print(longitud % 2 == 0)</p>
+<p># 26º<br />nombre1 = input("Tu nombre:")<br />nombre2 = input("Otro nombre:")<br />posicion_final_nombre1 = len(nombre1) - 1<br />posicion_final_nombre2 = -1<br />print((nombre1[0] == nombre2[0]) or<br />(nombre1[posicion_final_nombre1] == nombre2[posicion_final_nombre2]))</p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id142-83">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta142_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b142" class="block iDevice_content">
+<p>Extra 1: Calcular las soluciones de las raíces de una ecuación de segundo grado, asumiendo que el discriminante es &gt;= 0</p>
+<p><br />Extra 2: Hacer un conversor de divisas: $, € y Libras<br /> </p>
+</section>
+<form name="feedback-form-quesFeedback0b142" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b142text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b142" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b142" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p># Extra 1</p>
+<p>import math</p>
+<p>print("Cáculo de las raíces (y=ax^2+bx+c)")<br />a = int(input("Introduce a:"))<br />b = int(input("Introduce b:"))<br />c = int(input("Introduce c:"))<br />print("Primera raíz:", (-b + math.sqrt(b**2 - 4*a*c))/(2*a))<br />print("Segunda raíz:", (-b - math.sqrt(b**2 - 4*a*c))/(2*a))</p>
+<p># Extra 2 Necesario Python 3.10<br />EUROS_LIBRAS = 1<br />EUROS_DOLAR = 2<br />LIBRAS_DOLAR = 3<br />cantidad = cantidad_convertida = 0<br />moneda_origen = moneda_destino = ""<br />cantidad = int(input("Cantidad de dinero?"))<br />moneda_origen = input("Moneda origen (l,e,d):")<br />moneda_destino = input("Moneda origen (l,e,d):")<br />match (moneda_origen, moneda_destino):<br />    case ("e", "l"):<br />        cantidad_convertida = cantidad * EUROS_LIBRAS<br />    case ("e", "d"):<br />        cantidad_convertida = cantidad * EUROS_DOLAR<br />    case ("l", "d"):<br />        cantidad_convertida = cantidad * LIBRAS_DOLAR<br />    case ("l", "e"):<br />        cantidad_convertida = cantidad / EUROS_LIBRAS<br />    case ("d", "e"):<br />        cantidad_convertida = cantidad / EUROS_DOLAR<br />    case ("d", "l"):<br />        cantidad_convertida = cantidad / LIBRAS_DOLAR<br />    case _:<br />        cantidad_convertida = "No es posible"</p>
+<p>print(f"La cantidad {cantidad} en {moneda_origen} son {cantidad_convertida} en {moneda_destino}")</p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-37">
+<header class="nodeDecoration">
+<h1 id="exenode_37_Resumen" class="nodeTitle">Resumen</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_objectives" id="id143-37">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_objectives.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta143_183_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-mind-map">
+<figure class="exe-figure exe-image position-center" style="width: 1230px;"><img src="map_1639329002258.png" width="1230" height="1081" alt="Resumen U.T.2" />
+<figcaption class="figcaption"><span class="title"><em>Resumen U.T.2</em></span></figcaption>
+</figure>
+<p class="exe-mindmap-code">{"id":"740f12cd-b436-4e23-bf63-492866c943bf","title":"Elementos de un programa","mindmap":{"root":{"id":"bafee856-74a6-42cc-9e53-a0ecc906ccf9","parentId":null,"text":{"caption":"Elementos de un programa","font":{"style":"normal","weight":"bold","decoration":"none","size":20,"color":"#000000"}},"offset":{"x":0,"y":0},"foldChildren":false,"branchColor":"#000000","children":[{"id":"6af6fe12-a5f6-4ebc-8c36-4fb1364c81bb","parentId":"bafee856-74a6-42cc-9e53-a0ecc906ccf9","text":{"caption":"Historia de Python","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-213,"y":-2},"foldChildren":false,"branchColor":"#e4222f","children":[]},{"id":"7988e1c8-69cd-44ad-bedc-f5e48f14bea7","parentId":"bafee856-74a6-42cc-9e53-a0ecc906ccf9","text":{"caption":"Características de Python","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-224,"y":-103},"foldChildren":false,"branchColor":"#638756","children":[{"id":"20484baf-5ab4-4e33-bca9-119a0974f4fd","parentId":"7988e1c8-69cd-44ad-bedc-f5e48f14bea7","text":{"caption":"Fuertemente tipado","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-166,"y":-31},"foldChildren":false,"branchColor":"#638756","children":[]},{"id":"15e3b72b-2bf5-43d5-b532-9abdce981216","parentId":"7988e1c8-69cd-44ad-bedc-f5e48f14bea7","text":{"caption":"Tipado Dinámico","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-165,"y":31},"foldChildren":false,"branchColor":"#638756","children":[]},{"id":"72add403-9ee8-4528-b7db-233de36274f8","parentId":"7988e1c8-69cd-44ad-bedc-f5e48f14bea7","text":{"caption":"Gestor pip paquetes","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-186,"y":93},"foldChildren":false,"branchColor":"#638756","children":[]},{"id":"f4020bdf-d869-4cef-9f9f-04b539cdc7fd","parentId":"7988e1c8-69cd-44ad-bedc-f5e48f14bea7","text":{"caption":"Multisistema y multiplataforma","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-171,"y":-100},"foldChildren":false,"branchColor":"#638756","children":[]}]},{"id":"1b58fe81-9ac7-41ea-8120-d659df58eeed","parentId":"bafee856-74a6-42cc-9e53-a0ecc906ccf9","text":{"caption":"Elementos del lenguaje","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":97,"y":122},"foldChildren":false,"branchColor":"#6b5a6f","children":[{"id":"1e9161e8-e20e-47df-b2a4-5aad80e0c936","parentId":"1b58fe81-9ac7-41ea-8120-d659df58eeed","text":{"caption":"Conceptos básicos","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":192,"y":-200},"foldChildren":false,"branchColor":"#6b5a6f","children":[]},{"id":"383d45b5-f138-485b-b8b8-1860bde4a61d","parentId":"1b58fe81-9ac7-41ea-8120-d659df58eeed","text":{"caption":"Funciones introductorias","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":205,"y":-150},"foldChildren":false,"branchColor":"#6b5a6f","children":[]},{"id":"c590ace6-0f5b-498b-bd01-12136c473fac","parentId":"1b58fe81-9ac7-41ea-8120-d659df58eeed","text":{"caption":"Líneas","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":234,"y":-92},"foldChildren":false,"branchColor":"#6b5a6f","children":[]},{"id":"8db227fa-774f-456d-905a-903cbecd3b9a","parentId":"1b58fe81-9ac7-41ea-8120-d659df58eeed","text":{"caption":"Espacios en blanco","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":203,"y":-36},"foldChildren":false,"branchColor":"#6b5a6f","children":[]},{"id":"647b8306-4cb5-4da2-8221-a638ccc24eee","parentId":"1b58fe81-9ac7-41ea-8120-d659df58eeed","text":{"caption":"Comentarios","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":238,"y":17},"foldChildren":false,"branchColor":"#6b5a6f","children":[]},{"id":"8eede478-405b-4846-85dc-1e9171c758a0","parentId":"1b58fe81-9ac7-41ea-8120-d659df58eeed","text":{"caption":"Identificadores","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":227,"y":68},"foldChildren":false,"branchColor":"#6b5a6f","children":[{"id":"ac139429-1dcd-44bb-9ac7-02a4f2732145","parentId":"8eede478-405b-4846-85dc-1e9171c758a0","text":{"caption":"Nombrado","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":134,"y":0},"foldChildren":false,"branchColor":"#6b5a6f","children":[]}]},{"id":"24833b0b-2f79-48c4-8b22-c074a775480a","parentId":"1b58fe81-9ac7-41ea-8120-d659df58eeed","text":{"caption":"Palabras reservadas","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":210,"y":131},"foldChildren":false,"branchColor":"#6b5a6f","children":[]},{"id":"5853c9c5-2d43-4a73-94ae-a5d9f4d12961","parentId":"1b58fe81-9ac7-41ea-8120-d659df58eeed","text":{"caption":"Operadores","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":245,"y":241},"foldChildren":false,"branchColor":"#6b5a6f","children":[{"id":"e0289c92-aea9-4ebf-99b8-a493cc19602e","parentId":"5853c9c5-2d43-4a73-94ae-a5d9f4d12961","text":{"caption":"Concatenación","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":158.66666666666666,"y":-36},"foldChildren":false,"branchColor":"#6b5a6f","children":[]},{"id":"7421ac43-8bca-4f34-8a96-f18ecc997982","parentId":"5853c9c5-2d43-4a73-94ae-a5d9f4d12961","text":{"caption":"Booleanos","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":184,"y":16},"foldChildren":false,"branchColor":"#6b5a6f","children":[]},{"id":"45ddbb8c-95bd-4b09-b4b9-4c583303c823","parentId":"5853c9c5-2d43-4a73-94ae-a5d9f4d12961","text":{"caption":"Comparación","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":170.66666666666666,"y":77.33333333333333},"foldChildren":false,"branchColor":"#6b5a6f","children":[]},{"id":"ac310e86-8911-41da-a072-ba85a2112123","parentId":"5853c9c5-2d43-4a73-94ae-a5d9f4d12961","text":{"caption":"Aritméticos","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":157.33333333333334,"y":144},"foldChildren":false,"branchColor":"#6b5a6f","children":[]},{"id":"3eceae7c-7d3a-49e9-b68e-41131b17e931","parentId":"5853c9c5-2d43-4a73-94ae-a5d9f4d12961","text":{"caption":"Nivel de bits","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":161.33333333333334,"y":206.66666666666666},"foldChildren":false,"branchColor":"#6b5a6f","children":[]},{"id":"a20cb4d5-acc7-4fd5-8b96-1b9df3765b3e","parentId":"5853c9c5-2d43-4a73-94ae-a5d9f4d12961","text":{"caption":"Asignación","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":173.33333333333334,"y":264},"foldChildren":false,"branchColor":"#6b5a6f","children":[]},{"id":"ab843518-cc6a-43e0-b9d2-17b799c240d1","parentId":"5853c9c5-2d43-4a73-94ae-a5d9f4d12961","text":{"caption":"Morsa","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":162.66666666666666,"y":321.3333333333333},"foldChildren":false,"branchColor":"#6b5a6f","children":[]},{"id":"8890eea9-2b1f-4586-9a7d-71cb0bca2638","parentId":"5853c9c5-2d43-4a73-94ae-a5d9f4d12961","text":{"caption":"Pertenecia","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":164.65625,"y":380},"foldChildren":false,"branchColor":"#6b5a6f","children":[]},{"id":"7de2ed9b-24c1-40bd-aa2b-74c61d81a933","parentId":"5853c9c5-2d43-4a73-94ae-a5d9f4d12961","text":{"caption":"Identidad","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":170,"y":450},"foldChildren":false,"branchColor":"#6b5a6f","children":[]},{"id":"49a210c0-a660-4093-b278-4560fa3bd375","parentId":"5853c9c5-2d43-4a73-94ae-a5d9f4d12961","text":{"caption":"Prioridad de los operadores","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":176,"y":-116},"foldChildren":false,"branchColor":"#6b5a6f","children":[]}]},{"id":"4deca4d8-b90a-49cb-b459-1e338db7e25b","parentId":"1b58fe81-9ac7-41ea-8120-d659df58eeed","text":{"caption":"Expresiones","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":198.66666666666666,"y":322},"foldChildren":false,"branchColor":"#6b5a6f","children":[]}]},{"id":"b884b32b-fb6e-4080-b025-26644804b50c","parentId":"bafee856-74a6-42cc-9e53-a0ecc906ccf9","text":{"caption":"Instalación de Python","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-225,"y":55},"foldChildren":false,"branchColor":"#b1fd75","children":[]},{"id":"d334991e-81f7-41da-aceb-7e2eccb6fd10","parentId":"bafee856-74a6-42cc-9e53-a0ecc906ccf9","text":{"caption":"IDEs","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-191,"y":116},"foldChildren":false,"branchColor":"#0422ec","children":[{"id":"3e0b6561-933f-4ab8-9ef4-62dd01f8eb6b","parentId":"d334991e-81f7-41da-aceb-7e2eccb6fd10","text":{"caption":"Entornos de ejecución","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-165,"y":1},"foldChildren":false,"branchColor":"#0422ec","children":[]}]},{"id":"32117f38-eb03-40c4-9396-271f3c696599","parentId":"bafee856-74a6-42cc-9e53-a0ecc906ccf9","text":{"caption":"Literales","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-144,"y":248},"foldChildren":false,"branchColor":"#1f5e93","children":[{"id":"aa01e823-a40a-472d-86ec-0b1909749517","parentId":"32117f38-eb03-40c4-9396-271f3c696599","text":{"caption":"Numéricos","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-92,"y":-54},"foldChildren":false,"branchColor":"#1f5e93","children":[]},{"id":"a31df2b5-bdce-4ce1-aa90-02cfd9cf2c39","parentId":"32117f38-eb03-40c4-9396-271f3c696599","text":{"caption":"Secuencia de bytes","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-154.28571428571428,"y":10},"foldChildren":false,"branchColor":"#1f5e93","children":[]},{"id":"60307c3c-cef1-4cc7-8098-397bc6329f5f","parentId":"32117f38-eb03-40c4-9396-271f3c696599","text":{"caption":"Cadena","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-154.85714285714286,"y":81.14285714285714},"foldChildren":false,"branchColor":"#1f5e93","children":[]}]},{"id":"41e75863-3ff8-46ac-aa6d-f020d4e3ea78","parentId":"bafee856-74a6-42cc-9e53-a0ecc906ccf9","text":{"caption":"Tipos de datos","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-128,"y":538},"foldChildren":false,"branchColor":"#52ff69","children":[{"id":"99ffa778-0443-4488-ab20-eb185a72c017","parentId":"41e75863-3ff8-46ac-aa6d-f020d4e3ea78","text":{"caption":"Booleanos","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-112.66666666666667,"y":-32},"foldChildren":false,"branchColor":"#52ff69","children":[]},{"id":"aec64c1b-ff1c-4634-97a6-da0b4a505507","parentId":"41e75863-3ff8-46ac-aa6d-f020d4e3ea78","text":{"caption":"Numéricos","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-114,"y":-108},"foldChildren":false,"branchColor":"#52ff69","children":[{"id":"2aa4081a-9506-42a0-b203-c6be12086df8","parentId":"aec64c1b-ff1c-4634-97a6-da0b4a505507","text":{"caption":"Enteros","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-108,"y":-30},"foldChildren":false,"branchColor":"#52ff69","children":[]},{"id":"bb559810-639f-4500-b154-9749a8d0eb0f","parentId":"aec64c1b-ff1c-4634-97a6-da0b4a505507","text":{"caption":"Float","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-116,"y":24},"foldChildren":false,"branchColor":"#52ff69","children":[]},{"id":"69ab4623-fcdb-4328-98e1-d35f6c562b91","parentId":"aec64c1b-ff1c-4634-97a6-da0b4a505507","text":{"caption":"Irracionales","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-132,"y":84},"foldChildren":false,"branchColor":"#52ff69","children":[]}]},{"id":"ae643be9-15b9-4653-8508-21dfb6fa9e69","parentId":"41e75863-3ff8-46ac-aa6d-f020d4e3ea78","text":{"caption":"Cadena","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-136.66666666666666,"y":37.333333333333336},"foldChildren":false,"branchColor":"#52ff69","children":[]}]},{"id":"f1fe4cc8-3efb-4d83-8990-a6951d6be96c","parentId":"bafee856-74a6-42cc-9e53-a0ecc906ccf9","text":{"caption":"Variables","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":84,"y":-204},"foldChildren":false,"branchColor":"#769cc9","children":[]},{"id":"e6b6dec9-4d9a-4be1-92a8-6d96212b89bc","parentId":"bafee856-74a6-42cc-9e53-a0ecc906ccf9","text":{"caption":"Constantes","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":109.33333333333333,"y":-114},"foldChildren":false,"branchColor":"#5a22df","children":[]},{"id":"a0b3081d-f578-44a9-9fdd-eb8b1ea6359b","parentId":"bafee856-74a6-42cc-9e53-a0ecc906ccf9","text":{"caption":"Bibliotecas","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":68,"y":248},"foldChildren":false,"branchColor":"#a548a3","children":[]}]}},"dates":{"created":1639327931609,"modified":1639328965239},"dimensions":{"x":4000,"y":2000},"autosave":false}</p>
+</div>
+<p>...</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+
+<footer id="siteFooter">César San Juan Pastor - IES Arcipreste de Hita</footer>
+</div>
+<script type="text/javascript" src="_cedec_js.js"></script></body>
+</html>
