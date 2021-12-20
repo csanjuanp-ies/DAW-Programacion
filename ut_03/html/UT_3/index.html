@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>1º DAW - Programación - UT 3</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="César San Juan Pastor" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<meta name="description" content="  " />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+<body class="exe-single-page"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<header id="header">
+<div id="headerContent">
+<h1>1º DAW - Programación - UT 3</h1>
+</div>
+</header>
+<section id="main">
+<article class="node level-1-node" id="exe-node-0">
+<header class="nodeDecoration">
+<h1 id="exenode_0_UT3Estructurasdecontrol" class="nodeTitle">U.T. 3 Estructuras de control</h1>
+</header>
+</article>
+<article class="node level-2-node" id="exe-node-3">
+<header class="nodeDecoration">
+<h1 id="exenode_3_Orientaciones" class="nodeTitle">Orientaciones</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id5-3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Orientaciones</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta5_116_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Esta unidad de trabajo nos va a presentar las herramientas básicas de programación que se utilizan en todo programa. Se aprenderán los patrones estructural y modular.</p>
+<p style="text-align: justify;">Esta unidad es eminentemente práctica.</p>
+<p style="text-align: justify;">Es necesario el conocimiento de las unidades anteriores.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-41">
+<header class="nodeDecoration">
+<h1 id="exenode_41_31Introduccin" class="nodeTitle">3.1. Introducción</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id73-41">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta73_113_2" class="block iDevice_content">
+<div class="exe-text"><p>En esta unidad de trabajo vamos a conocer todas las estructuras de control de lenguaje, ya estamos familiarizadas con ellas a través de pseudocódigo y de diagramas de flujo, pero vamos a implementarlas en código.</p>
+<p style="background-color: #cccccc; border-style: solid;">A la hora de programar, nos centraremos en hacer el código fácil de leer no más corto</p>
+<p style="background-color: #cccccc; border-style: solid;">La programación se empieza siempre en papel desarrollando el algoritmo</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-84">
+<header class="nodeDecoration">
+<h1 id="exenode_84_32Condiciones" class="nodeTitle">3.2. Condiciones</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id144-84">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta144_144_2" class="block iDevice_content">
+<div class="exe-text"><p>Las condiciones forman parte de gran cantidad de estructuras de control, con lo que es imprescindible dominarlas correctamente para una adecuada programación.</p>
+<p>Una condición está formada por operandos y por operadores, el resultado final será generalmente un valor True o False</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-85">
+<header class="nodeDecoration">
+<h1 id="exenode_85_321Operandos" class="nodeTitle">3.2.1. Operandos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id145-85">
+<div class="iDevice emphasis0" >
+<div id="ta145_145_2" class="block iDevice_content">
+<div class="exe-text"><p>Un operando es cualquier valor o variable que pueda ser comparada con un operador</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-86">
+<header class="nodeDecoration">
+<h1 id="exenode_86_322Operadores" class="nodeTitle">3.2.2. Operadores</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id146-86">
+<div class="iDevice emphasis0" >
+<div id="ta146_146_2" class="block iDevice_content">
+<div class="exe-text"><p>Un operador realiza la operación entre uno o varios operadores para dar el resultado.</p>
+<p>Los operadores disponibles son:</p>
+<ul>
+<li>µ       Operadores de pertenencia: <strong>in</strong>, <strong>not in</strong>.</li>
+<li>µ       Operadores de ser lo mismo: <strong>is</strong>, <strong>not is</strong>.</li>
+<li>µ       Operadores de expresiones: <strong>and</strong> y <strong>or</strong> son operadores en cortocircuito, o que no siguen evaluando la expresión si no es necesario.</li>
+<li>µ       Operador de negación: <strong>not</strong>.</li>
+<li>µ       Operadores de comparación: <strong>&lt;, &gt;, &gt;=, &lt;=, !=, ==.</strong></li>
+<li>µ       Operador morsa a partir de la versión 3.8 (<strong>:=</strong>).</li>
+</ul></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-87">
+<header class="nodeDecoration">
+<h1 id="exenode_87_323Usodecondiciones" class="nodeTitle">3.2.3 Uso de condiciones</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id148-87">
+<div class="iDevice emphasis0" >
+<div id="ta148_148_2" class="block iDevice_content">
+<div class="exe-text"><p>Una condición tiene siempre la estructura: <strong>operando operador operando [[and| or] …]</strong>para aquellos operandos binarios. O tiene la forma <strong>operador operando [[and| or] …]</strong> para los operadores unarios. El único operador unario que hemos visto es <strong>not</strong>.</p>
+<p>En Python las condiciones se pueden encadenar de izquierda a derecha para formar una condición compleja: <strong>5 &lt; variable &lt; 15</strong> con el mismo significado que <strong>variable &gt; 5 and variable &lt; 15</strong>.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id149-87">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta149_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b149" class="block iDevice_content">
+<p>Crea las siguientes condiciones:</p>
+<p>La variable numero mayor o igual que cinco<br />La variable numero mayor de tres y menor o igual que uno<br />La variable numero<br />La variable numero no es verdadera y no es mayor de cinco<br />La variable numero no es igual a “Hola”<br />La variable numero no es igual a la variable saltos</p>
+</section>
+<form name="feedback-form-quesFeedback0b149" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b149text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b149" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b149" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<ul>
+<li>numero &gt; 5 or numero == 5</li>
+<li>numero &gt; 3 and numero &lt;= 1</li>
+<li>numero</li>
+<li>not numero and numero &lt;= 5</li>
+<li>numero != "Hola"</li>
+<li>numero != saltos</li>
+</ul></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-88">
+<header class="nodeDecoration">
+<h1 id="exenode_88_33Estructurasalternativasodeseleccin" class="nodeTitle">3.3 Estructuras alternativas o de selección</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id150-88">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta150_150_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="00.png" alt="if else" width="666" height="141" /></p>
+<p>Esta estructura de control nos permite realizar acciones en función de una o varias condiciones, que pueden ser simples o complejas uniéndolas a través de los operandos <strong>and</strong> y <strong>or</strong>. En caso de no ser verdadera ninguna condición se ejecutará la parte <strong>else</strong> si está presente.</p>
+<p><img src="01.png" alt="if else compuesta" width="331" height="212" /></p>
+<p>Los bloques <strong>elif</strong> y <strong>else</strong> son optativos y pueden aparecer ambos o solo uno de ellos. Además, se puede repetir el bloque <strong>elif</strong> tantas veces como requiramos para testear las condiciones necesarias <strong>elif</strong> es la abreviatura de <strong>else if</strong>. Python no tiene una estructura de control switch-case como otros lenguajes, se implementa mediante la condicional compuesta (actualización a 3.10 se ha incorporado la sentencia match que permite emular el comportamiento de los bloque switch de otros lenguajes).</p>
+<p><img src="02.png" alt="Operador ternario" width="432" height="83" /></p>
+<p>En muchos lenguajes encontraremos el operador ternario (?:), en Python no existe tal operador, pero la estructura <strong>if</strong> nos facilita un uso similar. En este caso la variable adquirirá <strong>Valor</strong> si la <strong>&lt;condición&gt;</strong> es verdadera, si es falsa se le asignará <strong>Valor2</strong>.</p>
+<p><strong>Ejemplo</strong></p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">if compra &lt;= 100: <br />    print("Pago en efectivo")<br />elif compra &gt; 100 and compra &lt; 300: <br />    print("Pago con tarjeta de débito")<br />else: <br />    print("Pago con tarjeta de crédito")</p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">if compra &lt;= 100: <br />    print("Pago en efectivo")<br />elif 100 &lt; compra &lt; 300<br />    print("Pago con tarjeta de débito")<br />else: <br />    print("Pago con tarjeta de crédito")</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-89">
+<header class="nodeDecoration">
+<h1 id="exenode_89_331Ejercicios" class="nodeTitle">3.3.1. Ejercicios</h1>
+</header>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id151-89">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta151_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b151" class="block iDevice_content">
+<ol>
+<li>Escribe un programa que pide la edad por teclado y nos muestra el mensaje de “Eres mayor de edad” solo si lo somos.</li>
+<li>Escribe un programa que pide la edad por teclado y nos muestra el mensaje de “eres mayor de edad” o el mensaje de “eres menor de edad”.</li>
+<li>Escribe un programa que lee dos números, calcula y muestra el valor de su suma, resta, producto y división. (Ten en cuenta la división por cero).</li>
+<li>Escribe un programa que lee 2 números y muestra el mayor.</li>
+<li>Escribe un programa que lee un número y me dice si es positivo o negativo, consideraremos el cero como positivo.</li>
+<li>Escribe un programa que lee dos números y los visualiza en orden ascendente.</li>
+<li>Escribe un programa que lee dos números y nos dice cuál es el mayor o si son iguales.</li>
+<li>Escribe un programa que lea tres números distintos y nos diga cuál es el mayor.</li>
+<li>Escribe un programa que lea una calificación numérica entre 0 y 10 y la transforma en calificación alfabética, escribiendo el resultado.
+<ul>
+<li>de 0 a &lt;3 Muy Deficiente.</li>
+<li>de 3 a &lt;5 Insuficiente.</li>
+<li>de 5 a &lt;6 Bien.</li>
+<li>de 6 a &lt;9 Notable</li>
+<li>de 9 a 10 Sobresaliente</li>
+</ul>
+</li>
+<li>Escribe un programa que recibe como datos de entrada una hora expresada en horas, minutos y segundos que nos calcula y escribe la hora, minutos y segundos que serán, transcurrido un segundo.</li>
+<li>Escribe un programa que calcula el salario neto semanal de un trabajador en función del número de horas trabajadas y la tasa de impuestos de acuerdo a las siguientes hipótesis:
+<ul>
+<li>Las primeras 35 horas se pagan a tarifa normal.</li>
+<li>Las horas que pasen de 35 se pagan a 1,5 veces la tarifa normal.</li>
+<li>Las tasas de impuestos son:
+<ul>
+<li>Los primeros 500 euros son libres de impuestos.</li>
+<li>Los siguientes 400 tienen un 25% de impuestos.</li>
+<li>Los restantes un 45% de impuestos.</li>
+</ul>
+</li>
+<li>Escribir nombre, salario bruto, tasas y salario neto.</li>
+</ul>
+</li>
+<li>Implementa un programa que pida al usuario por teclado sus datos personales en orden apellido1-apellido2-nombre y los muestre por pantalla en orden nombre-apellido1-apellido2.</li>
+</ol>
+</section>
+<form name="feedback-form-quesFeedback0b151" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b151text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b151" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b151" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>def uno():<br />    edad = int(input("Introduce la edad?"))<br />    if edad &gt;= 18:<br />        print("Eres mayor de edad")</p>
+<p><br />def dos():<br />    MAYORIA_EDAD = 18<br />    edad = int(input("Introduce la edad?"))<br />    if edad &gt;= MAYORIA_EDAD:<br />       print("Eres mayor de edad")<br />    else:<br />        print("Eres menor de edad")</p>
+<p><br />def tres():<br />    numero_uno = int(input("Primer número:"))<br />    numero_dos = int(input("Segundo número:"))<br />    print("Suma:", numero_uno + numero_uno)<br />    print("Resta:", numero_uno - numero_uno)<br />    print("Multiplicación:", numero_uno * numero_uno)<br />    if numero_dos != 0:<br />        print("División:", numero_uno // numero_uno)<br />    else:<br />        print("Divisiónpor cero imposible")</p>
+<p><br />def cuatro():<br />    numero_uno = int(input("Primer número:"))<br />    numero_dos = int(input("Segundo número:"))<br />    if numero_uno &gt; numero_dos:<br />        print(numero_uno, "mayor")<br />    elif numero_dos &gt; numero_uno:<br />        print(numero_dos, "mayor")</p>
+<p><br />def cinco():<br />    numero_uno = int(input("Primer número:"))<br />    if numero_uno &gt;= 0:<br />        print(numero_uno, "Positivo")<br />    else:<br />        print(numero_uno, "Negativo")</p>
+<p></p>
+<p>def seis():<br />    numero_uno = int(input("Primer número:"))<br />    numero_dos = int(input("Segundo número:"))<br />    if numero_uno &gt; numero_dos:<br />        numero_uno, numero_dos = numero_dos, numero_uno<br />    print(numero_uno, numero_dos)</p>
+<p><br />def siete():<br />    numero_uno = int(input("Primer número:"))<br />    numero_dos = int(input("Segundo número:"))<br />    if numero_uno &gt; numero_dos:<br />        print(numero_uno, "mayor")<br />    elif numero_dos &gt; numero_uno:<br />        print(numero_dos, "mayor")<br />    else:<br />        print(numero_uno, "es igual a", numero_dos)</p>
+<p><br />def ocho():<br />    numero_uno = int(input("Primer número:"))<br />    numero_dos = int(input("Segundo número:"))<br />    numero_tres = int(input("Tercer número:"))<br />    if numero_uno &gt; numero_dos and numero_uno &gt; numero_tres:<br />        print(numero_uno, "mayor")<br />    elif numero_dos &gt; numero_uno and numero_dos &gt; numero_tres:<br />        print(numero_dos, "mayor")<br />    elif numero_tres &gt; numero_uno and numero_tres &gt; numero_dos:<br />        print(numero_tres, "mayor")<br />    else:<br />        print("iguales")</p>
+<p><br />def nueve():<br />    nota = int(input("Primer número:"))<br />    if 0 &lt; nota &lt; 3:<br />        print("Muy deficiente")<br />    elif 3 &lt;= nota &lt; 5:<br />        print("Insuficiente")<br />    elif 5 &lt;= nota &lt; 6:<br />        print("Bien")<br />    elif 6 &lt;= nota &lt; 9:<br />        print("Notable")<br />    else:<br />        print("Sobresaliente")</p>
+<p><br />def diez():<br />    horas = int(input("La hora:"))<br />    minutos = int(input("Los minutos:"))<br />    segundos = int(input("Los segundos:"))</p>
+<p>    horas = horas if horas &lt; 24 else 0<br />    minutos = minutos if minutos &lt; 60 else 0<br />    segundos = segundos if segundos &lt; 60 else 0</p>
+<p>    segundos += 1<br />    if segundos == 60:<br />        minutos += 1<br />        segundos = 0<br />    if minutos == 60:<br />        horas += 1<br />        minutos = 0<br />    if horas == 24:<br />        horas = 0<br />    print(f"La hora es:{horas}:{minutos}:{segundos}")</p>
+<p>def once():<br />    TARIFA_NORMAL = 20<br />    INCREMENTO_HORAS_EXTRA = 1.5<br />    salario_bruto = salario = tasas = 0<br />    HORAS_SEMANALES = 35<br />    LIBRES_IMPUESTOS = 500<br />    DINERO_TRAMO_1 = 400<br />    IMPUESTOS_TRAMO_1 = 0.25<br />    IMPUESTOS_TRAMO_2 = 0.45<br />    nombre = input("Escribe tu nombre,por favor:")<br />    horas_semanales_trabajadas = int(input("Número de horas semanales trabajadas:"))</p>
+<p>    # Cálculo del salario bruto<br />    if horas_semanales_trabajadas &gt; HORAS_SEMANALES:<br />    # Si hay más de 35 horas semanales se calcula el salario por 1,5 veces el normal<br />        salario_bruto = (horas_semanales_trabajadas - HORAS_SEMANALES) * TARIFA_NORMAL * INCREMENTO_HORAS_EXTRA<br />        horas_semanales_trabajadas = HORAS_SEMANALES # Ya solo quedan las 35 horas semanales a precio normal<br />    salario_bruto += horas_semanales_trabajadas * TARIFA_NORMAL # horas extras si hay, más trabajadas normal</p>
+<p>    # Cálculo de los impuestos<br />    if salario_bruto &gt; LIBRES_IMPUESTOS: # los primeros 500€ libres de impuestos<br />        salario_bruto -= LIBRES_IMPUESTOS # los primeros 500€ libres de impuestos<br />        if 0 &lt; salario_bruto &lt; DINERO_TRAMO_1: # de 500 a 900 euros el 25%<br />            tasas = salario_bruto * IMPUESTOS_TRAMO_1<br />        elif salario_bruto &gt;= DINERO_TRAMO_1: # si hay más de 900 calculamos en dos tramos<br />            tasas = DINERO_TRAMO_1 * IMPUESTOS_TRAMO_1 # Los primeros 400 (de 500 a 900) a 25%<br />            tasas += (salario_bruto - DINERO_TRAMO_1) * IMPUESTOS_TRAMO_2 # El resto a 45%<br />        salario_bruto += float(LIBRES_IMPUESTOS) # Añadimos los 500# que quitamos para los cálculos</p>
+<p>    # Salario final calculado<br />    salario = salario_bruto - tasas</p>
+<p>    # Visualizaión de los resultados<br />    print()<br />    print("=" * 40)<br />    print(f"Dº/Dª {nombre}")<br />    print("=" * 40)<br />    print(f"Salario bruto.................{salario_bruto:&gt;10}") # alineamos a la derecha<br />    print(f"tasas.........................{tasas:&gt;10}")<br />    print("." * 30)<br />    print(f"Salario.......................{salario:&gt;10}")<br />    print("=" * 40)</p>
+<p><br />def doce():<br />    apellido_uno = input("Primer Apellido:")<br />    apellido_dos = input("Segundo Apellido:")<br />    nombre = input("Nombre:")<br />    print(f"Buenos días Dº/Dª {nombre} {apellido_uno} {apellido_dos}")</p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-90">
+<header class="nodeDecoration">
+<h1 id="exenode_90_34Estructurasderepeticin" class="nodeTitle">3.4 Estructuras de repetición</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id152-90">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta152_152_2" class="block iDevice_content">
+<div class="exe-text"><p>Las estructuras de repetición realizan un número finito de vueltas sobre el código que contienen. Es muy importante esa característica, debe ser <strong>finito</strong>, ya que si no controlamos correctamente la condición de finalización podemos hacer que nuestro programa entre en un bucle cerrado o infinito.</p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">fin=False<br />while not fin: <br />    print("Pago en efectivo")<br />print("Fin”) # Esta instrucción no se ejecutará nunca</p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">fin=False<br />while not fin: <br />    print("Pago en efectivo")<br />fin = True<br />print("Fin”) # Ahora sí, el bucle finaliza</p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-91">
+<header class="nodeDecoration">
+<h1 id="exenode_91_341Funcinrange" class="nodeTitle">3.4.1 Función range</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id153-91">
+<div class="iDevice emphasis0" >
+<div id="ta153_153_2" class="block iDevice_content">
+<div class="exe-text"><p>La función <strong>range</strong> se usa para devolver una lista de números secuenciales. Esta función se utiliza para simular los bucles secuenciales de otros lenguajes. La sintaxis de la función es<strong> range(inicio, fin, paso)</strong>. Los parámetros se explican por sí solos, pero hay que tener cuenta que el parámetro fin no estará incluido en la lista final.</p>
+<ul>
+<li>range(5)                             # 0 1 2 3 4</li>
+<li>range(5, 10)                       # 5 6 7 8 9</li>
+<li>range(0, 10, 3)                   # 0 3 6 9</li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-92">
+<header class="nodeDecoration">
+<h1 id="exenode_92_342Bucles" class="nodeTitle">3.4.2. Bucles</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id154-92">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">For</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta154_154_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="03.png" alt="For" width="315" height="119" /></p>
+<p>En lugar de siempre iterar sobre una progresión aritmética de números (como en Pascal) o darle al usuario la posibilidad de definir tanto el paso de la iteración como la condición de fin (como en C), la sentencia for de Python itera sobre los ítems de cualquier secuencia (una lista o una cadena de texto), en el orden que aparecen en la secuencia, por eso se hace imprescindible el uso de <strong>range</strong>.</p>
+<p>La parte <strong>else</strong> se ejecuta cuando termina la sentencia <strong>for</strong> siempre y cuando no se haya salido del bucle con una instrucción <strong>break</strong> que veremos a continuación, este bloque también admite la sentencia <strong>continue</strong>. Por último, indicar que la lista que se recorre se puede modificar dentro del bucle sin problemas.</p>
+<p>Ejemplo</p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">for valor in range(5):<br />    print(“El valor es”, valor)</p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">words = ['cat', 'window', 'defenestrate']<br />for w in words:<br />    print(w, len(w))</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id155-92">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">While</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta155_155_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="04.png" alt="While" width="323" height="129" /></p>
+<p>La sentencia <strong>while</strong> se usa para la repetir la ejecución del bloque siempre que una expresión sea verdadera. Como en el caso anterior, la parte <strong>else</strong> se ejecutará siempre que no se salga del bucle a través de <strong>break</strong>. Es en este bucle donde hay que tener especial cuidado con la terminación, por lo que siempre modificaremos la condición dentro del bucle de manera que se llegue a algún fin. Este bucle también admite las sentencias <strong>break</strong> y <strong>continue</strong> como el anterior.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-93">
+<header class="nodeDecoration">
+<h1 id="exenode_93_343Ejercicios" class="nodeTitle">3.4.3. Ejercicios</h1>
+</header>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id156-93">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta156_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b156" class="block iDevice_content">
+<p>13.       Desarrolla un programa que, una vez ejecutado, lea información desde teclado hasta que reciba la cadena de entrada "FIN".</p>
+<p>14.       Implementa un programa que reciba como parámetro un dígito correspondiente a un año y calcula si es o no bisiesto.</p>
+<p>15.       Escribe un programa calculadora que reciba como parámetros dos enteros (num1 y num2) desde su llamada y que los muestre por pantalla. A continuación, se deberá solicitar al usuario que seleccione la operación matemática a realizar entre los dos números. Las operaciones que implementará serán suma, resta, multiplicación, división y potencia.</p>
+<p>16.       Desarrolla un programa que pregunte por pantalla un número N y que, una vez leído, imprima una pirámide N filas.</p>
+<p>Número de filas: 5</p>
+<p>    * <br />   ***<br />  *****<br /> *******<br />*********</p>
+<p> 17.       Utilizando la sentencia de control if, implementa un programa que pida un número por teclado y que indique por pantalla a qué mes se corresponde.</p>
+<p>18.       Realiza un programa que muestre por pantalla los 20 primeros números naturales (1, 2, 3... 20).</p>
+<p>19.       Realiza un programa que muestre los números pares comprendidos entre el 1 y el 200. Para ello utiliza un contador y suma de 2 en 2.</p>
+</section>
+<form name="feedback-form-quesFeedback0b156" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b156text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b156" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b156" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>def trece():<br />    resultado = linea = ""<br />    while (linea := input("Datos?")) != "FIN":<br />        resultado += linea<br />       print(resultado)</p>
+<p><br />def catorce():<br />    anio = int(input("Año?"))<br />    if not anio % 4 and (anio % 100 or not anio % 400):<br />        print("Bisiesto")<br />    else:<br />        print("No bisiesto")</p>
+<p><br />def quince():<br />    operando_uno = int(input("Primer operando:"))<br />    operando_dos = int(input("Primer operando:"))<br />    operacion = input("Operación(+, -, *, /):")<br />    resultado = 0</p>
+<p>    if operacion == '+':<br />        resultado = operando_uno + operando_dos<br />    elif operacion == '-':<br />        resultado = operando_uno - operando_dos<br />    elif operacion == '*':<br />        resultado = operando_uno * operando_dos<br />    elif operacion == '/':<br />        resultado = operando_uno // operando_dos if operando_dos &gt; 0 else "Error"</p>
+<p>    print(f"el resultado de {operando_uno}{operacion}{operando_dos}={resultado}")</p>
+<p><br />def dieciseis():<br />    numeros_asteriscos = -1 # en el segundo print, primero hace la asignación y después imprime<br />    filas = int(input("Número de filas?"))<br />    for fila in range(filas, 0, -1):<br />        print(" " * fila, end='')<br />        print("*" * (numeros_asteriscos := numeros_asteriscos + 2)) # En la primera es -1 + 2 = 1</p>
+<p><br />def diecisiete():<br />    mes = int(input("Més?"))<br />    mes = mes if 0 &lt; mes &lt;= 12 else 1<br />    if mes == 1:<br />        resultado = 'Enero'<br />    elif mes == 2:<br />        resultado = 'Febrero'<br />    elif mes == 3:<br />        resultado = 'Marzo'<br />    elif mes == 4:<br />        resultado = 'Abril'<br />    elif mes == 5:<br />        resultado = 'Mayo'<br />    elif mes == 6:<br />        resultado = 'Junio'<br />    elif mes == 7:<br />        resultado = 'Julio'<br />    elif mes == 8:<br />        resultado = 'Agosto'<br />    elif mes == 9:<br />        resultado = 'Septiembre'<br />    elif mes == 10:<br />        resultado = 'Octubre'<br />    elif mes == 11:<br />        resultado = 'Noviembre'<br />    elif mes == 12:<br />        resultado = 'Diciembre'<br />    else:<br />        resultado = "Error"</p>
+<p>    print(f"El mes es {resultado}")</p>
+<p><br />def dieciocho():<br />    MAX_NUM = 20<br />    for numero in range(1, MAX_NUM + 1):<br />        print(f"{numero} ", end='')</p>
+<p><br />def diecinueve():<br />    numero_inicial = 0<br />    while numero_inicial &lt; 200:    <br />        print(numero_inicial := numero_inicial + 2, end=' - ')</p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-94">
+<header class="nodeDecoration">
+<h1 id="exenode_94_35Estructurasdesalto" class="nodeTitle">3.5. Estructuras de salto</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id157-94">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta157_157_2" class="block iDevice_content">
+<div class="exe-text"><p>Python no incorpora ninguna sentencia de ruptura de secuencia parecida a <strong>goto</strong> de otros lenguajes, esta sentencia no hace más que introducir problemas y está completamente desaconsejada. En aquellos lenguajes que aparece, permite saltar de forma arbitraria a otro punto de la ejecución.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-95">
+<header class="nodeDecoration">
+<h1 id="exenode_95_351Breakycontinue" class="nodeTitle">3.5.1. Break y continue</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id158-95">
+<div class="iDevice emphasis0" >
+<div id="ta158_158_2" class="block iDevice_content">
+<div class="exe-text"><p>Las sentencias <strong>break</strong> y <strong>continue</strong> sirven para romper la secuencia actual de un bucle. En caso de la sentencia break termina completamente el bucle y con la sentencia continue salta al comienzo del bucle haciendo que las condiciones se reevalúen.</p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">for n in range(2, 10):<br />    for x in range(2, n):<br />        if n % x == 0:<br />            print(n, 'equals', x, '*', n//x)<br />            <strong>break</strong> # termina el bucle de la x<br />        else:<br />            # loop fell through without finding a factor<br />            print(n, 'is a prime number')</p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">for num in range(2, 10):<br />    if num % 2 == 0:<br />        print("Found an even number", num)<br />        continue # salta al comienzo del bucle<br />    print("Found an odd number", num)</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-96">
+<header class="nodeDecoration">
+<h1 id="exenode_96_352Ejercicios" class="nodeTitle">3.5.2. Ejercicios</h1>
+</header>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id159-96">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta159_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b159" class="block iDevice_content">
+<p>20.       Realiza un programa que muestre los números pares comprendidos entre el 1 y el 200. Esta vez utiliza un contador sumando de 1 en 1.</p>
+<p>21.       Realiza un programa que muestre los números desde el 1 hasta un número N que se introducirá por teclado.</p>
+<p>22.       Realiza un programa que lea un número positivo N y calcule y visualice su factorial N! Siendo el factorial:</p>
+<p>0! = 1</p>
+<p>1! = 1</p>
+<p>2! = 2 * 1</p>
+<p>3! = 3 * 2* 1</p>
+<p>N! = N * (N-1) * (N-2)........* 3*2*1</p>
+<p>23.       Realiza un programa que lea 10 números no nulos y luego muestre un mensaje de si ha leído algún número negativo o no.</p>
+<p>24.       Realiza un programa que lea 10 números no nulos y luego muestre un mensaje indicando cuántos son positivos y cuantos negativos.</p>
+<p>25.       Realiza un programa que lea una secuencia de números no nulos hasta que se introduzca un 0, y luego muestre si ha leído algún número negativo, cuantos positivos y cuantos negativos.</p>
+<p>26.       Realiza un programa que calcule y escriba la suma y el producto de los 10 primeros números naturales.</p>
+</section>
+<form name="feedback-form-quesFeedback0b159" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b159text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b159" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b159" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>def veinte():<br />    numero_inicial = 0<br />    while numero_inicial &lt; 200:<br />        numero_inicial += 1<br />        if numero_inicial % 2 == 0:<br />            print(numero_inicial, end=' - ')</p>
+<p>def veintiuno():<br />    max_numero = int(input("Dame el último número:"))<br />    for numero in range(1, max_numero + 1): # recordar que el último no entraría<br />        print(numero, end='-')</p>
+<p><br />def ventidos():<br />    num_factorial = int(input("Dame el número, no muy grande:"))<br />    resultado = 1<br />    for numero in range(1, num_factorial + 1):<br />        resultado *= numero<br />    print(f"El resultado es {resultado}")</p>
+<p><br />def ventitres():<br />    MAX_NUM_PEDIR = 10<br />    numeros_introducidos = 0<br />    algun_negativo = False</p>
+<p>    while numeros_introducidos &lt; MAX_NUM_PEDIR:<br />        numero = int(input("Introduce un número:"))<br />        numeros_introducidos = numeros_introducidos if numero == 0 else numeros_introducidos + 1<br />        if numero &lt; 0:<br />            algun_negativo = True</p>
+<p>    if algun_negativo:<br />        print("Había algún negativo")<br />    else:<br />        print("Sin negativos")</p>
+<p><br />def venticuatro():<br />    MAX_NUM_PEDIR = 10<br />    numeros_introducidos = 0<br />    total_negativos = total_positivos = 0</p>
+<p>    while numeros_introducidos &lt; MAX_NUM_PEDIR:<br />    <strong>    </strong>numero = int(input("Introduce un número:"))<br />        numeros_introducidos = numeros_introducidos if numero == 0 else numeros_introducidos + 1<br />        if numero &lt; 0:<br />            total_negativos += 1<br />        elif numero &gt; 0:<br />            total_positivos += 1</p>
+<p>    print(f"Había {total_positivos} positivos y {total_negativos} negativos")</p>
+<p><br />def venticinco():<br />    total_negativos = total_positivos = 0</p>
+<p>    while (numero := int(input("Introduce un número:"))) != 0:<br />        if numero &lt; 0:<br />            total_negativos += 1<br />        elif numero &gt; 0:<br />            total_positivos += 1</p>
+<p>    print(f"Había {total_positivos} positivos y {total_negativos} negativos")</p>
+<p><br />def ventiseis():<br />    NUMERO_A_OPERAR = 10<br />    suma = 0<br />    multiplicacion = 1</p>
+<p>    for numero in range(1, NUMERO_A_OPERAR + 1):<br />        suma += numero<br />        multiplicacion *= numero</p>
+<p>    print(f"La suma es {suma} y la multiplicacíón {multiplicacion}")</p>
+<p></p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-97">
+<header class="nodeDecoration">
+<h1 id="exenode_97_36Ejercicios" class="nodeTitle">3.6. Ejercicios</h1>
+</header>
+<article class="iDevice_wrapper activityIdevice em_iDevice em_iDevice_activity" id="id160-97">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta160_160_2" class="block iDevice_content">
+<ul>
+<li>Contar el número de veces que aparece una letra en una frase, pedidas ambas al usuario.</li>
+<li>Similar al anterior, pero a partir de una posición inicial pedida al usuario.</li>
+<li>Encontrar si una subcadena está en una cadena, pedidas al usuario. Devolverá la posición de la subcadena en caso de estar o Fase si no lo está.</li>
+<li>Crear la cadena inversa a dos cadenas concatenadas que se pedirán al usuario.</li>
+<li>A partir de una cadena que tiene separadores dividirla y mostrarla en sus partes. Se pedirá al usuario tanto el separador como la cadena.</li>
+</ul>
+<ul>       Ejemplo: separador: -  cadena: la-casa-alta</ul>
+<p style="padding-left: 60px;">       mostrará:<br />          la<br />         casa<br />         alta</p>
+<ul>
+<li>Crear un menú que termine cuando se pulse salir. Tendrá tres opciones más que mostrará solo el texto de la opción seleccionada.</li>
+<li>A partir de la velocidad inicial de un móvil pedida al usuario, se calculará la distancia en los n primeros segundos (pedidos al usuario) mostrando la distancia segundo a segundo.</li>
+<li>Dibujar con letras N y B un tablero de ajedrez</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-98">
+<header class="nodeDecoration">
+<h1 id="exenode_98_37Pruebaydepuracindeprogramas" class="nodeTitle">3.7. Prueba y depuración de programas</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id161-98">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta161_161_2" class="block iDevice_content">
+<div class="exe-text"><p>Todo programa deberá ser testado mediante un conjunto de pruebas que garanticen que sea operativo, cumpla con los requisitos estipulados e incluya comentarios aclaratorios. Al proceso mediante el cual se corrigen estos errores del programa se le conoce como depuración e implica una serie de tareas:</p>
+<ul>
+<li>µ       La inspección del código.</li>
+<li>µ       La utilización de baterías de prueba.</li>
+<li>µ       La prueba de todos y cada uno de los módulos (pruebas unitarias).</li>
+<li>µ       La corrección de los errores detectados, teniendo en cuenta que ante cada modificación del código pueden surgir nuevos errores.</li>
+</ul>
+<p>Actuaciones  realizar:</p>
+<ul>
+<li>Todo programa hay que probarlo para asegurar el funcionamiento.</li>
+<li>Todo programa hay que documentarlo, tanto de forma interna como externa.</li>
+<li>La tarea de corrección de un programa se llama depuración y engloba.
+<ul>
+<li>La inspección del código.</li>
+<li>La utilización de baterías de prueba.</li>
+<li>La prueba de todos y cada uno de los módulos (pruebas unitarias).</li>
+<li>La corrección de los errores detectados, teniendo en cuenta que ante cada modificación del código pueden surgir nuevos errores</li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-99">
+<header class="nodeDecoration">
+<h1 id="exenode_99_371PyCharm" class="nodeTitle">3.7.1. PyCharm</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id162-99">
+<div class="iDevice emphasis0" >
+<div id="ta162_162_2" class="block iDevice_content">
+<div class="exe-text"><p>Nuestro entorno es PyCharm, pero cualquier IDE tiene las mismas herramientas, incluso probablemente utilizará los mismos iconos para los mismos conceptos. La Ventana de depuración es la siguiente.</p>
+<p><img src="05.png" alt="Entorno de depuración" width="656" height="214" /></p>
+<ul>
+<li>Debugger. Permite acceder a la ventana de gestión.</li>
+<li>Console. Permite ver la salida del programa, se debe configurar la opción Emulate terminal in output console en las propiedades de ejecución del programa.</li>
+</ul>
+<p><img src="06.png" alt="Barra de depuración" width="513" height="146" /></p>
+<ul>
+<li>Step Over (F8). Ejecuta la siguiente línea de código, si es una llamada a una función o método no entra y se ejecuta de una vez.</li>
+<li>Setp into (F7). Ejecuta la siguiente línea de código, si es una función entra y se para en la primera línea de la función o método.</li>
+<li>Step out (Mayus+F8). Sale de la ejecución de la función actual.</li>
+<li>Run tu cursor (Alt+F9). Ejecuta hasta la posición actual del cursor de texto.</li>
+<li>Evaluar expresión. Permite introducir una expresión y ver su resultado.</li>
+</ul>
+<p><img src="07.png" alt="Menú lateral de depuración" width="323" height="214" /></p>
+<p>Desde el área de inspección podemos acceder a las variables activas en ese momento y ver su contenido, desplegando cada miembro de un objeto.</p>
+<p><img src="08.png" alt="Ventana de inspección" width="635" height="271" /></p>
+<p>La ventana de Inspección permite algunas otras funciones interesantes al pulsar con el botón derecho del ratón, entre las que están cambiar el valor de una variable (Set Value), añadir a la lista de variables inspeccionadas (Add to Watches) y establecer cómo ver una variable (View As).</p>
+<p><img src="09.png" alt="Menú contextual de depuración" width="224" height="187" /></p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-100">
+<header class="nodeDecoration">
+<h1 id="exenode_100_372Elementosdeladepuracin" class="nodeTitle">3.7.2. Elementos de la depuración</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id163-100">
+<div class="iDevice emphasis0" >
+<div id="ta163_163_2" class="block iDevice_content">
+<div class="exe-text"><p>Para depurar correctamente debemos hacer uso de las herramientas que los depuradores nos presentan. En concreto podemos hablar de:</p>
+<ul>
+<li>Punto de ruptura. Se sitúan en cualquier línea de código que no sea de definición (def, class) y parará la ejecución del programa en es punto. Un punto de ruptura es un marcador en línea de código ejecutable (no pueden ser comentarios) en la que parará el depurador al llega a ella. Se establece pulsando en el área marcada por la flecha o situando el cursor en la línea correspondiente y pulsando Ctrl+F8.</li>
+</ul>
+<p style="padding-left: 30px;"><img src="10.png" alt="Punto de ruptura" width="459" height="132" /></p>
+<ul>
+<li>Ejecución paso a paso. Permite ejecutar la siguiente instrucción o la siguiente función pero sin seguir la ejecución completa del programa, es decir, volverá a parar tras su ejecución.</li>
+<li>Inspección de variables y evaluación de expresiones. La primera permite ver en todo momento el contenido de una variable, la segunda permite ver el resultado de una expresión sin modificar el flujo de ejecución.</li>
+</ul>
+<p style="padding-left: 30px;"><img src="11.png" alt="Inspección de variables" width="554" height="53" /></p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-101">
+<header class="nodeDecoration">
+<h1 id="exenode_101_373Ejercicio" class="nodeTitle">3.7.3. Ejercicio</h1>
+</header>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id164-101">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta164_148" class="block story iDevice_content">
+<p>Depura el siguiente código y encuentra todos los errores.</p>
+<ol style="list-style-type: lower-alpha;">
+<li>Establecer puntos de ruptura. Es importante determinar dónde poner los puntos de ruptura, generalmente al comienzo de un bloque o justo antes de la instrucción que no esté dando problemas.</li>
+<li>Lanzar el programa. El programa se puede ejecutar en modo depuración igual que en modo normal, con el botón derecho del ratón, pero en vez de utilizar el comando Run, pulsaremos sobre el comando Debug. Si todo va bien el programa se ejecutará y entrará en modo depuración en el punto de ruptura. La línea en la que está parado el programa se resalta en otro color y la ventana de depuración aparece, habilitándose los botones superiores de ejecución.</li>
+<li>A partir de este momento podemos ejecutar línea a línea, entrando en las funciones, inspeccionar o cambiar el valor de cualquier variable, o seguir la ejecución hasta la siguiente parada o finalización.</li>
+<li>Repetiremos el proceso hasta que el programa esté libre de errores.</li>
+<li>Encontrar los errores del programa. Las especificaciones son las siguientes: Para aquellas personas mayores de edad pedirá su fecha de nacimiento en formato YYYYMM (año cuatro dígitos_mes dos dígitos) encontrando la edad que tiene en años y en meses desde un año pedido. El programa saldrá cuando se teclee la palabra Fin.
+<ol style="list-style-type: lower-alpha;">
+<li> Introducir en edad: 17, 18 y 19, ver qué ocurre, depurar con los tres valores.</li>
+<li>Con edad &gt;18, introducir un valor de año y comprobar los resultados.</li>
+<li>Con edad&gt;18, introducir una fecha posterior al año de cálculo.</li>
+<li>Comprobar la salida del programa, debe pedirse siempre y ser coherente.</li>
+<li>Probar el programa con varias fechas y años.</li>
+</ol>
+</li>
+</ol>
+</section>
+<section id="taquesQuestion0b164" class="block iDevice_content">
+<p>edad = int(input("Introduce tu edad:"))<br />fin = False<br />while not fin:<br />    if edad &gt; 18: <br />        fecha_nacimiento = int(input("Introduce la fecha de nacimiento (YYYYMM):"))<br />        anio_actual = int(input("Introduce el año de cálculo (YYYY):"))<br />        anio_nacimiento = fecha_nacimiento // 10000 <br />        meses = fecha_nacimiento % 100<br />        edad = anio_actual - anio_nacimiento <br />        edad_calculada_meses = edad * 12 + meses<br />        if edad_calculada &gt; 0:<br />            print("Tu edad es:", edad, "en años")<br />            print("Tu edad es:", edad_calculada_meses, "en meses")<br />        else:<br />            print("Datos erróneos")</p>
+<p>        fin = input("Fin(Si)?") == 'si' </p>
+</section>
+<form name="feedback-form-quesFeedback0b164" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b164text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b164" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b164" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>edad = int(input("Introduce tu edad:"))<br />fin = False<br />while not fin:<br />    if edad &gt;= 18:<br />        fecha_nacimiento = int(input("Introduce la fecha de nacimiento (YYYYMM):"))<br />        anio_actual = int(input("Introduce el año de cálculo (YYYY):"))<br />        anio_nacimiento = fecha_nacimiento // 100<br />        meses = fecha_nacimiento % 100<br />        edad_calculada = anio_actual - anio_nacimiento<br />        edad_calculada_meses = edad_calculada * 12 + meses<br />        if edad_calculada &gt; 0:<br />            print("Tu edad es:", edad_calculada, "en años")<br />            print("Tu edad es:", edad_calculada_meses, "en meses")<br />        else:<br />            print("Datos erróneos")</p>
+<p>    fin = input("Fin(Si)?") == 'Si'</p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-102">
+<header class="nodeDecoration">
+<h1 id="exenode_102_38Documentacindelcdigodelprograma" class="nodeTitle">3.8. Documentación del código del programa</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id165-102">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta165_165_2" class="block iDevice_content">
+<div class="exe-text"><p>La idea de tener que documentar un programa genera en el programador un rechazo inmediato. Son de esas cosas que sabemos que son buenas y debemos procurar, pero definitivamente no nos fascinan. Pero, la verdad es ésta: no importa lo fabuloso que sea un programa, nadie lo usará si no queda claro la manera de utilizarlo. En este sentido la documentación juega un rol primordial. Y aunque yo sea el único usuario de mi programa, resulta más sencillo entender y reutilizar lo que escribí hace seis meses si cuento con una documentación adecuada. Python proporciona un mecanismo bastante sencillo y conveniente para elaborar la documentación técnica de un programa.</p>
+<ul>
+<li>Existe la documentación interna y la externa:
+<ul>
+<li>Interna, explicación del propio código</li>
+<li>Externa, documentación para crear la aplicación</li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-103">
+<header class="nodeDecoration">
+<h1 id="exenode_103_381Cadenasdedocumentacin" class="nodeTitle">3.8.1. Cadenas de documentación</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id166-103">
+<div class="iDevice emphasis0" >
+<div id="ta166_166_2" class="block iDevice_content">
+<div class="exe-text"><p>Python, un docstring o cadena de documentación es una literal de cadena de caracteres que se coloca como primer enunciado de un módulo, clase, método o función, y cuyo propósito es explicar su intención.</p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def promedio(a, b):<br /><strong>    'Calcula el promedio de dos números.'</strong><br />    return (a + b) / 2</p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def formula_cuadratica(a, b, c):<br />   <strong> """Resuelve una ecuación cuadrática.</strong><br /><strong>    Devuelve en una tupla las dos raíces que resuelven la</strong><br /><strong>    ecuación cuadrática:</strong><br /><br /><strong>    ax^2 + bx + c = 0.Utiliza la fórmula general.</strong><br /><strong>    Parámetros:</strong><br /><strong>    a -- coeficiente cuadrático (debe ser distinto de 0)</strong><br /><strong>    b -- coeficiente lineal</strong><br /><strong>    c -- término independiente.</strong><br /><strong>    Excepciones:</strong><br /><strong>    ValueError -- Si (a == 0)</strong><br /><br /><strong>    """</strong><br />    if a == 0:<br />        raise ValueError(<br />        'Coeficiente cuadrático no debe ser 0.')<br />        from cmath import sqrt<br />        discriminante = b ** 2 - 4 * a * c<br />        x1 = (-b + sqrt(discriminante)) / (2 * a)<br />        x2 = (-b - sqrt(discriminante)) / (2 * a)<br />    return (x1, x2)</p>
+<p>La cadena de documentación en el segundo ejemplo es una cadena multi-líneas, la cual comienza y termina con triples comillas ("""). Aquí se pueden observar el uso de las convenciones establecidas en el PEP 257 (Python Enhancement Proposals):</p>
+<p>µ       La primera línea de la cadena de documentación debe ser una línea de resumen terminada con un punto. Debe ser una breve descripción de la función que indica los efectos de ésta como comando. La línea de resumen puede ser utilizada por herramientas automáticas de indexación; es importante que quepa en una sola línea y que esté separada del resto del docstring por una línea en blanco. El resto de la cadena de documentación debe describir el comportamiento de la función, los valores que devuelve, las excepciones que arroja y cualquier otro detalle que consideremos relevante. <span style="font-size: 1.1em;">Se recomienda dejar una línea en blanco antes de las triples comillas que cierran la cadena de documentación.</span></p>
+<p>Todos los objetos documentables (módulos, clases, métodos y funciones) cuentan con un atributo __doc__ el cual contiene su respectivo comentario de documentación.</p>
+<p>A partir de los ejemplos anteriores podemos inspeccionar la documentación de las funciones promedio y formula_cuadratica desde el shell de Python:</p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">&gt;&gt;&gt; promedio.__doc__<br />'Calcula el promedio de dos números.'<br />Sin embargo, si se está usando el shell de Python es mejor usar la función help(), dado que la salida producida queda formateada de manera más clara y conveniente:<br />&gt;&gt;&gt; help(promedio)<br />Help on function promedio in module __main__:<br />promedio(a, b)<br />Calcula el promedio de dos números.</p>
+<p>Ciertas herramientas, por ejemplo, shell o editores de código, pueden ayudar a visualizar de manera automática la información contenida en los comentarios de documentación. La siguiente imagen muestra como el shell del ambiente de desarrollo integrado IDLE muestra la línea de resumen como descripción emergente (tool tip) al momento en que un usuario teclea el nombre de la función:</p>
+<p><img src="12.png" alt="Docstring" width="500" height="221" /></p>
+<p>De esta manera un usuario puede tener a su alcance de manera sencilla toda la información que necesita para poder usar nuestras funciones.</p>
+<p></p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-104">
+<header class="nodeDecoration">
+<h1 id="exenode_104_382Conclusiones" class="nodeTitle">3.8.2. Conclusiones</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id167-104">
+<div class="iDevice emphasis0" >
+<div id="ta167_167_2" class="block iDevice_content">
+<div class="exe-text"><p>El uso de docstrings en Python facilita la escritura de la documentación técnica de un programa. Escribir una buena documentación requiere de disciplina y tiempo, pero sus beneficios se cosechan cuando alguien (quizás mi futuro yo dentro de seis meses) necesita entender qué hace nuestro software. Los docstrings no sustituyen otras buenas prácticas de programación, como son el uso apropiado de comentarios o el empleo de nombres descriptivos para variables y funciones, por lo que resulta importante utilizar todas estas prácticas de manera conjunta.</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-105">
+<header class="nodeDecoration">
+<h1 id="exenode_105_39CuestionesdeEstilo" class="nodeTitle">3.9. Cuestiones de Estilo</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id168-105">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta168_168_2" class="block iDevice_content">
+<div class="exe-text"><p>Una guía de estilo es un sencillo documento que recoge la forma en que los desarrolladores tienen que escribir su código. Si todos los desarrolladores siguen las recomendaciones de la guía, conseguiremos que nuestro proyecto tenga un estilo consistente. Normalmente, una buena guía de estilo debería:</p>
+<ul>
+<li>Promover que el código sea inteligible.</li>
+<li>Promover que el código esté organizado en unidades de trabajo comprensibles (funciones no más extensas de un cierto número de líneas, organización en párrafos, etc.).</li>
+<li>Definir las convenciones de nombres de variables, estilo de espaciados, etc.</li>
+<li>Indicar cómo comentar el código.</li>
+</ul>
+<p>Las guías de estilo nos proporcionarán múltiples ventajas, entre las que se encuentra entenderlo mejor a nosotros y a cualquier programador; permitir un mejor mantenimiento y modificación; generar código legible y muchas otras.</p>
+<p>Python, como todos los lenguajes, tiene una guía de estilo, en este caso se llama PEP-8 que la podemos encontrar (en español: <a href="http://www.recursospython.com/pep8es.pdf" target="_blank" rel="noopener">http://www.recursospython.com/pep8es.pdf</a>) en: <a href="https://www.python.org/dev/peps/pep-0008/" target="_blank" rel="noopener">https://www.python.org/dev/peps/pep-0008/</a></p>
+<p>Entre las recomendaciones que implica esta guía podemos encontrar las siguientes:</p>
+<ul>
+<li>µ       Usar cuatro espacios en vez de tabuladores.</li>
+<li>µ       Escribir líneas de 79 caracteres máximo.</li>
+<li>µ       Después de la definición de una función añadir una línea en blanco.</li>
+<li>µ       Usar los comentarios de una línea.</li>
+<li>µ       Utilizar espacios alrededor de los operadores.</li>
+<li>µ       El nombrado de clases debería ajustarse a: <strong>NombreClase</strong></li>
+<li>µ       El nombrado de funciones y variables debería ajustarse a: <strong>nombre_funcion</strong></li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-106">
+<header class="nodeDecoration">
+<h1 id="exenode_106_310Ejercicios" class="nodeTitle">3.10. Ejercicios</h1>
+</header>
+<article class="iDevice_wrapper VerdaderofalsofpdIdevice em_iDevice em_iDevice_autoevaluacionfpd" id="id169-106">
+<div class="iDevice emphasis_autoevaluacionfpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Autoevaluación</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta169_135" class="block iDevice_content">
+
+</div>
+<section class="question">
+<form name="true-false-form-0b169" action="#" class="activity-form">
+<h1 class="js-sr-av">Pregunta 1</h1>
+<div id="taquestion0b169" class="block iDevice_content">
+<p>27.       Realiza un programa que lea una secuencia de notas (con valores que van de 0 a 10) que termina con el valor -1 y nos dice si hubo o no alguna nota con valor 10.</p>
+<p>28.       Realiza un programa que sume independientemente los pares y los impares de los números comprendidos entre 100 y 200, y luego muestra por pantalla ambas sumas.</p>
+<p>29.       Realiza un programa que calcule el valor A elevado a B (A^B) sin hacer uso del operador de potencia (^), siendo A y B valores introducidos por teclado, y luego muestre el resultado por pantalla.</p>
+<p>30.       Realiza un programa donde el usuario "piensa" un número del 1 al 100 y el ordenador intenta adivinarlo. Es decir, el ordenador irá proponiendo números una y otra vez hasta adivinarlo (el usuario deberá indicarle al ordenador si es mayor, menor o igual al número que ha pensado).</p>
+<p>31.       Realiza un programa que dada una cantidad de euros que el usuario introduce por teclado (múltiplo de 5 €) mostrará los billetes de cada tipo que serán necesarios para alcanzar dicha cantidad (utilizando billetes de 500, 200, 100, 50, 20, 10 y 5). Hay que indicar el mínimo de billetes posible. Por ejemplo, si el usuario introduce 145 el programa indicará que será necesario 1 billete de 100 €, 2 billetes de 20 € y 1 billete de 5 € (no será válido por ejemplo 29 billetes de 5 que, aunque sume 145 € no es el mínimo número de billetes posible).</p>
+<p>32.       Realiza un programa que cuente los múltiplos de 3 desde el 1 hasta un número que introducimos por teclado.</p>
+<p>33.       Realiza un programa en que pida un número entero positivo y nos diga si es primo o no.</p>
+<p>34.       Realiza un programa que lea y acepte únicamente aquellos que sean mayores que el último dado. La introducción de números finaliza con la introducción de un 0. Al final se mostrará:</p>
+<p>El total de números introducidos, excluido el 0.</p>
+<p>El total de números fallados.</p>
+<p> </p>
+<p>35.       Realiza un programa para calcular la suma de los cuadrados de los 5 primeros números naturales.</p>
+<p>36.   Realiza un programa que lea un número y a continuación escriba el carácter “*” tantas veces igual al valor numérico leído. En aquellos casos en que el valor leído no sea positivo se deberá escribir un único asterisco. </p>
+<p>37.   Realiza un programa que pida un número entero N entre 0 y 20 y luego muestre por pantalla los números desde 1 hasta N, uno en cada línea, repitiendo cada número tantas veces como su valor.</p>
+<p>38.   Realiza un programa que pida dos números enteros A y B, siendo B mayor que A. Luego visualiza los números desde A hasta B e indicar cuantos hay que sean pares. Ejemplo:</p>
+<p>39.   Crea un programa que pida al usuario un número entero y muestre su cuadrado. Se repetirá mientras el usuario introduzca un número distinto de cero.</p>
+<p>40.   Crea un programa que muestre la "tabla de multiplicar del 5", usando “while” y después "for”</p>
+<p>41.   Crea un programa que muestre los números del 1 al 20, excepto el 15, usando "for" y "continue".</p>
+<p>42.   Crea un programa que pida al usuario su login y su contraseña. Se repetirá hasta que el usuario introduzca como login "1809" y como contraseña "1234". Hazlo con while.</p>
+<p>43.   Crea un programa que pida un número de tipo byte al usuario y escriba en pantalla un cuadrado formado por asteriscos, que tendrá como alto y ancho la cantidad introducida por el usuario. Hazlo de dos formas, usando “while” y “for.</p>
+</div>
+<p class="iDevice_answer js-required">
+<label for="true0b169"><input type="radio" name="option0b169" id="true0b169" class="exe-radio-option exe-radio-option-0-2-0b169-truefalse" /> Verdadero</label> 
+<label for="false0b169"><input type="radio" name="option0b169" id="false0b169" class="exe-radio-option exe-radio-option-1-2-0b169-truefalse" /> Falso</label>
+</p>
+</form>
+<section id="s0b169" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p><strong id="s0b169-result" class="wrong">Falso</strong></p>
+
+</section>
+</section>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-107">
+<header class="nodeDecoration">
+<h1 id="exenode_107_311Programacinmodular" class="nodeTitle">3.11. Programación modular</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id170-107">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta170_170_2" class="block iDevice_content">
+<div class="exe-text"><p>Tiene por finalidad obtener algoritmos que se basan en la descomposición reiterada del problema inicial en subproblemas más simples. En esta descomposición una acción se dividirá en otras. El proceso se repite hasta que todas las acciones sean inmediatamente identificables.</p>
+<p><strong>Ejemplo</strong></p>
+<p>Fichar todos los libros de una biblioteca</p>
+<div style="padding-left: 30px;">1.       Primer nivel:</div>
+<div style="padding-left: 30px;">Mientras queden libros sin fichar Hacer</div>
+<div style="padding-left: 30px;">   Fichar un libro</div>
+<div style="padding-left: 30px;">Fin Mientras</div>
+<div style="padding-left: 30px;">2.       Segundo nivel:</div>
+<div style="padding-left: 30px;">Fichar un libro:</div>
+<div style="padding-left: 30px;">   Coger un libro de los no fichados</div>
+<div style="padding-left: 30px;">   Darle un número de referencia</div>
+<div style="padding-left: 30px;">   Coger ficha</div>
+<div style="padding-left: 30px;">   Escribir en ella el nombre del libro</div>
+<div style="padding-left: 30px;">   Escribir el nombre del autor</div>
+<div style="padding-left: 30px;">   Escribir la editorial</div>
+<div style="padding-left: 30px;">   Escribir el número de referencia</div>
+<div style="padding-left: 30px;">   Duplicar la ficha</div>
+<div style="padding-left: 30px;">   Poner la ficha en el libro</div>
+<div style="padding-left: 30px;">   Poner la otra ficha en el fichero</div>
+<div style="padding-left: 30px;">3.       Tercer nivel:</div>
+<div style="padding-left: 30px;">Poner la otra ficha en el fichero:</div>
+<div style="padding-left: 30px;">   Mirar la primera ficha del fichero</div>
+<div style="padding-left: 30px;">   Mientras la ficha del fichero se anterior Hacer</div>
+<div style="padding-left: 30px;">        Pasar una ficha del fichero</div>
+<div style="padding-left: 30px;">   Fin Mientras</div>
+<div style="padding-left: 30px;">   Colocar la ficha en el fichero</div>
+<div></div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-108">
+<header class="nodeDecoration">
+<h1 id="exenode_108_3111Funciones" class="nodeTitle">3.11.1 Funciones</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id171-108">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta171_171_2" class="block iDevice_content">
+<div class="exe-text"><p>Python permite diversos paradigmas de programación y se pueden mezclar en un mismo fichero. En concreto el paradigma de programación modular determina crear códigos independientes que realizan una función y pueden o no retornar un valor: funciones y procedimientos. Para llamar a una función se utilizará su nombre y entre paréntesis se le pasarán los parámetros correspondientes.</p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id172-108">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Diferencias entre funciones y procedimientos</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta172_172_2" class="block iDevice_content">
+<div class="exe-text"><p>Formalmente una función y un procedimiento no es lo mismo. Una función es una sección de un programa que calcula un valor de manera independiente al resto del programa que tiene tres partes: parámetros de entrada, proceso o código y resultado. Por otro lado, un procedimiento solo tiene dos partes: entrada y proceso, no devuelve nada.</p>
+<p>A nivel de código la diferencia principal es que en los procedimientos no encontraremos una sentencia <strong>return</strong>, mientras que en las funciones sí.</p>
+<p>Bajo Python, no existen los procedimientos, incluso si omitimos la sentencia <strong>return</strong> en nuestra definición, el intérprete devolverá de forma predefinida <strong>None</strong> como valor de nuestra función.</p>
+<p>Para Python como para el resto de lenguajes, una función es un bloque de código con autonomía propia de ejecución que podremos reutilizar. La mayor diferencia con los lenguajes tradicionales es que es un objeto con sus propiedades y métodos. Una función se puede definir en cualquier parte del código, aunque es recomendable estructurar el código en módulos.</p>
+<p>Para que una función esté bien definida según la guía de estilo, ésta no debe ocupar más de veinticinco a treinta líneas de código.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id173-108">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Definición</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta173_173_2" class="block iDevice_content">
+<div class="exe-text"><p>La palabra reservada def se usa para definir funciones. Debe seguirle el nombre de la función y la lista de parámetros formales entre paréntesis . Las sentencias que forman el cuerpo de la función empiezan en la línea siguiente y deben estar con sangría. La sentencia return final es optativa y representa el valor devuelto por la función cuando es utilizada como parte derecha de una asignación.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def fib(n):    # write Fibonacci series up to n</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    """Print a Fibonacci series up to n."""</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    a, b = 0, 1</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    while a &lt; n:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        print(a, end=' ')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        a, b = b, a+b</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    return False</div>
+<p>Esta definición se encontrará dentro de una definición de clase si es un método o fuera de ella si es una función, el resto del apartado trataremos como si se encontrase dentro de una clase, pero omitiremos el primer parámetro.</p>
+<p>La primera sentencia del cuerpo de la función puede ser opcionalmente una cadena de texto literal; esta es la cadena de texto de documentación de la función, o docstrings para documentación.</p>
+<p>Se pueden devolver varios valores separándolos con comas</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def suma_multiplicacion(num_1, num_2):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    return num1_+ num2, num_1 * num_2</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id174-108">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Ámbito de las variables</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta174_174_2" class="block iDevice_content">
+<div class="exe-text"><p>El ámbito es la zona de código que tiene acceso una variable. Python, como todos los lenguajes, tiene varios ámbitos para definir las variables uno <strong>local</strong>, uno <strong>nonlocal</strong> y otro <strong>global</strong>. Por defecto estos ámbitos no se mezclan y no podemos hacer uso de uno dentro del otro. El ámbito local se corresponde con el nivel de función, el ámbito global con el de programa, el <strong>nonlocal</strong> con una función interna.</p>
+<p>Para modificar una variable definida en el programa deberemos anteponer la palabra clave <strong>global</strong> y el nombre de la variable para poder usarla. Nunca podremos cambiar una variable local fuera de la función que la defina, aunque sí podremos acceder a ella sin especificar <strong>global</strong> si no la modificamos.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">mi_var_global = 3</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def mi_fun():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    global mi_var_global</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    mi_var_global = 4</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">mi_fun()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(mi_var_global)</div>
+<div>En una clase no se debería acceder nunca a una variable global.</div>
+<div>Del mismo modo, si dentro de una función interna a otra, queremos acceder al bloque de la función padre deberemos usar la palabra clave nonlocal, que nos da acceso al bloque inmediatamente superior, como en el ejemplo siguiente.</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">g = 5</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def miFunc2():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    global g</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    g = 6</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    b = 6</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def miInterna():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        nonlocal b  # accedemos a la b externa</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        global g</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        b = 7</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        g = 8</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    miInterna()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(b, g)   </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">miFunc2() # 7,8</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(g)  # 8</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id175-108">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Parámetros</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta175_175_2" class="block iDevice_content">
+<div class="exe-text"><p>Un parámetro es un valor que se le pasa al método o función, un valor que espera para realizar su trabajo. Como Python define el tipo de una variable (parámetro en este caso) en tiempo de ejecución, no es necesario determinarlo en el parámetro, y no solo eso, el mismo parámetro aceptará cualquier tipo de datos para su ejecución, por lo que tendremos que realizar una conversión explícita si fuera necesario.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def suma(numero_1, numero_2):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(numero_1 + numero_2)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">suma(2,3)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">suma(2) # Error faltan parámetros</div>
+<div></div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id176-108">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Parámetros de Entrada – Salida</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta176_176_2" class="block iDevice_content">
+<div class="exe-text"><p>El comportamiento común de un parámetro es como entrada, esto quiere decir que recibirá un dato almacenado en el parámetro enviado desde el contexto en el que se llama a la función, se utilizará dentro de la función y no se modificará.</p>
+<p>Los parámetros de salida permiten modificar el valor de una variable externa a la función relacionada con el parámetro. De esta manera, si la función modifica el valor del parámetro, la variable externa relacionada a este parámetro se modificará también, inclusive después de que la función haya terminado de ejecutarse.</p>
+<p>En Python todos los parámetros son de entrada.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-109">
+<header class="nodeDecoration">
+<h1 id="exenode_109_3112Juegodelahorcado" class="nodeTitle">3.11.2 Juego del ahorcado</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id177-109">
+<div class="iDevice emphasis0" >
+<div id="ta177_177_2" class="block iDevice_content">
+<div class="exe-text"><div><strong>Primer nivel</strong><br />Acción Juego del Ahorcado</div>
+<div>    Pedir la palabra al primer jugador</div>
+<div>    Jugar con el segundo</div>
+<div>Fin Acción</div>
+<div><br /><strong>Segundo nivel</strong><br />Acción Pedir la palabra al primer jugador</div>
+<div>    Imprimir “Palabra?”</div>
+<div>    Leer Palabra</div>
+<div>    Borrar la pantalla</div>
+<div>Fin Acción<br />   </div>
+<div>Acción Jugar con el segundo</div>
+<div>    numero_fallos = 0</div>
+<div>    letras_faltan = palabra</div>
+<div>    letras_adivinadas= “-“ * longitud(palabra)</div>
+<div>    Mientras no_acabe_el_juego Hacer</div>
+<div>        Pedir letra al segundo jugador</div>
+<div>        Evaluar jugada</div>
+<div>    Fin mientras</div>
+<div>Fin Acción<br /> </div>
+<div><em>no_acabe_el_juego será cuando numero_fallos &lt;= 10 y letras_adivinadas &lt;&gt; palabra</em></div>
+<div><em></em></div>
+<div><strong>Tercer nivel</strong><br />Acción Pedir letra al segundo jugador</div>
+<div>    Imprimir letras_acertadas, “Letra?”</div>
+<div>    Leer letra</div>
+<div>Fin Acción<br />   </div>
+<div>Acción Evaluar jugada</div>
+<div>    numero_aciertos_letra = 0</div>
+<div>    Para índice = 0 hasta longitud(letras_faltan) Hacer</div>
+<div>        Si letras_faltan[índice] = letra Entonces</div>
+<div>            letras_acertadas[índice] = letra</div>
+<div>            letras_faltan[índice] = “-“</div>
+<div>            numero_aciertos_letra += 1</div>
+<div>        Fin si</div>
+<div>    Fin para</div>
+<div>    Si numero_aciertos_letra = 0 Entonces</div>
+<div>       Numero_fallos += 1</div>
+<div>    Fin Si</div>
+<div>Fin Acción</div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-110">
+<header class="nodeDecoration">
+<h1 id="exenode_110_3113Recomendaciones" class="nodeTitle">3.11.3 Recomendaciones</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id178-110">
+<div class="iDevice emphasis0" >
+<div id="ta178_178_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Crear los algoritmos en papel</li>
+<li>Buscar código repetido y crear funciones o procedimientos con dicho código</li>
+<li>Se deben devolver uno o dos elementos en la función</li>
+<li>En caso de devolver más crear un objeto para contenerlo (listas, tuplas, clase…)</li>
+<li>Deben tener un tamaño corto</li>
+<li>Los parámetros siempre serán de entrada, no utilizarlos para salida</li>
+<li>Tendrán un único punto de entrada y un único punto de salida (<strong>return</strong>), la última línea</li>
+</ul></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-111">
+<header class="nodeDecoration">
+<h1 id="exenode_111_312Ejercicios" class="nodeTitle">3.12. Ejercicios</h1>
+</header>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id179-111">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta179_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b179" class="block iDevice_content">
+<p>52.       Hacer una función que intercambie dos variables globales</p>
+<p>53.       Hacer una función que intercambie dos variables que se les pasa</p>
+<p>54.       Hacer una función que valide un argumento, de tal manera que devolverá verdadero si está entre 5 y 50, en otro caso devolverá falso.</p>
+<p>55.       Hacer una función que devuelva el valor absoluto de un número.</p>
+<p>56.       Hacer una función que convierta coordenadas polares a (radio y ángulo) en rectangulares (x,y). x= radio*cos(a), y = radio*sin(a).</p>
+<p>57.       Crear una función que nos valide una fecha.</p>
+</section>
+<form name="feedback-form-quesFeedback0b179" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b179text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b179" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b179" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<div>import math</div>
+<div><br />def cincuenta_dos():<br />    global a, b<br />    a, b = b, a</div>
+<div><br />def cincuenta_tres(c, d):<br />    return d, c</div>
+<div><br />def cincuenta_cuatro(c):<br />    ret = False<br />    if 5 &lt;= c &lt;= 50:<br />        ret = True<br />    return ret</div>
+<div><br />def cincuenta_cuatro_bis(c):<br />    return 5 &lt;= c &lt;= 50</div>
+<div><br />def cincuenta_cinco(c):<br />    return c if c &gt;= 0 else -c</div>
+<div><br />def cincuenta_seis(longitud, angulo):<br />    return longitud * math.cos(angulo), longitud * math.sin(angulo)</div>
+<div><br />def cincuenta_siete(dia, mes):<br />    ret = True<br />    if mes &lt; 1 or mes &gt; 12 or dia &lt; 1 or dia &gt; 31:<br />        ret = False<br />    else:<br />        if mes == 1 and dia &gt; 31:<br />            ret = False<br />        elif mes == 2 and dia &gt; 28:<br />            ret = False<br />        elif mes == 3 and dia &gt; 31:<br />            ret = False<br />        elif mes == 4 and dia &gt; 30:<br />            ret = False<br />        elif mes == 5 and dia &gt; 31:<br />            ret = False<br />        elif mes == 6 and dia &gt; 30:<br />            ret = False<br />        elif mes == 7 and dia &gt; 31:<br />            ret = False<br />        elif mes == 8 and dia &gt; 31:<br />            ret = False<br />        elif mes == 9 and dia &gt; 30:<br />            ret = False<br />        elif mes == 10 and dia &gt; 31:<br />            ret = False<br />        elif mes == 11 and dia &gt; 30:<br />            ret = False<br />        elif mes == 12 and dia &gt; 31:<br />            ret = False</div>
+<div>    return ret</div>
+<div></div>
+<div># Ejecución de los ejemplos<br />a = 1<br />b = 2<br />print(a, b)<br />cincuenta_dos()<br />print(a, b)</div>
+<div>a = 1<br />b = 2<br />print(a, b)<br />a, b = cincuenta_tres(a, b)<br />print(a, b)</div>
+<div>print(cincuenta_cuatro(10))<br />print(cincuenta_cuatro_bis(10))<br />print(cincuenta_cuatro(4))<br />print(cincuenta_cuatro_bis(4))<br />print(cincuenta_cuatro(444))<br />print(cincuenta_cuatro_bis(444))</div>
+<div>print(cincuenta_cinco(-1))<br />print(cincuenta_cinco(0))<br />print(cincuenta_cinco(1))</div>
+<div>print(cincuenta_seis(5, 35))</div>
+<div>print(cincuenta_siete(0, 12))<br />print(cincuenta_siete(0, 13))<br />print(cincuenta_siete(32, 12))<br />print(cincuenta_siete(32, 13))<br />print(cincuenta_siete(31, 1))<br />print(cincuenta_siete(32, 1))<br />print(cincuenta_siete(28, 2))<br />print(cincuenta_siete(29, 2))</div>
+<p></p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id180-111">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta180_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b180" class="block iDevice_content">
+<p>58.       Hacer el juego de MasterMind para cuatro columnas y seis fichas (ABCDEF). Se eligen al azar 4 de las fichas con repetición y se colocan en orden. El jugador colocará como desee cuatro fichas y se darán como pista las que están bien colocadas con un + y las que están, pero mal colocadas con un –. El juego termina cuando se colocan todas bien colocadas.</p>
+<p>Elección: ACBC<br />El usuario pone             Bien       Mal        No están             Pistas<br />BBBB                             --B-        ----         BB-B                      +<br />ABCD                            A---        -BC-       ---D                       +--<br />CCEE                             -C--        C---        --EE                       +-<br />EECC                             ---C        --C-        EE--                       +-<br />ACCB                            AC--       --CB       ----                         ++--</p>
+</section>
+<form name="feedback-form-quesFeedback0b180" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b180text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b180" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b180" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<div>import random</div>
+<div> </div>
+<div>NUMERO_COLUMNAS = 4</div>
+<div>LETRA_USUARIO = '*'</div>
+<div>LETRA_JUGADA = '-'</div>
+<div>DEBUG = False</div>
+<div>colores = ('a', 'b', 'c', 'd', 'e', 'f')</div>
+<div> </div>
+<div> </div>
+<div>def master_mind():</div>
+<div>    jugada = []</div>
+<div>    fin = False</div>
+<div>    jugada_usuario = []</div>
+<div>    aciertos = fallos = 0</div>
+<div> </div>
+<div>    jugada = elegir_jugada()</div>
+<div>    while not fin:</div>
+<div>        jugada_usuario = pedir_jugada_usuario()</div>
+<div>        aciertos, mal_colocadas = comprobar_jugada(jugada, jugada_usuario)</div>
+<div>        if aciertos == NUMERO_COLUMNAS:</div>
+<div>            print("Ganaste")</div>
+<div>            fin = True</div>
+<div>        else:</div>
+<div>            imprimir_pistas(aciertos, mal_colocadas)</div>
+<div> </div>
+<div> </div>
+<div>def elegir_jugada():</div>
+<div>    jugada = [None, None, None, None]</div>
+<div>    for indice in range(NUMERO_COLUMNAS):</div>
+<div>        jugada[indice] = colores[random.randint(0, len(colores))]</div>
+<div>    print(jugada) if DEBUG else None</div>
+<div>    return jugada.copy()</div>
+<div> </div>
+<div> </div>
+<div>def pedir_jugada_usuario():</div>
+<div>    jugada = [None, None, None, None]</div>
+<div>    for indice in range(NUMERO_COLUMNAS):</div>
+<div>        jugada[indice] = input("color(a,b,c,d,e,f):").lower()</div>
+<div>    return jugada</div>
+<div> </div>
+<div> </div>
+<div>def comprobar_jugada(jugada, jugada_usuario):</div>
+<div>    jugada_in = jugada.copy()</div>
+<div>    jugada_usuario_in = jugada_usuario.copy()</div>
+<div>    aciertos_totales = aciertos_parciales = 0</div>
+<div>    # comprobar aciertos totales</div>
+<div>    print(jugada_in, jugada_usuario_in) if DEBUG else None</div>
+<div>    for indice in range(len(jugada_in)):</div>
+<div>        if jugada_in[indice] == jugada_usuario_in[indice]:</div>
+<div>            print(indice, jugada_in[indice], jugada_usuario_in[indice], aciertos_totales) if DEBUG else None</div>
+<div>            aciertos_totales += 1</div>
+<div>            jugada_in[indice] = LETRA_JUGADA</div>
+<div>            jugada_usuario_in[indice] = LETRA_USUARIO</div>
+<div>    # comprobar aciertos parciales</div>
+<div>    for indice in range(len(jugada_in)):</div>
+<div>        letra = jugada_usuario_in[indice]</div>
+<div>        if letra != LETRA_USUARIO:</div>
+<div>            indice_jugada = 0</div>
+<div>            while indice_jugada &lt; NUMERO_COLUMNAS and jugada_in[indice_jugada] != letra:</div>
+<div>                indice_jugada += 1</div>
+<div>            if indice_jugada &lt; NUMERO_COLUMNAS:</div>
+<div>                print(indice, jugada_in[indice], jugada_usuario_in[indice], aciertos_totales) if DEBUG else None</div>
+<div>                aciertos_parciales += 1</div>
+<div>                jugada_in[indice_jugada] = LETRA_JUGADA</div>
+<div>                jugada_usuario_in[indice] = LETRA_USUARIO</div>
+<div> </div>
+<div>    return aciertos_totales, aciertos_parciales</div>
+<div> </div>
+<div> </div>
+<div>def imprimir_pistas(aciertos, mal_colocadas):</div>
+<div>    print("+" * aciertos, end='')</div>
+<div>    print("-" * mal_colocadas, end='')</div>
+<div>    print()</div>
+<div> </div>
+<div> </div>
+<div>master_mind()</div></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id181-111">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta181_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b181" class="block iDevice_content">
+<p>59.       Diseña un programa que calcule el máximo de 5 números enteros. Intenta resolverlo con un ((candidato a valor máximo)) que se va actualizando al compararse con cada número.</p>
+<p>60.       Diseña un programa que, dados cinco números enteros, determine cuál de los cuatro ´últimos números es más cercano al primero. (Por ejemplo, si el usuario introduce los números 2, 6, 4, 1 y 10, el programa responder ‘a que el número más cercano al 2 es el 1.).</p>
+<p>61.       Un vector en un espacio tridimensional es una tripleta de valores reales (x, y, z). Deseamos confeccionar un programa que permita operar con dos vectores. El usuario verá en pantalla un menú con las siguientes opciones:</p>
+<p>1) Introducir el primer vector</p>
+<p>2) Introducir el segundo vector</p>
+<p>3) Calcular la suma</p>
+<p>4) Calcular la diferencia</p>
+<p>5) Calcular el producto escalar</p>
+<p>6) Calcular el producto vectorial</p>
+<p>7) Calcular el ´ángulo (en grados) entre ellos</p>
+<p>8) Calcular la longitud</p>
+<p>9) Finalizar</p>
+<p> </p>
+<p>62.       Implementa un programa que lea de teclado una cadena que representa un número binario. Si algún carácter de la cadena es distinto de ’0’ o ’1’, el programa advertirá al usuario de que la cadena introducida no representa un número binario y pedirá de nuevo la lectura de la cadena. En caso de ser correcta mostrará el valor binario.</p>
+<p>63.       Hay un tipo de pasatiempos que propone descifrar un texto del que se han suprimido las vocales. Por ejemplo, el texto ((.n .j.mpl. d. p.s.t..mp.s)), se descifra sustituyendo cada punto con una vocal del texto. La solución es ((un ejemplo de pasatiempos)). Diseña un programa que ayude al creador de pasatiempos. El programa recibirá una cadena y mostrará otra en la que cada vocal ha sido reemplazada por un punto.     If letra in “aeiou” remplazar por .</p>
+<p>64.       Una de las técnicas de criptografía más rudimentarias consiste en sustituir cada uno de los caracteres por otro situado n posiciones más a la derecha. Si n = 2, por ejemplo, sustituiremos la ((a)) por la ((c)), la ((b)) por la ((e)), y así sucesivamente. El problema que aparece en las últimas n letras del alfabeto tiene fácil solución: en el ejemplo, la letra ((y)) se sustituirá por la ((a)) y la letra ((z)) por la ((b)). La sustitución debe aplicarse a las letras minúsculas y mayúsculas y a los dígitos (el ((0)) se sustituye por el ((2)), el ((1)) por el ((3)) y así hasta llegar al ((9)), que se sustituye por el ((1))). Diseña un programa que lea un texto y el valor de n y muestre su versión criptografía.</p>
+<p>65.       Hacer un programa que calcule la corona circular pidiendo los dos radios, pero usando una función que calcule el área de un círculo.</p>
+<p>66.       Hacer un programa que pida dos listas y calcule la suma vectorial y el producto definido según el         siguiente ejemplo usando una función para cada operación</p>
+<p>(a,b,c) + (d,e,f) -&gt; (a+d,b+e,c+f)   (a,b,c) * (d,e,f) -&gt; a*d+b*e+c*f</p>
+<p>67.       Hacer un programa que calcule el máximo y el mínimo de 5 elementos guardados en una lista</p>
+<p>          --&gt; con una función para max y otra para min</p>
+<p>          --&gt; con una función solo y un parámetro que indique si es máx o min</p>
+<p>68.   Hacer un programa que pida dos conjuntos de 5 elementos (los conjunto no tienen elementos repetidos) y nos haga la unión y la intersección con funciones</p>
+</section>
+<form name="feedback-form-quesFeedback0b181" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b181text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b181" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b181" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<div>import math</div>
+<div>import sys</div>
+<div> </div>
+<div> </div>
+<div>def cincuenta_nueve():</div>
+<div>    """</div>
+<div>    59.     Diseña un programa que calcule el máximo de 5 números enteros.</div>
+<div>    Intenta resolverlo con un ((candidato a valor máximo)) que se va actualizando al compararse con cada número.</div>
+<div> </div>
+<div>    Fácil</div>
+<div> </div>
+<div>    """</div>
+<div>    CANTIDAD_NUMEROS = 5</div>
+<div>    numero = None</div>
+<div>    maximo = -sys.maxsize - 1  # es importante inicializar al mínimo para obligar al cambio</div>
+<div>    for index in range(CANTIDAD_NUMEROS):</div>
+<div>        numero = int(input(f"Dame el número {index + 1} de {CANTIDAD_NUMEROS}:"))</div>
+<div>        if numero &gt; maximo:</div>
+<div>            maximo = numero</div>
+<div>    print(f"El mayor es {maximo}")</div>
+<div> </div>
+<div> </div>
+<div>def sesenta():</div>
+<div>    """</div>
+<div>    60.     Diseña un programa que, dados cinco números enteros, determine cuál de los cuatro Últimos números</div>
+<div>    es más cercano al primero.</div>
+<div>    (Por ejemplo, si el usuario introduce los números 2, 6, 4, 1 y 10, el programa responderá</div>
+<div>    que el número más cercano al 2 es el 1.).</div>
+<div> </div>
+<div>    Fácil</div>
+<div>    """</div>
+<div>    numero_base = numero_actual = numero_mas_cercano = 0</div>
+<div>    distancia_entre_numeros = sys.maxsize   # es importante inicializar al más alto para obligar al cambio</div>
+<div>    CANTIDAD_NUMEROS = 5</div>
+<div>    numero_mas_cercano = numero_base = int(input(("Dame un número:")))</div>
+<div>    for index in range(CANTIDAD_NUMEROS - 1):</div>
+<div>        numero_actual = int(input("Dame un número:"))</div>
+<div>        if abs(numero_actual - numero_base) &lt; distancia_entre_numeros:</div>
+<div>            numero_mas_cercano = numero_actual</div>
+<div>            distancia_entre_numeros = abs(numero_base - numero_actual)</div>
+<div>    print(f"El más cercano es {numero_mas_cercano}")</div>
+<div> </div>
+<div> </div>
+<div>def sesenta_uno():</div>
+<div>    """</div>
+<div>    61.     Un vector en un espacio tridimensional es una tripleta de valores reales (x, y, z).</div>
+<div>    Deseamos confeccionar un programa que permita operar con dos vectores.</div>
+<div>    El usuario verá en pantalla un menú con las siguientes opciones:</div>
+<div>        1) Introducir el primer vector</div>
+<div>        2) Introducir el segundo vector</div>
+<div>        3) Calcular la suma</div>
+<div>        4) Calcular la diferencia</div>
+<div>        5) Calcular el producto escalar</div>
+<div>        6) Calcular el producto vectorial</div>
+<div>        7) Calcular el ´ángulo (en grados) entre ellos</div>
+<div>        8) Calcular la longitud</div>
+<div>        9) Finalizar</div>
+<div> </div>
+<div>    Medio</div>
+<div>    """</div>
+<div>    fin = False</div>
+<div>    x_1 = y_1 = z_1 = 0</div>
+<div>    x_2 = y_2 = z_2 = 0</div>
+<div>    opcion = None</div>
+<div>    while not fin:</div>
+<div>        #  imprimir menu</div>
+<div>        print("*" * 40)</div>
+<div>        print("1) Introducir el primer vector")</div>
+<div>        print("2) Introducir el segundo vector")</div>
+<div>        print("3) Calcular la suma")</div>
+<div>        print("4) Calcular la diferencia")</div>
+<div>        print("5) Calcular el producto escalar")</div>
+<div>        print("6) Calcular el producto vectorial")</div>
+<div>        print("7) Calcular el ´ángulo (en grados) entre ellos")</div>
+<div>        print("8) Calcular la longitud")</div>
+<div>        print("9) Finaliza")</div>
+<div>        print("*" * 40)</div>
+<div>        # pedir opción</div>
+<div>        opcion = int(input("¿Opción?"))</div>
+<div>        # actuar según opción</div>
+<div>        if opcion == 1:</div>
+<div>            x_1 = int(input("Coordenada X del primer vector?"))</div>
+<div>            y_1 = int(input("Coordenada y del primer vector?"))</div>
+<div>            z_1 = int(input("Coordenada z del primer vector?"))</div>
+<div>        elif opcion == 2:</div>
+<div>            x_2 = int(input("Coordenada X del segundo vector?"))</div>
+<div>            y_2 = int(input("Coordenada y del segundo vector?"))</div>
+<div>            z_2 = int(input("Coordenada z del segundo vector?"))</div>
+<div>        elif opcion == 3:</div>
+<div>            print(f"La suma es ({x_1 + x_2},{y_1 + y_2},{z_1 + z_2})")</div>
+<div>        elif opcion == 4:</div>
+<div>            print(f"La diferencia es ({x_1 - x_2},{y_1 - y_2},{z_1 - z_2})")</div>
+<div>        elif opcion == 5:</div>
+<div>            print(f"El producto escalar es ({x_1 * x_2 + y_1 * y_2 + z_1 * z_2})")</div>
+<div>        elif opcion == 6:</div>
+<div>            print(f"El producto vectorial es ({y_1*z_2 - z_1*y_2}, {z_1*y_2-x_1*y_2}, {x_1*y_2 - y_1*x_2})")</div>
+<div>        elif opcion == 7:  # probar con 1,1,1 y 2,2,2  ¿qué pasa?</div>
+<div>            ang_radianes = math.acos((x_1*x_2+y_1*y_2+z_1*z_2)/((math.sqrt(x_1**2 + y_1**2 + z_1**2)</div>
+<div>                                                                * math.sqrt(x_2**2 + y_2**2 + z_2**2))))</div>
+<div>            print(f"El ángulo es {ang_radianes * 180 / math.pi}")</div>
+<div>        elif opcion == 8:</div>
+<div>            print(f"La longitud es {math.sqrt((x_2-x_1)**2 + (y_2-y_1)** + (z_2-z_1)**2)}")</div>
+<div>        elif opcion == 9:</div>
+<div>            fin = True</div>
+<div> </div>
+<div> </div>
+<div>def sensenta_dos():</div>
+<div>    """</div>
+<div>    62.     Implementa un programa que lea de teclado una cadena que representa un número binario.</div>
+<div>    Si algún carácter de la cadena es distinto de ’0’ o ’1’, el programa advertirá al usuario de que la cadena</div>
+<div>    introducida no representa un número binario y pedirá de nuevo la lectura de la cadena.</div>
+<div>    En caso de ser correcta mostrará el valor binario.</div>
+<div> </div>
+<div>    Medio</div>
+<div>    """</div>
+<div>    cadena = None</div>
+<div> </div>
+<div>    cadena = input("Intropduce el número binario?")</div>
+<div>    es_bianrio = True</div>
+<div>    posicion_bit = 0</div>
+<div>    numero_decimal = 0</div>
+<div>    for indice in range(len(cadena) - 1, -1, -1):</div>
+<div>        if cadena[indice] == '1' or cadena[indice] == '0':</div>
+<div>            numero_decimal += int(cadena[indice]) * 2** posicion_bit</div>
+<div>            posicion_bit += 1</div>
+<div>        else:</div>
+<div>            es_bianrio = False</div>
+<div>            break</div>
+<div>    if es_bianrio:</div>
+<div>        print(f"El valor de {cadena} en decimal es {numero_decimal}")</div>
+<div>    else:</div>
+<div>        print("No binario")</div>
+<div> </div>
+<div> </div>
+<div>def sesenta_tres():</div>
+<div>    """</div>
+<div>    63.     Hay un tipo de pasatiempos que propone descifrar un texto del que se han suprimido las vocales.</div>
+<div>    Por ejemplo, el texto ((.n .j.mpl. d. p.s.t..mp.s)), se descifra sustituyendo cada punto con una vocal del texto.</div>
+<div>    La solución es ((un ejemplo de pasatiempos)). Diseña un programa que ayude al creador de pasatiempos.</div>
+<div>    El programa recibirá una cadena y mostrará otra en la que cada vocal ha sido reemplazada por un punto.</div>
+<div> </div>
+<div> </div>
+<div>    Fácil</div>
+<div>    """</div>
+<div>    cadena = None</div>
+<div>    cadena = input("Cadena a cambiar?")</div>
+<div>    for caracter in cadena:</div>
+<div>        if caracter in "aeiou":</div>
+<div>            print(".", end='')</div>
+<div>        else:</div>
+<div>            print(caracter, end='')</div>
+<div> </div>
+<div> </div>
+<div>def sesenta_cuatro():</div>
+<div>    """</div>
+<div>    64.     Una de las técnicas de criptografía más rudimentarias consiste en sustituir cada uno de los caracteres por otro</div>
+<div>    situado n posiciones más a la derecha. Si n = 2, por ejemplo, sustituiremos la ((a)) por la ((c)), la ((b))</div>
+<div>    por la ((e)), y así sucesivamente.</div>
+<div>    El problema que aparece en las últimas n letras del alfabeto tiene fácil solución:</div>
+<div>    en el ejemplo, la letra ((y)) se sustituirá por la ((a)) y la letra ((z)) por la ((b)).</div>
+<div>    La sustitución debe aplicarse a las letras minúsculas y mayúsculas y a los dígitos</div>
+<div>    (el ((0)) se sustituye por el ((2)), el ((1)) por el ((3)) y así hasta llegar al ((9)),</div>
+<div>    que se sustituye por el ((1))).</div>
+<div>    Diseña un programa que lea un texto y el valor de n y muestre su versión criptografía.</div>
+<div> </div>
+<div>    Medio</div>
+<div>    """</div>
+<div> </div>
+<div>    def buscar_posicion(caracter, cadena):</div>
+<div>        contador = 0</div>
+<div>        for caracter_de_cadena in cadena:</div>
+<div>            if caracter != caracter_de_cadena:</div>
+<div>                contador += 1</div>
+<div>            else:</div>
+<div>                break</div>
+<div>        return contador</div>
+<div> </div>
+<div>    letras_alfabeto = "abcdefghijklmnñopq"</div>
+<div>    numeros = "0123456789"</div>
+<div>    cadena_original = cadena_cifrada = ""</div>
+<div>    cadena_original = input("Cadena a trasladar?").lower()</div>
+<div> </div>
+<div>    for indice in range(len(cadena_original)):</div>
+<div>        if cadena_original[indice] in letras_alfabeto:</div>
+<div>            indice_actual = buscar_posicion(cadena_original[indice], letras_alfabeto)</div>
+<div>            print(letras_alfabeto[(indice_actual + 2) % len(letras_alfabeto)], end='')</div>
+<div>        elif cadena_original[indice] in numeros:</div>
+<div>            indice_actual = buscar_posicion(cadena_original[indice], numeros)</div>
+<div>            print(numeros[(indice_actual + 2) % len(numeros)], end='')</div>
+<div>        else:</div>
+<div>            print(cadena_original[indice], end='')</div>
+<p> </p>
+<div></div>
+<div> </div>
+<div>def sesenta_cinco():</div>
+<div>    """</div>
+<div>        Hacer un programa que calcule la corona circular pidiendo los dos radios pero usando una función</div>
+<div>        que calcule el área de un círculo</div>
+<div>    """</div>
+<div>    def calcular_area(radio):</div>
+<div>        return math.pi * radio ** 2</div>
+<div> </div>
+<div>    radio_mayor = radio_menor = area_corona_circular = 0</div>
+<div>    radio_mayor = int(input("Radio mayor?"))</div>
+<div>    radio_menor = int(input("Radio menor?"))</div>
+<div> </div>
+<div>    area_corona_circular = abs(calcular_area(radio_mayor) - calcular_area(radio_menor))</div>
+<div>    print(f"La corona tiene un área de {area_corona_circular}")</div>
+<div> </div>
+<div> </div>
+<div>def sesenta_seis():</div>
+<div>    """</div>
+<div>        Hacer un programa que pida dos listas y calcule la suma vectorial y el producto definido según el</div>
+<div>        siguiente ejemplo usando una función para cada operación</div>
+<div>        (a,b,c) + (d,e,f) -&gt; (a+d,b+e,c+f)   (a,b,c) * (d,e,f) -&gt; a*d+b*e+c*f</div>
+<div>    """</div>
+<div>    def sumar(vector_1, vector_2):</div>
+<div>        ret = [None, None, None, None, None]</div>
+<div>        for index in range(len(vector_1)):</div>
+<div>            ret[index] = vector_1[index] + vector_2[index]</div>
+<div>        return ret</div>
+<div> </div>
+<div>    def multiplicar(vector_1, vector_2):</div>
+<div>        ret = 0</div>
+<div>        for index in range(len(vector_1)):</div>
+<div>            ret += vector_1[index] * vector_2[index]</div>
+<div>        return ret</div>
+<div> </div>
+<div>    NUMERO_ELEMENTOS = 5</div>
+<div>    vector_1 = [None, None, None, None, None]</div>
+<div>    vector_2 = [None, None, None, None, None]</div>
+<div>    for index in range(NUMERO_ELEMENTOS):</div>
+<div>        vector_1[index] = int(input("Primer Vector?"))</div>
+<div>        vector_2[index] = int(input("Segundo Vector?"))</div>
+<div> </div>
+<div>    print(f"La suma es:{sumar(vector_1, vector_2)}")</div>
+<div>    print(f"La multiplicación es:{multiplicar(vector_1, vector_2)}")</div>
+<div> </div>
+<div> </div>
+<div>def sesenta_siete():</div>
+<div>    """</div>
+<div>        Hacer un programa que calcule el máximo y el mínimo de 5 elementos guardados en una lista</div>
+<div>           --&gt; con una función para max y otra para min</div>
+<div>           --&gt; con una función solo y un parámtro que indique si es máx o min</div>
+<div>    """</div>
+<div>    def maximo(valores):</div>
+<div>        valor_maximo = valores[0]</div>
+<div>        for index in range(1, len(valores)):</div>
+<div>            valor_maximo = valor_maximo if valores[index] &lt;= valor_maximo else valores[index]</div>
+<div>        return valor_maximo</div>
+<div> </div>
+<div>    def minimo(valores):</div>
+<div>        valor_minimo = valores[0]</div>
+<div>        for index in range(1, len(valores)):</div>
+<div>            valor_minimo = valor_minimo if valor_minimo &lt;= valores[index] else valores[index]</div>
+<div>        return valor_minimo</div>
+<div> </div>
+<div>    def max_min(valores, tipo):</div>
+<div>        ret = 0</div>
+<div>        if tipo == "M":</div>
+<div>            ret = maximo(valores)</div>
+<div>        else:</div>
+<div>            ret = minimo(valores)</div>
+<div>        return ret</div>
+<div> </div>
+<div>    valores = [None, None, None, None, None]</div>
+<div>    for index in range(len(valores)):</div>
+<div>        valores[index] = int(input("Valor?"))</div>
+<div>    print(f"EL mayor es:{maximo(valores)}")</div>
+<div>    print(f"EL mínimo es:{minimo(valores)}")</div>
+<div>    print(f"EL mayor es:{max_min(valores, 'M')}")</div>
+<div>    print(f"EL mínimo es:{max_min(valores, 'm')}")</div>
+<div> </div>
+<div> </div>
+<div>def sesenta_ocho():</div>
+<div>    """</div>
+<div>        Hacer un programa que pida dos conjuntos de de 5 elementos</div>
+<div>        (los conjunto no tienen elementos repetidos)</div>
+<div>        y nos haga la unión y la intersección con funciones</div>
+<div>    """</div>
+<div> </div>
+<div>    def esta_en_conjunto(valor, conjunto):</div>
+<div>        ret = False</div>
+<div>        for elemento in conjunto:</div>
+<div>            if elemento == valor:</div>
+<div>                ret = True</div>
+<div>                break</div>
+<div>        return ret</div>
+<div> </div>
+<div>    def pedir_conjunto():</div>
+<div>        ret = [None, None, None, None, None]</div>
+<div>        total_elementos = len(ret)</div>
+<div>        elemento_actual = 0</div>
+<div>        while elemento_actual &lt; total_elementos:</div>
+<div>            valor = int(input(f"Valor {elemento_actual}?"))</div>
+<div>            if not esta_en_conjunto(valor, ret):</div>
+<div>                ret[elemento_actual] = valor</div>
+<div>                elemento_actual += 1</div>
+<div>        return ret</div>
+<div> </div>
+<div>    def union(conjunto_1, conjunto_2):</div>
+<div>        ret = conjunto_1.copy()  # para no modificar el externo</div>
+<div>        for elemento in conjunto_2:</div>
+<div>            if not esta_en_conjunto(elemento, ret):</div>
+<div>                ret.append(elemento)</div>
+<div>        return ret</div>
+<div> </div>
+<div>    def interseccion(conjunto_1, conjunto_2):</div>
+<div>        ret = []</div>
+<div>        for elemento in conjunto_1:</div>
+<div>            if esta_en_conjunto(elemento, conjunto_2):</div>
+<div>                ret.append(elemento)</div>
+<div>        return ret</div>
+<div> </div>
+<div>    conjunto_1 = pedir_conjunto()</div>
+<div>    conjunto_2 = pedir_conjunto()</div>
+<div> </div>
+<div>    print(f"{conjunto_1=}, {conjunto_2=}")</div>
+<div>    print(f"La unión es{union(conjunto_1, conjunto_2)}")</div>
+<div>    print(f"La intersección es{interseccion(conjunto_1, conjunto_2)}")</div></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice em_iDevice_activity" id="id182-111">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta182_182_2" class="block iDevice_content">
+<p>69.   Encontrar todos los números que son amigos hasta un número pedido. Dos números son amigos si la suma de sus divisores es igual al otro número y viceversa:</p>
+<div style="padding-left: 30px;">284 --&gt; 1+2+4+71+142 = 220</div>
+<div style="padding-left: 30px;">220 --&gt; 1+2+4+5+10+11+20+22+44+55+110 = 284</div>
+<p>70.   Diseña un programa que permita jugar a dos personas al tres en raya.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-37">
+<header class="nodeDecoration">
+<h1 id="exenode_37_Resumen" class="nodeTitle">Resumen</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_objectives" id="id143-37">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_objectives.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta143_183_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-mind-map">
+<figure class="exe-figure exe-image position-center" style="width: 1159px;"><img src="map_1640013580463.png" width="1159" height="526" alt="Resumen" />
+<figcaption class="figcaption"><span class="title"><em>Resumen</em></span></figcaption>
+</figure>
+<p class="exe-mindmap-code">{"id":"4a770580-6ba9-41fa-ba3d-990b78a9912b","title":"Estructuras de control","mindmap":{"root":{"id":"bffdb79e-7d01-4df7-b851-c0ef696609ef","parentId":null,"text":{"caption":"Estructuras de control","font":{"style":"normal","weight":"bold","decoration":"none","size":20,"color":"#000000"}},"offset":{"x":0,"y":0},"foldChildren":false,"branchColor":"#000000","children":[{"id":"6e2f010b-099c-4ae0-9749-60ad537c43db","parentId":"bffdb79e-7d01-4df7-b851-c0ef696609ef","text":{"caption":"Expresiones","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":122,"y":-79},"foldChildren":false,"branchColor":"#8f3c4f","children":[{"id":"4190a916-5311-45a2-8d80-38a3de8cce43","parentId":"6e2f010b-099c-4ae0-9749-60ad537c43db","text":{"caption":"Operadores","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":116,"y":-41},"foldChildren":false,"branchColor":"#8f3c4f","children":[{"id":"cb7dfc40-e32f-45f3-9224-3c65d06746aa","parentId":"4190a916-5311-45a2-8d80-38a3de8cce43","text":{"caption":"Operador ternario","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":114,"y":-44},"foldChildren":false,"branchColor":"#8f3c4f","children":[]},{"id":"a34ad83f-542b-464b-9406-6b3c6c739317","parentId":"4190a916-5311-45a2-8d80-38a3de8cce43","text":{"caption":"Operadores binarios","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":125,"y":3},"foldChildren":false,"branchColor":"#8f3c4f","children":[]},{"id":"d777bbe9-0eb1-4c9d-8c0f-ddb35a175acf","parentId":"4190a916-5311-45a2-8d80-38a3de8cce43","text":{"caption":"Operadores unarios","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":136,"y":52},"foldChildren":false,"branchColor":"#8f3c4f","children":[]}]},{"id":"c36e28c3-e814-4685-8913-a54576fb3646","parentId":"6e2f010b-099c-4ae0-9749-60ad537c43db","text":{"caption":"Operandos","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":121,"y":4},"foldChildren":false,"branchColor":"#8f3c4f","children":[]},{"id":"ed8f7075-0c19-4e70-8eaf-f9fc56b36d51","parentId":"6e2f010b-099c-4ae0-9749-60ad537c43db","text":{"caption":"Concatenación","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":116,"y":55},"foldChildren":false,"branchColor":"#8f3c4f","children":[]}]},{"id":"722fe880-0a63-48e7-9e89-48e1d881ea7b","parentId":"bffdb79e-7d01-4df7-b851-c0ef696609ef","text":{"caption":"Estructuras de selección","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":118,"y":99},"foldChildren":false,"branchColor":"#d80beb","children":[{"id":"d7cc321f-c9e2-48fe-bc56-120f8c694e34","parentId":"722fe880-0a63-48e7-9e89-48e1d881ea7b","text":{"caption":"if -else","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":185,"y":-30},"foldChildren":false,"branchColor":"#d80beb","children":[]},{"id":"4bf24609-2690-4c95-89f5-e26d8ad3927d","parentId":"722fe880-0a63-48e7-9e89-48e1d881ea7b","text":{"caption":"if elif - else","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":189,"y":28},"foldChildren":false,"branchColor":"#d80beb","children":[]}]},{"id":"43ad627c-dfd5-4145-bcfd-3575784eb656","parentId":"bffdb79e-7d01-4df7-b851-c0ef696609ef","text":{"caption":"Estructuras de repetición","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-206,"y":-88},"foldChildren":false,"branchColor":"#30e8c0","children":[{"id":"d325fd6b-eace-48bc-9dc7-6a4395c7873f","parentId":"43ad627c-dfd5-4145-bcfd-3575784eb656","text":{"caption":"range","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-99,"y":-22},"foldChildren":false,"branchColor":"#30e8c0","children":[]},{"id":"606be925-71c9-4248-a040-c868b5fb25b8","parentId":"43ad627c-dfd5-4145-bcfd-3575784eb656","text":{"caption":"for in","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-104,"y":31},"foldChildren":false,"branchColor":"#30e8c0","children":[]},{"id":"eaf6e0df-3f82-41e3-89e4-2a88ae1a06a9","parentId":"43ad627c-dfd5-4145-bcfd-3575784eb656","text":{"caption":"while","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-111,"y":76},"foldChildren":false,"branchColor":"#30e8c0","children":[]}]},{"id":"577df09a-4dca-486e-9e23-43903c254789","parentId":"bffdb79e-7d01-4df7-b851-c0ef696609ef","text":{"caption":"Ruptura de flujo","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-177,"y":-196},"foldChildren":false,"branchColor":"#f8d91f","children":[{"id":"1493759d-9bd1-44cc-90f3-e873e4ab2c3f","parentId":"577df09a-4dca-486e-9e23-43903c254789","text":{"caption":"break","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-101,"y":-24},"foldChildren":false,"branchColor":"#f8d91f","children":[]},{"id":"6537a7c9-c211-4f71-8991-d3630b19e323","parentId":"577df09a-4dca-486e-9e23-43903c254789","text":{"caption":"continue","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-114,"y":22},"foldChildren":false,"branchColor":"#f8d91f","children":[]}]},{"id":"f813c902-db52-4b32-9e63-a87c80513fbb","parentId":"bffdb79e-7d01-4df7-b851-c0ef696609ef","text":{"caption":"Prueba y depuración","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":68,"y":-162},"foldChildren":false,"branchColor":"#5a219a","children":[]},{"id":"f81e8dea-20bf-4fc7-b06e-3e11a9a047d1","parentId":"bffdb79e-7d01-4df7-b851-c0ef696609ef","text":{"caption":"Documentación","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":101,"y":194},"foldChildren":false,"branchColor":"#178310","children":[{"id":"aff6bdef-a4c2-4ecf-ab1f-b2a3eed225be","parentId":"f81e8dea-20bf-4fc7-b06e-3e11a9a047d1","text":{"caption":"Interna","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":146,"y":-22},"foldChildren":false,"branchColor":"#178310","children":[]},{"id":"885456e9-2b2e-435b-9d1a-6d9ab177064f","parentId":"f81e8dea-20bf-4fc7-b06e-3e11a9a047d1","text":{"caption":"Externa","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":147,"y":46},"foldChildren":false,"branchColor":"#178310","children":[]}]},{"id":"512d2570-23bf-4f4d-9d58-44a2e46bb446","parentId":"bffdb79e-7d01-4df7-b851-c0ef696609ef","text":{"caption":"Estilo Pep 8","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-228,"y":42},"foldChildren":false,"branchColor":"#649247","children":[]},{"id":"1e14f264-af3d-42cb-a89c-3ab7cf65647a","parentId":"bffdb79e-7d01-4df7-b851-c0ef696609ef","text":{"caption":"Programación modular","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-194,"y":129},"foldChildren":false,"branchColor":"#b6e205","children":[{"id":"20f49771-6f95-4bdf-b32b-b28740ddd4a5","parentId":"1e14f264-af3d-42cb-a89c-3ab7cf65647a","text":{"caption":"Procedimientos y funciones","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-151,"y":1},"foldChildren":false,"branchColor":"#b6e205","children":[{"id":"9174bb09-2df4-4e1f-9428-cec1f85662b6","parentId":"20f49771-6f95-4bdf-b32b-b28740ddd4a5","text":{"caption":"Definición","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-114,"y":-84},"foldChildren":false,"branchColor":"#b6e205","children":[]},{"id":"a962acc2-6b1b-4877-b4d2-f32dbee00974","parentId":"20f49771-6f95-4bdf-b32b-b28740ddd4a5","text":{"caption":"Ámbito de las variables","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-195,"y":-38},"foldChildren":false,"branchColor":"#b6e205","children":[]},{"id":"21773fd6-49dc-43b1-adaf-af473d4ac8f2","parentId":"20f49771-6f95-4bdf-b32b-b28740ddd4a5","text":{"caption":"Parámetros","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-132,"y":55},"foldChildren":false,"branchColor":"#b6e205","children":[{"id":"7e1ad218-d3ab-495b-a44c-22e6b717445c","parentId":"21773fd6-49dc-43b1-adaf-af473d4ac8f2","text":{"caption":"entrada","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-94,"y":-35},"foldChildren":false,"branchColor":"#b6e205","children":[]},{"id":"73caf878-2096-46c1-bae0-49702f21b655","parentId":"21773fd6-49dc-43b1-adaf-af473d4ac8f2","text":{"caption":"Salida","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-111,"y":6},"foldChildren":false,"branchColor":"#b6e205","children":[]},{"id":"180d0730-6837-4415-b758-e345c4a05a0e","parentId":"21773fd6-49dc-43b1-adaf-af473d4ac8f2","text":{"caption":"Entrada - salida","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-150,"y":49},"foldChildren":false,"branchColor":"#b6e205","children":[]}]}]}]}]}},"dates":{"created":1640013001051,"modified":1640013572546},"dimensions":{"x":4000,"y":2000},"autosave":false}</p>
+</div>
+<p>...</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+
+<footer id="siteFooter">César San Juan Pastor - IES Arcipreste de Hita</footer>
+</div>
+<script type="text/javascript" src="_cedec_js.js"></script></body>
+</html>
