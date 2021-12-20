@@ -5759,7 +5759,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
               <string role="key" value="edit"></string>
               <bool value="0"></bool>
               <string role="key" value="emphasis"></string>
-              <int value="1"></int>
+              <int value="0"></int>
               <string role="key" value="exe.engine.jsidevice.JsIdevice.persistenceVersion"></string>
               <int value="1"></int>
               <string role="key" value="fields"></string>
@@ -5808,7 +5808,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                </instance>
               </list>
               <string role="key" value="icon"></string>
-              <unicode value="book"></unicode>
+              <unicode value=""></unicode>
               <string role="key" value="id"></string>
               <unicode value="171"></unicode>
               <string role="key" value="ideviceCategory"></string>
@@ -8753,7 +8753,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
   <string role="key" value="backgroundImgTile"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="127"></reference>
+  <reference key="110"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>
