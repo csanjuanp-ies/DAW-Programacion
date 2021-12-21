@@ -28,7 +28,7 @@
 
 [Anexos](https://htmlpreview.github.io/?https://github.com/csanjuanp-ies/DAW-Programacion/blob/main/anexos/html/index.html)
 
-[Licencia](https://github.com/csanjuanp-ies/DAW-Programacion/blob/main/LICENSE)
+[Licencia](https://htmlpreview.github.io/?https://github.com/csanjuanp-ies/DAW-Programacion/blob/main/LICENSE)
 
 ## Bibliografía
 - Python 3 Los fundamentos del lenguaje (3a edición), Sébastien CHAZALLET, Ediciones ENI, ISBN 978-2-409-02478-8
