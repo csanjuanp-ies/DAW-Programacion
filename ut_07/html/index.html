@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>1º DAW - Programación - UT 7</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="César San Juan Pastor" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<meta name="description" content="  Unidad práctica en la que se introducen los conceptos de las estructuras de datos bajo POO." />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+<body class="exe-single-page"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<header id="header">
+<div id="headerContent">
+<h1>1º DAW - Programación - UT 7</h1>
+</div>
+</header>
+<section id="main">
+<article class="node level-1-node" id="exe-node-0">
+<header class="nodeDecoration">
+<h1 id="exenode_0_UT7Proyecto" class="nodeTitle">U.T. 7 Proyecto</h1>
+</header>
+</article>
+<article class="node level-2-node" id="exe-node-3">
+<header class="nodeDecoration">
+<h1 id="exenode_3_Orientaciones" class="nodeTitle">Orientaciones</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id5-3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Orientaciones</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta5_116_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Esta unidad de trabajo vamos crear un proyecto completo que nos permitirá aunar todos los conceptos.</p>
+<p style="text-align: justify;">Es necesario el conocimiento de las unidades anteriores.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-176">
+<header class="nodeDecoration">
+<h1 id="exenode_176_71CasoPrctico" class="nodeTitle">7.1. Caso Práctico</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id274-176">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><h2 class="iDeviceTitle">Objetivo</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta274_274_2" class="block iDevice_content">
+<div class="exe-text"><p>Desarrollar un pequeño videojuego educativo para adolescentes llamado ‘Star Wars Códigos Secretos’ que fomente la comprensión lectora y la competencia matemática. Estará ambientado en el universo de Star Wars con un estilo de aventura conversacional sencillo en el que el usuario tendrá que superar varias pruebas matemáticas para conseguir destruir la estrella de la muerte.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id275-176">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Descripción del juego</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta275_275_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>El videojuego es una aventura conversacional clásica en la que se muestra texto por pantalla (para contar lo que sucede en la aventura y mostrar la pregunta de cada prueba) y el usuario interactúa escribiendo por teclado para intentar superar cada prueba (introduciendo la respuesta correcta).</li>
+<li>La aventura estará estructurada en etapas (Inicio, Nivel 1, Nivel 2… Fin). En el apartado 3 de este documento se explica en detalle qué texto se ha de mostrar en cada etapa, así como las preguntas y respuestas. Es decir, el videojuego ya está pensado y diseñado, vuestro trabajo consiste en programarlo siguiendo el diseño y la descripción de este documento.</li>
+<li>El videojuego comienza siempre por la etapa Inicio en la que se mostrará un texto por pantalla (la introducción a la aventura) y se pasa al Nivel 1 (se sigue contando la historia y se plantea una prueba, una pregunta). Si el usuario responde correctamente pasa al Nivel 2 (sigue la historia y se plantea otra pregunta), etc. Así nivel tras nivel hasta superar el último y pasar a la etapa Ganar (se muestra un texto contando el final feliz y el juego termina).</li>
+<li>Si en algún nivel el usuario contesta mal a la pregunta, se pasa directamente a la etapa Perder (se muestra un texto y el juego termina).</li>
+<li>Las preguntas utilizan números aleatorios para que cada vez que juegues se utilicen números distintos y no sean siempre iguales (ver apartado 4).</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-177">
+<header class="nodeDecoration">
+<h1 id="exenode_177_711Inicio" class="nodeTitle">7.1.1. Inicio</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id276-177">
+<div class="iDevice emphasis0" >
+<div id="ta276_276_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Texto a mostrar:  === STAR WARS CÓDIGOS SECRETOS ===</li>
+<li>Hace mucho tiempo, en una galaxia muy, muy lejana… La Princesa Leia, Luke Skywalker, Han Solo, Chewbacca, C3PO y R2D2 viajan en una nave imperial robada en una misión secreta para infiltrarse en otra estrella de la muerte que el imperio está construyendo para destruirla. (Presiona Intro para continuar)</li>
+<li>Acción  Tras presionar Intro -&gt; Nivel 1</li>
+</ul></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-178">
+<header class="nodeDecoration">
+<h1 id="exenode_178_712Nivel1" class="nodeTitle">7.1.2. Nivel 1</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id277-178">
+<div class="iDevice emphasis0" >
+<div id="ta277_277_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Texto a mostrar:  Los problemas empiezan cuando deben realizar un salto hiperespacial hasta al sistema S1 en el sector S2, pero el sistema de navegación está estropeado y el computador tiene problemas para calcular parte de las coordenadas de salto. Chewbacca, piloto experto, se da cuenta que falta el cuarto número de la serie. Recuerda de sus tiempos en la academia de pilotos que para calcularlo hay que calcular el sumatorio entre el número del sistema y el número del sector (ambos inclusive).</li>
+<li>¿Qué debe introducir?</li>
+<li>Variables  S1: Número entero aleatorio entre 1 y 10.    S2: Número entero aleatorio entre 20 y 30.</li>
+<li>Respuesta  Sumatorio desde S1 hasta S2. Por ejemplo, con S1=10, S2=20, la respuesta correcta sería 10+11+12+13+14+15+16+17+18+19+20 = 165.</li>
+<li>Acción  Si correcto -&gt; Nivel 2. Si no -&gt; Perder</li>
+</ul></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-179">
+<header class="nodeDecoration">
+<h1 id="exenode_179_712Nivel2" class="nodeTitle">7.1.2. Nivel 2</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id278-179">
+<div class="iDevice emphasis0" >
+<div id="ta278_278_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Texto a mostrar:  Gracias a Chewbacca consiguen llegar al sistema correcto y ven a lo lejos la estrella de la muerte. Como van en una nave imperial robada se aproximan lentamente con la intención de pasar desapercibidos. De repente suena el comunicador. “Aquí agente de espaciopuerto P1 contactando con nave imperial P2. No están destinados en este sector. ¿Qué hacen aquí?”. Han Solo coge el comunicador e improvisa. “Eh… tenemos un fallo en el… eh… condensador de fluzo... Solicitamos permiso para atracar y reparar la nave”. El agente, que no se anda con tonterías, responde “Proporcione código de acceso o abriremos fuego”. Han Solo ojea rápidamente el manual del piloto que estaba en la guantera y da con la página correcta. El código es el productorio entre el número del agente y el número de la nave (ambos inclusive).</li>
+<li>¿Cuál es el código?</li>
+<li>Variables  P1: Número entero aleatorio entre 1 y 7.  P2: Número entero aleatorio entre 8 y 12.</li>
+<li>Respuesta  Productorio entre P1 y P2. Por ejemplo, con P1=5, P2=10, la respuesta correcta sería 5*6*7*8*9*10 = 151200.</li>
+<li>Acción  Si correcto -&gt; Nivel 3. Si no -&gt; Perder</li>
+</ul></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-180">
+<header class="nodeDecoration">
+<h1 id="exenode_180_713Nivel3" class="nodeTitle">7.1.3. Nivel 3</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id279-180">
+<div class="iDevice emphasis0" >
+<div id="ta279_279_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Texto a mostrar:  Han Solo proporciona el código correcto. Atracan en la estrella de la muerte, se equipan con trajes de soldados imperiales que encuentran en la nave para pasar desapercibidos y bajan. Ahora deben averiguar en qué nivel de los N existentes se encuentra el reactor principal. Se dirigen al primer panel computarizado que encuentran y la Princesa Leia intenta acceder a los planos de la nave, pero necesita introducir una clave de acceso. Entonces recuerda la información que le proporcionó Lando Calrissian “La clave de acceso a los planos de la nave es el factorial de N/10 (redondeando N hacia abajo), donde N es el número de niveles”.</li>
+<li>¿Cuál es el nivel correcto?</li>
+<li>Variables  N: Número entero aleatorio entre 50 y 100.</li>
+<li>Respuesta  Factorial de N/10, redondeando hacia abajo. Por ejemplo si N=78, entonces la respuesta correcta sería 7! = 1*2*3*4*5*6*7 = 5040.</li>
+<li>Acción  Si correcto -&gt; Nivel 4. Si no -&gt; Perder</li>
+</ul></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-181">
+<header class="nodeDecoration">
+<h1 id="exenode_181_714Nivel4" class="nodeTitle">7.1.4. Nivel 4</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id280-181">
+<div class="iDevice emphasis0" >
+<div id="ta280_280_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Texto a mostrar:  Gracias a la inteligencia de Leia llegan al nivel correcto y encuentran la puerta acorazada que da al reactor principal. R2D2 se conecta al panel de acceso para intentar hackear el sistema y abrir la puerta. Para desencriptar la clave necesita verificar si el número P es primo o no. Si es primo introduce un 1, si no lo es introduce un 0.</li>
+<li>Variables  P: Número entero aleatorio entre 10 y 100.</li>
+<li>Respuesta  1 si P es primo, 0 en caso contrario.</li>
+<li>Por ejemplo, si P=11 como 11 es primo se introduce un 1.</li>
+<li>Acción  Si correcto -&gt; Nivel 5. Si no -&gt; Perder</li>
+</ul></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-182">
+<header class="nodeDecoration">
+<h1 id="exenode_182_715Nivel5" class="nodeTitle">7.1.5. Nivel 5</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id281-182">
+<div class="iDevice emphasis0" >
+<div id="ta281_281_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Texto a mostrar:  Consiguen entrar al reactor. Ya solo queda que Luke Skywalker coloque la bomba, programe el temporizador y salir de allí corriendo. Necesita programarlo para que explote en exactamente M minutos y S segundos, el tiempo suficiente para escapar antes de que explote, pero sin que el sistema de seguridad anti-explosivos detecte y desactive la bomba. Pero el temporizador utiliza un reloj Zordgiano un tanto peculiar. Para convertir los minutos y segundos al sistema Zordgiano hay que sumar el factorial de M y el factorial de S.</li>
+<li>¿Qué valor debe introducir?</li>
+<li>Variables  M: Número entero aleatorio entre 5 y 10.   S: Número entero aleatorio entre 5 y 10.</li>
+<li>Respuesta  Si por ejemplo M = 7 y S = 5, habría que calcular (1*2*3*4*5*6*7) + (1*2*3*4*5) que sería 5040 + 120 = 5160</li>
+<li>Acción  Si correcto -&gt; Ganar. Si no -&gt; Perder</li>
+</ul></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-183">
+<header class="nodeDecoration">
+<h1 id="exenode_183_716Ganar" class="nodeTitle">7.1.6. Ganar</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id282-183">
+<div class="iDevice emphasis0" >
+<div id="ta282_282_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Texto a mostrar:  Luke Skywalker introduce el tiempo correcto, activa el temporizador y empiezan a sonar las alarmas. Salen de allí corriendo, no hay tiempo que perder. La nave se convierte en un hervidero de soldados de arriba a abajo y entre el caos que les rodea consiguen llegar a la nave y salir de allí a toda prisa. A medida que se alejan observan por la ventana la imagen de la colosal estrella de la muerte explotando en el silencio del espacio, desapareciendo para siempre junto a los restos del malvado imperio.</li>
+<li>¡Has salvado la galaxia gracias a la Fuerza Jedi de las matemáticas! Enhorabuena ;D</li>
+<li>Acción  Se pasa automáticamente a la etapa Fin</li>
+</ul></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-184">
+<header class="nodeDecoration">
+<h1 id="exenode_184_717Perder" class="nodeTitle">7.1.7. Perder</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id283-184">
+<div class="iDevice emphasis0" >
+<div id="ta283_283_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Texto a mostrar:  Ese no era el código correcto… La misión ha sido un fracaso… :( :( :(</li>
+<li>Todavía no eres un Maestro Jedi de las Matemáticas. ¡Vuelve a intentarlo!</li>
+<li>Acción  Se pasa automáticamente a la etapa Fin</li>
+</ul></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-185">
+<header class="nodeDecoration">
+<h1 id="exenode_185_718Fin" class="nodeTitle">7.1.8. Fin</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id284-185">
+<div class="iDevice emphasis0" >
+<div id="ta284_284_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Texto a mostrar  Gracias por jugar :D</li>
+<li>Acción  Ninguna. El programa termina.</li>
+</ul></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-186">
+<header class="nodeDecoration">
+<h1 id="exenode_186_72Aleatoriedaddelaspreguntas" class="nodeTitle">7.2. Aleatoriedad de las preguntas</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id285-186">
+<div class="iDevice emphasis0" >
+<div id="ta285_285_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>Para que el juego sea más interesante se utilizarán números aleatorios en las preguntas. Así, aunque la historia sea la misma, en cada partida la respuesta correcta será diferente.</li>
+<li>Para ello necesitarás utilizar el método <strong>random</strong>() que proporciona un número pseudoaleatorio entre 0.0 y 1.0. o <strong>choice</strong>() que elige entre un conjunto de opciones</li>
+<li>Y tener definidas diferentes preguntas por niveles en estructuras de datos.</li>
+</ul></div>
+</div>
+</div>
+</article>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+
+<footer id="siteFooter">César San Juan Pastor - IES Arcipreste de Hita</footer>
+</div>
+<script type="text/javascript" src="_cedec_js.js"></script></body>
+</html>
