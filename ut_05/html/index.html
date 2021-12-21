@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>1º DAW - Programación - UT 5</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="César San Juan Pastor" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<meta name="description" content="  Unidad práctica en la que se introducen los conceptos del paradigma de POO." />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+<body class="exe-single-page"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<header id="header">
+<div id="headerContent">
+<h1>1º DAW - Programación - UT 5</h1>
+</div>
+</header>
+<section id="main">
+<article class="node level-1-node" id="exe-node-0">
+<header class="nodeDecoration">
+<h1 id="exenode_0_UT5POOenPythonI" class="nodeTitle">U.T. 5 POO en Python (I)</h1>
+</header>
+</article>
+<article class="node level-2-node" id="exe-node-3">
+<header class="nodeDecoration">
+<h1 id="exenode_3_Orientaciones" class="nodeTitle">Orientaciones</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id5-3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Orientaciones</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta5_116_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Esta unidad de trabajo vamos a conocer el paradigma orientado a objetos, introduciendo de forma práctica los conceptos de Clases, objetos, métodos, propiedades y sus relaciones, así como las librerías y los paquetes. Veremos el uso y la creación de todos estos conceptos con ejemplos.</p>
+<p style="text-align: justify;">Esta unidad es eminentemente práctica se plasmarán todos los conceptos en ejemplos y ejercicios.</p>
+<p style="text-align: justify;">Es necesario el conocimiento de las unidades anteriores.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-41">
+<header class="nodeDecoration">
+<h1 id="exenode_41_41Clases" class="nodeTitle">4.1. Clases</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id73-41">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta73_113_2" class="block iDevice_content">
+<div class="exe-text"><p>Una clase describe un grupo de objetos que contienen una información similar (atributos) y un comportamiento común (métodos).</p>
+<p>Las definiciones comunes (nombre de la clase, los nombres de los atributos, y los métodos) se almacenan una única vez en cada clase, independientemente de cuántos objetos de esa clase estén presentes en el sistema.</p>
+<p>Una clase es como un molde, a partir de ella se pueden crear objetos. Es decir, antes de poder utilizar un objeto se debe definir la clase a la que pertenece.</p>
+<p>En notación UML la estructura de una clase se define así:</p>
+<p><img src="00.png" alt="Clase UML" width="188" height="83" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice em_iDevice_activity" id="id210-41">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Definir una clase persona</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta210_210_2" class="block iDevice_content">
+<p>La clase Persona contiene dos atributos (variables) para almacenar datos sobre una persona (nombre y edad) además de varios métodos (es mayor de edad, imprimir el nombre) que hacen cosas con dichos datos.</p>
+<p><img src="01.png" alt="Clase Persona" width="247" height="122" /></p>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id211-41">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Elementos constituyentes de un clase</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta211_211_2" class="block iDevice_content">
+<div class="exe-text"><p>Los atributos y métodos de una clase se llaman <strong>miembros de una clase</strong>. Los atributos de una clase se llaman <strong>variables de instancia</strong> porque cada instancia de la clase (es decir, cada objeto de la clase), contiene sus propias variables atributo. Por lo tanto, los datos de cada objeto son individuales e independiente de los demás objetos, las variables que se comparten entre todos los objetos se llaman <strong>variables de clase</strong>.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-131">
+<header class="nodeDecoration">
+<h1 id="exenode_131_411Visibilidad" class="nodeTitle">4.1.1. Visibilidad</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id212-131">
+<div class="iDevice emphasis0" >
+<div id="ta212_212_2" class="block iDevice_content">
+<div class="exe-text"><p>La visibilidad permite que los métodos y propiedades de una clase sean utilizados de forma correcta por otros elementos del programa. La visibilidad puede ser pública (el signo + se utiliza para representar la visibilidad en una definición de clase), privada (-) o protegida (#). En caso de visibilidad pública cualquier parte del programa tendrá acceso, tanto la propia definición de clase como partes externas a la misma. Si la visibilidad es privada, solo la clase tiene acceso a dichos datos u operaciones, ni partes externas ni otras clases podrán utilizarla. Por último, en caso que sea protegida, tanto la propia clase, como cualquiera que herede de ella podrán utilizar el método o propiedad, estando prohibido el uso a otras clases o partes externas.</p>
+<p><img src="02.png" alt="Visibilidad de un clase" width="359" height="181" /></p>
+<p>Python utiliza una programación muy fácil, limitando el número de estructuras y características posibles en el lenguaje, lo que hace que el inicio y las características de la POO también sean sencillas.</p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">Python solo implementa una visibilidad pública, todos los métodos y atributos son públicos</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-132">
+<header class="nodeDecoration">
+<h1 id="exenode_132_412Definicin" class="nodeTitle">4.1.2. Definición</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id213-132">
+<div class="iDevice emphasis0" >
+<div id="ta213_213_2" class="block iDevice_content">
+<div class="exe-text"><p>La definición de una clase siempre comienza con la palabra clave <strong>class</strong> seguida del nombre de la clase y terminada con los dos puntos(<strong>:</strong>), en caso que se dé la herencia la sintaxis cambia un poco, pero se verá en el siguiente capítulo. Los métodos se definen con la palabra clave <strong>def</strong> seguido del nombre y los parámetros entre paréntesis. Hay que destacar que el primer parámetro de la definición será <strong>self</strong> en el que el sistema nos pasará una referencia al objeto actual (este mecanismo difiere mucho de otros lenguajes, que tienen una o varias variables internas predefinidas que apuntan a ese objeto: this, that, etc.). Para definir propiedades tenemos que inicializarlas en cualquier método, pero el procedimiento que vamos a seguir es usar el método “constructor o inicializador” (<strong>__init__</strong>) para tal fin. Como vemos en el siguiente ejemplo creamos dos propiedades (nombre y edad) y las inicializamos.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice em_iDevice_activity" id="id214-132">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejemplo</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta214_214_2" class="block iDevice_content">
+<p>Definir una clase muy simple, la clase Persona. Empezaremos definiendo la clase y a continuación un objeto de la misma, haremos uso del constructor (<strong>__init__</strong>) con dos subrayados delante y detrás, para inicializarla, y del método imprimir.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class Persona:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self, nombre, edad):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.nombre = nombre  # definimos las propiedades</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.edad = edad</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    #definimos los métodos de la clase</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def es_mayor_de_edad(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        return self.edad &gt;= 18</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def imprimir(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        return self.nombre</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># creación y uso de objetos</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">p = Persona("Juan", 23)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(p.imprimir())</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(f"{p.nombre} tiene {p.edad} años")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(p)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">q = Persona("Elena", 63)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(f"{q.nombre} tiene {q.edad} años")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(q)</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id215-132">
+<div class="iDevice emphasis0" >
+<div id="ta215_215_2" class="block iDevice_content">
+<div class="exe-text"><p>Hay que tener en cuenta que la clase Persona nos servirá para crear tantos objetos Persona como necesitemos, cada uno con su nombre y edad. Los métodos nos permitirán manipular los datos de cada objeto. En este caso creamos dos objetos (p, q) y los inicializamos en el momento de la creación (Persona(…)). También hacemos uso de sus propiedades y métodos mediante la notación punto (p.nombre, p.metodo(), etc.)</p>
+<p style="background-color: #cccccc; padding: 5px; border-style: solid;">Como todo Python, la indentación entre bloques es obligatoria</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-133">
+<header class="nodeDecoration">
+<h1 id="exenode_133_413Nombradodelasclases" class="nodeTitle">4.1.3. Nombrado de las clases</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id216-133">
+<div class="iDevice emphasis0" >
+<div id="ta216_216_2" class="block iDevice_content">
+<div class="exe-text"><p>El nombrado de las clases, métodos y propiedades es muy importante en cualquier definición y deberemos usar las normas del lenguaje (PEP) o las del proyecto en concreto. Las normas básicas que seguiremos en nuestros proyectos son:</p>
+<ul>
+<li>Las clases se nombran en formato primera letra de palabra en mayúscula: Persona, AulasClase, etc. Usando nombres para la definición.</li>
+<li>Los métodos se nombran en minúsculas completamente, separando cada palabra con un subrayado, usando verbos como primera palabra: imprimir_nombre, grabar_datos, etc.</li>
+<li>Las propiedades o atributos se escriben como los métodos, usando solo nombres: numero_lineas, nombre_persona, etc.</li>
+<li>Se implementarán primero todos los métodos mágicos (comienzan por dos subrayados) y a continuación los nuestros.</li>
+<li>Se implementarán primero un método utilizado que el método que lo usa.</li>
+<li>Los métodos relacionados se implementarán cerca unos de otros.</li>
+</ul></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-134">
+<header class="nodeDecoration">
+<h1 id="exenode_134_414Creacinyutilizacindeatributos" class="nodeTitle">4.1.4. Creación y utilización de atributos.</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id217-134">
+<div class="iDevice emphasis0" >
+<div id="ta217_217_2" class="block iDevice_content">
+<div class="exe-text"><p>Los <strong>atributos o propiedades</strong> en las clases son los datos de la misma. Estos datos se pueden definir en cualquier método de la clase con solo inicializarlos, pero es mucho más claro utilizar el constructor para tal fin.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self, nombre, edad):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.nombre = nombre  # definimos las propiedades</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.edad = edad</div>
+<div><br />Todos los atributos o propiedades en Python son públicos con lo que <strong>no es necesario especificar la visibilidad del mismo</strong>. En algunos entornos de POO critican esta característica al “mermar” la POO de alguna manera. No es verdad, ya que todas las opciones en las que surgen los atributos privados o protegidos se pueden implementar de otra manera eficiente bajo Python.</div>
+<p>Independientemente que todos los atributos son públicos, <strong>podemos indicar a otros programadores que no deben hacer uso de un atributo anteponiendo un subrayado (_) al nombre</strong>. Esto no impedirá nada, no se controlará nada, es simplemente una sugerencia al programador.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self, nombre, edad):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self._nombre = nombre  # definimos un atributo privado</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(p_nombre)</div>
+<p><br />Si aun así tenemos la imperiosa necesidad de impedir el acceso a un atributo, <strong>se puede anteponer al nombre dos subrayados (__) de tal manera que “impedirá” de forma externa al objeto el acceso</strong> (Nota: en verdad no se impide, se accede a una característica de renombrado en la que internamente mantiene el nombre original y externamente tiene otro nombre, si conocemos las reglas de nombrado podremos acceder desde fuera también, pero allá cada uno con no seguir lo que se le sugiere).</p>
+<p>Para acceder a un atributo, utilizaremos la notación punto (<strong>.</strong>), utilizaremos el objeto (o la clase si es un atributo de clase) seguido de un punto y del nombre del atributo. Al ser una variable, podrá estar en la parte izquierda de una asignación para darle un valor y en la parte derecha para acceder.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">p.nombre = “María”</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(p_nombre)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cadena = f"{p.nombre} tiene {p.edad} años"</div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-135">
+<header class="nodeDecoration">
+<h1 id="exenode_135_415Ejercicios" class="nodeTitle">4.1.5. Ejercicios</h1>
+</header>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id218-135">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta218_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b218" class="block iDevice_content">
+<p>En cada ejercicio debes crear un programa con dos clases: una clase que solo contendrá la función main, además de otra clase (con sus atributos y métodos) que utilizarás desde el main de la clase principal para hacer pruebas sobre su funcionamiento.</p>
+<p>En este apartado las clases solo contendrán atributos (variables) y haremos algunas pruebas sencillas con ellas para entender cómo se instancia objetos y se accede a sus atributos.</p>
+<p><strong>Ejercicio A1 – Punto</strong><br />Crea un programa con una clase llamada Punto que representará un punto de dos dimensiones en un plano. Solo contendrá dos atributos enteros llamadas x e y (coordenadas).</p>
+<p>En el main de la clase principal instancia 3 objetos Punto con las coordenadas (5,0), (10,10) y (-3, 7). Muestra por pantalla sus coordenadas (utiliza un print para cada punto). Modifica todas las coordenadas (prueba distintos operadores como =  +  -  +=  *=...) y vuelve a imprimirlas por pantalla.</p>
+<p><strong>Ejercicio A2 – Persona</strong><br />Crea un programa con una clase llamada Persona que representará los datos principales de una persona: dni, nombre, apellidos y edad.</p>
+<p>En el main de la clase principal instancia dos objetos de la clase Persona. Luego, pide por teclado los datos de ambas personas (guárdalos en los objetos). Por último, imprime dos mensajes por pantalla (uno por objeto) con un mensaje del estilo “Azucena Luján García con DNI … es / no es mayor de edad”.</p>
+<p><strong>Ejercicio A3 – Rectángulo</strong><br />Crea un programa con una clase llamada Rectángulo que representará un rectángulo mediante dos coordenadas (x1, y1) y (x2, y2) en un plano, por lo que la clase deberá tener cuatro atributos enteros: x1, y1, x2, y2.</p>
+<p>En el main de la clase principal instancia 2 objetos Rectángulo en (0,0)(5,5) y (7,9)(2,3). Muestra por pantalla sus coordenadas, perímetros (suma de lados) y áreas (ancho x alto). Modifica todas las coordenadas como consideres y vuelve a imprimir coordenadas, perímetros y áreas.</p>
+<p><strong>Ejercicio A4 – Artículo</strong><br />Crea un programa con una clase llamada Articulo con los siguientes atributos: nombre, precio (sin IVA), iva (siempre será 21) y stock (representa cuantos quedan en el almacén).</p>
+<p>En el main de la clase principal instancia un objeto de la clase artículo. Asígnales valores a todos sus atributos (los que quieras) y muestra por pantalla un mensaje del estilo “Pijama - Precio: 10€ - IVA: 21% - PVP: 12,1€” (el PVP es el precio de venta al público, es decir, el precio con IVA). Luego, cambia el precio y vuelve a imprimir el mensaje.</p>
+</section>
+<form name="feedback-form-quesFeedback0b218" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b218text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b218" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b218" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>class Punto:<br />    def __init__(self, x=0, y=0):<br />        self.x = x<br />        self.y = y</p>
+<p><br />class Persona:<br />    def __init__(self, dni=None, nombre=None, apellidos=None, edad=None):<br />        self.dni = dni<br />        self.nombre = nombre<br />        self.apellidos = apellidos<br />        self.edad = edad</p>
+<p>    def es_mayor_de_edad(self):<br />        return self.edad &gt;= 18</p>
+<p><br />class Rectangulo:<br />    def __init__(self, x1=0, y1=0, x2=0, y2=0):<br />        self.x1 = x1<br />        self.x2 = x2<br />        self.y1 = y1<br />        self.y2 = y2</p>
+<p>    def area(self):<br />        return self.distancia_x * self.distancia_y</p>
+<p>    def perimetro(self):<br />        return 2 * self.distancia_x + 2 * self.distancia_y</p>
+<p><br />class Articulo:<br />    IVA = 21</p>
+<p>    def __init__(self, nombre="", precio=0, stock=0):<br />        self.nombre = nombre<br />        self.precio = precio if type(precio) is int and precio &gt; 0 else 0<br />        self.stock = stock if type(stock) is int and stock &gt; 0 else 0</p>
+<p><br />class App:<br />    @staticmethod<br />    def main():<br />        #  Punto<br />        p1 = Punto(5)<br />        p2 = Punto(10, 10)<br />        p3 = Punto(-3, 7)<br />        print(f"({p1.x},{p1.y}) ({p2.x},{p2.y}) ({p3.x},{p3.y})")<br />        p1.x += 2<br />        p2.y -= 5<br />        p3.x = p1.y<br />        print(f"({p1.x},{p1.y}) ({p2.x},{p2.y}) ({p3.x},{p3.y})")<br />        # Persona<br />        pe1 = Persona()<br />        pe2 = Persona()<br />        pe1.edad = int(input("Edad?"))<br />        pe1.nombre = input("Nombre?")<br />        pe1.apellidos = input("Apellidos?")<br />        pe1.dni = input("DNI?")<br />        pe2.edad = int(input("Edad?"))<br />        pe2.nombre = input("Nombre?")<br />        pe2.apellidos = input("Apellidos?")<br />        pe2.dni = input("DNI?")<br />        texto_mayor_edad = "es" if pe1.es_mayor_de_edad() else "no es"<br />        print(f"{pe1.nombre} {pe1.apellidos} con DNI {pe1.dni} {texto_mayor_edad} mayor de edad")<br />        texto_mayor_edad = "es" if pe2.es_mayor_de_edad() else "no es"<br />        print(f"{pe2.nombre} {pe2.apellidos} con DNI {pe2.dni} {texto_mayor_edad} mayor de edad")<br />        # Rectángulo<br />        r1 = Rectangulo(0, 0, 5, 5)<br />        r2 = Rectangulo(7, 9, 2, 3)<br />        print(f"({r1.x1},{r1.y1})-({r1.x2},{r1.y2})")<br />        print(f"El área es {r1.area()} y su perímetro {r1.perimetro()}")<br />        print(f"({r2.x1},{r2.y1})-({r2.x2},{r2.y2})")<br />        r2.x1 *= 2<br />        r2.x2 *= 2<br />        print(f"({r2.x1},{r2.y1})-({r2.x2},{r2.y2})")<br />        print(f"El área es {r2.area()} y su perímetro {r2.perimetro()}")<br />        # Artículos<br />        ar1 = Articulo(precio="a")  # precio 0 al ser una cadena<br />        print(ar1.precio)<br />        ar1 = Articulo(precio=-5)  # precio 0 al ser menor de cero<br />        print(ar1.precio)<br />        ar1.precio = 100<br />        ar1.nombre = "Artículo 1"<br />        ar1.stock = 23<br />        print(f"El {ar1.nombre} cuesta {ar1.precio} y quedan {ar1.stock} en el almacén, " <br />              f"con un __IVA de {Articulo.IVA}% es {ar1.precio_con_iva()}")<br />        ar1.precio = 200<br />        print(f"El {ar1.nombre} cuesta {ar1.precio} y quedan {ar1.stock} en el almacén, " <br />              f"con un __IVA de {Articulo.IVA}% es {ar1.precio_con_iva()}")</p>
+<p><br />App().main()</p>
+<p> </p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-136">
+<header class="nodeDecoration">
+<h1 id="exenode_136_416Creacinyutilizacindemtodos" class="nodeTitle">4.1.6. Creación y utilización de métodos.</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id219-136">
+<div class="iDevice emphasis0" >
+<div id="ta219_219_2" class="block iDevice_content">
+<div class="exe-text"><p>Un <strong>método</strong> en POO, f<strong>unción o procedimiento en programación estructurada</strong>, es una sección de un programa que calcula un valor de manera independiente al resto del programa o realiza una acción sobre los datos, que tiene tres componentes importantes:</p>
+<ul>
+<li>Los parámetros, que son los valores que recibe como entrada.</li>
+<li>El código de la función, que son las operaciones que hace.</li>
+<li>El resultado (o valor de retorno), que es el valor final que entrega.</li>
+</ul>
+<p>En esencia, una función o método (formalmente hablando, un método es una operación de la clase sobre los datos de la misma) es un mini programa y sus tres componentes son análogos a la entrada, el proceso y la salida de un programa.</p>
+<p>Para Python la única diferencia entre métodos y funciones es que los métodos tienen obligatoriamente un parámetro como mínimo, el objeto sobre el que el método ha sido invocado (<strong>self</strong>). Hay que tener en cuenta que este mecanismo es automático y que no hace falta que nosotros pasemos ese primer argumento al llamar al método, solo los siguientes parámetros.</p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(p.imprimir())  # no se pasa el self, es automático</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ReflectionIdevice em_iDevice em_iDevice_reflection" id="id220-136">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Nota Importante</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta220_92" class="block iDevice_content">
+<p><strong>Todo lo explicado en este punto también se puede extrapolar a la creación de funciones.</strong></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ReflectionIdevice em_iDevice em_iDevice_reflection" id="id221-136">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Diferencia entre procedimientos y funciones</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta221_92" class="block iDevice_content">
+<p>Formalmente una función y un procedimiento no es lo mismo. Una función es una sección de un programa que calcula un valor de manera independiente al resto del programa que tiene tres partes: parámetros de entrada, proceso o código y resultado. Por otro lado, un procedimiento solo tiene dos partes: entrada y proceso, no devuelve nada.</p>
+<p>A nivel de código la diferencia principal es que en los procedimientos no encontraremos una sentencia <strong>return</strong>, mientras que en las funciones sí.</p>
+<p style="background-color: #cccccc; padding: 5px; border-style: solid;">Bajo Python, no existen los procedimientos, incluso si omitimos la sentencia <strong>return</strong> en nuestra definición, el intérprete devolverá de forma predefinida <strong>None</strong> como valor de nuestra función.</p>
+<p>Para Python como para el resto de lenguajes, una función es un bloque de código con autonomía propia de ejecución que podremos reutilizar. La mayor diferencia con los lenguajes tradicionales es que es un objeto con sus propiedades y métodos. Una función se puede definir en cualquier parte del código, aunque es recomendable estructurar el código en módulos.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-137">
+<header class="nodeDecoration">
+<h1 id="exenode_137_Definicin" class="nodeTitle">Definición</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id222-137">
+<div class="iDevice emphasis0" >
+<div id="ta222_222_2" class="block iDevice_content">
+<div class="exe-text"><div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def fib(n):    # write Fibonacci series up to n</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    """Print a Fibonacci series up to n."""</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    a, b = 0, 1</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    while a &lt; n:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        print(a, end=' ')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        a, b = b, a+b</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    return False</div>
+<p><br />La palabra reservada <strong>def</strong> se usa para definir funciones o métodos. Debe seguirle el nombre del método o función y la lista de parámetros formales entre paréntesis (<strong>si es un método debe incluir obligatoriamente self como primer parámtro</strong>). Las sentencias que forman el cuerpo de la función empiezan en la línea siguiente y deben tener sangría. La sentencia <strong>return</strong> final es optativa y representa el valor devuelto por el método cuando es utilizada como parte derecha de una asignación.</p>
+<p>Esta definición se encontrará dentro de una definición de clase si es un método o fuera de ella si es una función, el resto del apartado trataremos como si se encontrase dentro de una clase, pero omitiremos el primer parámetro.</p>
+<p>La primera sentencia del cuerpo de la función puede ser opcionalmente una cadena de texto literal; esta es la cadena de texto de documentación de la función, o docstrings para documentación.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id223-137">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Ámbito de las variables</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta223_223_2" class="block iDevice_content">
+<div class="exe-text"><p>El ámbito es la zona de código que tiene acceso una variable. Python, como todos los lenguajes, tiene varios ámbitos para definir las variables uno <strong>local</strong>, uno <strong>nonlocal</strong> y otro <strong>global</strong>. Por defecto estos ámbitos no se mezclan. El ámbito local se corresponde con el nivel de función, el ámbito global con el de programa, el nonlocal con una función interna.</p>
+<p>Para modificar una variable definida en el programa (ámbito global) demntrto de una función deberemos anteponer la palabra clave <strong>global</strong> y el nombre de la variable, para poder leerla no hace falta.</p>
+<p>Nunca podremos cambiar una variable local fuera de la función que la defina.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">mi_var_global = 3</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def mi_fun():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    global mi_var_global  # Quitar global y ver qué pasa</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    mi_var_global = 3</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(mi_var_global) </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"></div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">&gt; 3</div>
+<p><br />Para las clases, el ámbito clase y local se mantiene, de tal manera que cualquier variable definida dentro de un método será local a toda la clase, por lo que se podrá hacer uso de ella a través del objeto self.</p>
+<p>En una clase no se debería acceder nunca a una variable global.</p>
+<p>Del mismo modo, si dentro de una función interna a otra, queremos acceder al bloque de la función padre deberemos usar la palabra clave <strong>nonlocal</strong>, que nos da acceso al bloque inmediatamente superior, como en el ejemplo siguiente.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">g = 5</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def miFunc2():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    global g</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    g = 6</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    b = 6</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def miInterna():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        nonlocal b  # accedemos a la b externa</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        global g</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        b = 7</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        g = 8</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    miInterna()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(b, g)   </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">miFunc2() # 7,8</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(g)  # 8</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-138">
+<header class="nodeDecoration">
+<h1 id="exenode_138_Parmetros" class="nodeTitle">Parámetros</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id224-138">
+<div class="iDevice emphasis0" >
+<div id="ta224_224_2" class="block iDevice_content">
+<div class="exe-text"><p>Un parámetro es un valor que se le pasa al método o función, un valor que espera para realizar su trabajo. Como Python define el tipo de una variable (parámetro en este caso) en tiempo de ejecución, no es necesario determinarlo en el parámetro, y no solo eso, el mismo parámetro aceptará cualquier tipo de datos para su ejecución, por lo que tendremos que realizar una conversión explícita si fuera necesario.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def suma(numero_1, numero_2):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(numero_1 + numero_2)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">suma(2,3)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">suma(2) # Error faltan parámetros</div></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id225-138">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Parámetros pasados por Valor - por Referencia</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta225_225_2" class="block iDevice_content">
+<div class="exe-text"><p>Dependiendo del tipo de dato que enviemos a la función o método, podemos diferenciar dos comportamientos:</p>
+<ul>
+<li><strong>Paso por valor</strong>: Se crea una copia local de la variable dentro de la función, los cambios internos no se reflejan en la variable externa.</li>
+<li><strong>Paso por referencia</strong>: Se maneja directamente la variable, los cambios realizados dentro de la función le afectarán también fuera. Se pasa la dirección del objeto.</li>
+</ul>
+<p>Tradicionalmente</p>
+<ul>
+<li>Los tipos simples se pasan por valor: Enteros, flotantes, cadenas, lógicos...</li>
+<li>Los tipos compuestos se pasan por referencia: Listas, diccionarios, conjuntos, tuplas, ...</li>
+</ul>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def mi_funcion(numero_1, obj):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    numero_1 = 1</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    obj.nombre = "Nombre"</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(id(numero_1))</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(obj)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">valor = 2</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">p = Persona("Juan", 23)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(valor, p.nombre)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(p)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(id(valor))</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">mi_funcion(valor, p)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(valor, p.nombre)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># 2 Juan</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># &lt;__main__.Persona object at 0x000002736CE34F70&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># 2694761769296</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># 2694761769264</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># &lt;__main__.Persona object at 0x000002736CE34F70&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># 2 Nombre</div>
+<p> <br />Se puede comprobar como el objeto Persona es el mismo dentro y fuera de la función, se pasa la referencia de memoria, pero el parámetro número se crea una nueva copia, el identificador es diferente.</p>
+<p><img src="03.gif" alt="Por valor vs por referencia" width="500" height="270" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id226-138">
+<div class="iDevice emphasis0" >
+<div id="ta226_226_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>Se debe proporcionar todos los parámetros obligatorios a la hora de llamar a la función. Un parámetro es obligatorio si en la definición no se le ha proporcionado un valor por defecto.</strong></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id227-138">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Parámetros de Entrada – Salida</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta227_227_2" class="block iDevice_content">
+<div class="exe-text"><p>El comportamiento común de un parámetro es como entrada, esto quiere decir que recibirá un dato almacenado en el parámetro enviado desde el contexto en el que se llama a la función, se utilizará dentro de la función y no se modificará.</p>
+<p>Los parámetros de salida permiten modificar el valor de una variable externa a la función relacionada con el parámetro. De esta manera, si la función modifica el valor del parámetro, la variable externa relacionada a este parámetro se modificará también, inclusive después de que la función haya terminado de ejecutarse.</p>
+<p><strong>En Python todos los parámetros son de entrada, pero no confundir con que se pasen por referencia.</strong></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-139">
+<header class="nodeDecoration">
+<h1 id="exenode_139_Parmetrospordefecto" class="nodeTitle">Parámetros por defecto</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id228-139">
+<div class="iDevice emphasis0" >
+<div id="ta228_228_2" class="block iDevice_content">
+<div class="exe-text"><p>Al igual que en muchos lenguajes se pueden usar parámetros por defecto, deben ir a continuación de los parámetros tradicionales. Estos parámetros si no se pasan en la llamada tendrán el valor establecido en la definición.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def miFuncion(a, b = 0):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(a , b)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">miFuncion(2)    # 2 0</div>
+<p><br /><strong>Los parámetros por defecto se evalúan solo una vez, cuando se define la función,</strong> por lo que el siguiente código el valor por defecto para arg es 5 y no 6.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">i = 5</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def f(arg=i):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(arg)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">i = 6</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">f()  #5, ya que se ha evaluado la i al definir la función</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">f(arg=7)#7</div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-140">
+<header class="nodeDecoration">
+<h1 id="exenode_140_Pasodeparmetrosporpalabrasclave" class="nodeTitle">Paso de parámetros por palabras clave</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id229-140">
+<div class="iDevice emphasis0" >
+<div id="ta229_229_2" class="block iDevice_content">
+<div class="exe-text"><p>Python no es un lenguaje tan rígido como otros, con lo que permite algunas licencias en el uso de los métodos o funciones. En Python los parámetros se pueden enviar a una función Python o bien por posición o explícitamente por nombre. Por posición lo hemos visto en los puntos anteriores, por nombre el orden no importa y se antepone al valor el nombre del parámetro.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def suma(numero_1, numero_2):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(numero_1 + numero_2)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"></div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">suma(numero_2=2, numero_1=3)</div>
+<p>Aunque la versatilidad de Python permite definir si es necesario la rigidez de otros lenguajes, indicando explícitamente qué parámetros son posicionales, cuáles se deberán pasar por clave y cuáles podrán utilizarse de forma indistinta.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def combined_example(pos_only, /, standard, *, kwd_only):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(pos_only, standard, kwd_only)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">combined_example(1, 2, kwd_only=3)   # 1 2 3</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">combined_example(1, standard=2, kwd_only=3)  # 1 2 3</div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-141">
+<header class="nodeDecoration">
+<h1 id="exenode_141_Nmeroindeterminadodeparmetros" class="nodeTitle">Número indeterminado de parámetros</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id230-141">
+<div class="iDevice emphasis0" >
+<div id="ta230_230_2" class="block iDevice_content">
+<div class="exe-text"><p>Cuando no sabemos el número de parámetros a recibir podemos usar el operador asterisco para juntarlos todos en una tupla como vemos en el ejemplo siguiente. Se puede mezclar este tipo de parámetros con cualquiera siempre que se sitúe después de los parámetros por defecto y antes de los parámetros del siguiente punto.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def miFuncion(a, b = 0, *resto):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(a , b, resto)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(type(resto))</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">miFuncion(2, 5, "resto", 5)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">&gt; 2 5 ('resto', 5)<br />&gt; &lt;class 'tuple'&gt;</div>
+<p> </p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-142">
+<header class="nodeDecoration">
+<h1 id="exenode_142_Desempaquetadodeparmetros" class="nodeTitle">Desempaquetado de parámetros</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id231-142">
+<div class="iDevice emphasis0" >
+<div id="ta231_231_2" class="block iDevice_content">
+<div class="exe-text"><p>En este caso, similar al anterior, se recogen en un diccionario todos los parámetros no definidos, pero es obligatorio pasarlos por nombre, que serán las claves del diccionario. Si usamos este tipo de parámetros debe situarse obligatoriamente al final de la definición, después de los parámetros indeterminados.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def miFuncion(a, b = 0, **resto):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(a , b)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(resto)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">miFuncion(2, 5, c = "resto", d = 5)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">#   2 5</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># {'c': 'resto', 'd': 5}</div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-143">
+<header class="nodeDecoration">
+<h1 id="exenode_143_Sugerenciasdetiposenlosparmetros" class="nodeTitle">Sugerencias de tipos en los parámetros</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id232-143">
+<div class="iDevice emphasis0" >
+<div id="ta232_232_2" class="block iDevice_content">
+<div class="exe-text"><p>El lenguaje permite sugerencias de tipo (definir el tipo del parámetro) para los parámetros, pero no se utilizan para forzar ninguna conversión ni generan errores en caso que el tipo no concuerde, tal y como se ve en el segundo ejemplo.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">miFuncion(a:int, b:str)-&gt;int:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    return str(a)+str(b)  # no se fuerza a int</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(miFuncion("3",5)) #espera int, str   </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># 35, se pasa: str, int, al revés</div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-144">
+<header class="nodeDecoration">
+<h1 id="exenode_144_Devolucindevalores" class="nodeTitle">Devolución de valores</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id233-144">
+<div class="iDevice emphasis0" >
+<div id="ta233_233_2" class="block iDevice_content">
+<div class="exe-text"><p>Hemos dicho que los métodos o funciones tienen tres partes y el resultado es la última de ellas. Ya hemos comentado que Python solo implementa funciones con lo que, si no proporcionamos un valor de vuelta, este será <strong>None</strong>.</p>
+<p>Para devolver un valor utilizaremos la palabra clave <strong>return</strong> y a continuación el valor a devolver. No es un buen hábito de programación que existan en el método varios returns, siendo generalmente esta instrucción siempre la última de la función.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def suma(numero_1, numero_2):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    return int(numero_1) + int(numero_2)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(suma(2, 3))  # 5</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(suma(“2”,3))  # 5</div>
+<p><br />Python no puede devolver valores múltiples, siempre devolverá un único valor. Pero nada impide devolver un objeto que contenga otros valores, como por ejemplo tuplas, diccionarios y otros objetos. Estos tipos de datos se verán en la siguiente unidad de trabajo.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def suma(numero_1, numero_2):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    return (numero_1, numero_2) # devuelve 1 tupla no dos valores</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(suma(2, 3))  # (2,3)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(suma(“2”,3))  # (‘2’, 3)</div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-145">
+<header class="nodeDecoration">
+<h1 id="exenode_145_Funcioneslambdaoannimas" class="nodeTitle">Funciones lambda o anónimas</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id234-145">
+<div class="iDevice emphasis0" >
+<div id="ta234_234_2" class="block iDevice_content">
+<div class="exe-text"><p>Las funciones lambda son funciones sin nombre que se suelen usar en aquellos parámetros que esperan una función para realizar su trabajo, como puede ser la ordenación.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def hacer_incrementador(n): #lambda</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    return lambda x: x + n  #devolvemos una función</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">f = hacer_incrementador(42)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">#f es una función hacer_incrementador inicializada a 42</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print (f(1))            #43</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">for x in filter(lambda i: i % 2 == 0, [1, 2, 3, 4]):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(x)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-146">
+<header class="nodeDecoration">
+<h1 id="exenode_146_Pasodemtodosafunciones" class="nodeTitle">Paso de métodos a funciones</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id235-146">
+<div class="iDevice emphasis0" >
+<div id="ta235_235_2" class="block iDevice_content">
+<div class="exe-text"><div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class Persona:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def es_mayor_De_edad(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        return self.edad &gt;= 18</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def imprimir(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        return self.nombre</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># eliminar la línea class, disminuir el sangrado, eliminar self,</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># convertir variables de clase en parámetros</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def es_mayor_De_edad(edad):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    return edad &gt;= 18</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def imprimir(nombre):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    return nombre</div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-147">
+<header class="nodeDecoration">
+<h1 id="exenode_147_Creacinyutilizacindeconstructoresydestructores" class="nodeTitle">Creación y utilización de constructores y destructores</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id236-147">
+<div class="iDevice emphasis0" >
+<div id="ta236_236_2" class="block iDevice_content">
+<div class="exe-text"><p>Un constructor es un método que se llama en el momento de la creación del objeto para inicialización del mismo. Un destructor se llama como última ejecución del objeto cuando es eliminado. Las llamadas a estos métodos son automáticas y no tenemos que hacer nada. Generalmente, los constructores se utilizan para inicialización del objeto y establecimiento de conexiones; los destructores para eliminación de basura y cierre de conexiones.</p>
+<p>Python tiene dos métodos en vez de uno para la “construcción” del objeto: el constructor y el inicializador. Raramente vamos a usar constructor a no ser que ahondemos en Metaclases por lo que usaremos exclusivamente el método inicializador:<strong> __init__</strong>. A efectos funcionales de nuestro nivel no hay diferencia.</p>
+<p>En cuanto al destructor, utilizaremos el método <strong>__del__</strong> que técnicamente no es un destructor, es llamado por el sistema cuando se recupera la memoria (el recolector de memoria) del objeto al destruirlo. El mayor problema que presenta este método es que el sistema no asegura que se llame al destructor, puede que el script termine antes de que pueda ser llamado y no hacer una liberación ordenada de los recursos.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class Persona:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        print("Inicializando")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __del__(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        print("destruyendo")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">p = Persona("Juan", 23)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">p = None</div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-148">
+<header class="nodeDecoration">
+<h1 id="exenode_148_Propiedades" class="nodeTitle">Propiedades</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id237-148">
+<div class="iDevice emphasis0" >
+<div id="ta237_237_2" class="block iDevice_content">
+<div class="exe-text"><p>Una de las críticas que se hace a Python desde los puristas de la POO es la no existencia de visibilidad en los métodos y atributos, pero cuando ahondamos en los usos de estas características vemos que no es imprescindible la visibilidad para una adecuada programación. El caso que se utiliza para minorar las capacidades de POO de Python hace referencia a aquellos en los que queremos controlar el acceso a un atributo, verificarlo antes de cambiarlo o realizar algún cálculo con él antes de la asignación, en definitiva, si necesitamos ejecutar código antes de la modificación del atributo (en otros lenguajes se implementa a través de los métodos getters y setters también presentes en Python).</p>
+<p>Para solucionar este problema Python ofrece la creación de propiedades. Para Python una propiedad es un atributo que puede ejecutar código en el momento del acceso, que se define dentro de una clase mediante un decorador (los decoradores se verán más adelante) o al crear un objeto <strong>property</strong> en la definición.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># Using property object</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class Celsius:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self, temperature=0):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.temperature = temperature</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def to_fahrenheit(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        return (self.temperature * 1.8) + 32</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    # getter</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def get_temperature(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        print("Getting value...")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        return self._temperature</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    # setter</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def set_temperature(self, value):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        print("Setting value...")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self._temperature = value</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    # creating a property object</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    temperature = property(get_temperature, set_temperature)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># Using @property decorator</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class Celsius:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self, temperature=0):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.temperature = temperature</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def to_fahrenheit(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        return (self.temperature * 1.8) + 32</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    @property</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def temperature(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        print("Getting value...")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        return self._temperature</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    @temperature.setter</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def temperature(self, value):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        print("Setting value...")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self._temperature = value</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">human = Celsius(37)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(human.temperature)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(human.to_fahrenheit())</div></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id238-148">
+<div class="iDevice emphasis0" >
+<div id="ta238_238_2" class="block iDevice_content">
+<div class="exe-text"><p>Ambas definiciones son similares y podremos usar cualquiera de las dos, pero no mezclarlas en una misma propiedad.</p>
+<p>Con esta sintaxis, podemos hacer propiedades de solo lectura (con solo la parte get) o propiedades de lectura escritura con ambas partes. En cualquier caso, una propiedad definida con este mecanismo no es diferente a la creada en un constructor (Este mecanismo es conocido en muchos lenguajes POO como métodos getters and setters).</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-149">
+<header class="nodeDecoration">
+<h1 id="exenode_149_Ejemplos" class="nodeTitle">Ejemplos</h1>
+</header>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id239-149">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta239_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b239" class="block iDevice_content">
+<p>Definir la siguiente estructura de clases.</p>
+<p><img src="04.png" alt="Ejemplo 1" width="198" height="128" /></p>
+</section>
+<form name="feedback-form-quesFeedback0b239" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b239text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b239" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b239" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>import math</p>
+<p><br />class Punto:<br />    def __init__(self, x=0, y=0):<br />        self.x = x<br />        self.y = y</p>
+<p>    def __str__(self):<br />        return f"({self.x},{self.y})"</p>
+<p>    def mover(self, *args):<br />        """Desplaza un punto sumando otras cordenadas"""<br />        if len(args) == 1 and isinstance(args[0], Punto):  # se pasa un único parámetro Punto<br />            self.x += args[0].x<br />            self.y += args[0].y<br />        elif len(args) == 2 and type(args[0]) is int and isinstance(args[1],  int):  # se pasan dos parámetros, x e y<br />            self.x += int(args[0])<br />            self.y += int(args[1])</p>
+<p>    def distancia(self, *args):<br />        """Calcula la distancia euclidea"""</p>
+<p>        x = y = 0</p>
+<p>        if len(args) == 1 and isinstance(args[0], Punto):  # se pasa un único parámetro Punto<br />            x += args[0].x<br />            y += args[0].y<br />        elif len(args) == 2 and type(args[0]) is int and isinstance(args[1], int):  # se pasan dos parámetros, x e y<br />            x += int(args[0])<br />            y += int(args[1])</p>
+<p>        distancia = math.sqrt((x-self.x)**2 + (y-self.y)**2)</p>
+<p>        return distancia</p>
+<p><br />p1 = Punto(1, 1)<br />print(f"El punto p1 está en:{p1}")<br />print(f"distancia con (1,1) es {p1.distancia(1, 1)}")<br />print(f"distancia con Punto(2, 2) es {p1.distancia(Punto(2, 2))}")<br />p1.mover(1, 1)<br />print("después de mover (1,1):", p1)<br />p1.mover(Punto(3, 3))<br />print("después de mover Punto(3,3):", p1)<br />print("Otro punto, pruebas de funcionamiento")<br />p2 = Punto()<br />print(p2)<br />p2.mover(2)<br />print(p2)<br />print("La distancia es", p2.distancia(3))<br />print("La distancia es", p2.distancia(3, "3"))<br />print("La distancia es", p2.distancia(3, 5, 2))<br />print("La distancia es", p2.distancia(Punto(3, 5), 2))</p>
+<p>"""<br />El punto p1 está en:(1,1)<br />distancia con (1,1) es 0.0<br />distancia con Punto(2, 2) es 1.4142135623730951<br />después de mover (1,1): (2,2)<br />después de mover Punto(3,3): (5,5)<br />Otro punto, pruebas de funcionamiento<br />(0,0)<br />(0,0)<br />La distancia es 0.0<br />La distancia es 0.0<br />La distancia es 0.0<br />"""</p>
+<p> </p></section>
+</form>
+<section id="taquesQuestion1b239" class="block iDevice_content">
+<p>Definir la siguiente estructura de clases.</p>
+<p><img src="05.png" alt="Ejemplo 2" width="798" height="271" /></p>
+</section>
+<form name="feedback-form-quesFeedback1b239" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback1b239text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback1b239" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback1b239" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>class Player:<br />    def __init__(self, nombre="Anonimo"):<br />        self.nombre = nombre</p>
+<p><br />class Position:<br />    def __init__(self, position="", chess_board=None):<br />        self.posicion = position<br />        self.chess_board = chess_board</p>
+<p><br />class Piece:<br />    def __init__(self, name="Peon", chess_set=None, color="Blanco"):<br />        self.chess_set = chess_set<br />        self.name = name<br />        self.color = color</p>
+<p>    def __str__(self):<br />        return f"&lt;{self.name}-{self.color}&gt;"</p>
+<p><br />class Board:<br />    def __init__(self, chess_set=None):<br />        self.chess_set = chess_set<br />        self.positions = []</p>
+<p>    def add_position(self, position):<br />        if position is Position:<br />            self.positions.append(position)</p>
+<p><br />class ChesSet:<br />    def __init__(self):<br />        self.board = Board(self)<br />        self.pieces = [Piece(n, self) for n in ["Dama", "Rey"]]<br />        self.pieces.extend([Piece("Peon", self) for _ in range(8)])<br />        self.pieces.extend([Piece("Alfil", self) for _ in range(2)])<br />        self.pieces.extend([Piece("Torre", self) for _ in range(2)])<br />        self.pieces.extend([Piece("Caballo", self) for _ in range(2)])<br />        self.pieces.extend([Piece(n, self, "Negro") for n in ["Dama", "Rey"]])<br />        self.pieces.extend([Piece("Peon", self, "Negro") for _ in range(8)])<br />        self.pieces.extend([Piece("Alfil", self, "Negro") for _ in range(2)])<br />        self.pieces.extend([Piece("Torre", self, "Negro") for _ in range(2)])<br />        self.pieces.extend([Piece("Caballo", self, "Negro") for _ in range(2)])</p>
+<p>    def __str__(self):<br />        str_return = ""<br />        for piece in self.pieces:<br />            str_return += str(piece) + "\n"<br />        return str_return</p>
+<p><br />ch = ChesSet()<br />print(ch)</p>
+<p> </p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-154">
+<header class="nodeDecoration">
+<h1 id="exenode_154_417Ejercicio" class="nodeTitle">4.1.7. Ejercicio</h1>
+</header>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id245-154">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta245_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b245" class="block iDevice_content">
+<p>En este apartado tienes que modificar los programas del apartado anterior (o haz una copia del proyecto si lo prefieres) y realizar los cambios indicados.</p>
+<p><strong>Ejercicio B1 – Punto</strong><br />Añade a la clase Punto los siguientes métodos públicos:</p>
+<ul>
+<li>imprime() // Imprime por pantalla las coordenadas. Ejemplo: “(7, -5)”</li>
+<li>set_xy(x, y) // Modifica ambas coordenadas. Es como un setter doble.</li>
+<li>desplaza(int dx, int dy) // Desplaza el punto la cantidad (dx, dy) indicada. Ejemplo: Si el punto (1, 1) se desplaza (2, 5) entonces estará en (3, 6).</li>
+<li>distancia(Punto p) // Calcula y devuelve la distancia entre el propio objeto y otro objeto (Punto p) que se pasa como parámetro: distancia entre dos coordenadas.</li>
+</ul>
+<p>Prueba a utilizar estos métodos desde el main para comprobar su funcionamiento.</p>
+<p><strong>Ejercicio B2 – Persona</strong><br />Añade a la clase Persona los siguientes métodos públicos:</p>
+<ul>
+<li>imprime()  // Imprime la información del objeto: “DNI:… Nombre:… etc.”</li>
+<li>es_mayor_edad() // Devuelve true si es mayor de edad (false si no).</li>
+<li>es_jubilado() // Devuelve true si tiene 65 años o más (false si no).</li>
+<li>diferencia_edad(Persona p) // Devuelve la diferencia de edad entre ‘this’ y p.</li>
+</ul>
+<p>Prueba a utilizar estos métodos desde el main para comprobar su funcionamiento.</p>
+<p><strong>Ejercicio B3 – Rectángulo</strong><br />En nuestro software necesitamos asegurarnos de que la coordenada (x1, y1) represente la esquina inferior izquierda y la (x2, y2) la superior derecha del rectángulo, como en el dibujo.</p>
+<p><img src="08.png" alt="Rectángulo" width="324" height="303" /></p>
+<p>Incluye un if que compruebe los valores. Si son válidos guardará los parámetros en el objeto. Si no lo los inicializará a al valor de la coordenada inferior.</p>
+<p>Añade a la clase Rectángulo métodos públicos con las siguientes funcionalidades:</p>
+<ul>
+<li>Método para imprimir la información del rectángulo por pantalla.</li>
+<li>Métodos setters dobles y cuadruples: set_x1y1, set_x2y2 y set_all(…).</li>
+<li>Métodos get_perimetro y get_area que calculen y devuelvan el perímetro y área del objeto.</li>
+</ul>
+<p>Prueba a utilizar estos métodos desde el main para comprobar su funcionamiento.</p>
+<p><strong>Ejercicio B4 – Artículo</strong><br />Añade a la clase Artículo métodos públicos con las siguientes funcionalidades:</p>
+<ul>
+<li>Método para imprimir la información del artículo por pantalla.</li>
+<li> Método get_pvp que devuelva el precio de venta al público (PVP) con iva incluido.</li>
+<li>Método get_pvp_descuento que devuelva el PVP con un descuento pasado como argumento.</li>
+<li>Método vender que actualiza los atributos del objeto tras vender una cantidad ‘x’ (si es  posible). Devolverá true si ha sido posible (false en caso contrario).</li>
+<li>Método almacenar que actualiza los atributos del objeto tras almacenar una cantidad ‘x’. Devolverá true.</li>
+</ul>
+</section>
+<form name="feedback-form-quesFeedback0b245" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b245text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b245" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b245" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>import math</p>
+<p><br />class Punto:<br />    def __init__(self, x=0, y=0):<br />        self.x = x<br />        self.y = y</p>
+<p>    def imprime(self):<br />        return f"({self.x},{self.y})"</p>
+<p>    def set_xy(self, x=0, y=0):<br />        self.x = x if isinstance(x, int) else self.x<br />        self.y = y if isinstance(y, int) else self.y</p>
+<p>    def desplaza(self, dx, dy):<br />        self.x += int(dx)<br />        self.y += int(dy)</p>
+<p>    def distancia(self, *args):<br />        distancia = 0<br />        if len(args) == 1 and isinstance(args, Punto):<br />            distancia = math.sqrt((args[0].x - self.x) ** 2 + (args[0].y - self.y) ** 2)<br />        elif len(args) == 2 and isinstance(args[0], int) and isinstance(args[1], int):<br />            distancia = math.sqrt((args[0] - self.x) ** 2 + (args[1] - self.y) ** 2)<br />        return distancia</p>
+<p><br />class Persona:<br />    def __init__(self, dni=None, nombre=None, apellidos=None, edad=None):<br />        self.dni = dni<br />        self.nombre = nombre<br />        self.apellidos = apellidos<br />        self.edad = edad</p>
+<p>    def imprime(self):<br />        return f"{self.nombre} {self.apellidos} con DNI {self.dni}"</p>
+<p>    def es_mayor_de_edad(self):<br />        return self.edad &gt;= 18</p>
+<p>    def es_mayor_jubilado(self):<br />        return self.edad &gt;= 65</p>
+<p>    def diferencia_edad(self, p):<br />        diferencia = 0<br />        if isinstance(p, Persona):<br />            diferencia = abs(p.edad - self.edad)<br />        return diferencia</p>
+<p><br />class Rectangulo:<br />    def __init__(self, x1=0, y1=0, x2=0, y2=0):<br />        self.x1 = x1<br />        self.y1 = y1<br />        self.x2 = x2 if x2 &gt;= self.x1 else x1<br />        self.y2 = y2 if y2 &gt;= self.y1 else y1</p>
+<p>    @property<br />    def distancia_x(self):<br />        return abs(self.x2 - self.x1)</p>
+<p>    @property<br />    def distancia_y(self):<br />        return abs(self.y2 - self.y1)</p>
+<p>    def get_area(self):<br />        return self.distancia_x * self.distancia_y</p>
+<p>    def get_perimetro(self):<br />        return 2 * self.distancia_x + 2 * self.distancia_y</p>
+<p>    def imprimir(self):<br />        return f"({self.x1},{self.y1})-({self.x2},{self.y2})"</p>
+<p>    def set_x1y1(self, x1=0, y1=0):<br />        self.x1 = x1<br />        self.y1 = y1</p>
+<p>    def set_x2y2(self, x2=0, y2=0):<br />        self.x2 = x2<br />        self.y2 = y2</p>
+<p>    def set_all(self, x1=0, y1=0, x2=0, y2=0):<br />        self.x1 = x1<br />        self.y1 = y1<br />        self.x2 = x2 if x2 &gt;= self.x1 else x1<br />        self.y2 = y2 if y2 &gt;= self.y1 else y1</p>
+<p><br />class Articulo:<br />    IVA = 21</p>
+<p>    def __init__(self, nombre="", precio=0, stock=0):<br />        self.nombre = nombre<br />        self.precio = precio if type(precio) is int and precio &gt; 0 else 0<br />        self.stock = stock if type(stock) is int and stock &gt; 0 else 0</p>
+<p>    def get_pvp(self):<br />        return self.precio + (Articulo.IVA * self.precio / 100)</p>
+<p>    def get_pvp_descuento(self, descuento=0):<br />        iva = Articulo.IVA * self.precio / 100<br />        descuento = abs(descuento) if -100 &lt; descuento &lt; 100 else abs(descuento / 100)<br />        return self.precio + iva - self.precio * descuento</p>
+<p>    def vender(self, cantidad):<br />        vendido = False<br />        if self.stock &gt;= abs(cantidad):<br />            self.stock -= cantidad<br />            vendido = True<br />        return vendido</p>
+<p>    def almacenar(self, cantidad):<br />        self.stock += cantidad<br />        return True</p>
+<p><br />class App:<br />    @staticmethod<br />    def main():<br />        pass</p>
+<p><br />App().main()</p>
+<p> </p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-150">
+<header class="nodeDecoration">
+<h1 id="exenode_150_42Objetos" class="nodeTitle">4.2. Objetos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id240-150">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta240_240_2" class="block iDevice_content">
+<div class="exe-text"><p>Desde un punto de vista técnico, un objeto es una instancia de una clase. Cuando creamos una instancia estamos reservando una zona de memoria dedicada para el objeto en cuestión y esa zona va a permanecer ahí mientras la variable en cuestión (u otra) la referencie. Tras leer lo anterior podemos pensar en un objeto como un puntero a la zona de memoria que ocupa, pero en POO no suele hablarse siguiendo esa terminología. A diferencia de otros lenguajes de programación, no es necesario liberar las zonas de memoria cuando dejan de utilizarse. Existe un mecanismo llamado recolector de basura que se encarga de ir liberando las zonas de memoria que no están siendo referenciadas por ningún objeto.</p>
+<p>Un objeto contiene toda la información que permite definirlo e identificarlo frente a otros objetos pertenecientes a otras clases e incluso frente a objetos de una misma clase, al poder tener valores bien diferenciados en sus atributos.</p>
+<p><img src="06.png" alt="Objetos" width="512" height="167" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-151">
+<header class="nodeDecoration">
+<h1 id="exenode_151_421Creacinyusodeobjetos" class="nodeTitle">4.2.1. Creación y uso de objetos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id241-151">
+<div class="iDevice emphasis0" >
+<div id="ta241_241_2" class="block iDevice_content">
+<div class="exe-text"><p>Un objeto no se define, se crea o instancia en una variable a partir de un modelo (clase) de la que recoge todas sus características. Una vez instanciado se puede hacer uso de los atributos y métodos de la clase que hemos utilizado de base.</p>
+<p>Si vemos el ejemplo anterior, el objeto <strong>p1</strong> se instancia de la clase punto y en nuestro código a través de la notación punto podremos hacer uso de los atributos <strong>x</strong> e <strong>y</strong> así como de los métodos.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">human = Celsius(37)  # constructor</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(human.temperature)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(human.to_fahrenheit())</div>
+<p><br />Cuando creamos un objeto, hacemos uso de su “<strong>constructor</strong>” de forma automática, este constructor se usa para inicializar el objeto con los datos iniciales. Si no proporcionamos todos los datos que son obligatorios no será posible instanciar el objeto.</p>
+<p>Una vez instanciado el objeto deberemos hacer uso del mismo. En Python el acceso a propiedades o métodos se hace a través del operador punto (.).</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">human.temperature = 39</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(human.temperature)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(human.to_fahrenheit())</div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-152">
+<header class="nodeDecoration">
+<h1 id="exenode_152_422Visibilidad" class="nodeTitle">4.2.2. Visibilidad</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id242-152">
+<div class="iDevice emphasis0" >
+<div id="ta242_242_2" class="block iDevice_content">
+<div class="exe-text"><p>La visibilidad permite que los métodos y propiedades de una clase sean utilizados de forma correcta por otros elementos del programa.</p>
+<p>En la imagen podemos ver las clases de visibilidad que se pueden implementar bajo un lenguaje POO tradicional: pública, privada y protegida.</p>
+<p><img src="02.png" alt="Visibilidad" width="359" height="181" /></p>
+<p>En Python la visibilidad es mucho más sencilla y solo implementa visibilidad pública, todos los métodos y propiedades son accesibles desde fuera del objeto. Aunque solo se impelente la visibilidad pública, podemos indicar a otros programadores que no deben hacer uso de un atributo o método anteponiendo un subrayado (<strong>_</strong>) al nombre. Esto no impedirá nada, no se controlará nada, es simplemente una sugerencia al programador.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class Celsius:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self, temperature=0):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self._temperature = temperature  # privada</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def _to_fahrenheit(self):  # protegido</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        print("en el método", self.__get_temperature())</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        return (self._temperature * 1.8) + 32</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __get_temperature(self):  # privado</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        print("Getting value...")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        return self._temperature</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">human = Celsius(37)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(human._temperature)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(human._to_fahrenheit())</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(dir(human))</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(human._Celsius__get_temperature())  # cambio de nombre</div>
+<p><br />Si aun así tenemos la imperiosa necesidad de impedir el acceso a un atributo o método, se puede anteponer al nombre dos subrayados (<strong>__</strong>) de tal manera que “impedirá” de forma externa al objeto el acceso (Nota: En verdad no se impide, se accede a una característica de renombrado o name mangling en la que internamente mantiene el nombre original y externamente tiene otro nombre (<strong>_NombreClase_nombre_metodo</strong>), si conocemos las reglas de nombrado podremos acceder desde fuera también, pero allá cada uno con no seguir lo que se le sugiere. Internamente mantiene el nombre original para las llamadas).</p>
+<p>No se recomienda el uso de dobles subrayados, en su lugar si queremos decir que una variable es privada usaremos la nomenclatura de un subrayado.</p>
+<p></p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-153">
+<header class="nodeDecoration">
+<h1 id="exenode_153_423Ejercicio" class="nodeTitle">4.2.3. Ejercicio</h1>
+</header>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id244-153">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta244_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b244" class="block iDevice_content">
+<p><img src="07.png" alt="Ejercicio" width="706" height="697" /></p>
+</section>
+<form name="feedback-form-quesFeedback0b244" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b244text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b244" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b244" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>class Bicicleta:<br />    def __init__(self, kilometros_totales=0, kilometros_recorridos=0, color=0):<br />        self.kilometros_totales = kilometros_totales<br />        self.kilometros_recorridos = kilometros_recorridos<br />        self.color = color</p>
+<p>    def __str__(self):<br />        return f"La bicicleta ha recorrido {self.kilometros_totales} km"</p>
+<p>    def andar(self):<br />        return f"Bicicleta de color {self.color} andando"</p>
+<p>    def hacer_caballito(self):<br />        return f"Bicicleta de color {self.color} haciendo caballito"</p>
+<p>class Coche:<br />    def __init__(self, kilometros_totales=0, kilometros_recorridos=0, color=0):<br />        self.kilometros_totales = kilometros_totales<br />        self.kilometros_recorridos = kilometros_recorridos<br />        self.color = color</p>
+<p>    def __str__(self):<br />        return f"El coche ha recorrido {self.kilometros_totales} km"</p>
+<p>    def andar(self):<br />        return f"Coche de color {self.color} andando"</p>
+<p>    def quemar_rueda(self):<br />        return f"Coche de color {self.color} quemando rueda"</p>
+<p>class App:<br />    BICICLETA = 1<br />    COCHE = 2<br />    ERROR = -1</p>
+<p>    MENU_1 = 1<br />    MENU_2 = 2<br />    MENU_3 = 3<br />    MENU_4 = 4<br />    MENU_5 = 5<br />    MENU_6 = 6<br />    MENU_7 = 7<br />    MENU_8 = 81</p>
+<p>    def __print_main_menu(self):<br />        print("Qué objeto deseas crear?")<br />        print("1.- Bicicleta")<br />        print("2.- Coche")</p>
+<p>    def __print_sub_menu(self):<br />        print("1.- Anda con la bicicleta")<br />        print("2.- Haz el caballito con la bicicleta")<br />        print("3.- Anda con el coche")<br />        print("4.- Quema rueda con el coche")<br />        print("5.- Ver kilometraje de la bicicleta")<br />        print("6.- Ver kilometraje del coche")<br />        print("7.- Ver kilometraje total")<br />        print("8.- Salir")</p>
+<p>    def __run_menu_bici_o_coche(self, bici_o_coche):<br />        bici_o_coche.color = input("¿De qué color es?")<br />        bici_o_coche.kilometros_recorridos = int(input("¿Cuántos kilómetros recorridos?"))</p>
+<p>    def run(self):<br />        fin = False<br />        while not fin:<br />            vehiculo = None<br />            self.__print_main_menu()<br />            try:<br />                respuesta = int(input("....&gt;?"))<br />            except ValueError:<br />                respuesta = App.ERROR</p>
+<p>            if respuesta == App.BICICLETA:<br />                vehiculo = Bicicleta()<br />            elif respuesta == App.COCHE:<br />                vehiculo = Coche()<br />            else:<br />                fin = True</p>
+<p>            if vehiculo:<br />                self.__run_menu_bici_o_coche(vehiculo)</p>
+<p>            fin_submenu = False<br />            while not fin_submenu and vehiculo:<br />                self.__print_sub_menu()<br />                respuesta = int(input("....&gt;?"))<br />                if respuesta == App.MENU_1 or respuesta == App.MENU_3:<br />                    print(vehiculo.andar())<br />                elif respuesta == App.MENU_2:<br />                    if isinstance(vehiculo, Bicicleta):<br />                        print(vehiculo.hacer_caballito())<br />                elif respuesta == App.MENU_4:<br />                    if isinstance(vehiculo, Coche):<br />                        print(vehiculo.quemar_rueda())<br />                elif respuesta == App.MENU_5 or respuesta == App.MENU_6:<br />                    print(vehiculo.kilometros_recorridos)<br />                elif respuesta == App.MENU_7:<br />                    print(vehiculo.kilometros_totales)<br />                elif respuesta == App.MENU_8:<br />                    fin_submenu = True</p>
+<p><br />app = App()<br />app.run()</p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-156">
+<header class="nodeDecoration">
+<h1 id="exenode_156_43Paquetes" class="nodeTitle">4.3. Paquetes</h1>
+</header>
+</article>
+<article class="node level-3-node" id="exe-node-155">
+<header class="nodeDecoration">
+<h1 id="exenode_155_431Mdulos" class="nodeTitle">4.3.1. Módulos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id246-155">
+<div class="iDevice emphasis0" >
+<div id="ta246_246_2" class="block iDevice_content">
+<div class="exe-text"><p>Un módulo es un fichero Python que contiene código. Potencialmente cualquier fichero puede ser un módulo, o ser llamado para la ejecución. Como tal podemos determinar si un fichero ha sido llamado como módulo o para la ejecución a través de la variable global <strong>__name__</strong>. Esta variable contendrá el valor: <strong>__main__</strong> cuando se esté intentando ejecutar el código, en caso contrario el módulo se intentará usar como librería de importación.</p>
+<p>Las variables que se definan en un módulo en el ámbito global serán accesibles desde el módulo y desde fuera como una función más.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def main():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print("Ejecutando el código")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">if __name__ == "__main__":</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    main()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">else:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print("importando datos")</div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-157">
+<header class="nodeDecoration">
+<h1 id="exenode_157_432Paquete" class="nodeTitle">4.3.2. Paquete</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id247-157">
+<div class="iDevice emphasis0" >
+<div id="ta247_247_2" class="block iDevice_content">
+<div class="exe-text"><p>Un paquete (<strong>namespace</strong>) es un directorio en el que se le crea un directorio especial: <strong>__init__.py</strong> (optativo a partir de la versión 3.3). Este fichero puede estar vacío o puede tener una variable <strong>__all__</strong>, con lista de los módulos al cargar cuando se use. Además, cualquier variable o definición que se haga en este fichero, estará disponible para todos los módulos del paquete usando el nombre del mismo para importarlo (namespace).</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">pqt_1\</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    __init__.py</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        from .database import db</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    modulo_1.py</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        from pqt_1 import db</div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-158">
+<header class="nodeDecoration">
+<h1 id="exenode_158_433Ejemplo" class="nodeTitle">4.3.3. Ejemplo</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id248-158">
+<div class="iDevice emphasis0" >
+<div id="ta248_248_2" class="block iDevice_content">
+<div class="exe-text"><p>En este ejemplo desarrollaremos una librería muy básica. En primer lugar, se crea un módulo librería (lib001b.py) y a continuación el paquete lib001a con dos módulos dentro. El fichero 0002.py hace uso de las librerías y todos sus ejemplos de importación.</p>
+<p><img src="09.png" alt="Ejemplo" width="137" height="123" /></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id249-158">
+<div class="iDevice emphasis0" >
+<div id="ta249_249_2" class="block iDevice_content">
+<div class="exe-text"><div><strong>lib001b.py</strong></div>
+<div>def suma(*valores):</div>
+<div>    rest=0</div>
+<div>    for val in valores:</div>
+<div>        rest+=int(val)</div>
+<div>    return rest</div>
+<div> </div>
+<div><strong>lib001.py</strong></div>
+<div>varg=3</div>
+<div>def suma(*valores):</div>
+<div>    rest=0</div>
+<div>    for val in valores:</div>
+<div>        rest+=val</div>
+<div>    print (varg)</div>
+<div>    return rest</div>
+<div> </div>
+<div><strong>lib002.py</strong></div>
+<div>varg=5</div>
+<div>def suma(*valores):</div>
+<div>    rest=0</div>
+<div>    for val in valores:</div>
+<div>        rest+=val</div>
+<div>    print (varg)</div>
+<div>    return rest</div>
+<div> <br /> </div>
+<div><strong>0002.py</strong></div>
+<div>import lib001b  # se importa todo el módulo</div>
+<div>import lib001a.lib001 # se importa un módulo de un pqt.</div>
+<div>import lib001a.lib002 as lb # se renombra un módulo</div>
+<div> </div>
+<div>print(lib001b.suma(1, 3, 5, 7))         #16</div>
+<div>print(lib001a.lib001.suma(1,2,3,4))     #3  10</div>
+<div>print(lb.suma(1,2,3,4))                 #5  10</div>
+<div>lb.varg = 99    #acceso a la variable de módulo</div>
+<div>print(lb.suma(1,2,3,4))                 #99 10</div>
+<div> </div>
+<div>from lib001b import suma</div>
+<div>print(suma(1,2,3,4))                    #10</div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-159">
+<header class="nodeDecoration">
+<h1 id="exenode_159_434Usodeimport" class="nodeTitle">4.3.4. Uso de import</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id250-159">
+<div class="iDevice emphasis0" >
+<div id="ta250_250_2" class="block iDevice_content">
+<div class="exe-text"><p>El contenido de cada módulo, podrá ser utilizado a la vez, por otros módulos, pero para ello, es necesario importar los módulos que se quieran utilizar. Para importar un módulo, se utiliza la instrucción import, seguida del nombre del paquete (si aplica) más el nombre del módulo (sin extensión) que se desee importar.</p>
+<p>Todo código en un paquete importado será ejecutado en el momento de la importación, pero no se ejecutarán las clases o funciones definidas en él, hay que llamarlas de forma explícita.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import modulo  # un módulo que no pertenece a un paquete</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import paquete.modulo1 # un módulo que está dentro de un paquete</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import paquete.subpaquete.modulo1</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print modulo.CONSTANTE_1</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print paquete.modulo1.CONSTANTE_1</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print paquete.subpaquete.modulo1.CONSTANTE_1</div>
+<p>Es posible también, importar mediante un alias. Para ello, durante la importación, se asigna la palabra clave as seguida del alias con el cual nos referiremos en el futuro:</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import modulo as m</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import paquete.modulo1 as pm</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import paquete.subpaquete.modulo1 as psm</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print m.CONSTANTE _1</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print pm.CONSTANTE _1</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print psm.CONSTANTE_1</div>
+<p>En Python, es posible también, importar de un módulo solo los elementos que se desee utilizar. Para ello se utiliza la instrucción from seguida del namespace, más la instrucción import seguida del elemento que se desee importar. En este caso, se accederá directamente al elemento, sin recurrir a su namespace.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from paquete.modulo1 import CONSTANTE_1</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print CONSTANTE_1</div>
+<p>Es posible también, importar más de un elemento en la misma instrucción. Para ello, cada elemento irá separado por una coma (,) y un espacio en blanco.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from paquete.modulo1 import CONSTANTE_1, CONSTANTE_2</div>
+<p>Pero ¿qué sucede si los elementos importados desde módulos diferentes tienen los mismos nombres? En estos casos, habrá que prevenir fallos, utilizando alias para los elementos:</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from paquete.modulo1 import CONSTANTE_1 as C1, CONSTANTE_2 as C2</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from paquete.subpaquete.modulo1 import CONSTANTE_1 as CS1,</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from .paquete.subpaquete.modulo1 import CONSTANTE_2 as CS2</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print C1</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print C2</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print CS1</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print CS2</div>
+<p>Se puede anteponer un punto(.) o dos puntos (..) indicando que la búsqueda del paquete debe empezar en el directorio del fichero en vez del proyecto.</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-160">
+<header class="nodeDecoration">
+<h1 id="exenode_160_44DestruccindeobjetosyLiberacindememoria" class="nodeTitle">4.4. Destrucción de objetos y Liberación de memoria</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id252-160">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta252_252_2" class="block iDevice_content">
+<div class="exe-text"><p>El recolector de basura o <strong>garbage collector</strong> es una de las piezas fundamentales del lenguaje, es la funcionalidad que libera al programador de la solicitud y liberación de memoria de forma explícita lo que facilita a los programadores la creación de programas, una mayor productividad, evita errores y fallos de seguridad. Uno de los motivos por los que programar en Python es cómodo y sencillo es que no tenemos que preocuparnos por el tiempo de vida de nuestros objetos ya que implementa el garbage collector. Es decir, una vez que deja de ser necesaria, una variable desaparece de la memoria “mágicamente”.</p>
+<p>Python utiliza para manejar la memoria una estrategia combinada consistente en: conteo de referencias y colector de basura generacional.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-161">
+<header class="nodeDecoration">
+<h1 id="exenode_161_441Lagestindelrecolectordebasuras" class="nodeTitle">4.4.1 La gestión del recolector de basuras</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id253-161">
+<div class="iDevice emphasis0" >
+<div id="ta253_253_2" class="block iDevice_content">
+<div class="exe-text"><p>El módulo <strong>gc</strong> proporciona una interfaz para el recolector de basura opcional (recolector de basura cíclico generacional). Proporciona la capacidad de deshabilitar el recolector, ajustar la frecuencia de recolección y establecer opciones de depuración.</p>
+<p>También proporciona acceso a objetos inaccesibles (unreachable) que el recolector encontró, pero no pudo liberar. Dado que el recolector de basura complementa el conteo de referencias es posible desactivarlo siempre que se esté seguro de que el programa no crea referencias cíclicas.</p>
+<p>El módulo gc proporciona las siguientes funciones:</p>
+<ul>
+<li>µ       gc.enable(). Habilita la recolección automática de basura.</li>
+<li>µ       gc.disable(). Deshabilita la recolección automática de basura.</li>
+<li>µ       gc.isenabled(). Retorna True si la recolección automática está habilitada.</li>
+<li>µ       gc.collect(generation=2). Sin argumentos, ejecuta una recolección completa. El argumento opcional generation debe ser un número entero que especifica qué generación recolectar (de 0 a 2. Se retorna el número de objetos inaccesibles encontrados.</li>
+</ul>
+<p>Las listas libres mantenidas para varios tipos incorporados son borradas cada vez que se ejecuta una recolección completa o una recolección de la generación más alta. No obstante, no todos los elementos de algunas listas libres pueden ser liberados, particularmente float, debido a su implementación particular.</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-162">
+<header class="nodeDecoration">
+<h1 id="exenode_162_45Libreraestndar" class="nodeTitle">4.5. Librería estándar</h1>
+</header>
+</article>
+<article class="node level-3-node" id="exe-node-163">
+<header class="nodeDecoration">
+<h1 id="exenode_163_451Cadenasclasestr" class="nodeTitle">4.5.1 Cadenas, clase str</h1>
+</header>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_preknowledge" id="id255-163">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Conocimiento previo</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta255_255_2" class="block iDevice_content">
+<p>Parra un uso básico de la clase str o cadenas de caracteres revisar la U.T. 3.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id256-163">
+<div class="iDevice emphasis0" >
+<div id="ta256_256_2" class="block iDevice_content">
+<div class="exe-text"><p>El tipo str es una secuencia inmutable de caracteres Unicode (cuidado cuando trabajes con texto procedente de ficheros u otras fuentes de datos. Fíjate en qué codificación está y haz las transformaciones necesarias si no quieres tener problemas. Por defecto, la codificación de un string en Python es Unicode, concretamente <strong>UTF-8</strong>).</p>
+<p>Una singularidad de la clase str es que a su constructor se le puede pasar cualquier objeto. Al hacer esto, la función str() devuelve la representación en forma de cadena de caracteres del propio objeto (si se pasa un string devuelve el string en sí). Normalmente, al llamar a la función str(objeto) lo que se hace internamente es llamar al método <strong>__str__()</strong> del objeto. Si este método no existe, entonces devuelve el resultado de invocar a repr(objeto) o <strong>__repr__()</strong>.</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-164">
+<header class="nodeDecoration">
+<h1 id="exenode_164_Cadenasdecaracteres" class="nodeTitle">Cadenas de caracteres.</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id257-164">
+<div class="iDevice emphasis0" >
+<div id="ta257_257_2" class="block iDevice_content">
+<div class="exe-text"><p>Todas las cadenas de caracteres implementan las operaciones comunes de las secuencias, junto con los métodos descritos a continuación.</p>
+<ul>
+<li>str.<strong>capitalize</strong>(). Retorna una copia de la cadena con el primer carácter en mayúsculas y el resto en minúsculas. Distinto en la versión 3.8: El primer carácter se pasa ahora a título, más que a mayúsculas. Esto significa que caracteres como dígrafos solo tendrán la primera letra en mayúsculas, en vez de todo el carácter.</li>
+<li>str.<strong>center(width[, fillchar])</strong>. Retorna el texto de la cadena, centrado en una cadena de longitud width. El relleno a izquierda y derecha se realiza usando el carácter definido por el parámetro fillchar (Por defecto se usa el carácter espacio ASCII). Si la cadena original tiene una longitud len(s) igual o superior a width, se retorna el texto sin modificar.</li>
+<li>str.<strong>count(sub[, start[, end]])</strong>. Retorna el número de ocurrencias no solapadas de la cadena sub en el rango [start, end]. Los parámetros opcionales start y end Se interpretan como en una expresión de rebanada.</li>
+<li>str.<strong>encode(encoding="utf-8", errors="strict")</strong>. Retorna una versión codificada en forma de bytes. La codificación por defecto es 'utf-8'. El parámetro errors permite especificar diferentes esquemas de gestión de errores. El valor por defecto de errors es 'strict', que significa que cualquier error en la codificación eleva una excepción de tipo UnicodeError. Otros valores posibles son 'ignore', 'replace', 'xmlcharrefreplace', 'backslashreplace' y cualquier otro nombre que se haya registrado mediante la función codecs.register_error().</li>
+<li>str.<strong>endswith(suffix[, start[, end]])</strong>. Retorna True si la cadena termina con el sufijo especificado con el parámetro prefix, y False en caso contrario. También podemos usar suffix para pasar una tupla de sufijos a buscar. Si especificamos el parámetro opcional start, la comprobación empieza en esa posición. Con el parámetro opcional stop, la comprobación termina en esa posición.</li>
+<li>str.<strong>find(sub[, start[, end]])</strong>. Retorna el menor índice de la cadena s donde se puede encontrar la cadena sub, considerando solo el intervalo s[start:end]. Los parámetros opcionales start y end se interpretan como si fueran “índices” de una slice. retorna -1 si no se encuentra la cadena. El método find() se debe usar solo si se necesita saber la posición de la cadena sub. Si solo se necesita comprobar si sub es una parte de s, es mejor usar el operador in:</li>
+</ul>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">'Py' in 'Python'</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">True</div>
+<ul>
+<li>str.<strong>isalnum</strong>(). Retorna True si todos los caracteres de la cadena son alfanuméricos y hay, al menos, un carácter.</li>
+<li>str.<strong>isalpha</strong>(). Retorna True si todos los caracteres de la cadena son alfabéticos y hay, al menos, un carácter.</li>
+<li>str.<strong>isascii</strong>(). Retorna True si la cadena de caracteres está vacía, o si todos los caracteres de la cadena son ASCII.</li>
+<li>str.<strong>isdecimal</strong>(). Retorna True si todos los caracteres de la cadena son caracteres decimales y hay, al menos, un carácter.</li>
+<li>str.<strong>isdigit</strong>(). Retorna True si todos los caracteres de la cadena son dígitos y hay, al menos, un carácter.</li>
+<li>str.<strong>isidentifier</strong>(). Retorna True si la cadena de caracteres es un identificar válido de acuerdo a la especificación del lenguaje.</li>
+<li>str.<strong>islower</strong>().  Retorna True si todos los caracteres de la cadena están en minúsculas y hay, al menos, un carácter de ese tipo.</li>
+<li>str.<strong>isnumeric</strong>(). Retorna True si todos los caracteres de la cadena son caracteres numéricos y hay, al menos, un carácter.</li>
+<li>str.<strong>isprintable</strong>(). Retorna True si todos los caracteres de la cadena son imprimibles o si la cadena está vacía.</li>
+<li>str.<strong>isspace</strong>(). Retorna True si todos los caracteres de la cadena son espacios en blanco y hay, al menos, un carácter. Un carácter se considera espacio en blanco si, en la base de datos de Unicode, está clasificado en la categoría general ("Espacio, separador") o la clase bidireccional es WS, B, or S.</li>
+<li>str.<strong>istitle</strong>(). Retorna True si las palabras en la cadena tienen forma de título y hay, al menos, un carácter.</li>
+<li>str.<strong>isupper</strong>(). Retorna True si todos los caracteres de la cadena están en mayúsculas y hay, al menos, un carácter de ese tipo</li>
+<li>str.<strong>join</strong>(iterable). Retorna una cadena de caracteres formada por la concatenación de las cadenas en el iterable. Se eleva una excepción de tipo TypeError si alguno de los elementos en el iterable no es una cadena, incluyendo objetos de tipo bytes. Se usa como separador entre los elementos la cadena de caracteres pasada como parámetro.</li>
+<li>str.<strong>lower</strong>(). Retorna una copia de la cadena de caracteres con todas las letras en minúsculas.</li>
+<li>str.<strong>replace(old, new[, count])</strong>. Retorna una copia de la cadena con todas las ocurrencias de la cadena old sustituidas por new. Si se utiliza el parámetro count, solo se cambian las primeras count ocurrencias.</li>
+<li>str.<strong>split(sep=None, maxsplit=-1)</strong>. Retorna una lista con las palabras que componen la cadena de caracteres original, usando como separador el valor de sep. Si se utiliza el parámetro maxsplit, se realizan como máximo maxsplit divisiones, (Por tanto, la lista resultante tendrá maxsplit+1 elementos). Si no se especifica maxsplit o se pasa con valor -1, entonces no hay límite al número de divisiones a realizar (Se harán todas las que se puedan).</li>
+<li>str.<strong>startswith(prefix[, start[, end]])</strong>. Retorna True si la cadena empieza por prefix, en caso contrario Retorna False. El valor de prefix puede ser también una tupla de prefijos por los que buscar. Con el parámetro opcional start, la comprobación empieza en esa posición de la cadena.</li>
+<li>str.<strong>strip([chars])</strong>. Retorna una copia de la cadena con los caracteres indicados eliminados, tanto si están al principio como al final de la cadena. El parámetro opcional chars es una cadena que especifica el conjunto de caracteres a eliminar. Si se omite o se usa None, se eliminan los caracteres de espacio en blanco. No debe entenderse el valor de chars como un prefijo, sino que se elimina cualquier combinación de sus caracteres.</li>
+<li>str.<strong>upper</strong>(). Retorna una copia de la cadena, con todos los caracteres con formas mayúsculas o minúsculas pasados a minúsculas.</li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-171">
+<header class="nodeDecoration">
+<h1 id="exenode_171_Ejercicios" class="nodeTitle">Ejercicios</h1>
+</header>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id269-171">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta269_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b269" class="block iDevice_content">
+<ul>
+<li>Escribir por pantalla cada carácter de una cadena introducida por teclado.</li>
+<li>Realizar un programa que comprueba si una cadena leída por teclado comienza por una subcadena pedida por teclado.</li>
+<li>Pide una cadena y un carácter por teclado (valida que sea un carácter) y muestra cuantas veces aparece el carácter en la cadena.</li>
+<li>Suponiendo que hemos introducido una cadena por teclado que representa una frase (palabras separadas por espacios), realiza un programa que cuente cuantas palabras tiene.</li>
+<li>Si tenemos una cadena con un nombre y apellidos, realizar un programa que muestre las iniciales en mayúsculas.</li>
+<li>Realizar un programa que, dada una cadena de caracteres por caracteres, genere otra cadena resultado de invertir la primera.</li>
+<li>Pide una cadena y dos caracteres por teclado (valida que sea un carácter), sustituye la aparición del primer carácter en la cadena por el segundo carácter.</li>
+<li>Realizar un programa que lea una cadena por teclado y convierta las mayúsculas a minúsculas y viceversa.</li>
+<li>Realizar un programa que compruebe si una cadena contiene una subcadena. Las dos cadenas se introducen por teclado.</li>
+<li>Escribir funciones que dada una cadena de caracteres:
+<ul>
+<li>Imprima los dos primeros caracteres.</li>
+<li>Imprima los tres últimos caracteres.</li>
+<li>Imprima dicha cadena cada dos caracteres. Ej.: recta debería imprimir rca</li>
+<li>Dicha cadena en sentido inverso. Ej.: hola mundo! debe imprimir !odnum aloh</li>
+<li>Imprima la cadena en un sentido y en sentido inverso. Ej.: reflejo imprime reflejoojelfer</li>
+</ul>
+</li>
+<li> Escribir funciones que dada una cadena y un carácter:
+<ul>
+<li>Inserte el carácter entre cada letra de la cadena. Ej.: separar , debería devolver s,e,p,a,r,a,r</li>
+<li>Reemplace todos los espacios por el carácter. Ej.: mi archivo de texto.txt y \_ debería devolver mi\_archivo\_de\_texto.txt</li>
+<li>Reemplace todos los dígitos en la cadena por el carácter. Ej.: su clave es: 1540 y X debería devolver su clave es: XXXX</li>
+<li>Inserte el carácter cada 3 dígitos en la cadena. Ej. 2552552550 y . debería devolver 255.255.255.0</li>
+</ul>
+</li>
+<li>Escribir una función que reciba una cadena que contiene un largo número entero y devuelva una cadena con el número y las separaciones de miles. Por ejemplo, si recibe 1234567890, debe devolver 1.234.567.890.</li>
+<li>Escribir una función que, dada una cadena de caracteres, devuelva:
+<ul>
+<li>La primera letra de cada palabra. Por ejemplo, si recibe Universal Serial Bus debe devolver USB.</li>
+<li>Dicha cadena con la primera letra de cada palabra en mayúsculas. Por ejemplo, si recibe república argentina debe devolver República Argentina.</li>
+<li>Las palabras que comiencen con la letra A. Por ejemplo, si recibe Antes de ayer debe devolver Antes ayer.</li>
+</ul>
+</li>
+<li>Escribir funciones que dada una cadena de caracteres:
+<ul>
+<li>Devuelva solamente las letras consonantes. Por ejemplo, si recibe algoritmos o logaritmos debe devolver lgrtms.</li>
+<li>Devuelva solamente las letras vocales. Por ejemplo, si recibe: sin consonantes debe devolver i ooae.</li>
+<li>Reemplace cada vocal por su siguiente vocal. Por ejemplo, si recibe vestuario debe devolver vistaerou.</li>
+<li>Indique si se trata de un palíndromo. Por ejemplo, anita lava la tina es un palíndromo (se lee igual de izquierda a derecha que de derecha a izquierda).</li>
+<li>Escribir funciones que devuelva la que sea anterior en orden alfábetico. Por ejemplo, si recibe kde y gnome debe devolver gnome.</li>
+</ul>
+</li>
+<li>Escribir una función que reciba una cadena de unos y ceros (es decir, un número en representación binaria) y devuelva el valor decimal correspondiente.</li>
+</ul>
+</section>
+<form name="feedback-form-quesFeedback0b269" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b269text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b269" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b269" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>"""<br />µ  Escribir por pantalla cada carácter de una cadena introducida por teclado.<br />"""<br /># cadena = input("¿Cadena?")<br /># for caracter in cadena:<br />#     print(caracter, end="-")<br />"""<br />µ  Realizar un programa que comprueba si una cadena leída por teclado comienza por una subcadena pedida por teclado.<br />"""<br /># cadena = input("¿Cadena?")<br /># subcadena = input("¿Subcadena?")<br /># print(f"Comienza {cadena} por {subcadena}", cadena.startswith(subcadena))<br />"""<br />µ  Pide una cadena y un carácter por teclado (valida que sea un carácter) y muestra cuantas veces aparece el carácter<br />en la cadena.<br />"""<br /># cadena = input("¿Cadena?")<br /># caracter = input("¿Carácter?")<br /># if len(caracter) &gt; 1:<br />#     print("No es un carácter")<br /># else:<br />#     print(f"El carácter {caracter} están en {cadena} {cadena.count(caracter)} veces")<br />"""<br />µ  Suponiendo que hemos introducido una cadena por teclado que representa una frase (palabras separadas por espacios),<br />realiza un programa que cuente cuantas palabras tiene.<br />"""<br /># cadena = input("¿Frase?")<br /># print("El número de palabras es", len(cadena.split(" ")))<br />"""<br />µ   Si tenemos una cadena con un nombre y apellidos, realizar un programa que muestre las iniciales en mayúsculas.<br />"""<br /># cadena = input("¿Frase?")<br /># print(cadena.title())<br />"""<br />µ  Realizar un programa que, dada una cadena de caracteres por caracteres, genere otra cadena resultado de invertir<br />la primera.<br />"""<br /># cadena = input("¿Frase?")<br /># print(cadena[::-1])<br />"""<br />µ   Pide una cadena y dos caracteres por teclado (valida que sea un carácter), sustituye la aparición del primer<br />carácter en la cadena por el segundo carácter.<br />"""<br /># cadena = input("¿Frase?")<br /># car_1 = input("¿Caracter original?")<br /># car_2 = input("¿Caracter a poner?")<br /># print(cadena.replace(car_1, car_2))<br />"""<br />µ   Realizar un programa que lea una cadena por teclado y convierta las mayúsculas a minúsculas y viceversa.<br />"""<br /># cadena = input("¿Frase?")<br /># print(cadena.swapcase())<br />"""<br />µ   Realizar un programa que compruebe si una cadena contiene una subcadena. Las dos cadenas se introducen por teclado.<br />"""<br /># cadena = input("¿Cadena?")<br /># subcadena = input("¿Subcadena?")<br /># print(f"La {cadena} contiene {subcadena}", cadena.find(subcadena) &gt; -1)<br />"""<br />µ   Introducir una cadena de caracteres e indicar si es un palíndromo. Una palabra palíndroma es aquella que se lee<br />igual adelante que atrás.<br />"""<br /># cadena_1 = input("¿Cadena?")<br /># cadena_2 = input("¿Subcadena?")<br /># print(f"La {cadena_1} y {cadena_2} son palíndromos:", cadena_1[::-1] == cadena_2)<br />"""<br />µ  Escribir funciones que dada una cadena de caracteres:<br />    o  Imprima los dos primeros caracteres.<br />    o  Imprima los tres últimos caracteres.<br />    o  Imprima dicha cadena cada dos caracteres. Ej.: recta debería imprimir rca<br />    o  Dicha cadena en sentido inverso. Ej.: hola mundo! debe imprimir !odnum aloh<br />    o  Imprima la cadena en un sentido y en sentido inverso. Ej: reflejo imprime reflejoojelfer.<br />"""<br /># cadena = input("¿Cadena?")<br /># print(cadena[:2])<br /># print(cadena[-3:])<br /># print(cadena[::-1])<br /># for num, car in enumerate(cadena):<br />#     if num % 2 == 0: print(car, end='')<br /># print()<br /># print(cadena, cadena[::-1])<br />"""<br />µ  Escribir funciones que dada una cadena y un caracter:<br />    o  Inserte el caracter entre cada letra de la cadena. Ej: separar y , debería devolver s,e,p,a,r,a,r<br />    o  Reemplace todos los espacios por el caracter. Ej: mi archivo de texto.txt y \_ <br />    debería devolver mi\_archivo\_de\_texto.txt<br />    o  Reemplace todos los dígitos en la cadena por el caracter. Ej: su clave es: 1540 y X debería devolver <br />    su clave es: XXXX<br />    o  Inserte el caracter cada 3 dígitos en la cadena. Ej. 2552552550 y . debería devolver 255.255.255.0<br />"""<br /># cadena = input("¿Cadena?")<br /># cadena_resultado = ""<br /># for char in cadena:<br />#     cadena_resultado += char + ","<br /># print(cadena_resultado)<br /># print(cadena.replace(" ", "\_"))<br /># cadena_resultado = ""<br /># for char in cadena:<br />#     if char.isdigit():<br />#         cadena_resultado += "X"<br />#     else:<br />#         cadena_resultado += char<br /># print(cadena_resultado)<br /># cadena_resultado = ""<br /># for numero in range(0, len(cadena), 3):<br />#     if numero &gt; 0:<br />#         cadena_resultado += "."<br />#     cadena_resultado += cadena[numero:numero+3]<br /># print(cadena_resultado)<br />"""<br />µ  Escribir una función que reciba una cadena que contiene un largo número entero y devuelva una cadena con el número<br />y las separaciones de miles. Por ejemplo, si recibe 1234567890, debe devolver 1.234.567.890.<br />"""<br /># cadena = input("¿Cadena?")<br /># subcadena = cadena_resultado = ""<br /># num_inicial = len(cadena) % 3  # caracteres que sobran por la izquierda para el primer punto<br /># if num_inicial &gt; 0: # imprimimos el primer grupo, el no completo<br />#     print(cadena[0:num_inicial] + ".", end='')<br />#     subcadena = cadena[num_inicial:]<br /># else:<br />#     subcadena = cadena<br /># for numero in range(0, len(subcadena), 3): # imprimimos grupos de tres en tres<br />#     if numero &gt; 0:<br />#         cadena_resultado += "."<br />#     cadena_resultado += cadena[numero:numero+3]<br /># print(cadena_resultado)<br />"""<br />µ  Escribir una función que dada una cadena de caracteres, devuelva:<br />    o  La primera letra de cada palabra. Por ejemplo, si recibe Universal Serial Bus debe devolver USB.<br />    o  Dicha cadena con la primera letra de cada palabra en mayúsculas. Por ejemplo, si recibe república argentina<br />    debe devolver República Argentina.<br />    o  Las palabras que comiencen con la letra A. Por ejemplo, si recibe Antes de ayer debe devolver Antes ayer.<br />"""<br /># cadena = input("¿Cadena?")<br /># for palabra in cadena.split(" "):<br />#     print(palabra[0], end='')<br /># print()<br /># print(cadena.title())<br /># for palabra in cadena.split(" "):<br />#     if palabra[0].upper() == "A":<br />#         print(palabra, end=' ')<br />"""<br />µ  Escribir funciones que dada una cadena de caracteres:<br />    o  Devuelva solamente las letras consonantes. Por ejemplo, si recibe algoritmos o logaritmos debe devolver lgrtms.<br />    o  Devuelva solamente las letras vocales. Por ejemplo, si recibe sin consonantes debe devolver i ooae.<br />    o  Reemplace cada vocal por su siguiente vocal. Por ejemplo, si recibe vestuario debe devolver vistaerou.<br />    o  Indique si se trata de un palíndromo. Por ejemplo, anita lava la tina es un palíndromo (se lee igual de<br />    izquierda a derecha que de derecha a izquierda).<br />"""<br /># cadena = input("¿Cadena?")<br /># cadena_resultado = ""<br /># vocales = ['a', 'e', 'i', 'o', 'u']<br /># for caracter in cadena:<br />#     if caracter.lower() not in vocales:<br />#         cadena_resultado += caracter<br /># print(cadena_resultado)<br /># cadena_resultado = ""<br /># for caracter in cadena:<br />#     if caracter.lower() in vocales + [' ']:<br />#         cadena_resultado += caracter<br /># print(cadena_resultado)<br /># cadena_resultado = ""<br /># for caracter in cadena:<br />#     if caracter.lower() in vocales:<br />#         siguiente = (vocales.index(caracter) + 1) % 5<br />#         cadena_resultado += vocales[siguiente]<br />#     else:<br />#         cadena_resultado += caracter<br /># print(cadena_resultado)<br /># print(f"{cadena} es palíndromo", cadena == cadena[::-1])<br />"""<br />µ  Escribir funciones que dadas dos cadenas de caracteres:<br />    o  Devuelva la que sea anterior en orden alfábetico. Por ejemplo, si recibe kde y gnome debe devolver gnome.<br />"""<br /># cadena_1 = input("¿Cadena?")<br /># cadena_2 = input("¿Cadena?")<br /># print(cadena_2 if cadena_1.upper() &gt; cadena_2.upper() else cadena_1)<br />"""<br />µ  Escribir una función que reciba una cadena de unos y ceros (es decir, un número en representación binaria) y<br />devuelva el valor decimal correspondiente.<br />"""<br /># cadena = input("¿Cadena Binaria?")<br /># # print(int(cadena, 2))  # esta solo lo hace<br /># posicion = 0<br /># numero_decimal = 0<br /># if len(cadena) == cadena.count('0') + cadena.count('1'):<br />#     for caracter in cadena[::-1]:<br />#         numero_decimal += int(caracter) * 2 ** posicion<br />#         posicion += 1<br /># print(numero_decimal)</p>
+<p></p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-4-node" id="exe-node-165">
+<header class="nodeDecoration">
+<h1 id="exenode_165_Expresionesregulares" class="nodeTitle">Expresiones regulares.</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id258-165">
+<div class="iDevice emphasis0" >
+<div id="ta258_258_2" class="block iDevice_content">
+<div class="exe-text"><p>Las expresiones regulares son un potente lenguaje de descripción de texto. Tanto los patrones como las cadenas de texto a buscar pueden ser cadenas de Unicode, así como cadenas de 8 bits. Sin embargo, las cadenas Unicode y las cadenas de 8 bits no se pueden mezclar: es decir, no se puede hacer coincidir una cadena Unicode con un patrón de bytes o viceversa; del mismo modo, al pedir una sustitución, la cadena de sustitución debe ser del mismo tipo que el patrón y la cadena de búsqueda.</p>
+<p>Las expresiones regulares usan el carácter de barra inversa ('\') para indicar formas especiales o para permitir el uso de caracteres especiales sin invocar su significado especial. Esto choca con el uso de Python de este carácter para el mismo propósito con los literales de cadena; por ejemplo, para hacer coincidir una barra inversa literal, se podría escribir '\\\\' como patrón, porque la expresión regular debe ser \\, y cada barra inversa debe ser expresada como \\ dentro de un literal de cadena regular de Python.</p>
+<p>La solución es usar la notación de cadena raw de Python para los patrones de expresiones regulares; las barras inversas no se manejan de ninguna manera especial en un literal de cadena prefijado con 'r'. Así que r"\n" es una cadena de dos caracteres que contiene '\' y 'n', mientras que "\n" es una cadena de un carácter que contiene una nueva línea. Normalmente los patrones se expresan en código Python usando esta notación de cadena raw.</p>
+<p style="padding: 5px; border-style: solid;"><a href="https://docs.python.org/es/3/library/re.html" target="_blank" rel="noopener">https://docs.python.org/es/3/library/re.html</a></p>
+<p style="padding: 5px; border-style: solid;"><a href="https://docs.python.org/es/3/howto/regex.html#regex-howto" target="_blank" rel="noopener">https://docs.python.org/es/3/howto/regex.html#regex-howto</a></p>
+<p style="padding: 5px; border-style: solid;"><a href="http://w3.unpocodetodo.info/utiles/regex.php" target="_blank" rel="noopener">http://w3.unpocodetodo.info/utiles/regex.php</a></p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-5-node" id="exe-node-166">
+<header class="nodeDecoration">
+<h1 id="exenode_166_Patrones" class="nodeTitle">Patrones</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id259-166">
+<div class="iDevice emphasis0" >
+<div id="ta259_259_2" class="block iDevice_content">
+<div class="exe-text"><p>Las reglas con las que se forman las expresiones son bastante simples y se denominan patrón. Pero aprender a combinarlas correctamente requiere de práctica. Utilizándolas podemos buscar una subcadena al principio o al final del texto. Incluso si queremos que se repita cierta cantidad de veces, si queremos que algo NO aparezca, o si debe aparecer una subcadena entre varias posibilidades. Permite, además, capturar aquellos trozos del texto que coincidan con la expresión para guardarlos en una variable o reemplazarlos por una cadena predeterminada; o incluso una cadena formada por los mismos trozos capturados.</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-5-node" id="exe-node-167">
+<header class="nodeDecoration">
+<h1 id="exenode_167_Metacaracteres" class="nodeTitle">Metacaracteres</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id260-167">
+<div class="iDevice emphasis0" >
+<div id="ta260_260_2" class="block iDevice_content">
+<div class="exe-text"><p>Se conoce como metacaracteres a aquellos que, dependiendo del contexto, tienen un significado especial para las expresiones regulares. Por lo tanto, los debemos escapar colocándoles una contrabarra (\) delante para buscarlos explícitamente.</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-5-node" id="exe-node-168">
+<header class="nodeDecoration">
+<h1 id="exenode_168_Elementosdeunaexpresin" class="nodeTitle">Elementos de una expresión</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id261-168">
+<div class="iDevice emphasis0" >
+<div id="ta261_261_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="10.png" alt="Expresión regular" width="931" height="346" /></p>
+<p>Una expresión es una cadena de texto formada por caracteres, metacaracteres o cualquier estructura que permita la sintaxis. Veamos los más importantes:</p>
+<ul>
+<li><strong>Cadena</strong> literal. Coincide exactamente con lo escrito. Abc à buscará Abc.</li>
+<li><strong>Anclas</strong>: Indican que lo que queremos encontrar se encuentra al principio o al final de la cadena. Combinándolas, podemos buscar algo que represente a la cadena entera:
+<ul>
+<li><strong>patron</strong>: coincide con cualquier cadena que comience con patrón.</li>
+<li><strong>patron$</strong>: coincide con cualquier cadena que termine con patrón.</li>
+<li><strong>^patron$</strong>: coincide con la cadena exacta patrón.</li>
+</ul>
+</li>
+<li><strong>Clases de caractere</strong>s: Se utilizan cuando se quiere buscar un carácter dentro de varias posibles opciones. Una clase se delimita entre corchetes y lista posibles opciones para el carácter que representa:
+<ul>
+<li><strong>[abc]</strong>: coincide con a, b, o c</li>
+<li><strong>[387ab]</strong>: coincide con 3, 8, a o b</li>
+<li><strong>niñ[oa]s</strong>: coincide con niños o niñas.</li>
+<li>Para evitar errores, en caso de que queramos crear una clase de caracteres que contenga un corchete, debemos escribir una barra \ delante, para que el motor de expresiones regulares lo considere un carácter normal: la clase [ab\[] coincide con a, b y [.</li>
+</ul>
+</li>
+<li><strong>Rangos</strong>. Si queremos encontrar un número, podemos usar una clase como [0123456789], o podemos utilizar un rango. Un rango es una clase de caracteres abreviada que se crea escribiendo el primer carácter del rango, un guion y el último carácter del rango. Múltiples rangos pueden definirse en la misma clase de caracteres.
+<ul>
+<li>[a-c]: equivale a [abc]</li>
+<li>[0-9]: equivale a [0123456789]</li>
+<li>[a-d5-8]: equivale a [abcd5678]</li>
+<li>Es importante notar que si se quiere buscar un guion debe colocarse al principio o al final de la clase. Es decir, inmediatamente después del corchete izquierdo o inmediatamente antes del corchete derecho; o, en su defecto, escaparse. Si no se hace de esta forma, el motor de expresiones regulares intentará crear un rango y la expresión no funcionará como debe (o dará un error). Si queremos, por ejemplo, crear una clase que coincida con los caracteres a, 4 y -, debemos escribirla así:</li>
+</ul>
+</li>
+</ul>
+<div style="padding-left: 90px;">[a4-]</div>
+<div style="padding-left: 90px;">[-a4]</div>
+<div style="padding-left: 90px;">[a\-4]</div>
+<ul>
+<li><strong>Rango negado</strong>. Así como podemos listar los caracteres posibles en cierta posición de la cadena, también podemos listar caracteres que no deben aparecer. Para lograrlo, debemos negar la clase, colocando un circunflejo inmediatamente después del corchete izquierdo.
+<ul>
+<li>[^abc]: coincide con cualquier carácter distinto de a, b y c</li>
+</ul>
+</li>
+<li><strong>Clases predefinidas</strong>. Existen algunas clases que se usan frecuentemente y por eso existen formas abreviadas para ellas. En Python, así como en otros lenguajes, se soportan las clases predefinidas de Perl y de POSIX. Algunos ejemplos de expresiones regulares son:
+<ul>
+<li>\d (POSIX [[:digit:]]): equivale a [0-9]</li>
+<li>\s (POSIX [[:space:]]): caracteres de espacio en blanco (espacio, tabulador, nueva línea, etc)</li>
+<li>\w (POSIX [[:word:]]): letras minúsculas, mayúsculas, números y guion bajo (_)</li>
+<li>"." : coincide con cualquier carácter.</li>
+</ul>
+</li>
+<li><strong>Cuantificadores</strong>. Son conjuntos de caracteres que multiplican el patrón que les precede. Mientras que con las clases de caracteres podemos buscar un dígito, o una letra; con los cuantificadores podemos buscar cero o más letras, al menos 7 dígitos, o entre tres y cinco letras mayúsculas. Los cuantificadores son.
+<ul>
+<li>*                             cero o más, similar a {0,}.</li>
+<li>+                             una o más, similar a {1,}.</li>
+<li>?                             cero o una, similar a {0,1}.</li>
+<li>{n}                          exactamente n veces.</li>
+<li>{n,}                         por lo menos n veces.</li>
+<li>{n, m}    por lo menos n, pero no más de m veces.</li>
+<li>*?                           cero o más, similar a {0 , }?.</li>
+<li>+?                           una o más, similar a {1, }?.</li>
+<li>??                           cero o una, similar a {0,1}?.</li>
+<li>{n}?                        exactamente n veces.</li>
+<li>{n,}?                      por lo menos n veces.</li>
+<li>{n, m}? por lo menos n pero no más de m veces.</li>
+</ul>
+</li>
+<li><strong>Alternativa</strong> (|): permite definir opciones para el patrón: <strong>perro|gato</strong> coincide con perro y con gato.</li>
+<li><strong>Secuencias de escape o metacaracteres</strong>.
+<ul>
+<li>\n           Nueva línea (new line). El cursor pasa a la primera posición de la línea siguiente.</li>
+<li>\t            Tabulador. El cursor pasa a la siguiente posición de tabulación.</li>
+<li>\\            Barra diagonal inversa</li>
+<li>\v           Tabulación vertical.</li>
+<li>\ooo      Carácter ASCII en notación octal.</li>
+<li>\xhh      Carácter ASCII en notación hexadecimal.</li>
+<li>\xhhhh Carácter Unicode en notación hexadecimal.</li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-5-node" id="exe-node-169">
+<header class="nodeDecoration">
+<h1 id="exenode_169_Ejemplos" class="nodeTitle">Ejemplos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id262-169">
+<div class="iDevice emphasis0" >
+<div id="ta262_262_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li><strong>.*</strong> : cualquier cadena, de cualquier largo (incluyendo una cadena vacía)</li>
+<li><strong>[a-z]{3,6</strong>}: entre 3 y 6 letras minúsculas</li>
+<li><strong>\d{4,}</strong>: al menos 4 dígitos</li>
+<li><strong>.*hola!?</strong>: una cadena cualquiera, seguida de hola, y terminando (o no) con un !</li>
+<li><strong>^[(a-z0-9\_\-\.)]+@[(a-z0-9\_\-\.)]+\.[(a-z)]{2,15}</strong>. Valida un email.</li>
+<li><strong>^\(?\+[\d]{1,3}\)?\s?[\d]{1,5}\s?[\d][\s\.-]?{6,7}$</strong>. Para un número de teléfono.</li>
+</ul></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-5-node" id="exe-node-170">
+<header class="nodeDecoration">
+<h1 id="exenode_170_Mdulore" class="nodeTitle">Módulo re</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id263-170">
+<div class="iDevice emphasis0" >
+<div id="ta263_263_2" class="block iDevice_content">
+<div class="exe-text"><p>Para utilizar Expresiones Regulares, Python provee el módulo re. Importando este módulo podemos crear objetos de tipo patrón y generar objetos tipo matcher, que son los que contienen la información de la coincidencia del patrón en la cadena.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id264-170">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Creando un patrón</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta264_264_2" class="block iDevice_content">
+<div class="exe-text"><p>Para crear un objeto patrón, debemos importar el módulo re y utilizamos la función compile.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import re</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">patron = re.compile(r'a[3-5]+')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># coincide con una letra, seguida de al menos 1 dígito entre</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># 3 y 5<br /> </div>
+<p>Desde este momento, podemos usar el objeto patrón para comparar cadenas con la expresión regular.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id265-170">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Buscar el patrón en la cadena</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta265_265_2" class="block iDevice_content">
+<div class="exe-text"><p>Para buscar un patrón en una cadena, Python provee los métodos search y match. La diferencia entre ambos es que, mientras search busca en la cadena alguna ocurrencia del patrón, match devuelve None si la ocurrencia no se da al principio de la cadena.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cadena = r'a44453'</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">patron.match(cadena)  # &lt;_sre.SRE_Match object at 0x02303BF0&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">patron.search(cadena) # &lt;_sre.SRE_Match object at 0x02303C28&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cadena = r'ba3455' # la coincidencia no está al principio!</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">patron.search(cadena)#  &lt;_sre.SRE_Match object at 0x02303BF0&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print patron.match(cadena) # None</div>
+<p><br />Si sabemos que obtendremos más de una coincidencia, podemos usar el método <strong>findall</strong>, que recorre la cadena y devuelve una lista de coincidencias.</p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">patron.findall(r'a455 a333b435') # ['a455', 'a333']</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id266-170">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Reemplazo de cadenas</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta266_266_2" class="block iDevice_content">
+<div class="exe-text"><p>Similar a la combinación search + expand, existe el método sub; cuya función es encontrar todas las coincidencias de un patrón y sustituirlas por una cadena. Este recibe dos parámetros: el primero es la cadena con la que se sustituirá el patrón y el segundo es la cadena sobre la que queremos aplicar la sustitución. Y también se pueden utilizar referencias.</p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">patron.sub(r"X", r'a455 a333b435')</p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># sustituye todas las ocurrencias del patrón por X 'X XX'</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id267-170">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Modificadores para el patrón</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta267_267_2" class="block iDevice_content">
+<div class="exe-text"><p>Existen varios modificadores que podemos pasar al método compile para modificar el comportamiento del patrón. Los más usados son:</p>
+<ul>
+<li>µ       re.I o re.IGNORECASE: hace que el patrón no distinga entre minúsculas y mayúsculas.</li>
+<li>µ       re.M o re.MULTILINE: modifica el comportamiento de ^ y `&lt;letra para que coincidan con el comienzo y final de cada línea de la cadena, en lugar de coincidir con el comienzo y final de la cadena entera</li>
+<li>µ       re.S o re.DOTALL: hace que el punto (.) coincida además con un salto de línea. Sin este modificador, el punto coincide con cualquier carácter excepto un salto de línea</li>
+</ul>
+<p>Cada modificador se usa como segundo parámetro de la función. Podemos unir los efectos de más de un modificador separándolos con |.</p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">patron = re.compile(r'el patron', re.I | re.MULTILINE)</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id268-170">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">División según el patrón</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta268_268_2" class="block iDevice_content">
+<div class="exe-text"><p>El método re.<strong>split</strong>: divide una cadena a partir de un patrón.</p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(re.split(r' ', texto))</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-172">
+<header class="nodeDecoration">
+<h1 id="exenode_172_452Math" class="nodeTitle">4.5.2. Math</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id270-172">
+<div class="iDevice emphasis0" >
+<div id="ta270_270_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>Funciones numéricasµ    </strong></p>
+<ul>
+<li> math<strong>.ceil(x)</strong>: Devuelve el entero más próximo mayor o igual que x.</li>
+<li>math.<strong>floor(x)</strong>: Devuelve el entero más próximo menor o igual que x.</li>
+<li>math.<strong>gcd(a, b)</strong>: Devuelve el máximo común divisor ("greatest common divisor") de los números a y b.</li>
+<li>math.<strong>isnan(x)</strong>: Devuelve el booleano True si x es un NaN ("Not a Number").</li>
+</ul>
+<p><strong>Funciones de potencia y logarítmicas</strong></p>
+<ul>
+<li>math.<strong>exp(x)</strong>: Devuelve ex.</li>
+<li>math.<strong>log(x, [base])</strong>: Devuelve el logaritmo neperiano de x. Si se incluye el segundo argumento, devuelve el logaritmo de x en la base indicada.</li>
+<li>math.<strong>log2(x)</strong>: Devuelve el logaritmo en base 2 de x.</li>
+<li>math.<strong>log10(x)</strong>: Devuelve el logaritmo en base 10 de x.</li>
+<li>math.<strong>pow(x, y)</strong>: Devuelve xy.</li>
+<li>math.<strong>sqrt(x)</strong>: Devuelve la raíz cuadrada de x.</li>
+</ul>
+<p><strong>Funciones trigonométricas y de conversión de ángulos</strong></p>
+<ul>
+<li>math.<strong>cos(x)</strong>: Devuelve el coseno de x.</li>
+<li>math.<strong>sin(x)</strong>: Devuelve el seno de x.</li>
+<li>math.<strong>tan(x)</strong>: Devuelve la tangente de x.</li>
+<li>math.<strong>degrees(x)</strong>: Convierte un ángulo de grados sexagesimales a radianes.</li>
+<li>math.<strong>radians(x)</strong>: Convierte un ángulo de radianes a grados sexagesimales.</li>
+</ul>
+<p><strong>Constantes</strong></p>
+<ul>
+<li>math.<strong>pi</strong>: Número pi.</li>
+<li>math.<strong>e</strong>: Número e:</li>
+<li>math.<strong>nan</strong>: Valor equivalente a "no es un número".</li>
+</ul>
+<p></p>
+<p><a href="https://docs.python.org/3/library/math.html" target="_blank" rel="noopener" style="border-style: solid;">https://docs.python.org/3/library/math.html</a></p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-173">
+<header class="nodeDecoration">
+<h1 id="exenode_173_453Pandas" class="nodeTitle">4.5.3. Pandas</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id271-173">
+<div class="iDevice emphasis0" >
+<div id="ta271_271_2" class="block iDevice_content">
+<div class="exe-text"><p>Es un paquete de Python que proporciona estructuras de datos similares a los dataframes de R. Pandas depende de Numpy, la librería que añade un potente tipo matricial a Python. Los principales tipos de datos que pueden representarse con pandas son:</p>
+<ul>
+<li>Datos tabulares con columnas de tipo heterogéneo con etiquetas en columnas y filas.</li>
+<li>Series temporales.</li>
+</ul>
+<p>Pandas proporciona herramientas que permiten:</p>
+<ul>
+<li>leer y escribir datos en diferentes formatos: CSV, Microsoft Excel, bases SQL y formato HDF5</li>
+<li>seleccionar y filtrar de manera sencilla tablas de datos en función de posición, valor o etiquetas</li>
+<li>fusionar y unir datos</li>
+<li>transformar datos aplicando funciones tanto en global como por ventanas</li>
+<li>manipulación de series temporales</li>
+<li>hacer gráficas</li>
+</ul>
+<p>En pandas existen tres tipos básicos de objetos todos ellos basados a su vez en Numpy:</p>
+<ul>
+<li>Series (listas, 1D).</li>
+<li>DataFrame (tablas, 2D).</li>
+<li>Panels (tablas 3D).</li>
+</ul>
+<p style="padding: 5px; border-style: solid;"><a href="https://pandas.pydata.org/pandas-docs/stable/index.html" target="_blank" rel="noopener">https://pandas.pydata.org/pandas-docs/stable/index.html</a></p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-174">
+<header class="nodeDecoration">
+<h1 id="exenode_174_454NumPy" class="nodeTitle">4.5.4. NumPy</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id272-174">
+<div class="iDevice emphasis0" >
+<div id="ta272_272_2" class="block iDevice_content">
+<div class="exe-text"><p>Es una biblioteca para el lenguaje de programación Python que da soporte para crear vectores y matrices grandes multidimensionales, junto con una gran colección de funciones matemáticas de alto nivel para operar con ellas.</p>
+<p>El uso de NumPy en Python brinda una funcionalidad comparable a MATLAB, ya que ambos se interpretan​ y ambos permiten al usuario escribir programas rápidos siempre que la mayoría de las operaciones funcionen en vectores o matrices en lugar de escalares.</p>
+<p>NumPy es un paquete optimizado para trabajar bajo GPUs.</p>
+<p><a href="https://numpy.org/doc/stable/" target="_blank" rel="noopener" style="padding: 5px; border-style: solid;">https://numpy.org/doc/stable/</a></p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-175">
+<header class="nodeDecoration">
+<h1 id="exenode_175_455Mathplotlib" class="nodeTitle">4.5.5. Mathplotlib</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id273-175">
+<div class="iDevice emphasis0" >
+<div id="ta273_273_2" class="block iDevice_content">
+<div class="exe-text"><p>Es una biblioteca de imágenes 2D y 3D que produce figuras de alta calidad en una variedad de formatos impresos y entornos interactivos en todas las plataformas. La librería Mathplotlib se puede utilizar en scripts de Python, el shell de Python y en iPython.</p>
+<p><img src="11.png" alt="Mathplotlib" width="891" height="336" /></p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import matplotlib.pyplot as plt</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">plt.plot([1, 2, 3, 4])</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">plt.ylabel('some numbers')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">plt.show()<br /> </div>
+<p></p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import numpy as np</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import matplotlib.pyplot as plt</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">data = {'a': np.arange(50),</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        'c': np.random.randint(0, 50, 50),</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        'd': np.random.randn(50)}</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">data['b'] = data['a'] + 10 * np.random.randn(50)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">data['d'] = np.abs(data['d']) * 100</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">plt.scatter('a', 'b', c='c', s='d', data=data)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">plt.xlabel('entry a')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">plt.ylabel('entry b')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">plt.show()<br /> </div>
+<p><a href="https://matplotlib.org/stable/index.html" target="_blank" rel="noopener" style="padding: 5px; border-style: solid;">https://matplotlib.org/stable/index.html</a></p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-176">
+<header class="nodeDecoration">
+<h1 id="exenode_176_46CasoPrcticoDawbank" class="nodeTitle">4.6. Caso Práctico Dawbank</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_draw" id="id274-176">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_draw.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta274_274_2" class="block iDevice_content">
+<div class="exe-text"><p>La empresa LibreCoders te ha contratado para desarrollar un software de gestión de una cuenta bancaria para la cooperativa de banca ética y sostenible DawBank. Se trata de una aplicación Java formada por una clase principal <strong>DawBank</strong> y otra llamada <strong>CuentaBancaria</strong>.</p>
+<p>El programa pedirá los datos necesarios para crear una cuenta bancaria. Si son válidos, creará la cuenta y mostrará el menú principal para permitir actuar sobre la cuenta. Tras cada acción se volverá a mostrar el menú.</p>
+<ol>
+<li>Datos de la cuenta. Mostrará el IBAN, el titular y el saldo.</li>
+<li>IBAN. Mostrará el IBAN.</li>
+<li>Titular. Mostrará el titular.</li>
+<li>Saldo. Mostrará el saldo disponible.</li>
+<li> Ingreso. Pedirá la cantidad a ingresar y realizará el ingreso si es posible.</li>
+<li>Retirada. Pedirá la cantidad a retirar y realizará la retirada si es posible.</li>
+<li>Movimientos. Mostrará una lista con el historial de movimientos.</li>
+<li>Salir. Termina el programa.</li>
+</ol>
+<p><strong>Clase CuentaBancaria</strong></p>
+<p>Una cuenta bancaria tiene como datos asociados el iban (international bank acount number, formado por dos letras y 22 números, por ejemplo, ES6621000418401234567891), el titular (un nombre completo), el saldo (dinero en euros) y los movimientos (histórico de los movimientos realizados en la cuenta, un máximo de 100(*) para simplificar).</p>
+<p>Cuando se crea una cuenta es obligatorio que tenga un iban y un titular (que no podrán cambiar nunca). El saldo será de 0 euros y la cuenta no tendrá movimientos asociados.</p>
+<p>El saldo solo puede variar cuando se produce un ingreso (entra dinero en la cuenta) o una retirada (sale dinero de la cuenta). En ambos casos se deberá registrar la operación en los movimientos. Los ingresos y retiradas solo pueden ser de valores superiores a cero.</p>
+<p>El saldo de una cuenta nunca podrá ser inferior a -50(*) euros. Si se produce un movimiento que deje la cuenta con un saldo negativo (no inferior a -50) habrá que mostrar el mensaje “AVISO: Saldo negativo”. Si se produce un movimiento superior a 3.000(*) euros se mostrará el mensaje “AVISO: Notificar a hacienda”.</p>
+<p>No se realizará ningún tipo de entrada por teclado. La única salida por pantalla permitida son los dos mensajes de aviso mencionados arriba, ninguna otra.</p>
+<p>(*) Estos valores no pueden variar y son iguales para todas las cuentas bancarias.</p>
+<p><strong>Clase DawBank</strong></p>
+<p>Clase principal con función main. Encargada de interactuar con el usuario, mostrar el menú principal, dar feedback y/o mensajes de error, etc. Utilizará la clase CuentaBancaria. Puedes implementar las funciones que consideres oportunas.</p>
+<p><br /> </p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-37">
+<header class="nodeDecoration">
+<h1 id="exenode_37_Resumen" class="nodeTitle">Resumen</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_objectives" id="id143-37">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_objectives.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta143_183_2" class="block iDevice_content">
+<div class="exe-text"><div class="exe-mind-map">
+<figure class="exe-figure exe-image position-center" style="width: 1217px;"><img src="map_1640112422716.png" width="1217" height="700" alt="Resumen" />
+<figcaption class="figcaption"><span class="title"><em>Resumen</em></span></figcaption>
+</figure>
+<p class="exe-mindmap-code">{"id":"68275b5e-1172-4b02-91d8-a139f37a57f2","title":"POO","mindmap":{"root":{"id":"556885f9-1424-4d44-9907-a104c3c1ced3","parentId":null,"text":{"caption":"POO","font":{"style":"normal","weight":"bold","decoration":"none","size":20,"color":"#000000"}},"offset":{"x":0,"y":0},"foldChildren":false,"branchColor":"#000000","children":[{"id":"4665ba62-3530-49b1-b9a6-333c6651e836","parentId":"556885f9-1424-4d44-9907-a104c3c1ced3","text":{"caption":"Clases","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":62,"y":-105.0069580078125},"foldChildren":false,"branchColor":"#da0f64","children":[{"id":"2266098e-a91e-4084-b773-d7392fbf1aeb","parentId":"4665ba62-3530-49b1-b9a6-333c6651e836","text":{"caption":"Representación","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":114.9757080078125,"y":-22.03472900390625},"foldChildren":false,"branchColor":"#da0f64","children":[]},{"id":"c091bef5-9e43-43ef-aec8-18a6149b42b3","parentId":"4665ba62-3530-49b1-b9a6-333c6651e836","text":{"caption":"Compuestos de","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":154.9757080078125,"y":44.96527099609375},"foldChildren":false,"branchColor":"#da0f64","children":[{"id":"747d8fc6-1b52-4519-b8a5-9ea0deaf9261","parentId":"c091bef5-9e43-43ef-aec8-18a6149b42b3","text":{"caption":"Atributos","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":138.96533203125,"y":-28.03472900390625},"foldChildren":false,"branchColor":"#da0f64","children":[{"id":"97d76993-08db-4fa8-9d88-b224f2bd66aa","parentId":"747d8fc6-1b52-4519-b8a5-9ea0deaf9261","text":{"caption":"Generales","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":107.9757080078125,"y":-25.024322509765625},"foldChildren":false,"branchColor":"#da0f64","children":[]},{"id":"e0a25936-4b7b-485f-a44a-427cb236779e","parentId":"747d8fc6-1b52-4519-b8a5-9ea0deaf9261","text":{"caption":"Comienzan con _","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":111.9617919921875,"y":26.95831298828125},"foldChildren":false,"branchColor":"#da0f64","children":[]},{"id":"fe21d012-a609-439f-8bbf-30d99d9fe555","parentId":"747d8fc6-1b52-4519-b8a5-9ea0deaf9261","text":{"caption":"Propiedades","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":114.767333984375,"y":-74.20832824707031},"foldChildren":false,"branchColor":"#da0f64","children":[]}]},{"id":"f453bd26-21a4-46f6-b26d-334d20ac533a","parentId":"c091bef5-9e43-43ef-aec8-18a6149b42b3","text":{"caption":"Métodos","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":152.96533203125,"y":48.96527099609375},"foldChildren":false,"branchColor":"#da0f64","children":[{"id":"696219ed-f505-4aa3-920f-c5aac9481247","parentId":"f453bd26-21a4-46f6-b26d-334d20ac533a","text":{"caption":"Definición","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":99.93408203125,"y":94.98263549804688},"foldChildren":false,"branchColor":"#da0f64","children":[{"id":"8a59dcaa-c0d6-4d9b-b096-e4d7e43116cc","parentId":"696219ed-f505-4aa3-920f-c5aac9481247","text":{"caption":"Parámetros","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":107.9722900390625,"y":1.9478759765625},"foldChildren":false,"branchColor":"#da0f64","children":[{"id":"153910c5-f52c-40c5-b987-3a75af4cf205","parentId":"8a59dcaa-c0d6-4d9b-b096-e4d7e43116cc","text":{"caption":"Por defecto","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":133.9791259765625,"y":-7.03472900390625},"foldChildren":false,"branchColor":"#da0f64","children":[]},{"id":"cdfe2b52-4fd0-4c23-8b29-eccf68a4574e","parentId":"8a59dcaa-c0d6-4d9b-b096-e4d7e43116cc","text":{"caption":"Por palabras clave","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":130.9791259765625,"y":49.96527099609375},"foldChildren":false,"branchColor":"#da0f64","children":[]},{"id":"af86dc79-6402-4281-8920-c87daa03adae","parentId":"8a59dcaa-c0d6-4d9b-b096-e4d7e43116cc","text":{"caption":"Número indeterminado","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":122.9791259765625,"y":108.96527099609375},"foldChildren":false,"branchColor":"#da0f64","children":[]}]},{"id":"39328bc4-20f6-403c-b639-ee4434ffcd08","parentId":"696219ed-f505-4aa3-920f-c5aac9481247","text":{"caption":"Valores devueltos","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":116.9757080078125,"y":169.96527099609375},"foldChildren":false,"branchColor":"#da0f64","children":[]}]},{"id":"96c17bf6-007a-41da-b9e0-ba37f859ca92","parentId":"f453bd26-21a4-46f6-b26d-334d20ac533a","text":{"caption":"Ámbito de las variables","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":104.9583740234375,"y":6.954864501953125},"foldChildren":false,"branchColor":"#da0f64","children":[{"id":"76b935db-c24f-463e-8950-a84d13365f39","parentId":"96c17bf6-007a-41da-b9e0-ba37f859ca92","text":{"caption":"global","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":198.9757080078125,"y":-48.010406494140625},"foldChildren":false,"branchColor":"#da0f64","children":[]},{"id":"7890baef-02fe-45c0-a336-3ad5ea5479ea","parentId":"96c17bf6-007a-41da-b9e0-ba37f859ca92","text":{"caption":"local","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":201.96875,"y":-1.03472900390625},"foldChildren":false,"branchColor":"#da0f64","children":[]},{"id":"f0effb2e-09c6-42b6-98a8-cae0b4811900","parentId":"96c17bf6-007a-41da-b9e0-ba37f859ca92","text":{"caption":"nonlocal","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":201.9617919921875,"y":51.961822509765625},"foldChildren":false,"branchColor":"#da0f64","children":[]}]},{"id":"d7838b0e-8f78-47d4-bed6-695159a73309","parentId":"f453bd26-21a4-46f6-b26d-334d20ac533a","text":{"caption":"Constructores y destructures","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":116.972216796875,"y":319.958349609375},"foldChildren":false,"branchColor":"#da0f64","children":[]}]}]},{"id":"21b7f39b-18c6-494c-be48-6ee04bd6fcf6","parentId":"4665ba62-3530-49b1-b9a6-333c6651e836","text":{"caption":"Visibilidad","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":157.9757080078125,"y":118.96527099609375},"foldChildren":false,"branchColor":"#da0f64","children":[]},{"id":"369769cd-4df9-4d01-a36a-b7ebffaa95a6","parentId":"4665ba62-3530-49b1-b9a6-333c6651e836","text":{"caption":"Nombrado","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":121.9757080078125,"y":-73.03472900390625},"foldChildren":false,"branchColor":"#da0f64","children":[]},{"id":"9ed0e35f-b971-4124-b4db-0cd78b4eb7f8","parentId":"4665ba62-3530-49b1-b9a6-333c6651e836","text":{"caption":"Destrucción","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":127.97564697265625,"y":-128.03472900390625},"foldChildren":false,"branchColor":"#da0f64","children":[]}]},{"id":"cb187649-7cbf-4298-801a-a458d3c7ed40","parentId":"556885f9-1424-4d44-9907-a104c3c1ced3","text":{"caption":"Objetos","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-157.98614501953125,"y":-111.01388549804688},"foldChildren":false,"branchColor":"#96cbc3","children":[{"id":"9c19cc67-6e70-4106-a793-f527a3d94f4e","parentId":"cb187649-7cbf-4298-801a-a458d3c7ed40","text":{"caption":"Creación","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-96.97222900390625,"y":-45.017364501953125},"foldChildren":false,"branchColor":"#96cbc3","children":[]},{"id":"d0054545-a1a3-4a53-97c0-64da05194a0a","parentId":"cb187649-7cbf-4298-801a-a458d3c7ed40","text":{"caption":"Visibilidad","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-99.986083984375,"y":18.965301513671875},"foldChildren":false,"branchColor":"#96cbc3","children":[]}]},{"id":"eacb9064-5439-4488-ad44-c97cf9d14e06","parentId":"556885f9-1424-4d44-9907-a104c3c1ced3","text":{"caption":"Modularización","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-170.9896240234375,"y":56.989593505859375},"foldChildren":false,"branchColor":"#455651","children":[{"id":"5a30ee8d-543a-4356-ba11-77da55f3684a","parentId":"eacb9064-5439-4488-ad44-c97cf9d14e06","text":{"caption":"Paquetes","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-96.97564697265625,"y":-27.03472900390625},"foldChildren":false,"branchColor":"#455651","children":[]},{"id":"460e5e82-ec83-4b2f-8cd8-d46ee07b4228","parentId":"eacb9064-5439-4488-ad44-c97cf9d14e06","text":{"caption":"Módulos","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-107.97222900390625,"y":34.947906494140625},"foldChildren":false,"branchColor":"#455651","children":[]},{"id":"c7147d03-82ba-4e15-8b86-6ed325805912","parentId":"eacb9064-5439-4488-ad44-c97cf9d14e06","text":{"caption":"Uso de import","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":-135.9791259765625,"y":86.951416015625},"foldChildren":false,"branchColor":"#455651","children":[]}]},{"id":"a74cb58c-bf83-49bd-b1f3-2a8addbf21bf","parentId":"556885f9-1424-4d44-9907-a104c3c1ced3","text":{"caption":"Librerías","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":33,"y":179.99307250976562},"foldChildren":false,"branchColor":"#4d6e0a","children":[{"id":"e6ecb85d-61c2-406a-a7eb-c88f6e237bed","parentId":"a74cb58c-bf83-49bd-b1f3-2a8addbf21bf","text":{"caption":"de cadenas","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":114.95489501953125,"y":57.96875},"foldChildren":false,"branchColor":"#4d6e0a","children":[]},{"id":"18444437-def5-408c-b96e-c87850a4cacc","parentId":"a74cb58c-bf83-49bd-b1f3-2a8addbf21bf","text":{"caption":"Expresiones regulares","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":81.94097900390625,"y":-44.04168701171875},"foldChildren":false,"branchColor":"#4d6e0a","children":[{"id":"297faee2-4654-4803-8206-07cb232e58a8","parentId":"18444437-def5-408c-b96e-c87850a4cacc","text":{"caption":"Patrones","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":177.9757080078125,"y":-32.0242919921875},"foldChildren":false,"branchColor":"#4d6e0a","children":[]},{"id":"adf551f3-1c84-4b66-a10b-7a2cca6b0871","parentId":"18444437-def5-408c-b96e-c87850a4cacc","text":{"caption":"Metacaracteres","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":183.9757080078125,"y":21.97222900390625},"foldChildren":false,"branchColor":"#4d6e0a","children":[]},{"id":"95d92c8c-e584-4ec0-b8dd-bccc4edc6801","parentId":"18444437-def5-408c-b96e-c87850a4cacc","text":{"caption":"Elementos","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":184.9757080078125,"y":83.9757080078125},"foldChildren":false,"branchColor":"#4d6e0a","children":[]}]},{"id":"28849866-15dd-4669-922c-855c9c9c12ae","parentId":"a74cb58c-bf83-49bd-b1f3-2a8addbf21bf","text":{"caption":"math","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":109.9757080078125,"y":13.951416015625},"foldChildren":false,"branchColor":"#4d6e0a","children":[]},{"id":"5de2c272-fb48-403f-958e-fdfe9e9c73bd","parentId":"a74cb58c-bf83-49bd-b1f3-2a8addbf21bf","text":{"caption":"Pandas","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":120.97222900390625,"y":101.9444580078125},"foldChildren":false,"branchColor":"#4d6e0a","children":[]},{"id":"17c26c09-4b2f-45b0-b8bb-a3c99c66994d","parentId":"a74cb58c-bf83-49bd-b1f3-2a8addbf21bf","text":{"caption":"NumPy","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":128.96527099609375,"y":151.95489501953125},"foldChildren":false,"branchColor":"#4d6e0a","children":[]},{"id":"9d6efeb2-07b9-4a57-aea3-8a13a9fa1f2e","parentId":"a74cb58c-bf83-49bd-b1f3-2a8addbf21bf","text":{"caption":"Mathplotlib","font":{"style":"normal","weight":"normal","decoration":"none","size":15,"color":"#000000"}},"offset":{"x":128.95831298828125,"y":199.96185302734375},"foldChildren":false,"branchColor":"#4d6e0a","children":[]}]}]}},"dates":{"created":1640111762678,"modified":1640112396460},"dimensions":{"x":4000,"y":2000},"autosave":false}</p>
+</div>
+<p>...</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+
+<footer id="siteFooter">César San Juan Pastor - IES Arcipreste de Hita</footer>
+</div>
+<script type="text/javascript" src="_cedec_js.js"></script></body>
+</html>
