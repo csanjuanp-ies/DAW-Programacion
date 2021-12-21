@@ -272,7 +272,7 @@
       <instance class="exe.engine.node.Node" reference="8">
        <dictionary>
         <string role="key" value="_title"></string>
-        <unicode value="4.1. Clases"></unicode>
+        <unicode value="5.1. Clases"></unicode>
         <string role="key" value="idevices"></string>
         <list>
          <instance class="exe.engine.jsidevice.JsIdevice" reference="6">
@@ -373,7 +373,7 @@
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="600"></int>
+                     <int value="631"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -387,7 +387,7 @@
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="73_113_2.4"></unicode>
+                   <unicode value="73_113_2.5"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="9">
                     <dictionary>
@@ -398,7 +398,7 @@
                      <string role="key" value="_storageName"></string>
                      <string value="00.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpzk9vlf\\00.png"></string>
+                     <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpfbqzze\\00.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="e75c210504094e5b5b00740dd2f7e5a9"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -427,7 +427,7 @@
               <string role="key" value="intlinks_to_anchors"></string>
               <dictionary></dictionary>
               <string role="key" value="nextImageId"></string>
-              <int value="5"></int>
+              <int value="6"></int>
               <string role="key" value="parentNode"></string>
               <reference key="8"></reference>
              </dictionary>
@@ -518,7 +518,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="601"></int>
+                     <int value="632"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -532,7 +532,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="210_210_2.1"></unicode>
+                   <unicode value="210_210_2.2"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="12">
                     <dictionary>
@@ -543,7 +543,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="01.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpzk9vlf\\01.png"></string>
+                     <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpfbqzze\\01.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="15a704e7b1039920421082c9250bcb2f"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -572,7 +572,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
               <string role="key" value="intlinks_to_anchors"></string>
               <dictionary></dictionary>
               <string role="key" value="nextImageId"></string>
-              <int value="2"></int>
+              <int value="3"></int>
               <string role="key" value="parentNode"></string>
               <reference key="8"></reference>
              </dictionary>
@@ -741,7 +741,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
         <string role="key" value="exportType"></string>
         <string value="singlepage"></string>
         <string role="key" value="last_full_node_path"></string>
-        <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases"></string>
+        <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases"></string>
         <string role="key" value="parent"></string>
         <reference key="5"></reference>
         <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -751,7 +751,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
          <instance class="exe.engine.node.Node" reference="17">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.1.1. Visibilidad"></unicode>
+           <unicode value="5.1.1. Visibilidad"></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.jsidevice.JsIdevice" reference="15">
@@ -851,7 +851,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="602"></int>
+                        <int value="633"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -865,7 +865,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="212_212_2.1"></unicode>
+                      <unicode value="212_212_2.2"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="18">
                        <dictionary>
@@ -876,7 +876,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="02.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpzk9vlf\\02.png"></string>
+                        <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpfbqzze\\02.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="584b0a0fccd42af5ebbbce79ab2d0866"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -905,7 +905,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
                  <string role="key" value="intlinks_to_anchors"></string>
                  <dictionary></dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="2"></int>
+                 <int value="3"></int>
                  <string role="key" value="parentNode"></string>
                  <reference key="17"></reference>
                 </dictionary>
@@ -949,7 +949,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.1.%20Visibilidad"></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.1.%20Visibilidad"></string>
            <string role="key" value="parent"></string>
            <reference key="8"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -961,7 +961,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
          <instance class="exe.engine.node.Node" reference="21">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.1.2. Definición"></unicode>
+           <unicode value="5.1.2. Definición"></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.jsidevice.JsIdevice" reference="19">
@@ -1336,7 +1336,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.2.%20Definici%C3%B3n"></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.2.%20Definici%C3%B3n"></string>
            <string role="key" value="parent"></string>
            <reference key="8"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -1348,7 +1348,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
          <instance class="exe.engine.node.Node" reference="28">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.1.3. Nombrado de las clases"></unicode>
+           <unicode value="5.1.3. Nombrado de las clases"></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.jsidevice.JsIdevice" reference="26">
@@ -1496,7 +1496,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.3.%20Nombrado%20de%20las%20clases"></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.3.%20Nombrado%20de%20las%20clases"></string>
            <string role="key" value="parent"></string>
            <reference key="8"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -1508,7 +1508,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
          <instance class="exe.engine.node.Node" reference="31">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.1.4. Creación y utilización de atributos."></unicode>
+           <unicode value="5.1.4. Creación y utilización de atributos."></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.jsidevice.JsIdevice" reference="29">
@@ -1661,7 +1661,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.4.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20atributos."></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.4.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20atributos."></string>
            <string role="key" value="parent"></string>
            <reference key="8"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -1673,7 +1673,7 @@ that may help or hinder the learner in the performance of the task."></unicode>
          <instance class="exe.engine.node.Node" reference="32">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.1.5. Ejercicios"></unicode>
+           <unicode value="5.1.5. Ejercicios"></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.ejercicioresueltofpdidevice.EjercicioresueltofpdIdevice" reference="33">
@@ -1922,7 +1922,7 @@ in order to gain resolution of the situation."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.5.%20Ejercicios"></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.5.%20Ejercicios"></string>
            <string role="key" value="parent"></string>
            <reference key="8"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -1934,7 +1934,7 @@ in order to gain resolution of the situation."></unicode>
          <instance class="exe.engine.node.Node" reference="39">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.1.6. Creación y utilización de métodos."></unicode>
+           <unicode value="5.1.6. Creación y utilización de métodos."></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.jsidevice.JsIdevice" reference="37">
@@ -2363,7 +2363,7 @@ reflective feedback)."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos."></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos."></string>
            <string role="key" value="parent"></string>
            <reference key="8"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -2676,7 +2676,7 @@ reflective feedback)."></unicode>
               <string role="key" value="exportType"></string>
               <string value="singlepage"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Definici%C3%B3n"></string>
+              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Definici%C3%B3n"></string>
               <string role="key" value="parent"></string>
               <reference key="39"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -2947,7 +2947,7 @@ reflective feedback)."></unicode>
                          <instance class="exe.engine.field.TextField">
                           <dictionary>
                            <string role="key" value="_id"></string>
-                           <int value="603"></int>
+                           <int value="635"></int>
                            <string role="key" value="_idevice"></string>
                            <none></none>
                            <string role="key" value="_instruc"></string>
@@ -2961,7 +2961,7 @@ reflective feedback)."></unicode>
                           </dictionary>
                          </instance>
                          <string role="key" value="_id"></string>
-                         <unicode value="225_225_2.0"></unicode>
+                         <unicode value="225_225_2.1"></unicode>
                          <string role="key" value="_imageResource"></string>
                          <instance class="exe.engine.resource.Resource" reference="56">
                           <dictionary>
@@ -2972,7 +2972,7 @@ reflective feedback)."></unicode>
                            <string role="key" value="_storageName"></string>
                            <string value="03.gif"></string>
                            <string role="key" value="_userName"></string>
-                           <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpug3wjc.eXe\\previews\\allyourbase\\03.gif"></string>
+                           <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpfbqzze\\03.gif"></string>
                            <string role="key" value="checksum"></string>
                            <string value="197a0c5aa96302b99b8c1d1178d8a86a"></string>
                            <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3001,7 +3001,7 @@ reflective feedback)."></unicode>
                     <string role="key" value="intlinks_to_anchors"></string>
                     <dictionary></dictionary>
                     <string role="key" value="nextImageId"></string>
-                    <int value="1"></int>
+                    <int value="2"></int>
                     <string role="key" value="parentNode"></string>
                     <reference key="53"></reference>
                    </dictionary>
@@ -3297,7 +3297,7 @@ reflective feedback)."></unicode>
               <string role="key" value="exportType"></string>
               <string value="singlepage"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Par%C3%A1metros"></string>
+              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Par%C3%A1metros"></string>
               <string role="key" value="parent"></string>
               <reference key="39"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -3460,7 +3460,7 @@ reflective feedback)."></unicode>
               <string role="key" value="exportType"></string>
               <string value="singlepage"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Par%C3%A1metros%20por%20defecto"></string>
+              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Par%C3%A1metros%20por%20defecto"></string>
               <string role="key" value="parent"></string>
               <reference key="39"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -3622,7 +3622,7 @@ reflective feedback)."></unicode>
               <string role="key" value="exportType"></string>
               <string value="singlepage"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Paso%20de%20par%C3%A1metros%20por%20palabras%20clave"></string>
+              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Paso%20de%20par%C3%A1metros%20por%20palabras%20clave"></string>
               <string role="key" value="parent"></string>
               <reference key="39"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -3781,7 +3781,7 @@ reflective feedback)."></unicode>
               <string role="key" value="exportType"></string>
               <string value="singlepage"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:N%C3%BAmero%20indeterminado%20de%20par%C3%A1metros"></string>
+              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:N%C3%BAmero%20indeterminado%20de%20par%C3%A1metros"></string>
               <string role="key" value="parent"></string>
               <reference key="39"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -3940,7 +3940,7 @@ reflective feedback)."></unicode>
               <string role="key" value="exportType"></string>
               <string value="singlepage"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Desempaquetado%20de%20par%C3%A1metros"></string>
+              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Desempaquetado%20de%20par%C3%A1metros"></string>
               <string role="key" value="parent"></string>
               <reference key="39"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -4097,7 +4097,7 @@ reflective feedback)."></unicode>
               <string role="key" value="exportType"></string>
               <string value="singlepage"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Sugerencias%20de%20tipos%20en%20los%20par%C3%A1metros"></string>
+              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Sugerencias%20de%20tipos%20en%20los%20par%C3%A1metros"></string>
               <string role="key" value="parent"></string>
               <reference key="39"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -4261,7 +4261,7 @@ reflective feedback)."></unicode>
               <string role="key" value="exportType"></string>
               <string value="singlepage"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Devoluci%C3%B3n%20de%20valores"></string>
+              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Devoluci%C3%B3n%20de%20valores"></string>
               <string role="key" value="parent"></string>
               <reference key="39"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -4423,7 +4423,7 @@ reflective feedback)."></unicode>
               <string role="key" value="exportType"></string>
               <string value="singlepage"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Funciones%20lambda%20o%20an%C3%B3nimas"></string>
+              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Funciones%20lambda%20o%20an%C3%B3nimas"></string>
               <string role="key" value="parent"></string>
               <reference key="39"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -4589,7 +4589,7 @@ reflective feedback)."></unicode>
               <string role="key" value="exportType"></string>
               <string value="singlepage"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Paso%20de%20m%C3%A9todos%20a%20funciones"></string>
+              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Paso%20de%20m%C3%A9todos%20a%20funciones"></string>
               <string role="key" value="parent"></string>
               <reference key="39"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -4675,6 +4675,8 @@ reflective feedback)."></unicode>
                     <string value=""></string>
                     <string role="key" value="anchor_names"></string>
                     <list></list>
+                    <string role="key" value="anchors_linked_from_fields"></string>
+                    <dictionary></dictionary>
                     <string role="key" value="content_w_resourcePaths"></string>
                     <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Un constructor es un método que se llama en el momento de la creación del objeto para inicialización del mismo. Un destructor se llama como última ejecución del objeto cuando es eliminado. Las llamadas a estos métodos son automáticas y no tenemos que hacer nada. Generalmente, los constructores se utilizan para inicialización del objeto y establecimiento de conexiones; los destructores para eliminación de basura y cierre de conexiones.&lt;/p&gt;
 &lt;p&gt;Python tiene dos métodos en vez de uno para la “construcción” del objeto: el constructor y el inicializador. Raramente vamos a usar constructor a no ser que ahondemos en Metaclases por lo que usaremos exclusivamente el método inicializador:&lt;strong&gt; __init__&lt;/strong&gt;. A efectos funcionales de nuestro nivel no hay diferencia.&lt;/p&gt;
@@ -4711,7 +4713,7 @@ reflective feedback)."></unicode>
                     <string role="key" value="nextImageId"></string>
                     <int value="0"></int>
                     <string role="key" value="parentNode"></string>
-                    <none></none>
+                    <reference key="87"></reference>
                    </dictionary>
                   </instance>
                  </list>
@@ -4751,7 +4753,7 @@ reflective feedback)."></unicode>
               <string role="key" value="exportType"></string>
               <string value="singlepage"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20constructores%20y%20destructores"></string>
+              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20constructores%20y%20destructores"></string>
               <string role="key" value="parent"></string>
               <reference key="39"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -4837,6 +4839,8 @@ reflective feedback)."></unicode>
                     <string value=""></string>
                     <string role="key" value="anchor_names"></string>
                     <list></list>
+                    <string role="key" value="anchors_linked_from_fields"></string>
+                    <dictionary></dictionary>
                     <string role="key" value="content_w_resourcePaths"></string>
                     <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Una de las críticas que se hace a Python desde los puristas de la POO es la no existencia de visibilidad en los métodos y atributos, pero cuando ahondamos en los usos de estas características vemos que no es imprescindible la visibilidad para una adecuada programación. El caso que se utiliza para minorar las capacidades de POO de Python hace referencia a aquellos en los que queremos controlar el acceso a un atributo, verificarlo antes de cambiarlo o realizar algún cálculo con él antes de la asignación, en definitiva, si necesitamos ejecutar código antes de la modificación del atributo (en otros lenguajes se implementa a través de los métodos getters y setters también presentes en Python).&lt;/p&gt;
 &lt;p&gt;Para solucionar este problema Python ofrece la creación de propiedades. Para Python una propiedad es un atributo que puede ejecutar código en el momento del acceso, que se define dentro de una clase mediante un decorador (los decoradores se verán más adelante) o al crear un objeto &lt;strong&gt;property&lt;/strong&gt; en la definición.&lt;/p&gt;
@@ -4904,7 +4908,7 @@ reflective feedback)."></unicode>
                     <string role="key" value="nextImageId"></string>
                     <int value="0"></int>
                     <string role="key" value="parentNode"></string>
-                    <none></none>
+                    <reference key="90"></reference>
                    </dictionary>
                   </instance>
                  </list>
@@ -5003,6 +5007,8 @@ reflective feedback)."></unicode>
                     <string value=""></string>
                     <string role="key" value="anchor_names"></string>
                     <list></list>
+                    <string role="key" value="anchors_linked_from_fields"></string>
+                    <dictionary></dictionary>
                     <string role="key" value="content_w_resourcePaths"></string>
                     <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Ambas definiciones son similares y podremos usar cualquiera de las dos, pero no mezclarlas en una misma propiedad.&lt;/p&gt;
 &lt;p&gt;Con esta sintaxis, podemos hacer propiedades de solo lectura (con solo la parte get) o propiedades de lectura escritura con ambas partes. En cualquier caso, una propiedad definida con este mecanismo no es diferente a la creada en un constructor (Este mecanismo es conocido en muchos lenguajes POO como métodos getters and setters).&lt;/p&gt;&lt;/div&gt;"></unicode>
@@ -5028,7 +5034,7 @@ reflective feedback)."></unicode>
                     <string role="key" value="nextImageId"></string>
                     <int value="0"></int>
                     <string role="key" value="parentNode"></string>
-                    <none></none>
+                    <reference key="90"></reference>
                    </dictionary>
                   </instance>
                  </list>
@@ -5068,7 +5074,7 @@ reflective feedback)."></unicode>
               <string role="key" value="exportType"></string>
               <string value="singlepage"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Propiedades"></string>
+              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Propiedades"></string>
               <string role="key" value="parent"></string>
               <reference key="39"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -5153,6 +5159,8 @@ in order to gain resolution of the situation."></unicode>
                       <unicode value=""></unicode>
                       <string role="key" value="anchor_names"></string>
                       <list></list>
+                      <string role="key" value="anchors_linked_from_fields"></string>
+                      <dictionary></dictionary>
                       <string role="key" value="content_w_resourcePaths"></string>
                       <unicode content="true" value="&lt;p&gt;Definir la siguiente estructura de clases.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;resources/04.png&quot; alt=&quot;Ejemplo 1&quot; width=&quot;198&quot; height=&quot;128&quot; /&gt;&lt;/p&gt;"></unicode>
@@ -5175,7 +5183,7 @@ in order to gain resolution of the situation."></unicode>
                            <instance class="exe.engine.field.TextField">
                             <dictionary>
                              <string role="key" value="_id"></string>
-                             <int value="606"></int>
+                             <int value="636"></int>
                              <string role="key" value="_idevice"></string>
                              <none></none>
                              <string role="key" value="_instruc"></string>
@@ -5189,7 +5197,7 @@ in order to gain resolution of the situation."></unicode>
                             </dictionary>
                            </instance>
                            <string role="key" value="_id"></string>
-                           <unicode value="239_149.0"></unicode>
+                           <unicode value="239_149.1"></unicode>
                            <string role="key" value="_imageResource"></string>
                            <instance class="exe.engine.resource.Resource" reference="100">
                             <dictionary>
@@ -5200,7 +5208,7 @@ in order to gain resolution of the situation."></unicode>
                              <string role="key" value="_storageName"></string>
                              <string value="04.png"></string>
                              <string role="key" value="_userName"></string>
-                             <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpug3wjc.eXe\\previews\\allyourbase\\04.png"></string>
+                             <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpfbqzze\\04.png"></string>
                              <string role="key" value="checksum"></string>
                              <string value="aff8d0655861db47ff74bb2ba3c01c60"></string>
                              <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -5229,7 +5237,7 @@ in order to gain resolution of the situation."></unicode>
                       <string role="key" value="intlinks_to_anchors"></string>
                       <dictionary></dictionary>
                       <string role="key" value="nextImageId"></string>
-                      <int value="1"></int>
+                      <int value="2"></int>
                       <string role="key" value="parentNode"></string>
                       <reference key="93"></reference>
                      </dictionary>
@@ -5249,6 +5257,8 @@ in order to gain resolution of the situation."></unicode>
                       <unicode value=""></unicode>
                       <string role="key" value="anchor_names"></string>
                       <list></list>
+                      <string role="key" value="anchors_linked_from_fields"></string>
+                      <dictionary></dictionary>
                       <string role="key" value="content_w_resourcePaths"></string>
                       <unicode content="true" value="&lt;p&gt;import math&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;class Punto:&lt;br /&gt;    def __init__(self, x=0, y=0):&lt;br /&gt;        self.x = x&lt;br /&gt;        self.y = y&lt;/p&gt;
@@ -5297,7 +5307,7 @@ in order to gain resolution of the situation."></unicode>
                       <string role="key" value="nextImageId"></string>
                       <int value="0"></int>
                       <string role="key" value="parentNode"></string>
-                      <none></none>
+                      <reference key="93"></reference>
                      </dictionary>
                     </instance>
                    </dictionary>
@@ -5317,6 +5327,8 @@ in order to gain resolution of the situation."></unicode>
                       <unicode value=""></unicode>
                       <string role="key" value="anchor_names"></string>
                       <list></list>
+                      <string role="key" value="anchors_linked_from_fields"></string>
+                      <dictionary></dictionary>
                       <string role="key" value="content_w_resourcePaths"></string>
                       <unicode content="true" value="&lt;p&gt;Definir la siguiente estructura de clases.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;resources/05.png&quot; alt=&quot;Ejemplo 2&quot; width=&quot;798&quot; height=&quot;271&quot; /&gt;&lt;/p&gt;"></unicode>
@@ -5339,7 +5351,7 @@ in order to gain resolution of the situation."></unicode>
                            <instance class="exe.engine.field.TextField">
                             <dictionary>
                              <string role="key" value="_id"></string>
-                             <int value="607"></int>
+                             <int value="637"></int>
                              <string role="key" value="_idevice"></string>
                              <none></none>
                              <string role="key" value="_instruc"></string>
@@ -5353,7 +5365,7 @@ in order to gain resolution of the situation."></unicode>
                             </dictionary>
                            </instance>
                            <string role="key" value="_id"></string>
-                           <unicode value="239_604.0"></unicode>
+                           <unicode value="239_604.1"></unicode>
                            <string role="key" value="_imageResource"></string>
                            <instance class="exe.engine.resource.Resource" reference="101">
                             <dictionary>
@@ -5364,7 +5376,7 @@ in order to gain resolution of the situation."></unicode>
                              <string role="key" value="_storageName"></string>
                              <string value="05.png"></string>
                              <string role="key" value="_userName"></string>
-                             <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpug3wjc.eXe\\previews\\allyourbase\\05.png"></string>
+                             <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpfbqzze\\05.png"></string>
                              <string role="key" value="checksum"></string>
                              <string value="f3bb276227e8748c968c421fda703db0"></string>
                              <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -5393,7 +5405,7 @@ in order to gain resolution of the situation."></unicode>
                       <string role="key" value="intlinks_to_anchors"></string>
                       <dictionary></dictionary>
                       <string role="key" value="nextImageId"></string>
-                      <int value="1"></int>
+                      <int value="2"></int>
                       <string role="key" value="parentNode"></string>
                       <reference key="93"></reference>
                      </dictionary>
@@ -5413,6 +5425,8 @@ in order to gain resolution of the situation."></unicode>
                       <unicode value=""></unicode>
                       <string role="key" value="anchor_names"></string>
                       <list></list>
+                      <string role="key" value="anchors_linked_from_fields"></string>
+                      <dictionary></dictionary>
                       <string role="key" value="content_w_resourcePaths"></string>
                       <unicode content="true" value="&lt;p&gt;class Player:&lt;br /&gt;    def __init__(self, nombre=&quot;Anonimo&quot;):&lt;br /&gt;        self.nombre = nombre&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;class Position:&lt;br /&gt;    def __init__(self, position=&quot;&quot;, chess_board=None):&lt;br /&gt;        self.posicion = position&lt;br /&gt;        self.chess_board = chess_board&lt;/p&gt;
@@ -5457,7 +5471,7 @@ in order to gain resolution of the situation."></unicode>
                       <string role="key" value="nextImageId"></string>
                       <int value="0"></int>
                       <string role="key" value="parentNode"></string>
-                      <none></none>
+                      <reference key="93"></reference>
                      </dictionary>
                     </instance>
                    </dictionary>
@@ -5479,6 +5493,8 @@ in order to gain resolution of the situation."></unicode>
                    <unicode value="Story:"></unicode>
                    <string role="key" value="anchor_names"></string>
                    <list></list>
+                   <string role="key" value="anchors_linked_from_fields"></string>
+                   <dictionary></dictionary>
                    <string role="key" value="class_"></string>
                    <string value="block story"></string>
                    <string role="key" value="content_w_resourcePaths"></string>
@@ -5505,7 +5521,7 @@ in order to gain resolution of the situation."></unicode>
                    <string role="key" value="nextImageId"></string>
                    <int value="0"></int>
                    <string role="key" value="parentNode"></string>
-                   <none></none>
+                   <reference key="93"></reference>
                   </dictionary>
                  </instance>
                  <string role="key" value="systemResources"></string>
@@ -5533,7 +5549,7 @@ in order to gain resolution of the situation."></unicode>
               <string role="key" value="exportType"></string>
               <string value="singlepage"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Ejemplos"></string>
+              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.6.%20Creaci%C3%B3n%20y%20utilizaci%C3%B3n%20de%20m%C3%A9todos.:Ejemplos"></string>
               <string role="key" value="parent"></string>
               <reference key="39"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -5548,7 +5564,7 @@ in order to gain resolution of the situation."></unicode>
          <instance class="exe.engine.node.Node" reference="102">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.1.7. Ejercicio"></unicode>
+           <unicode value="5.1.7. Ejercicio"></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.ejercicioresueltofpdidevice.EjercicioresueltofpdIdevice" reference="103">
@@ -5621,6 +5637,8 @@ in order to gain resolution of the situation."></unicode>
                    <unicode value=""></unicode>
                    <string role="key" value="anchor_names"></string>
                    <list></list>
+                   <string role="key" value="anchors_linked_from_fields"></string>
+                   <dictionary></dictionary>
                    <string role="key" value="content_w_resourcePaths"></string>
                    <unicode content="true" value="&lt;p&gt;En este apartado tienes que modificar los programas del apartado anterior (o haz una copia del proyecto si lo prefieres) y realizar los cambios indicados.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Ejercicio B1 – Punto&lt;/strong&gt;&lt;br /&gt;Añade a la clase Punto los siguientes métodos públicos:&lt;/p&gt;
@@ -5676,7 +5694,7 @@ in order to gain resolution of the situation."></unicode>
                         <instance class="exe.engine.field.TextField">
                          <dictionary>
                           <string role="key" value="_id"></string>
-                          <int value="612"></int>
+                          <int value="640"></int>
                           <string role="key" value="_idevice"></string>
                           <none></none>
                           <string role="key" value="_instruc"></string>
@@ -5690,7 +5708,7 @@ in order to gain resolution of the situation."></unicode>
                          </dictionary>
                         </instance>
                         <string role="key" value="_id"></string>
-                        <unicode value="245_149.0"></unicode>
+                        <unicode value="245_149.1"></unicode>
                         <string role="key" value="_imageResource"></string>
                         <instance class="exe.engine.resource.Resource" reference="107">
                          <dictionary>
@@ -5701,7 +5719,7 @@ in order to gain resolution of the situation."></unicode>
                           <string role="key" value="_storageName"></string>
                           <string value="08.png"></string>
                           <string role="key" value="_userName"></string>
-                          <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpug3wjc.eXe\\previews\\allyourbase\\08.png"></string>
+                          <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpfbqzze\\08.png"></string>
                           <string role="key" value="checksum"></string>
                           <string value="45ae0151f636dd541092444e8402dac2"></string>
                           <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -5730,7 +5748,7 @@ in order to gain resolution of the situation."></unicode>
                    <string role="key" value="intlinks_to_anchors"></string>
                    <dictionary></dictionary>
                    <string role="key" value="nextImageId"></string>
-                   <int value="1"></int>
+                   <int value="2"></int>
                    <string role="key" value="parentNode"></string>
                    <reference key="102"></reference>
                   </dictionary>
@@ -5750,6 +5768,8 @@ in order to gain resolution of the situation."></unicode>
                    <unicode value=""></unicode>
                    <string role="key" value="anchor_names"></string>
                    <list></list>
+                   <string role="key" value="anchors_linked_from_fields"></string>
+                   <dictionary></dictionary>
                    <string role="key" value="content_w_resourcePaths"></string>
                    <unicode content="true" value="&lt;p&gt;import math&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;class Punto:&lt;br /&gt;    def __init__(self, x=0, y=0):&lt;br /&gt;        self.x = x&lt;br /&gt;        self.y = y&lt;/p&gt;
@@ -5832,7 +5852,7 @@ in order to gain resolution of the situation."></unicode>
                    <string role="key" value="nextImageId"></string>
                    <int value="0"></int>
                    <string role="key" value="parentNode"></string>
-                   <none></none>
+                   <reference key="102"></reference>
                   </dictionary>
                  </instance>
                 </dictionary>
@@ -5854,6 +5874,8 @@ in order to gain resolution of the situation."></unicode>
                 <unicode value="Story:"></unicode>
                 <string role="key" value="anchor_names"></string>
                 <list></list>
+                <string role="key" value="anchors_linked_from_fields"></string>
+                <dictionary></dictionary>
                 <string role="key" value="class_"></string>
                 <string value="block story"></string>
                 <string role="key" value="content_w_resourcePaths"></string>
@@ -5880,7 +5902,7 @@ in order to gain resolution of the situation."></unicode>
                 <string role="key" value="nextImageId"></string>
                 <int value="0"></int>
                 <string role="key" value="parentNode"></string>
-                <none></none>
+                <reference key="102"></reference>
                </dictionary>
               </instance>
               <string role="key" value="systemResources"></string>
@@ -5907,7 +5929,7 @@ in order to gain resolution of the situation."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.1.%20Clases:4.1.7.%20Ejercicio"></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.1.%20Clases:5.1.7.%20Ejercicio"></string>
            <string role="key" value="parent"></string>
            <reference key="8"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -5922,7 +5944,7 @@ in order to gain resolution of the situation."></unicode>
       <instance class="exe.engine.node.Node" reference="110">
        <dictionary>
         <string role="key" value="_title"></string>
-        <unicode value="4.2. Objetos"></unicode>
+        <unicode value="5.2. Objetos"></unicode>
         <string role="key" value="idevices"></string>
         <list>
          <instance class="exe.engine.jsidevice.JsIdevice" reference="108">
@@ -5996,6 +6018,8 @@ in order to gain resolution of the situation."></unicode>
               <string value=""></string>
               <string role="key" value="anchor_names"></string>
               <list></list>
+              <string role="key" value="anchors_linked_from_fields"></string>
+              <dictionary></dictionary>
               <string role="key" value="content_w_resourcePaths"></string>
               <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Desde un punto de vista técnico, un objeto es una instancia de una clase. Cuando creamos una instancia estamos reservando una zona de memoria dedicada para el objeto en cuestión y esa zona va a permanecer ahí mientras la variable en cuestión (u otra) la referencie. Tras leer lo anterior podemos pensar en un objeto como un puntero a la zona de memoria que ocupa, pero en POO no suele hablarse siguiendo esa terminología. A diferencia de otros lenguajes de programación, no es necesario liberar las zonas de memoria cuando dejan de utilizarse. Existe un mecanismo llamado recolector de basura que se encarga de ir liberando las zonas de memoria que no están siendo referenciadas por ningún objeto.&lt;/p&gt;
 &lt;p&gt;Un objeto contiene toda la información que permite definirlo e identificarlo frente a otros objetos pertenecientes a otras clases e incluso frente a objetos de una misma clase, al poder tener valores bien diferenciados en sus atributos.&lt;/p&gt;
@@ -6019,7 +6043,7 @@ in order to gain resolution of the situation."></unicode>
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="608"></int>
+                     <int value="638"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -6033,7 +6057,7 @@ in order to gain resolution of the situation."></unicode>
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="240_240_2.0"></unicode>
+                   <unicode value="240_240_2.1"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="111">
                     <dictionary>
@@ -6044,7 +6068,7 @@ in order to gain resolution of the situation."></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="06.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpug3wjc.eXe\\previews\\allyourbase\\06.png"></string>
+                     <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpfbqzze\\06.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="f956c2c69f099ca88e2efc4ca29e4e49"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6073,7 +6097,7 @@ in order to gain resolution of the situation."></unicode>
               <string role="key" value="intlinks_to_anchors"></string>
               <dictionary></dictionary>
               <string role="key" value="nextImageId"></string>
-              <int value="1"></int>
+              <int value="2"></int>
               <string role="key" value="parentNode"></string>
               <reference key="110"></reference>
              </dictionary>
@@ -6117,7 +6141,7 @@ in order to gain resolution of the situation."></unicode>
         <string role="key" value="exportType"></string>
         <string value="singlepage"></string>
         <string role="key" value="last_full_node_path"></string>
-        <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.2.%20Objetos"></string>
+        <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.2.%20Objetos"></string>
         <string role="key" value="parent"></string>
         <reference key="5"></reference>
         <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -6127,7 +6151,7 @@ in order to gain resolution of the situation."></unicode>
          <instance class="exe.engine.node.Node" reference="114">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.2.1. Creación y uso de objetos"></unicode>
+           <unicode value="5.2.1. Creación y uso de objetos"></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.jsidevice.JsIdevice" reference="112">
@@ -6201,6 +6225,8 @@ in order to gain resolution of the situation."></unicode>
                  <string value=""></string>
                  <string role="key" value="anchor_names"></string>
                  <list></list>
+                 <string role="key" value="anchors_linked_from_fields"></string>
+                 <dictionary></dictionary>
                  <string role="key" value="content_w_resourcePaths"></string>
                  <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Un objeto no se define, se crea o instancia en una variable a partir de un modelo (clase) de la que recoge todas sus características. Una vez instanciado se puede hacer uso de los atributos y métodos de la clase que hemos utilizado de base.&lt;/p&gt;
 &lt;p&gt;Si vemos el ejemplo anterior, el objeto &lt;strong&gt;p1&lt;/strong&gt; se instancia de la clase punto y en nuestro código a través de la notación punto podremos hacer uso de los atributos &lt;strong&gt;x&lt;/strong&gt; e &lt;strong&gt;y&lt;/strong&gt; así como de los métodos.&lt;/p&gt;
@@ -6234,7 +6260,7 @@ in order to gain resolution of the situation."></unicode>
                  <string role="key" value="nextImageId"></string>
                  <int value="0"></int>
                  <string role="key" value="parentNode"></string>
-                 <none></none>
+                 <reference key="114"></reference>
                 </dictionary>
                </instance>
               </list>
@@ -6274,7 +6300,7 @@ in order to gain resolution of the situation."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.2.%20Objetos:4.2.1.%20Creaci%C3%B3n%20y%20uso%20de%20objetos"></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.2.%20Objetos:5.2.1.%20Creaci%C3%B3n%20y%20uso%20de%20objetos"></string>
            <string role="key" value="parent"></string>
            <reference key="110"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -6286,7 +6312,7 @@ in order to gain resolution of the situation."></unicode>
          <instance class="exe.engine.node.Node" reference="117">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.2.2. Visibilidad"></unicode>
+           <unicode value="5.2.2. Visibilidad"></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.jsidevice.JsIdevice" reference="115">
@@ -6360,6 +6386,8 @@ in order to gain resolution of the situation."></unicode>
                  <string value=""></string>
                  <string role="key" value="anchor_names"></string>
                  <list></list>
+                 <string role="key" value="anchors_linked_from_fields"></string>
+                 <dictionary></dictionary>
                  <string role="key" value="content_w_resourcePaths"></string>
                  <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;La visibilidad permite que los métodos y propiedades de una clase sean utilizados de forma correcta por otros elementos del programa.&lt;/p&gt;
 &lt;p&gt;En la imagen podemos ver las clases de visibilidad que se pueden implementar bajo un lenguaje POO tradicional: pública, privada y protegida.&lt;/p&gt;
@@ -6407,7 +6435,7 @@ in order to gain resolution of the situation."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="609"></int>
+                        <int value="634"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6421,7 +6449,7 @@ in order to gain resolution of the situation."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="242_242_2.0"></unicode>
+                      <unicode value="242_242_2.1"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="118">
                        <dictionary>
@@ -6432,7 +6460,7 @@ in order to gain resolution of the situation."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="02.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpug3wjc.eXe\\previews\\allyourbase\\02.png"></string>
+                        <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpfbqzze\\02.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="584b0a0fccd42af5ebbbce79ab2d0866"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6461,7 +6489,7 @@ in order to gain resolution of the situation."></unicode>
                  <string role="key" value="intlinks_to_anchors"></string>
                  <dictionary></dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="1"></int>
+                 <int value="2"></int>
                  <string role="key" value="parentNode"></string>
                  <reference key="117"></reference>
                 </dictionary>
@@ -6505,7 +6533,7 @@ in order to gain resolution of the situation."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.2.%20Objetos:4.2.2.%20Visibilidad"></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.2.%20Objetos:5.2.2.%20Visibilidad"></string>
            <string role="key" value="parent"></string>
            <reference key="110"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -6517,7 +6545,7 @@ in order to gain resolution of the situation."></unicode>
          <instance class="exe.engine.node.Node" reference="119">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.2.3. Ejercicio"></unicode>
+           <unicode value="5.2.3. Ejercicio"></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.ejercicioresueltofpdidevice.EjercicioresueltofpdIdevice" reference="120">
@@ -6590,6 +6618,8 @@ in order to gain resolution of the situation."></unicode>
                    <unicode value=""></unicode>
                    <string role="key" value="anchor_names"></string>
                    <list></list>
+                   <string role="key" value="anchors_linked_from_fields"></string>
+                   <dictionary></dictionary>
                    <string role="key" value="content_w_resourcePaths"></string>
                    <unicode content="true" value="&lt;p&gt;&lt;img src=&quot;resources/07.png&quot; alt=&quot;Ejercicio&quot; width=&quot;706&quot; height=&quot;697&quot; /&gt;&lt;/p&gt;"></unicode>
                    <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
@@ -6611,7 +6641,7 @@ in order to gain resolution of the situation."></unicode>
                         <instance class="exe.engine.field.TextField">
                          <dictionary>
                           <string role="key" value="_id"></string>
-                          <int value="611"></int>
+                          <int value="639"></int>
                           <string role="key" value="_idevice"></string>
                           <none></none>
                           <string role="key" value="_instruc"></string>
@@ -6625,7 +6655,7 @@ in order to gain resolution of the situation."></unicode>
                          </dictionary>
                         </instance>
                         <string role="key" value="_id"></string>
-                        <unicode value="244_149.0"></unicode>
+                        <unicode value="244_149.1"></unicode>
                         <string role="key" value="_imageResource"></string>
                         <instance class="exe.engine.resource.Resource" reference="124">
                          <dictionary>
@@ -6636,7 +6666,7 @@ in order to gain resolution of the situation."></unicode>
                           <string role="key" value="_storageName"></string>
                           <string value="07.png"></string>
                           <string role="key" value="_userName"></string>
-                          <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpug3wjc.eXe\\previews\\allyourbase\\07.png"></string>
+                          <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpfbqzze\\07.png"></string>
                           <string role="key" value="checksum"></string>
                           <string value="a684f39638b2fd1b94b790838c1e754d"></string>
                           <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6665,7 +6695,7 @@ in order to gain resolution of the situation."></unicode>
                    <string role="key" value="intlinks_to_anchors"></string>
                    <dictionary></dictionary>
                    <string role="key" value="nextImageId"></string>
-                   <int value="1"></int>
+                   <int value="2"></int>
                    <string role="key" value="parentNode"></string>
                    <reference key="119"></reference>
                   </dictionary>
@@ -6685,6 +6715,8 @@ in order to gain resolution of the situation."></unicode>
                    <unicode value=""></unicode>
                    <string role="key" value="anchor_names"></string>
                    <list></list>
+                   <string role="key" value="anchors_linked_from_fields"></string>
+                   <dictionary></dictionary>
                    <string role="key" value="content_w_resourcePaths"></string>
                    <unicode content="true" value="&lt;p&gt;class Bicicleta:&lt;br /&gt;    def __init__(self, kilometros_totales=0, kilometros_recorridos=0, color=0):&lt;br /&gt;        self.kilometros_totales = kilometros_totales&lt;br /&gt;        self.kilometros_recorridos = kilometros_recorridos&lt;br /&gt;        self.color = color&lt;/p&gt;
 &lt;p&gt;    def __str__(self):&lt;br /&gt;        return f&quot;La bicicleta ha recorrido {self.kilometros_totales} km&quot;&lt;/p&gt;
@@ -6745,7 +6777,7 @@ in order to gain resolution of the situation."></unicode>
                    <string role="key" value="nextImageId"></string>
                    <int value="0"></int>
                    <string role="key" value="parentNode"></string>
-                   <none></none>
+                   <reference key="119"></reference>
                   </dictionary>
                  </instance>
                 </dictionary>
@@ -6767,6 +6799,8 @@ in order to gain resolution of the situation."></unicode>
                 <unicode value="Story:"></unicode>
                 <string role="key" value="anchor_names"></string>
                 <list></list>
+                <string role="key" value="anchors_linked_from_fields"></string>
+                <dictionary></dictionary>
                 <string role="key" value="class_"></string>
                 <string value="block story"></string>
                 <string role="key" value="content_w_resourcePaths"></string>
@@ -6793,7 +6827,7 @@ in order to gain resolution of the situation."></unicode>
                 <string role="key" value="nextImageId"></string>
                 <int value="0"></int>
                 <string role="key" value="parentNode"></string>
-                <none></none>
+                <reference key="119"></reference>
                </dictionary>
               </instance>
               <string role="key" value="systemResources"></string>
@@ -6820,7 +6854,7 @@ in order to gain resolution of the situation."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.2.%20Objetos:4.2.3.%20Ejercicio"></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.2.%20Objetos:5.2.3.%20Ejercicio"></string>
            <string role="key" value="parent"></string>
            <reference key="110"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -6835,7 +6869,7 @@ in order to gain resolution of the situation."></unicode>
       <instance class="exe.engine.node.Node" reference="128">
        <dictionary>
         <string role="key" value="_title"></string>
-        <unicode value="4.3. Paquetes"></unicode>
+        <unicode value="5.3. Paquetes"></unicode>
         <string role="key" value="idevices"></string>
         <list></list>
         <string role="key" value="_id"></string>
@@ -6849,7 +6883,7 @@ in order to gain resolution of the situation."></unicode>
         <string role="key" value="exportType"></string>
         <string value="singlepage"></string>
         <string role="key" value="last_full_node_path"></string>
-        <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.3.%20Paquetes"></string>
+        <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.3.%20Paquetes"></string>
         <string role="key" value="parent"></string>
         <reference key="5"></reference>
         <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -6859,7 +6893,7 @@ in order to gain resolution of the situation."></unicode>
          <instance class="exe.engine.node.Node" reference="127">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.3.1. Módulos"></unicode>
+           <unicode value="5.3.1. Módulos"></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.jsidevice.JsIdevice" reference="125">
@@ -6933,6 +6967,8 @@ in order to gain resolution of the situation."></unicode>
                  <string value=""></string>
                  <string role="key" value="anchor_names"></string>
                  <list></list>
+                 <string role="key" value="anchors_linked_from_fields"></string>
+                 <dictionary></dictionary>
                  <string role="key" value="content_w_resourcePaths"></string>
                  <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Un módulo es un fichero Python que contiene código. Potencialmente cualquier fichero puede ser un módulo, o ser llamado para la ejecución. Como tal podemos determinar si un fichero ha sido llamado como módulo o para la ejecución a través de la variable global &lt;strong&gt;__name__&lt;/strong&gt;. Esta variable contendrá el valor: &lt;strong&gt;__main__&lt;/strong&gt; cuando se esté intentando ejecutar el código, en caso contrario el módulo se intentará usar como librería de importación.&lt;/p&gt;
 &lt;p&gt;Las variables que se definan en un módulo en el ámbito global serán accesibles desde el módulo y desde fuera como una función más.&lt;/p&gt;
@@ -6965,7 +7001,7 @@ in order to gain resolution of the situation."></unicode>
                  <string role="key" value="nextImageId"></string>
                  <int value="0"></int>
                  <string role="key" value="parentNode"></string>
-                 <none></none>
+                 <reference key="127"></reference>
                 </dictionary>
                </instance>
               </list>
@@ -7005,7 +7041,7 @@ in order to gain resolution of the situation."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.3.%20Paquetes:4.3.1.%20M%C3%B3dulos"></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.3.%20Paquetes:5.3.1.%20M%C3%B3dulos"></string>
            <string role="key" value="parent"></string>
            <reference key="128"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -7017,7 +7053,7 @@ in order to gain resolution of the situation."></unicode>
          <instance class="exe.engine.node.Node" reference="131">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.3.2. Paquete"></unicode>
+           <unicode value="5.3.2. Paquete"></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.jsidevice.JsIdevice" reference="129">
@@ -7091,6 +7127,8 @@ in order to gain resolution of the situation."></unicode>
                  <string value=""></string>
                  <string role="key" value="anchor_names"></string>
                  <list></list>
+                 <string role="key" value="anchors_linked_from_fields"></string>
+                 <dictionary></dictionary>
                  <string role="key" value="content_w_resourcePaths"></string>
                  <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Un paquete (&lt;strong&gt;namespace&lt;/strong&gt;) es un directorio en el que se le crea un directorio especial: &lt;strong&gt;__init__.py&lt;/strong&gt; (optativo a partir de la versión 3.3). Este fichero puede estar vacío o puede tener una variable &lt;strong&gt;__all__&lt;/strong&gt;, con lista de los módulos al cargar cuando se use. Además, cualquier variable o definición que se haga en este fichero, estará disponible para todos los módulos del paquete usando el nombre del mismo para importarlo (namespace).&lt;/p&gt;
 &lt;div style=&quot;background-color: #cccccc; padding-left: 60px; border-left-style: solid;&quot;&gt;pqt_1\&lt;/div&gt;
@@ -7121,7 +7159,7 @@ in order to gain resolution of the situation."></unicode>
                  <string role="key" value="nextImageId"></string>
                  <int value="0"></int>
                  <string role="key" value="parentNode"></string>
-                 <none></none>
+                 <reference key="131"></reference>
                 </dictionary>
                </instance>
               </list>
@@ -7161,7 +7199,7 @@ in order to gain resolution of the situation."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.3.%20Paquetes:4.3.2.%20Paquete"></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.3.%20Paquetes:5.3.2.%20Paquete"></string>
            <string role="key" value="parent"></string>
            <reference key="128"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -7173,7 +7211,7 @@ in order to gain resolution of the situation."></unicode>
          <instance class="exe.engine.node.Node" reference="134">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.3.3. Ejemplo"></unicode>
+           <unicode value="5.3.3. Ejemplo"></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.jsidevice.JsIdevice" reference="132">
@@ -7247,6 +7285,8 @@ in order to gain resolution of the situation."></unicode>
                  <string value=""></string>
                  <string role="key" value="anchor_names"></string>
                  <list></list>
+                 <string role="key" value="anchors_linked_from_fields"></string>
+                 <dictionary></dictionary>
                  <string role="key" value="content_w_resourcePaths"></string>
                  <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;En este ejemplo desarrollaremos una librería muy básica. En primer lugar, se crea un módulo librería (lib001b.py) y a continuación el paquete lib001a con dos módulos dentro. El fichero 0002.py hace uso de las librerías y todos sus ejemplos de importación.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;resources/09.png&quot; alt=&quot;Ejemplo&quot; width=&quot;137&quot; height=&quot;123&quot; /&gt;&lt;/p&gt;&lt;/div&gt;"></unicode>
@@ -7269,7 +7309,7 @@ in order to gain resolution of the situation."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="613"></int>
+                        <int value="641"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -7283,7 +7323,7 @@ in order to gain resolution of the situation."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="248_248_2.0"></unicode>
+                      <unicode value="248_248_2.1"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="135">
                        <dictionary>
@@ -7294,7 +7334,7 @@ in order to gain resolution of the situation."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="09.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpug3wjc.eXe\\previews\\allyourbase\\09.png"></string>
+                        <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpfbqzze\\09.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="896fa7e8aa7cf32dbf1aa48ef893691e"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -7323,7 +7363,7 @@ in order to gain resolution of the situation."></unicode>
                  <string role="key" value="intlinks_to_anchors"></string>
                  <dictionary></dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="1"></int>
+                 <int value="2"></int>
                  <string role="key" value="parentNode"></string>
                  <reference key="134"></reference>
                 </dictionary>
@@ -7426,6 +7466,8 @@ in order to gain resolution of the situation."></unicode>
                  <string value=""></string>
                  <string role="key" value="anchor_names"></string>
                  <list></list>
+                 <string role="key" value="anchors_linked_from_fields"></string>
+                 <dictionary></dictionary>
                  <string role="key" value="content_w_resourcePaths"></string>
                  <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;div&gt;&lt;strong&gt;lib001b.py&lt;/strong&gt;&lt;/div&gt;
 &lt;div&gt;def suma(*valores):&lt;/div&gt;
@@ -7487,7 +7529,7 @@ in order to gain resolution of the situation."></unicode>
                  <string role="key" value="nextImageId"></string>
                  <int value="0"></int>
                  <string role="key" value="parentNode"></string>
-                 <none></none>
+                 <reference key="134"></reference>
                 </dictionary>
                </instance>
               </list>
@@ -7527,7 +7569,7 @@ in order to gain resolution of the situation."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.3.%20Paquetes:4.3.3.%20Ejemplo"></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.3.%20Paquetes:5.3.3.%20Ejemplo"></string>
            <string role="key" value="parent"></string>
            <reference key="128"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -7539,7 +7581,7 @@ in order to gain resolution of the situation."></unicode>
          <instance class="exe.engine.node.Node" reference="140">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.3.4. Uso de import"></unicode>
+           <unicode value="5.3.4. Uso de import"></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.jsidevice.JsIdevice" reference="138">
@@ -7613,6 +7655,8 @@ in order to gain resolution of the situation."></unicode>
                  <string value=""></string>
                  <string role="key" value="anchor_names"></string>
                  <list></list>
+                 <string role="key" value="anchors_linked_from_fields"></string>
+                 <dictionary></dictionary>
                  <string role="key" value="content_w_resourcePaths"></string>
                  <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;El contenido de cada módulo, podrá ser utilizado a la vez, por otros módulos, pero para ello, es necesario importar los módulos que se quieran utilizar. Para importar un módulo, se utiliza la instrucción import, seguida del nombre del paquete (si aplica) más el nombre del módulo (sin extensión) que se desee importar.&lt;/p&gt;
 &lt;p&gt;Todo código en un paquete importado será ejecutado en el momento de la importación, pero no se ejecutarán las clases o funciones definidas en él, hay que llamarlas de forma explícita.&lt;/p&gt;
@@ -7667,7 +7711,7 @@ in order to gain resolution of the situation."></unicode>
                  <string role="key" value="nextImageId"></string>
                  <int value="0"></int>
                  <string role="key" value="parentNode"></string>
-                 <none></none>
+                 <reference key="140"></reference>
                 </dictionary>
                </instance>
               </list>
@@ -7707,7 +7751,7 @@ in order to gain resolution of the situation."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.3.%20Paquetes:4.3.4.%20Uso%20de%20import"></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.3.%20Paquetes:5.3.4.%20Uso%20de%20import"></string>
            <string role="key" value="parent"></string>
            <reference key="128"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -7722,7 +7766,7 @@ in order to gain resolution of the situation."></unicode>
       <instance class="exe.engine.node.Node" reference="143">
        <dictionary>
         <string role="key" value="_title"></string>
-        <unicode value="4.4. Destrucción de objetos y Liberación de memoria"></unicode>
+        <unicode value="5.4. Destrucción de objetos y Liberación de memoria"></unicode>
         <string role="key" value="idevices"></string>
         <list>
          <instance class="exe.engine.jsidevice.JsIdevice" reference="141">
@@ -7796,6 +7840,8 @@ in order to gain resolution of the situation."></unicode>
               <string value=""></string>
               <string role="key" value="anchor_names"></string>
               <list></list>
+              <string role="key" value="anchors_linked_from_fields"></string>
+              <dictionary></dictionary>
               <string role="key" value="content_w_resourcePaths"></string>
               <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;El recolector de basura o &lt;strong&gt;garbage collector&lt;/strong&gt; es una de las piezas fundamentales del lenguaje, es la funcionalidad que libera al programador de la solicitud y liberación de memoria de forma explícita lo que facilita a los programadores la creación de programas, una mayor productividad, evita errores y fallos de seguridad. Uno de los motivos por los que programar en Python es cómodo y sencillo es que no tenemos que preocuparnos por el tiempo de vida de nuestros objetos ya que implementa el garbage collector. Es decir, una vez que deja de ser necesaria, una variable desaparece de la memoria “mágicamente”.&lt;/p&gt;
 &lt;p&gt;Python utiliza para manejar la memoria una estrategia combinada consistente en: conteo de referencias y colector de basura generacional.&lt;/p&gt;&lt;/div&gt;"></unicode>
@@ -7821,7 +7867,7 @@ in order to gain resolution of the situation."></unicode>
               <string role="key" value="nextImageId"></string>
               <int value="0"></int>
               <string role="key" value="parentNode"></string>
-              <none></none>
+              <reference key="143"></reference>
              </dictionary>
             </instance>
            </list>
@@ -7861,7 +7907,7 @@ in order to gain resolution of the situation."></unicode>
         <string role="key" value="exportType"></string>
         <string value="singlepage"></string>
         <string role="key" value="last_full_node_path"></string>
-        <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.4.%20Destrucci%C3%B3n%20de%20objetos%20y%20Liberaci%C3%B3n%20de%20memoria"></string>
+        <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.4.%20Destrucci%C3%B3n%20de%20objetos%20y%20Liberaci%C3%B3n%20de%20memoria"></string>
         <string role="key" value="parent"></string>
         <reference key="5"></reference>
         <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -7871,7 +7917,7 @@ in order to gain resolution of the situation."></unicode>
          <instance class="exe.engine.node.Node" reference="146">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.4.1 La gestión del recolector de basuras"></unicode>
+           <unicode value="5.4.1 La gestión del recolector de basuras"></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.jsidevice.JsIdevice" reference="144">
@@ -7945,6 +7991,8 @@ in order to gain resolution of the situation."></unicode>
                  <string value=""></string>
                  <string role="key" value="anchor_names"></string>
                  <list></list>
+                 <string role="key" value="anchors_linked_from_fields"></string>
+                 <dictionary></dictionary>
                  <string role="key" value="content_w_resourcePaths"></string>
                  <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;El módulo &lt;strong&gt;gc&lt;/strong&gt; proporciona una interfaz para el recolector de basura opcional (recolector de basura cíclico generacional). Proporciona la capacidad de deshabilitar el recolector, ajustar la frecuencia de recolección y establecer opciones de depuración.&lt;/p&gt;
 &lt;p&gt;También proporciona acceso a objetos inaccesibles (unreachable) que el recolector encontró, pero no pudo liberar. Dado que el recolector de basura complementa el conteo de referencias es posible desactivarlo siempre que se esté seguro de que el programa no crea referencias cíclicas.&lt;/p&gt;
@@ -7978,7 +8026,7 @@ in order to gain resolution of the situation."></unicode>
                  <string role="key" value="nextImageId"></string>
                  <int value="0"></int>
                  <string role="key" value="parentNode"></string>
-                 <none></none>
+                 <reference key="146"></reference>
                 </dictionary>
                </instance>
               </list>
@@ -8018,7 +8066,7 @@ in order to gain resolution of the situation."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.4.%20Destrucci%C3%B3n%20de%20objetos%20y%20Liberaci%C3%B3n%20de%20memoria:4.4.1%20La%20gesti%C3%B3n%20del%20recolector%20de%20basuras"></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.4.%20Destrucci%C3%B3n%20de%20objetos%20y%20Liberaci%C3%B3n%20de%20memoria:5.4.1%20La%20gesti%C3%B3n%20del%20recolector%20de%20basuras"></string>
            <string role="key" value="parent"></string>
            <reference key="143"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -8033,7 +8081,7 @@ in order to gain resolution of the situation."></unicode>
       <instance class="exe.engine.node.Node" reference="152">
        <dictionary>
         <string role="key" value="_title"></string>
-        <unicode value="4.5. Librería estándar"></unicode>
+        <unicode value="5.5. Librería estándar"></unicode>
         <string role="key" value="idevices"></string>
         <list></list>
         <string role="key" value="_id"></string>
@@ -8047,7 +8095,7 @@ in order to gain resolution of the situation."></unicode>
         <string role="key" value="exportType"></string>
         <string value="singlepage"></string>
         <string role="key" value="last_full_node_path"></string>
-        <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.5.%20Librer%C3%ADa%20est%C3%A1ndar"></string>
+        <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.5.%20Librer%C3%ADa%20est%C3%A1ndar"></string>
         <string role="key" value="parent"></string>
         <reference key="5"></reference>
         <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -8057,7 +8105,7 @@ in order to gain resolution of the situation."></unicode>
          <instance class="exe.engine.node.Node" reference="149">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.5.1 Cadenas, clase str"></unicode>
+           <unicode value="5.5.1 Cadenas, clase str"></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.genericidevice.GenericIdevice" reference="147">
@@ -8124,7 +8172,7 @@ complete this learning."></unicode>
                  <string role="key" value="nextImageId"></string>
                  <int value="0"></int>
                  <string role="key" value="parentNode"></string>
-                 <none></none>
+                 <reference key="149"></reference>
                 </dictionary>
                </instance>
               </list>
@@ -8223,6 +8271,8 @@ complete this learning."></unicode>
                  <string value=""></string>
                  <string role="key" value="anchor_names"></string>
                  <list></list>
+                 <string role="key" value="anchors_linked_from_fields"></string>
+                 <dictionary></dictionary>
                  <string role="key" value="content_w_resourcePaths"></string>
                  <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;El tipo str es una secuencia inmutable de caracteres Unicode (cuidado cuando trabajes con texto procedente de ficheros u otras fuentes de datos. Fíjate en qué codificación está y haz las transformaciones necesarias si no quieres tener problemas. Por defecto, la codificación de un string en Python es Unicode, concretamente &lt;strong&gt;UTF-8&lt;/strong&gt;).&lt;/p&gt;
 &lt;p&gt;Una singularidad de la clase str es que a su constructor se le puede pasar cualquier objeto. Al hacer esto, la función str() devuelve la representación en forma de cadena de caracteres del propio objeto (si se pasa un string devuelve el string en sí). Normalmente, al llamar a la función str(objeto) lo que se hace internamente es llamar al método &lt;strong&gt;__str__()&lt;/strong&gt; del objeto. Si este método no existe, entonces devuelve el resultado de invocar a repr(objeto) o &lt;strong&gt;__repr__()&lt;/strong&gt;.&lt;/p&gt;&lt;/div&gt;"></unicode>
@@ -8248,7 +8298,7 @@ complete this learning."></unicode>
                  <string role="key" value="nextImageId"></string>
                  <int value="0"></int>
                  <string role="key" value="parentNode"></string>
-                 <none></none>
+                 <reference key="149"></reference>
                 </dictionary>
                </instance>
               </list>
@@ -8288,7 +8338,7 @@ complete this learning."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.5.%20Librer%C3%ADa%20est%C3%A1ndar:4.5.1%20Cadenas%2C%20clase%20str"></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.5.%20Librer%C3%ADa%20est%C3%A1ndar:5.5.1%20Cadenas%2C%20clase%20str"></string>
            <string role="key" value="parent"></string>
            <reference key="152"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -8372,6 +8422,8 @@ complete this learning."></unicode>
                     <string value=""></string>
                     <string role="key" value="anchor_names"></string>
                     <list></list>
+                    <string role="key" value="anchors_linked_from_fields"></string>
+                    <dictionary></dictionary>
                     <string role="key" value="content_w_resourcePaths"></string>
                     <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Todas las cadenas de caracteres implementan las operaciones comunes de las secuencias, junto con los métodos descritos a continuación.&lt;/p&gt;
 &lt;ul&gt;
@@ -8428,7 +8480,7 @@ complete this learning."></unicode>
                     <string role="key" value="nextImageId"></string>
                     <int value="0"></int>
                     <string role="key" value="parentNode"></string>
-                    <none></none>
+                    <reference key="155"></reference>
                    </dictionary>
                   </instance>
                  </list>
@@ -8468,7 +8520,7 @@ complete this learning."></unicode>
               <string role="key" value="exportType"></string>
               <string value="singlepage"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.5.%20Librer%C3%ADa%20est%C3%A1ndar:4.5.1%20Cadenas%2C%20clase%20str:Cadenas%20de%20caracteres."></string>
+              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.5.%20Librer%C3%ADa%20est%C3%A1ndar:5.5.1%20Cadenas%2C%20clase%20str:Cadenas%20de%20caracteres."></string>
               <string role="key" value="parent"></string>
               <reference key="149"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -8553,6 +8605,8 @@ in order to gain resolution of the situation."></unicode>
                       <unicode value=""></unicode>
                       <string role="key" value="anchor_names"></string>
                       <list></list>
+                      <string role="key" value="anchors_linked_from_fields"></string>
+                      <dictionary></dictionary>
                       <string role="key" value="content_w_resourcePaths"></string>
                       <unicode content="true" value="&lt;ul&gt;
 &lt;li&gt;Escribir por pantalla cada carácter de una cadena introducida por teclado.&lt;/li&gt;
@@ -8622,7 +8676,7 @@ in order to gain resolution of the situation."></unicode>
                       <string role="key" value="nextImageId"></string>
                       <int value="0"></int>
                       <string role="key" value="parentNode"></string>
-                      <none></none>
+                      <reference key="156"></reference>
                      </dictionary>
                     </instance>
                     <string role="key" value="exe.engine.ejercicioresueltofpdidevice.Question.persistenceVersion"></string>
@@ -8640,6 +8694,8 @@ in order to gain resolution of the situation."></unicode>
                       <unicode value=""></unicode>
                       <string role="key" value="anchor_names"></string>
                       <list></list>
+                      <string role="key" value="anchors_linked_from_fields"></string>
+                      <dictionary></dictionary>
                       <string role="key" value="content_w_resourcePaths"></string>
                       <unicode content="true" value="&lt;p&gt;&quot;&quot;&quot;&lt;br /&gt;µ  Escribir por pantalla cada carácter de una cadena introducida por teclado.&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;# cadena = input(&quot;¿Cadena?&quot;)&lt;br /&gt;# for caracter in cadena:&lt;br /&gt;#     print(caracter, end=&quot;-&quot;)&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;µ  Realizar un programa que comprueba si una cadena leída por teclado comienza por una subcadena pedida por teclado.&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;# cadena = input(&quot;¿Cadena?&quot;)&lt;br /&gt;# subcadena = input(&quot;¿Subcadena?&quot;)&lt;br /&gt;# print(f&quot;Comienza {cadena} por {subcadena}&quot;, cadena.startswith(subcadena))&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;µ  Pide una cadena y un carácter por teclado (valida que sea un carácter) y muestra cuantas veces aparece el carácter&lt;br /&gt;en la cadena.&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;# cadena = input(&quot;¿Cadena?&quot;)&lt;br /&gt;# caracter = input(&quot;¿Carácter?&quot;)&lt;br /&gt;# if len(caracter) &amp;gt; 1:&lt;br /&gt;#     print(&quot;No es un carácter&quot;)&lt;br /&gt;# else:&lt;br /&gt;#     print(f&quot;El carácter {caracter} están en {cadena} {cadena.count(caracter)} veces&quot;)&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;µ  Suponiendo que hemos introducido una cadena por teclado que representa una frase (palabras separadas por espacios),&lt;br /&gt;realiza un programa que cuente cuantas palabras tiene.&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;# cadena = input(&quot;¿Frase?&quot;)&lt;br /&gt;# print(&quot;El número de palabras es&quot;, len(cadena.split(&quot; &quot;)))&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;µ   Si tenemos una cadena con un nombre y apellidos, realizar un programa que muestre las iniciales en mayúsculas.&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;# cadena = input(&quot;¿Frase?&quot;)&lt;br /&gt;# print(cadena.title())&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;µ  Realizar un programa que, dada una cadena de caracteres por caracteres, genere otra cadena resultado de invertir&lt;br /&gt;la primera.&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;# cadena = input(&quot;¿Frase?&quot;)&lt;br /&gt;# print(cadena[::-1])&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;µ   Pide una cadena y dos caracteres por teclado (valida que sea un carácter), sustituye la aparición del primer&lt;br /&gt;carácter en la cadena por el segundo carácter.&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;# cadena = input(&quot;¿Frase?&quot;)&lt;br /&gt;# car_1 = input(&quot;¿Caracter original?&quot;)&lt;br /&gt;# car_2 = input(&quot;¿Caracter a poner?&quot;)&lt;br /&gt;# print(cadena.replace(car_1, car_2))&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;µ   Realizar un programa que lea una cadena por teclado y convierta las mayúsculas a minúsculas y viceversa.&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;# cadena = input(&quot;¿Frase?&quot;)&lt;br /&gt;# print(cadena.swapcase())&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;µ   Realizar un programa que compruebe si una cadena contiene una subcadena. Las dos cadenas se introducen por teclado.&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;# cadena = input(&quot;¿Cadena?&quot;)&lt;br /&gt;# subcadena = input(&quot;¿Subcadena?&quot;)&lt;br /&gt;# print(f&quot;La {cadena} contiene {subcadena}&quot;, cadena.find(subcadena) &amp;gt; -1)&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;µ   Introducir una cadena de caracteres e indicar si es un palíndromo. Una palabra palíndroma es aquella que se lee&lt;br /&gt;igual adelante que atrás.&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;# cadena_1 = input(&quot;¿Cadena?&quot;)&lt;br /&gt;# cadena_2 = input(&quot;¿Subcadena?&quot;)&lt;br /&gt;# print(f&quot;La {cadena_1} y {cadena_2} son palíndromos:&quot;, cadena_1[::-1] == cadena_2)&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;µ  Escribir funciones que dada una cadena de caracteres:&lt;br /&gt;    o  Imprima los dos primeros caracteres.&lt;br /&gt;    o  Imprima los tres últimos caracteres.&lt;br /&gt;    o  Imprima dicha cadena cada dos caracteres. Ej.: recta debería imprimir rca&lt;br /&gt;    o  Dicha cadena en sentido inverso. Ej.: hola mundo! debe imprimir !odnum aloh&lt;br /&gt;    o  Imprima la cadena en un sentido y en sentido inverso. Ej: reflejo imprime reflejoojelfer.&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;# cadena = input(&quot;¿Cadena?&quot;)&lt;br /&gt;# print(cadena[:2])&lt;br /&gt;# print(cadena[-3:])&lt;br /&gt;# print(cadena[::-1])&lt;br /&gt;# for num, car in enumerate(cadena):&lt;br /&gt;#     if num % 2 == 0: print(car, end='')&lt;br /&gt;# print()&lt;br /&gt;# print(cadena, cadena[::-1])&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;µ  Escribir funciones que dada una cadena y un caracter:&lt;br /&gt;    o  Inserte el caracter entre cada letra de la cadena. Ej: separar y , debería devolver s,e,p,a,r,a,r&lt;br /&gt;    o  Reemplace todos los espacios por el caracter. Ej: mi archivo de texto.txt y \_ &lt;br /&gt;    debería devolver mi\_archivo\_de\_texto.txt&lt;br /&gt;    o  Reemplace todos los dígitos en la cadena por el caracter. Ej: su clave es: 1540 y X debería devolver &lt;br /&gt;    su clave es: XXXX&lt;br /&gt;    o  Inserte el caracter cada 3 dígitos en la cadena. Ej. 2552552550 y . debería devolver 255.255.255.0&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;# cadena = input(&quot;¿Cadena?&quot;)&lt;br /&gt;# cadena_resultado = &quot;&quot;&lt;br /&gt;# for char in cadena:&lt;br /&gt;#     cadena_resultado += char + &quot;,&quot;&lt;br /&gt;# print(cadena_resultado)&lt;br /&gt;# print(cadena.replace(&quot; &quot;, &quot;\_&quot;))&lt;br /&gt;# cadena_resultado = &quot;&quot;&lt;br /&gt;# for char in cadena:&lt;br /&gt;#     if char.isdigit():&lt;br /&gt;#         cadena_resultado += &quot;X&quot;&lt;br /&gt;#     else:&lt;br /&gt;#         cadena_resultado += char&lt;br /&gt;# print(cadena_resultado)&lt;br /&gt;# cadena_resultado = &quot;&quot;&lt;br /&gt;# for numero in range(0, len(cadena), 3):&lt;br /&gt;#     if numero &amp;gt; 0:&lt;br /&gt;#         cadena_resultado += &quot;.&quot;&lt;br /&gt;#     cadena_resultado += cadena[numero:numero+3]&lt;br /&gt;# print(cadena_resultado)&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;µ  Escribir una función que reciba una cadena que contiene un largo número entero y devuelva una cadena con el número&lt;br /&gt;y las separaciones de miles. Por ejemplo, si recibe 1234567890, debe devolver 1.234.567.890.&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;# cadena = input(&quot;¿Cadena?&quot;)&lt;br /&gt;# subcadena = cadena_resultado = &quot;&quot;&lt;br /&gt;# num_inicial = len(cadena) % 3  # caracteres que sobran por la izquierda para el primer punto&lt;br /&gt;# if num_inicial &amp;gt; 0: # imprimimos el primer grupo, el no completo&lt;br /&gt;#     print(cadena[0:num_inicial] + &quot;.&quot;, end='')&lt;br /&gt;#     subcadena = cadena[num_inicial:]&lt;br /&gt;# else:&lt;br /&gt;#     subcadena = cadena&lt;br /&gt;# for numero in range(0, len(subcadena), 3): # imprimimos grupos de tres en tres&lt;br /&gt;#     if numero &amp;gt; 0:&lt;br /&gt;#         cadena_resultado += &quot;.&quot;&lt;br /&gt;#     cadena_resultado += cadena[numero:numero+3]&lt;br /&gt;# print(cadena_resultado)&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;µ  Escribir una función que dada una cadena de caracteres, devuelva:&lt;br /&gt;    o  La primera letra de cada palabra. Por ejemplo, si recibe Universal Serial Bus debe devolver USB.&lt;br /&gt;    o  Dicha cadena con la primera letra de cada palabra en mayúsculas. Por ejemplo, si recibe república argentina&lt;br /&gt;    debe devolver República Argentina.&lt;br /&gt;    o  Las palabras que comiencen con la letra A. Por ejemplo, si recibe Antes de ayer debe devolver Antes ayer.&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;# cadena = input(&quot;¿Cadena?&quot;)&lt;br /&gt;# for palabra in cadena.split(&quot; &quot;):&lt;br /&gt;#     print(palabra[0], end='')&lt;br /&gt;# print()&lt;br /&gt;# print(cadena.title())&lt;br /&gt;# for palabra in cadena.split(&quot; &quot;):&lt;br /&gt;#     if palabra[0].upper() == &quot;A&quot;:&lt;br /&gt;#         print(palabra, end=' ')&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;µ  Escribir funciones que dada una cadena de caracteres:&lt;br /&gt;    o  Devuelva solamente las letras consonantes. Por ejemplo, si recibe algoritmos o logaritmos debe devolver lgrtms.&lt;br /&gt;    o  Devuelva solamente las letras vocales. Por ejemplo, si recibe sin consonantes debe devolver i ooae.&lt;br /&gt;    o  Reemplace cada vocal por su siguiente vocal. Por ejemplo, si recibe vestuario debe devolver vistaerou.&lt;br /&gt;    o  Indique si se trata de un palíndromo. Por ejemplo, anita lava la tina es un palíndromo (se lee igual de&lt;br /&gt;    izquierda a derecha que de derecha a izquierda).&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;# cadena = input(&quot;¿Cadena?&quot;)&lt;br /&gt;# cadena_resultado = &quot;&quot;&lt;br /&gt;# vocales = ['a', 'e', 'i', 'o', 'u']&lt;br /&gt;# for caracter in cadena:&lt;br /&gt;#     if caracter.lower() not in vocales:&lt;br /&gt;#         cadena_resultado += caracter&lt;br /&gt;# print(cadena_resultado)&lt;br /&gt;# cadena_resultado = &quot;&quot;&lt;br /&gt;# for caracter in cadena:&lt;br /&gt;#     if caracter.lower() in vocales + [' ']:&lt;br /&gt;#         cadena_resultado += caracter&lt;br /&gt;# print(cadena_resultado)&lt;br /&gt;# cadena_resultado = &quot;&quot;&lt;br /&gt;# for caracter in cadena:&lt;br /&gt;#     if caracter.lower() in vocales:&lt;br /&gt;#         siguiente = (vocales.index(caracter) + 1) % 5&lt;br /&gt;#         cadena_resultado += vocales[siguiente]&lt;br /&gt;#     else:&lt;br /&gt;#         cadena_resultado += caracter&lt;br /&gt;# print(cadena_resultado)&lt;br /&gt;# print(f&quot;{cadena} es palíndromo&quot;, cadena == cadena[::-1])&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;µ  Escribir funciones que dadas dos cadenas de caracteres:&lt;br /&gt;    o  Devuelva la que sea anterior en orden alfábetico. Por ejemplo, si recibe kde y gnome debe devolver gnome.&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;# cadena_1 = input(&quot;¿Cadena?&quot;)&lt;br /&gt;# cadena_2 = input(&quot;¿Cadena?&quot;)&lt;br /&gt;# print(cadena_2 if cadena_1.upper() &amp;gt; cadena_2.upper() else cadena_1)&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;µ  Escribir una función que reciba una cadena de unos y ceros (es decir, un número en representación binaria) y&lt;br /&gt;devuelva el valor decimal correspondiente.&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt;# cadena = input(&quot;¿Cadena Binaria?&quot;)&lt;br /&gt;# # print(int(cadena, 2))  # esta solo lo hace&lt;br /&gt;# posicion = 0&lt;br /&gt;# numero_decimal = 0&lt;br /&gt;# if len(cadena) == cadena.count('0') + cadena.count('1'):&lt;br /&gt;#     for caracter in cadena[::-1]:&lt;br /&gt;#         numero_decimal += int(caracter) * 2 ** posicion&lt;br /&gt;#         posicion += 1&lt;br /&gt;# print(numero_decimal)&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;"></unicode>
@@ -8668,7 +8724,7 @@ in order to gain resolution of the situation."></unicode>
                       <string role="key" value="nextImageId"></string>
                       <int value="0"></int>
                       <string role="key" value="parentNode"></string>
-                      <none></none>
+                      <reference key="156"></reference>
                      </dictionary>
                     </instance>
                    </dictionary>
@@ -8690,6 +8746,8 @@ in order to gain resolution of the situation."></unicode>
                    <unicode value="Story:"></unicode>
                    <string role="key" value="anchor_names"></string>
                    <list></list>
+                   <string role="key" value="anchors_linked_from_fields"></string>
+                   <dictionary></dictionary>
                    <string role="key" value="class_"></string>
                    <string value="block story"></string>
                    <string role="key" value="content_w_resourcePaths"></string>
@@ -8716,7 +8774,7 @@ in order to gain resolution of the situation."></unicode>
                    <string role="key" value="nextImageId"></string>
                    <int value="0"></int>
                    <string role="key" value="parentNode"></string>
-                   <none></none>
+                   <reference key="156"></reference>
                   </dictionary>
                  </instance>
                  <string role="key" value="systemResources"></string>
@@ -8741,7 +8799,7 @@ in order to gain resolution of the situation."></unicode>
               <string role="key" value="exportType"></string>
               <string value="singlepage"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.5.%20Librer%C3%ADa%20est%C3%A1ndar:4.5.1%20Cadenas%2C%20clase%20str:Ejercicios"></string>
+              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.5.%20Librer%C3%ADa%20est%C3%A1ndar:5.5.1%20Cadenas%2C%20clase%20str:Ejercicios"></string>
               <string role="key" value="parent"></string>
               <reference key="149"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -8827,6 +8885,8 @@ in order to gain resolution of the situation."></unicode>
                     <string value=""></string>
                     <string role="key" value="anchor_names"></string>
                     <list></list>
+                    <string role="key" value="anchors_linked_from_fields"></string>
+                    <dictionary></dictionary>
                     <string role="key" value="content_w_resourcePaths"></string>
                     <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Las expresiones regulares son un potente lenguaje de descripción de texto. Tanto los patrones como las cadenas de texto a buscar pueden ser cadenas de Unicode, así como cadenas de 8 bits. Sin embargo, las cadenas Unicode y las cadenas de 8 bits no se pueden mezclar: es decir, no se puede hacer coincidir una cadena Unicode con un patrón de bytes o viceversa; del mismo modo, al pedir una sustitución, la cadena de sustitución debe ser del mismo tipo que el patrón y la cadena de búsqueda.&lt;/p&gt;
 &lt;p&gt;Las expresiones regulares usan el carácter de barra inversa ('\') para indicar formas especiales o para permitir el uso de caracteres especiales sin invocar su significado especial. Esto choca con el uso de Python de este carácter para el mismo propósito con los literales de cadena; por ejemplo, para hacer coincidir una barra inversa literal, se podría escribir '\\\\' como patrón, porque la expresión regular debe ser \\, y cada barra inversa debe ser expresada como \\ dentro de un literal de cadena regular de Python.&lt;/p&gt;
@@ -8856,7 +8916,7 @@ in order to gain resolution of the situation."></unicode>
                     <string role="key" value="nextImageId"></string>
                     <int value="0"></int>
                     <string role="key" value="parentNode"></string>
-                    <none></none>
+                    <reference key="163"></reference>
                    </dictionary>
                   </instance>
                  </list>
@@ -8896,7 +8956,7 @@ in order to gain resolution of the situation."></unicode>
               <string role="key" value="exportType"></string>
               <string value="singlepage"></string>
               <string role="key" value="last_full_node_path"></string>
-              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.5.%20Librer%C3%ADa%20est%C3%A1ndar:4.5.1%20Cadenas%2C%20clase%20str:Expresiones%20regulares."></string>
+              <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.5.%20Librer%C3%ADa%20est%C3%A1ndar:5.5.1%20Cadenas%2C%20clase%20str:Expresiones%20regulares."></string>
               <string role="key" value="parent"></string>
               <reference key="149"></reference>
               <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -8980,6 +9040,8 @@ in order to gain resolution of the situation."></unicode>
                        <string value=""></string>
                        <string role="key" value="anchor_names"></string>
                        <list></list>
+                       <string role="key" value="anchors_linked_from_fields"></string>
+                       <dictionary></dictionary>
                        <string role="key" value="content_w_resourcePaths"></string>
                        <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Las reglas con las que se forman las expresiones son bastante simples y se denominan patrón. Pero aprender a combinarlas correctamente requiere de práctica. Utilizándolas podemos buscar una subcadena al principio o al final del texto. Incluso si queremos que se repita cierta cantidad de veces, si queremos que algo NO aparezca, o si debe aparecer una subcadena entre varias posibilidades. Permite, además, capturar aquellos trozos del texto que coincidan con la expresión para guardarlos en una variable o reemplazarlos por una cadena predeterminada; o incluso una cadena formada por los mismos trozos capturados.&lt;/p&gt;&lt;/div&gt;"></unicode>
                        <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
@@ -9004,7 +9066,7 @@ in order to gain resolution of the situation."></unicode>
                        <string role="key" value="nextImageId"></string>
                        <int value="0"></int>
                        <string role="key" value="parentNode"></string>
-                       <none></none>
+                       <reference key="166"></reference>
                       </dictionary>
                      </instance>
                     </list>
@@ -9044,7 +9106,7 @@ in order to gain resolution of the situation."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="singlepage"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.5.%20Librer%C3%ADa%20est%C3%A1ndar:4.5.1%20Cadenas%2C%20clase%20str:Expresiones%20regulares.:Patrones"></string>
+                 <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.5.%20Librer%C3%ADa%20est%C3%A1ndar:5.5.1%20Cadenas%2C%20clase%20str:Expresiones%20regulares.:Patrones"></string>
                  <string role="key" value="parent"></string>
                  <reference key="163"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -9130,6 +9192,8 @@ in order to gain resolution of the situation."></unicode>
                        <string value=""></string>
                        <string role="key" value="anchor_names"></string>
                        <list></list>
+                       <string role="key" value="anchors_linked_from_fields"></string>
+                       <dictionary></dictionary>
                        <string role="key" value="content_w_resourcePaths"></string>
                        <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Se conoce como metacaracteres a aquellos que, dependiendo del contexto, tienen un significado especial para las expresiones regulares. Por lo tanto, los debemos escapar colocándoles una contrabarra (\) delante para buscarlos explícitamente.&lt;/p&gt;&lt;/div&gt;"></unicode>
                        <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
@@ -9154,7 +9218,7 @@ in order to gain resolution of the situation."></unicode>
                        <string role="key" value="nextImageId"></string>
                        <int value="0"></int>
                        <string role="key" value="parentNode"></string>
-                       <none></none>
+                       <reference key="169"></reference>
                       </dictionary>
                      </instance>
                     </list>
@@ -9194,7 +9258,7 @@ in order to gain resolution of the situation."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="singlepage"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.5.%20Librer%C3%ADa%20est%C3%A1ndar:4.5.1%20Cadenas%2C%20clase%20str:Expresiones%20regulares.:Metacaracteres"></string>
+                 <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.5.%20Librer%C3%ADa%20est%C3%A1ndar:5.5.1%20Cadenas%2C%20clase%20str:Expresiones%20regulares.:Metacaracteres"></string>
                  <string role="key" value="parent"></string>
                  <reference key="163"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -9280,6 +9344,8 @@ in order to gain resolution of the situation."></unicode>
                        <string value=""></string>
                        <string role="key" value="anchor_names"></string>
                        <list></list>
+                       <string role="key" value="anchors_linked_from_fields"></string>
+                       <dictionary></dictionary>
                        <string role="key" value="content_w_resourcePaths"></string>
                        <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;&lt;img src=&quot;resources/10.png&quot; alt=&quot;Expresión regular&quot; width=&quot;931&quot; height=&quot;346&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Una expresión es una cadena de texto formada por caracteres, metacaracteres o cualquier estructura que permita la sintaxis. Veamos los más importantes:&lt;/p&gt;
@@ -9374,7 +9440,7 @@ in order to gain resolution of the situation."></unicode>
                             <instance class="exe.engine.field.TextField">
                              <dictionary>
                               <string role="key" value="_id"></string>
-                              <int value="614"></int>
+                              <int value="642"></int>
                               <string role="key" value="_idevice"></string>
                               <none></none>
                               <string role="key" value="_instruc"></string>
@@ -9388,7 +9454,7 @@ in order to gain resolution of the situation."></unicode>
                              </dictionary>
                             </instance>
                             <string role="key" value="_id"></string>
-                            <unicode value="261_261_2.0"></unicode>
+                            <unicode value="261_261_2.1"></unicode>
                             <string role="key" value="_imageResource"></string>
                             <instance class="exe.engine.resource.Resource" reference="173">
                              <dictionary>
@@ -9399,7 +9465,7 @@ in order to gain resolution of the situation."></unicode>
                               <string role="key" value="_storageName"></string>
                               <string value="10.png"></string>
                               <string role="key" value="_userName"></string>
-                              <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpug3wjc.eXe\\previews\\allyourbase\\10.png"></string>
+                              <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpfbqzze\\10.png"></string>
                               <string role="key" value="checksum"></string>
                               <string value="0029689724d0777da131a3b1431e5ba4"></string>
                               <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -9428,7 +9494,7 @@ in order to gain resolution of the situation."></unicode>
                        <string role="key" value="intlinks_to_anchors"></string>
                        <dictionary></dictionary>
                        <string role="key" value="nextImageId"></string>
-                       <int value="1"></int>
+                       <int value="2"></int>
                        <string role="key" value="parentNode"></string>
                        <reference key="172"></reference>
                       </dictionary>
@@ -9472,7 +9538,7 @@ in order to gain resolution of the situation."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="singlepage"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.5.%20Librer%C3%ADa%20est%C3%A1ndar:4.5.1%20Cadenas%2C%20clase%20str:Expresiones%20regulares.:Elementos%20de%20una%20expresi%C3%B3n"></string>
+                 <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.5.%20Librer%C3%ADa%20est%C3%A1ndar:5.5.1%20Cadenas%2C%20clase%20str:Expresiones%20regulares.:Elementos%20de%20una%20expresi%C3%B3n"></string>
                  <string role="key" value="parent"></string>
                  <reference key="163"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -9558,6 +9624,8 @@ in order to gain resolution of the situation."></unicode>
                        <string value=""></string>
                        <string role="key" value="anchor_names"></string>
                        <list></list>
+                       <string role="key" value="anchors_linked_from_fields"></string>
+                       <dictionary></dictionary>
                        <string role="key" value="content_w_resourcePaths"></string>
                        <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;.*&lt;/strong&gt; : cualquier cadena, de cualquier largo (incluyendo una cadena vacía)&lt;/li&gt;
@@ -9589,7 +9657,7 @@ in order to gain resolution of the situation."></unicode>
                        <string role="key" value="nextImageId"></string>
                        <int value="0"></int>
                        <string role="key" value="parentNode"></string>
-                       <none></none>
+                       <reference key="176"></reference>
                       </dictionary>
                      </instance>
                     </list>
@@ -9629,7 +9697,7 @@ in order to gain resolution of the situation."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="singlepage"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.5.%20Librer%C3%ADa%20est%C3%A1ndar:4.5.1%20Cadenas%2C%20clase%20str:Expresiones%20regulares.:Ejemplos"></string>
+                 <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.5.%20Librer%C3%ADa%20est%C3%A1ndar:5.5.1%20Cadenas%2C%20clase%20str:Expresiones%20regulares.:Ejemplos"></string>
                  <string role="key" value="parent"></string>
                  <reference key="163"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -9715,6 +9783,8 @@ in order to gain resolution of the situation."></unicode>
                        <string value=""></string>
                        <string role="key" value="anchor_names"></string>
                        <list></list>
+                       <string role="key" value="anchors_linked_from_fields"></string>
+                       <dictionary></dictionary>
                        <string role="key" value="content_w_resourcePaths"></string>
                        <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Para utilizar Expresiones Regulares, Python provee el módulo re. Importando este módulo podemos crear objetos de tipo patrón y generar objetos tipo matcher, que son los que contienen la información de la coincidencia del patrón en la cadena.&lt;/p&gt;&lt;/div&gt;"></unicode>
                        <string role="key" value="exe.engine.field.Field.persistenceVersion"></string>
@@ -9739,7 +9809,7 @@ in order to gain resolution of the situation."></unicode>
                        <string role="key" value="nextImageId"></string>
                        <int value="0"></int>
                        <string role="key" value="parentNode"></string>
-                       <none></none>
+                       <reference key="179"></reference>
                       </dictionary>
                      </instance>
                     </list>
@@ -9838,6 +9908,8 @@ in order to gain resolution of the situation."></unicode>
                        <string value=""></string>
                        <string role="key" value="anchor_names"></string>
                        <list></list>
+                       <string role="key" value="anchors_linked_from_fields"></string>
+                       <dictionary></dictionary>
                        <string role="key" value="content_w_resourcePaths"></string>
                        <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Para crear un objeto patrón, debemos importar el módulo re y utilizamos la función compile.&lt;/p&gt;
 &lt;div style=&quot;background-color: #cccccc; padding-left: 60px; border-left-style: solid;&quot;&gt;import re&lt;/div&gt;
@@ -9868,7 +9940,7 @@ in order to gain resolution of the situation."></unicode>
                        <string role="key" value="nextImageId"></string>
                        <int value="0"></int>
                        <string role="key" value="parentNode"></string>
-                       <none></none>
+                       <reference key="179"></reference>
                       </dictionary>
                      </instance>
                     </list>
@@ -9967,6 +10039,8 @@ in order to gain resolution of the situation."></unicode>
                        <string value=""></string>
                        <string role="key" value="anchor_names"></string>
                        <list></list>
+                       <string role="key" value="anchors_linked_from_fields"></string>
+                       <dictionary></dictionary>
                        <string role="key" value="content_w_resourcePaths"></string>
                        <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Para buscar un patrón en una cadena, Python provee los métodos search y match. La diferencia entre ambos es que, mientras search busca en la cadena alguna ocurrencia del patrón, match devuelve None si la ocurrencia no se da al principio de la cadena.&lt;/p&gt;
 &lt;div style=&quot;background-color: #cccccc; padding-left: 60px; border-left-style: solid;&quot;&gt;cadena = r'a44453'&lt;/div&gt;
@@ -9999,7 +10073,7 @@ in order to gain resolution of the situation."></unicode>
                        <string role="key" value="nextImageId"></string>
                        <int value="0"></int>
                        <string role="key" value="parentNode"></string>
-                       <none></none>
+                       <reference key="179"></reference>
                       </dictionary>
                      </instance>
                     </list>
@@ -10098,6 +10172,8 @@ in order to gain resolution of the situation."></unicode>
                        <string value=""></string>
                        <string role="key" value="anchor_names"></string>
                        <list></list>
+                       <string role="key" value="anchors_linked_from_fields"></string>
+                       <dictionary></dictionary>
                        <string role="key" value="content_w_resourcePaths"></string>
                        <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Similar a la combinación search + expand, existe el método sub; cuya función es encontrar todas las coincidencias de un patrón y sustituirlas por una cadena. Este recibe dos parámetros: el primero es la cadena con la que se sustituirá el patrón y el segundo es la cadena sobre la que queremos aplicar la sustitución. Y también se pueden utilizar referencias.&lt;/p&gt;
 &lt;p style=&quot;background-color: #cccccc; padding-left: 60px; border-left-style: solid;&quot;&gt;patron.sub(r&quot;X&quot;, r'a455 a333b435')&lt;/p&gt;
@@ -10124,7 +10200,7 @@ in order to gain resolution of the situation."></unicode>
                        <string role="key" value="nextImageId"></string>
                        <int value="0"></int>
                        <string role="key" value="parentNode"></string>
-                       <none></none>
+                       <reference key="179"></reference>
                       </dictionary>
                      </instance>
                     </list>
@@ -10223,6 +10299,8 @@ in order to gain resolution of the situation."></unicode>
                        <string value=""></string>
                        <string role="key" value="anchor_names"></string>
                        <list></list>
+                       <string role="key" value="anchors_linked_from_fields"></string>
+                       <dictionary></dictionary>
                        <string role="key" value="content_w_resourcePaths"></string>
                        <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Existen varios modificadores que podemos pasar al método compile para modificar el comportamiento del patrón. Los más usados son:&lt;/p&gt;
 &lt;ul&gt;
@@ -10254,7 +10332,7 @@ in order to gain resolution of the situation."></unicode>
                        <string role="key" value="nextImageId"></string>
                        <int value="0"></int>
                        <string role="key" value="parentNode"></string>
-                       <none></none>
+                       <reference key="179"></reference>
                       </dictionary>
                      </instance>
                     </list>
@@ -10353,6 +10431,8 @@ in order to gain resolution of the situation."></unicode>
                        <string value=""></string>
                        <string role="key" value="anchor_names"></string>
                        <list></list>
+                       <string role="key" value="anchors_linked_from_fields"></string>
+                       <dictionary></dictionary>
                        <string role="key" value="content_w_resourcePaths"></string>
                        <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;El método re.&lt;strong&gt;split&lt;/strong&gt;: divide una cadena a partir de un patrón.&lt;/p&gt;
 &lt;p style=&quot;background-color: #cccccc; padding-left: 60px; border-left-style: solid;&quot;&gt;print(re.split(r' ', texto))&lt;/p&gt;&lt;/div&gt;"></unicode>
@@ -10378,7 +10458,7 @@ in order to gain resolution of the situation."></unicode>
                        <string role="key" value="nextImageId"></string>
                        <int value="0"></int>
                        <string role="key" value="parentNode"></string>
-                       <none></none>
+                       <reference key="179"></reference>
                       </dictionary>
                      </instance>
                     </list>
@@ -10418,7 +10498,7 @@ in order to gain resolution of the situation."></unicode>
                  <string role="key" value="exportType"></string>
                  <string value="singlepage"></string>
                  <string role="key" value="last_full_node_path"></string>
-                 <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.5.%20Librer%C3%ADa%20est%C3%A1ndar:4.5.1%20Cadenas%2C%20clase%20str:Expresiones%20regulares.:M%C3%B3dulo%20re"></string>
+                 <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.5.%20Librer%C3%ADa%20est%C3%A1ndar:5.5.1%20Cadenas%2C%20clase%20str:Expresiones%20regulares.:M%C3%B3dulo%20re"></string>
                  <string role="key" value="parent"></string>
                  <reference key="163"></reference>
                  <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -10436,7 +10516,7 @@ in order to gain resolution of the situation."></unicode>
          <instance class="exe.engine.node.Node" reference="192">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.5.2. Math"></unicode>
+           <unicode value="5.5.2. Math"></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.jsidevice.JsIdevice" reference="190">
@@ -10510,6 +10590,8 @@ in order to gain resolution of the situation."></unicode>
                  <string value=""></string>
                  <string role="key" value="anchor_names"></string>
                  <list></list>
+                 <string role="key" value="anchors_linked_from_fields"></string>
+                 <dictionary></dictionary>
                  <string role="key" value="content_w_resourcePaths"></string>
                  <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;&lt;strong&gt;Funciones numéricasµ    &lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -10565,7 +10647,7 @@ in order to gain resolution of the situation."></unicode>
                  <string role="key" value="nextImageId"></string>
                  <int value="0"></int>
                  <string role="key" value="parentNode"></string>
-                 <none></none>
+                 <reference key="192"></reference>
                 </dictionary>
                </instance>
               </list>
@@ -10605,7 +10687,7 @@ in order to gain resolution of the situation."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.5.%20Librer%C3%ADa%20est%C3%A1ndar:4.5.2.%20Math"></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.5.%20Librer%C3%ADa%20est%C3%A1ndar:5.5.2.%20Math"></string>
            <string role="key" value="parent"></string>
            <reference key="152"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -10617,7 +10699,7 @@ in order to gain resolution of the situation."></unicode>
          <instance class="exe.engine.node.Node" reference="195">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.5.3. Pandas"></unicode>
+           <unicode value="5.5.3. Pandas"></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.jsidevice.JsIdevice" reference="193">
@@ -10691,6 +10773,8 @@ in order to gain resolution of the situation."></unicode>
                  <string value=""></string>
                  <string role="key" value="anchor_names"></string>
                  <list></list>
+                 <string role="key" value="anchors_linked_from_fields"></string>
+                 <dictionary></dictionary>
                  <string role="key" value="content_w_resourcePaths"></string>
                  <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Es un paquete de Python que proporciona estructuras de datos similares a los dataframes de R. Pandas depende de Numpy, la librería que añade un potente tipo matricial a Python. Los principales tipos de datos que pueden representarse con pandas son:&lt;/p&gt;
 &lt;ul&gt;
@@ -10735,7 +10819,7 @@ in order to gain resolution of the situation."></unicode>
                  <string role="key" value="nextImageId"></string>
                  <int value="0"></int>
                  <string role="key" value="parentNode"></string>
-                 <none></none>
+                 <reference key="195"></reference>
                 </dictionary>
                </instance>
               </list>
@@ -10775,7 +10859,7 @@ in order to gain resolution of the situation."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.5.%20Librer%C3%ADa%20est%C3%A1ndar:4.5.3.%20Pandas"></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.5.%20Librer%C3%ADa%20est%C3%A1ndar:5.5.3.%20Pandas"></string>
            <string role="key" value="parent"></string>
            <reference key="152"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -10787,7 +10871,7 @@ in order to gain resolution of the situation."></unicode>
          <instance class="exe.engine.node.Node" reference="198">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.5.4. NumPy"></unicode>
+           <unicode value="5.5.4. NumPy"></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.jsidevice.JsIdevice" reference="196">
@@ -10861,6 +10945,8 @@ in order to gain resolution of the situation."></unicode>
                  <string value=""></string>
                  <string role="key" value="anchor_names"></string>
                  <list></list>
+                 <string role="key" value="anchors_linked_from_fields"></string>
+                 <dictionary></dictionary>
                  <string role="key" value="content_w_resourcePaths"></string>
                  <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Es una biblioteca para el lenguaje de programación Python que da soporte para crear vectores y matrices grandes multidimensionales, junto con una gran colección de funciones matemáticas de alto nivel para operar con ellas.&lt;/p&gt;
 &lt;p&gt;El uso de NumPy en Python brinda una funcionalidad comparable a MATLAB, ya que ambos se interpretan​ y ambos permiten al usuario escribir programas rápidos siempre que la mayoría de las operaciones funcionen en vectores o matrices en lugar de escalares.&lt;/p&gt;
@@ -10888,7 +10974,7 @@ in order to gain resolution of the situation."></unicode>
                  <string role="key" value="nextImageId"></string>
                  <int value="0"></int>
                  <string role="key" value="parentNode"></string>
-                 <none></none>
+                 <reference key="198"></reference>
                 </dictionary>
                </instance>
               </list>
@@ -10928,7 +11014,7 @@ in order to gain resolution of the situation."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.5.%20Librer%C3%ADa%20est%C3%A1ndar:4.5.4.%20NumPy"></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.5.%20Librer%C3%ADa%20est%C3%A1ndar:5.5.4.%20NumPy"></string>
            <string role="key" value="parent"></string>
            <reference key="152"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -10940,7 +11026,7 @@ in order to gain resolution of the situation."></unicode>
          <instance class="exe.engine.node.Node" reference="201">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="4.5.5. Mathplotlib"></unicode>
+           <unicode value="5.5.5. Mathplotlib"></unicode>
            <string role="key" value="idevices"></string>
            <list>
             <instance class="exe.engine.jsidevice.JsIdevice" reference="199">
@@ -11014,6 +11100,8 @@ in order to gain resolution of the situation."></unicode>
                  <string value=""></string>
                  <string role="key" value="anchor_names"></string>
                  <list></list>
+                 <string role="key" value="anchors_linked_from_fields"></string>
+                 <dictionary></dictionary>
                  <string role="key" value="content_w_resourcePaths"></string>
                  <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;Es una biblioteca de imágenes 2D y 3D que produce figuras de alta calidad en una variedad de formatos impresos y entornos interactivos en todas las plataformas. La librería Mathplotlib se puede utilizar en scripts de Python, el shell de Python y en iPython.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;resources/11.png&quot; alt=&quot;Mathplotlib&quot; width=&quot;891&quot; height=&quot;336&quot; /&gt;&lt;/p&gt;
@@ -11055,7 +11143,7 @@ in order to gain resolution of the situation."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="615"></int>
+                        <int value="643"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -11069,7 +11157,7 @@ in order to gain resolution of the situation."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="273_273_2.0"></unicode>
+                      <unicode value="273_273_2.1"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="202">
                        <dictionary>
@@ -11080,7 +11168,7 @@ in order to gain resolution of the situation."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="11.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpug3wjc.eXe\\previews\\allyourbase\\11.png"></string>
+                        <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpfbqzze\\11.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="02c2fe082deb54062ca88aef15376db1"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -11109,7 +11197,7 @@ in order to gain resolution of the situation."></unicode>
                  <string role="key" value="intlinks_to_anchors"></string>
                  <dictionary></dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="1"></int>
+                 <int value="2"></int>
                  <string role="key" value="parentNode"></string>
                  <reference key="201"></reference>
                 </dictionary>
@@ -11153,7 +11241,7 @@ in order to gain resolution of the situation."></unicode>
            <string role="key" value="exportType"></string>
            <string value="singlepage"></string>
            <string role="key" value="last_full_node_path"></string>
-           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.5.%20Librer%C3%ADa%20est%C3%A1ndar:4.5.5.%20Mathplotlib"></string>
+           <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.5.%20Librer%C3%ADa%20est%C3%A1ndar:5.5.5.%20Mathplotlib"></string>
            <string role="key" value="parent"></string>
            <reference key="152"></reference>
            <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -11168,7 +11256,7 @@ in order to gain resolution of the situation."></unicode>
       <instance class="exe.engine.node.Node" reference="205">
        <dictionary>
         <string role="key" value="_title"></string>
-        <unicode value="4.6. Caso Práctico Dawbank"></unicode>
+        <unicode value="5.6. Caso Práctico Dawbank"></unicode>
         <string role="key" value="idevices"></string>
         <list>
          <instance class="exe.engine.jsidevice.JsIdevice" reference="203">
@@ -11242,6 +11330,8 @@ in order to gain resolution of the situation."></unicode>
               <string value=""></string>
               <string role="key" value="anchor_names"></string>
               <list></list>
+              <string role="key" value="anchors_linked_from_fields"></string>
+              <dictionary></dictionary>
               <string role="key" value="content_w_resourcePaths"></string>
               <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p&gt;La empresa LibreCoders te ha contratado para desarrollar un software de gestión de una cuenta bancaria para la cooperativa de banca ética y sostenible DawBank. Se trata de una aplicación Java formada por una clase principal &lt;strong&gt;DawBank&lt;/strong&gt; y otra llamada &lt;strong&gt;CuentaBancaria&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;El programa pedirá los datos necesarios para crear una cuenta bancaria. Si son válidos, creará la cuenta y mostrará el menú principal para permitir actuar sobre la cuenta. Tras cada acción se volverá a mostrar el menú.&lt;/p&gt;
@@ -11287,7 +11377,7 @@ in order to gain resolution of the situation."></unicode>
               <string role="key" value="nextImageId"></string>
               <int value="0"></int>
               <string role="key" value="parentNode"></string>
-              <none></none>
+              <reference key="205"></reference>
              </dictionary>
             </instance>
            </list>
@@ -11327,7 +11417,7 @@ in order to gain resolution of the situation."></unicode>
         <string role="key" value="exportType"></string>
         <string value="singlepage"></string>
         <string role="key" value="last_full_node_path"></string>
-        <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:4.6.%20Caso%20Pr%C3%A1ctico%20Dawbank"></string>
+        <string value="exe-node:U.T.%205%20POO%20en%20Python%20%28I%29:5.6.%20Caso%20Pr%C3%A1ctico%20Dawbank"></string>
         <string role="key" value="parent"></string>
         <reference key="5"></reference>
         <string role="key" value="top_anchors_linked_from_fields"></string>
@@ -11442,7 +11532,7 @@ in order to gain resolution of the situation."></unicode>
                    <instance class="exe.engine.field.TextField">
                     <dictionary>
                      <string role="key" value="_id"></string>
-                     <int value="616"></int>
+                     <int value="644"></int>
                      <string role="key" value="_idevice"></string>
                      <none></none>
                      <string role="key" value="_instruc"></string>
@@ -11456,7 +11546,7 @@ in order to gain resolution of the situation."></unicode>
                     </dictionary>
                    </instance>
                    <string role="key" value="_id"></string>
-                   <unicode value="143_183_2.8"></unicode>
+                   <unicode value="143_183_2.9"></unicode>
                    <string role="key" value="_imageResource"></string>
                    <instance class="exe.engine.resource.Resource" reference="209">
                     <dictionary>
@@ -11467,7 +11557,7 @@ in order to gain resolution of the situation."></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="map_1640112422716.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpug3wjc.eXe\\previews\\map_1640112422716.png"></string>
+                     <string value="c:\\users\\arcipr~1\\appdata\\local\\temp\\tmpfbqzze\\map_1640112422716.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="d02c2331a364113e7cd4b3b74b6b0df2"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -11496,7 +11586,7 @@ in order to gain resolution of the situation."></unicode>
               <string role="key" value="intlinks_to_anchors"></string>
               <dictionary></dictionary>
               <string role="key" value="nextImageId"></string>
-              <int value="9"></int>
+              <int value="10"></int>
               <string role="key" value="parentNode"></string>
               <reference key="208"></reference>
              </dictionary>
@@ -11667,7 +11757,7 @@ in order to gain resolution of the situation."></unicode>
   <string role="key" value="backgroundImgTile"></string>
   <bool value="0"></bool>
   <string role="key" value="currentNode"></string>
-  <reference key="208"></reference>
+  <reference key="205"></reference>
   <string role="key" value="dublinCore"></string>
   <instance class="exe.engine.package.DublinCore">
    <dictionary>
