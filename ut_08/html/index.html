@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>1º DAW - Programación - UT 8</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="César San Juan Pastor" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<meta name="description" content="  Unidad práctica en la que se introducen los conceptos gestión de datos: archivos, BBDD y XML
+" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+<body class="exe-single-page"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<header id="header">
+<div id="headerContent">
+<h1>1º DAW - Programación - UT 8</h1>
+</div>
+</header>
+<section id="main">
+<article class="node level-1-node" id="exe-node-0">
+<header class="nodeDecoration">
+<h1 id="exenode_0_UT8Gestindedatos" class="nodeTitle">U.T. 8 Gestión de datos</h1>
+</header>
+</article>
+<article class="node level-2-node" id="exe-node-3">
+<header class="nodeDecoration">
+<h1 id="exenode_3_Orientaciones" class="nodeTitle">Orientaciones</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id5-3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Orientaciones</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta5_116_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Esta unidad de trabajo vamos a aprender los conceptos de gestión de datos sobre varias arquitecturas diferentes: archivos, bbdd y xml.</p>
+<p style="text-align: justify;">Es necesario el conocimiento de las unidades anteriores.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-176">
+<header class="nodeDecoration">
+<h1 id="exenode_176_81Ficheros" class="nodeTitle">8.1. Ficheros</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id274-176">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><h2 class="iDeviceTitle">Qué es un fichero</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta274_274_2" class="block iDevice_content">
+<div class="exe-text"><p>Todas las estructuras de datos que hemos visto hasta ahora utilizan memoria principal. Esto tiene dos limitaciones importantes:</p>
+<ul>
+<li>Los datos desaparecen cuando el programa termina.</li>
+<li>La cantidad de los datos no puede ser muy grande debido a la limitación de la memoria principal.</li>
+</ul>
+<p>Por eso existen también estructuras especiales que utilizan memoria secundaria: los ficheros. El fichero es además una estructura dinámica, en el sentido de que su tamaño puede variar durante la ejecución del programa dependiendo de la cantidad de datos que tenga.</p>
+<p style="background-color: #cccccc; padding: 5px; border-style: solid;">El fichero es una estructura de datos que se almacena en memoria secundaria</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id286-176">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Tipos de acceso</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta286_286_2" class="block iDevice_content">
+<div class="exe-text"><p>El fichero al estar en memoria secundaria, no todos los elementos son accesibles de forma inmediata. Solamente se puede acceder cada vez a un único elemento del fichero, que se denomina puntero del fichero. Dependiendo de cómo se desplaza este puntero por el fichero, podemos distinguir dos tipos de acceso:</p>
+<p> <img src="00.png" alt="Tipos de acceso" width="243" height="79" /></p>
+<ul>
+<li><strong>Acceso secuencial</strong>: El puntero del fichero sólo puede moverse hacia delante a partir del primer elemento y siempre de uno en uno.</li>
+<li><strong>Acceso directo</strong>: El puntero del fichero se puede situar directamente en cualquier posición del fichero. Es un acceso similar al utilizado en los Arrays unidimensionales.</li>
+</ul>
+<p>El acceso directo suele ser más eficiente, ya que para leer un dato no hace falta leer antes todos los anteriores.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id287-176">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Ficheros binarios y ficheros de texto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta287_287_2" class="block iDevice_content">
+<div class="exe-text"><p>Existen dos tipos principales de ficheros atendiendo a cómo se almacenan los datos:</p>
+<ul>
+<li><strong>Ficheros de texto</strong>: Contienen secuencias de caracteres separadas por saltos de línea (tipo str) codificadas según un código: ASCII, UTF-8, etc. El teclado (entrada estándar) y la pantalla (salida estándar) se consideran también ficheros de texto. Al leer o escribir variables de un fichero de texto se pueden realizar ciertas conversiones. Por ejemplo, cuando escribimos un entero con valor 10, este entero se convierte en los caracteres '1' y '0'.</li>
+<li><strong>Ficheros binarios</strong>: Contienen secuencias de bytes. Los elementos se almacenan en el fichero exactamente igual que están almacenados en memoria principal, es decir, al leer o escribir no se realiza ningún tipo de conversión.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id288-176">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Modo de acceso a los ficheros</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta288_288_2" class="block iDevice_content">
+<div class="exe-text"><p>Cuando intentamos acceder a un fichero existen dos únicas acciones posibles: leer o escribir. Según estas acciones se pueden definir en ficheros de entrada (abiertos para lectura), ficheros de salida (abiertos para escritura) o ficheros de lectura / escritura (abiertos para ambas operaciones).</p>
+<p>Los ficheros residen en un sistema de archivos y tendremos que saber la ruta de acceso al mismo para poder utilizarlo, dependiendo del SSOO de base los separadores cambian: / o \, con lo que recomendamos utilizar las herramientas de los lenguajes o librerías asociadas para crear estas rutas de acceso, evitando trabajar con características específicas de los SSOO.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id289-176">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Procesamiento de un fichero</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta289_289_2" class="block iDevice_content">
+<div class="exe-text"><p>Siempre que queramos realizar cualquier operación con ficheros se debe seguir el siguiente esquema:</p>
+<p style="padding-left: 30px;"><strong style="background-color: #cccccc; padding: 5px; border-style: solid;">Apertura de Fichero → Operaciones → Cierre del fichero</strong></p>
+<p>Es importante seguir el esquema y sobre todo no olvidar el cierre del fichero, si no queremos perder datos. Los SSOO no escriben inmediatamente los datos de memoria a disco, utilizan un buffer intermedio por eficiencia, si no cerramos el fichero no nos aseguramos que este buffer se descargue a disco y podremos perder las últimas operaciones.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-187">
+<header class="nodeDecoration">
+<h1 id="exenode_187_811Qusonlosflujos" class="nodeTitle">8.1.1. Qué son los flujos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id291-187">
+<div class="iDevice emphasis0" >
+<div id="ta291_291_2" class="block iDevice_content">
+<div class="exe-text"><p>Los archivos o ficheros almacenados se tienen que tratar por parte del SSOO y de Python. Para esa gestión se crea un objeto especial en memoria. Por tanto, un flujo no es más que un objeto de control que gestiona un fichero en disco, creado en el momento de la apertura y destruido cuando se cierra el archivo. El flujo representa al archivo dentro de nuestro programa y da acceso a sus datos.</p>
+<p>Bajo Python no se habla de flujos, se asocia más a lenguajes como C++ o Java, se utiliza directamente fichero o archivo, pero este concepto también existe y hay paquetes que lo implementan: <strong>io</strong> (<a href="https://docs.python.org/es/3/library/io.html" target="_blank" rel="noopener">https://docs.python.org/es/3/library/io.html</a>) que utilizaría conceptos similares al lenguaje C++ o Java.</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-188">
+<header class="nodeDecoration">
+<h1 id="exenode_188_812AccesoaficherosdeTextoyBinarios" class="nodeTitle">8.1.2. Acceso a ficheros de Texto y Binarios</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id292-188">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Apertura de ficheros</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta292_292_2" class="block iDevice_content">
+<div class="exe-text"><p>Python tiene una función <strong>open</strong>() incorporada para abrir un archivo. Esta función devuelve un objeto archivo, también llamado identificador, ya que se usa para leer o modificar el archivo(sería similar al concepto del lenguaje C).</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">f = open("test.txt")    # open file in current directory</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">f = open("C:/Python38/README.txt")  # specifying full path</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id293-188">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Modos de acceso.</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta293_293_2" class="block iDevice_content">
+<div class="exe-text"><p>Podemos especificar el modo al abrir un archivo en el momento de su apertura. En el modo, especificamos si queremos leer (r), escribir (w) o agregar (a) al archivo. También podemos especificar si queremos abrir el archivo en modo texto (t) o en modo binario (b).</p>
+<p></p>
+<p> <img src="01.png" alt="Modos de apertura" width="800" height="475" /></p>
+<p></p>
+<ul>
+<li>t    Se abre en modo texto, no es necesario especificarlo. (default)</li>
+<li>b   Se abre en modo binario</li>
+</ul>
+<p>El valor predeterminado es leer en modo texto (rt) . En este modo, obtenemos cadenas (str) al leer del archivo. Por otro lado, el modo binario devuelve bytes (bytes) y este es el modo que se debe utilizar cuando se trata de archivos que no son de texto, como imágenes o archivos ejecutables.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">f = open("test.txt")      # equivalent to 'r' or 'rt'<br />f = open("test.txt",'w')  # write in text mode<br />f = open("img.bmp",'r+b') # read and write in binary mode</div>
+<p>Python no utiliza en la lectura y escritura una codificación estricta, por lo que debemos especificarla en el momento de la apertura si no queremos tener problemas. De hecho, la codificación por defecto que se usará si no la especificamos es dependiente de la plataforma, así en Windows utilizará cp1252 pero bajo Linux se utilizará utf-8.</p>
+<p>Debemos especificar la codificación correcta o no se mostrarán los caracteres de forma adecuada, por lo que si el fichero no lo hemos creado nosotros habrá que encontrar la codificación y usarla. Cuando creemos nosotros los ficheros utilizaremos siempre que sea posible utf-8 independientemente de la plataforma en la que se ejecute.</p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">f = open("test.txt", mode='r', encoding='utf-8')</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper DebesconocerfpdIdevice em_iDevice em_iDevice_debesconocerfpd" id="id294-188">
+<div class="iDevice emphasis_debesconocerfpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Qué es la codificación de un fichero.</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta294_129" class="block iDevice_content">
+<p>Cuando queremos representar el alfabeto y sus correspondientes letras que tenemos en el ordenador, hay que asignar a cada letra un valor numérico. La cantidad de letras que podemos usar dependerá del número de bits que usemos en la codificación. Por ejemplo, la codificación ASCII estándar utiliza 8 bits, lo que significa que solo podrá representar como máximo 256 letras, algunas menos ya que los 32 primeros códigos se utilizan para control.</p>
+<p>El número de idiomas presentes en el mundo hizo que con estos 256 valores no se pudieran representar todos los guarismos y se hicieran conjuntos de ellos según el idioma. Así aparecieron las diferentes codificaciones que se determinan por el SSOO en los ajustes del mismo: latin1, cp1252, 8859-1, 8859-15. Cada uno de ellos asigna valores diferentes a sus símbolos y mismos símbolos pueden estar en posiciones diferentes, con lo que al intentar representarlos en pantalla no se corresponda (Las diferencias de las páginas de código estaban en los 128 caracteres superiores, los inferiores del código no cambiaban).</p>
+<p>Con el tiempo la codificación ASCII se quedó obsoleta y no daba cabida a todos los caracteres en algunas lenguas con lo que se implementó una nueva codificación: UTF, esta permite que los bits a utilizar sean de 8, 16 o 32 bits pudiéndose representar todos los símbolos de todos los lenguajes en esta nueva representación.</p>
+<p>No vamos a profundizar más en UTF, pero el estándar que más se está usando hoy en día es UTF-8, por lo que nuestros ficheros deben tener esa codificación.</p>
+<p>Resumen: La codificación es la manera de asignar a cada valor numérico almacenado en modo texto la grafía que le corresponde, si usamos una tabla distinta a la que se usó para crearlo no veremos el texto de forma adecuada.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id295-188">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Cierre de ficheros</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta295_295_2" class="block iDevice_content">
+<div class="exe-text"><p>Cuando terminemos de realizar operaciones en el archivo, debemos cerrarlo correctamente. Cerrar un archivo liberará los recursos que estaban vinculados con el archivo. Se hace usando el método <strong>close</strong>() disponible en Python. Python tiene un recolector de basura para limpiar objetos sin referencia, pero no debemos confiar en él para cerrar el archivo.</p>
+<div style="background-color: #cccccc; padding: 5px; border-style: solid;">f = open("test.txt", encoding = 'utf-8')<br /># realizar operaciones de lectura escritura<br />f.close()</div>
+<p>Queda una cuestión: si en el programa se produce alguna excepción, el fichero no se cerrará correctamente y podemos crear malos funcionamientos, con lo que el protocolo que debemos usar para la gestión de archivos es el que mostramos a continuación.</p>
+<div style="background-color: #cccccc; padding: 5px; border-style: solid;">try:<br />   f = open("test.txt", encoding = 'utf-8')<br />   # realizar operaciones de lectura escritura<br />finally:<br />   f.close()</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-189">
+<header class="nodeDecoration">
+<h1 id="exenode_189_813Usodewithconficheros" class="nodeTitle">8.1.3. Uso de with con ficheros</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id296-189">
+<div class="iDevice emphasis0" >
+<div id="ta296_296_2" class="block iDevice_content">
+<div class="exe-text"><p>Hemos vistos el protocolo estándar y los problemas que nos puede producir el no capturar correctamente las excepciones. Para evitar estas situaciones se ha implementado el uso de la palabra reservada <strong>with</strong>, que se encargará de cerrar adecuadamente el fichero y tratar las excepciones si ocurrieran.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">with open("test.txt", encoding = 'utf-8') as f:<br />   # realizar operaciones de lectura escritura<br style="clear: both;" />  f.write(...)</div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-190">
+<header class="nodeDecoration">
+<h1 id="exenode_190_814Escrituraylecturadeinformacinenficheros" class="nodeTitle">8.1.4. Escritura y lectura de información en ficheros</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id297-190">
+<div class="iDevice emphasis0" >
+<div id="ta297_297_2" class="block iDevice_content">
+<div class="exe-text"><p>Python trabaja con los ficheros de forma similar al C, por lo que no les dota de una estructura y es difícil la actualización y manejo de bases de datos de ficheros.</p>
+<p>Para escribir en un archivo en Python, necesitamos abrirlo en escritura <strong>w</strong>, agregar <strong>a</strong> o modo exclusivo <strong>x</strong> creación. Debemos tener cuidado con el modo <strong>w</strong>, ya que se sobrescribirá en el archivo si ya existe. Debido a esto, se borran todos los datos anteriores.</p>
+<p>La escritura de una cadena o secuencia de bytes (para archivos binarios) se realiza mediante el método <strong>write</strong>(). Este método devuelve el número de caracteres escritos en el archivo.</p>
+<p>Debemos incluir los caracteres de nueva línea nosotros mismos para distinguir las diferentes líneas.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">with open("test.txt",'w',encoding = 'utf-8') as f:<br />   f.write("my first file\n")<br />   f.write("This file\n\n"<br />   f.write("contains three lines\n”)</div>
+<p>Para leer un archivo en Python, debemos abrir el archivo en modo (<strong>r</strong>) de lectura. Hay varios métodos disponibles para este propósito. Podemos usar el método de <strong>read</strong> (tamaño) para leer el número de <em>"tamaño"</em> de los datos. Si no se especifica el parámetro de <em>tamaño</em>, se lee y regresa hasta el final del archivo.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">f = open("test.txt",'r',encoding = 'utf-8')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">f.read(4)    # read the first 4 data</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">f.read(4)    # read the next 4 data</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">f.read()     # read in the rest till end of file</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">f.read()     # further reading returns empty sting</div>
+<p>Una vez que se llega al final del archivo, obtenemos una cadena vacía en la lectura adicional.</p>
+<p>Podemos cambiar el cursor de lectura usando la instrucción <strong>seek(posicion)</strong>. También podemos determinar la posición actual mediante <strong>tell</strong>(). Ambos métodos trabajan a nivel de bytes.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">f.tell()    # get the current file position</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">f.seek(0)   # bring file cursor to initial position</div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-191">
+<header class="nodeDecoration">
+<h1 id="exenode_191_815Ejemplos" class="nodeTitle">8.1.5. Ejemplos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id298-191">
+<div class="iDevice emphasis0" >
+<div id="ta298_298_2" class="block iDevice_content">
+<div class="exe-text"><div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">for line in f:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(line, end = '')</div>
+<p>En ficheros de texto podemos usar el método <strong>readline</strong>() para leer líneas individuales de un archivo. Este método lee un archivo hasta el salto de línea, incluido el carácter de salto de línea. O podemos usar el método <strong>readlines</strong>() que devuelve una lista con las líneas restantes de todo el archivo. Todos estos métodos de lectura devuelven valores vacíos cuando se alcanza el final del archivo (EOF).</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">f.readline()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">f.readlines()</div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-192">
+<header class="nodeDecoration">
+<h1 id="exenode_192_816Resumen" class="nodeTitle">8.1.6. Resumen</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id299-192">
+<div class="iDevice emphasis0" >
+<div id="ta299_299_2" class="block iDevice_content">
+<div class="exe-text"><table width="586" style="width: 1124px;">
+<tbody>
+<tr>
+<td style="width: 291.91px;">
+<p><strong>Método</strong></p>
+</td>
+<td style="width: 818.125px;">
+<p><strong>Descripción</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 291.91px;">
+<p><strong>close()</strong></p>
+</td>
+<td style="width: 818.125px;">
+<p>Cierra un fichero, no tiene efecto si ya lo está</p>
+</td>
+</tr>
+<tr>
+<td style="width: 291.91px;">
+<p><strong>flush()</strong></p>
+</td>
+<td style="width: 818.125px;">
+<p>Vacía el buffer subyacente del flujo</p>
+</td>
+</tr>
+<tr>
+<td style="width: 291.91px;">
+<p><strong>read(n)</strong></p>
+</td>
+<td style="width: 818.125px;">
+<p>Lee al menos n caracteres del fichero. En caso de <strong>None</strong> o negativo lee hasta el final del fichero.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 291.91px;">
+<p><strong>readline(n=-1)</strong></p>
+</td>
+<td style="width: 818.125px;">
+<p>Lee una línea del fichero leyendo al menos n bytes.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 291.91px;">
+<p><strong>readlines(n=-1)</strong></p>
+</td>
+<td style="width: 818.125px;">
+<p>Lee un conjunto de líneas del fichero.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 291.91px;">
+<p><strong>seek(offset,from=SEEK_SET)</strong></p>
+</td>
+<td style="width: 818.125px;">
+<p>Establece la nueva posición del puntero de lectura – escritura a partir de un punto.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 291.91px;">
+<p><strong>tell()</strong></p>
+</td>
+<td style="width: 818.125px;">
+<p>Devuelve la posición del puntero de lectura.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 291.91px;">
+<p><strong>write(s)</strong></p>
+</td>
+<td style="width: 818.125px;">
+<p>Escribe la cadena en el fichero.</p>
+</td>
+</tr>
+<tr>
+<td style="width: 291.91px;">
+<p><strong>writelines(lines)</strong></p>
+</td>
+<td style="width: 818.125px;">
+<p>Escribe un  conjunto de líneas en el fichero</p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-193">
+<header class="nodeDecoration">
+<h1 id="exenode_193_817Ejercicios" class="nodeTitle">8.1.7. Ejercicios</h1>
+</header>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id301-193">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta301_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b301" class="block iDevice_content">
+<h3>1º Ejercicio</h3>
+<p>    Escribir en un fichero llamado secuencias. las siguientes secuencias:</p>
+<ul>
+<li>ACTG</li>
+<li>GATA</li>
+</ul>
+<h3>2º Ejercicio</h3>
+<p>Escribir los números del 1 al 100 en un fichero.</p>
+<h3>3º Ejercicio</h3>
+<p>Escribir en un fichero separado por tabuladores la información de un paciente que tenemos disponible en el siguiente diccionario:</p>
+<ul>
+<li>paciente = {'nombre': 'Daniel', 'edad': 42, 'Diabetico': True}</li>
+</ul>
+</section>
+<form name="feedback-form-quesFeedback0b301" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b301text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b301" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b301" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>fhand = open('secuencias', 'a')<br />fhand.write('ACTG\n')<br />fhand.write('GATA\n')<br />fhand.close()</p>
+<p></p>
+<p><br />fhand = open('numeros.txt')<br />for numero in range(0, 101):<br />fhand.write(str(numero))<br />fhand.write('\n')<br />fhand.close()</p>
+<p></p>
+<p><br />paciente = {'nombre': 'Daniel', 'edad': 42, 'Diabetico': True}</p>
+<p>fhand = open('pacientes.txt', 'w')<br />towrite = ['nombre', paciente['nombre'], 'edad', str(paciente['edad']), 'Diabetico', str(paciente['Diabetico'])]<br />fhand.write('\t'.join(towrite))<br />fhand.write('\n')<br />fhand.close()</p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-194">
+<header class="nodeDecoration">
+<h1 id="exenode_194_818Serializacin" class="nodeTitle">8.1.8. Serialización</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id302-194">
+<div class="iDevice emphasis0" >
+<div id="ta302_302_2" class="block iDevice_content">
+<div class="exe-text"><p>La serialización es el proceso de codificación de un objeto en un medio de almacenamiento (como puede ser un archivo, o un buffer de memoria), con el fin de transmitirlo a través de una conexión en red o almacenarlo en un fichero, como una serie de bytes o en un formato humanamente más legible como XML o JSON, entre otros. La serie de bytes o el formato pueden ser usados para crear un nuevo objeto que es idéntico en todo al original, incluido su estado interno (por tanto, el nuevo objeto es un clon del original).</p>
+<p>El módulo <strong>pickle</strong> implementa un algoritmo para convertir un objeto arbitrario Python en una serie de bytes. El flujo de bytes que representa al objeto puede ser transmitido o almacenado y luego reconstruido para crear un nuevo objeto con las mismas características.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import pickle</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import pprint</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">data1 = [{'a': 'A', 'b': 2, 'c': 3.0}]</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print('BEFORE: ', end=' ')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">pprint.pprint(data1)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">data1_string = pickle.dumps(data1)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># data1_string puede ser transmitido o almacenado en disco</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">data2 = pickle.loads(data1_string)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print('AFTER : ', end=' ')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">pprint.pprint(data2)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print('SAME? :', (data1 is data2))</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print('EQUAL?:', (data1 == data2))</div>
+<p>No todos los objetos pueden ser serializados: Sockets, gestores de archivos, conexiones de bases de datos, y otros objetos con estado de ejecución que dependen del sistema operativo u otro proceso puede no ser posible guardarlo. Los objetos que tienen atributos no serializables pueden definir <strong>__getstate__</strong>() y <strong>__setstate__</strong>() para devolver un subconjunto del estado de la instancia a ser serializada.</p>
+<p>El protocolo <strong>pickle</strong> maneja automáticamente referencias circulares entre objetos, por lo que las estructuras de datos complejas no necesitan ningún manejo especial.</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-195">
+<header class="nodeDecoration">
+<h1 id="exenode_195_819Utilizacindelossistemasdeficheros" class="nodeTitle">8.1.9. Utilización de los sistemas de ficheros</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id304-195">
+<div class="iDevice emphasis0" >
+<div id="ta304_304_2" class="block iDevice_content">
+<div class="exe-text"><p>Al igual que podemos gestionar el contenido de ficheros, podemos gestionar los ficheros desde el nivel del sistema operativo. A este nivel podremos crear directorios, mover ficheros, etc. Veamos un ejemplo de las posibilidades que existen en la librearía os, <strong>pathlib</strong> y la librería <strong>shutil</strong>.</p>
+<ul>
+<li>import os. 
+<ul>
+<li>os.chdir(path), cambio de path actual.</li>
+<li>os.getcwd(), path actual.</li>
+<li>os.path, librería para manipulación de rutas a bajo nivel.</li>
+<li>oos.listdir(path='.'). Retorna la lista de ficheros y directorios de una ruta.              </li>
+<li>os.mkdir(path, mode=0o777, *, dir_fd=None). Crear un directorio.</li>
+<li>os.rmdir(path, *, dir_fd=None). Borra un directorio vacío.</li>
+<li>os.remove(path, *, dir_fd=None). Borrar un fichero.</li>
+<li>os.rename(src, dst, *, src_dir_fd=None, dst_dir_fd=None). Renombrar.</li>
+</ul>
+</li>
+<li>Import pathlib, librería para manipulación de rutas a nivel de objetos independientemente del SSOO. https://docs.python.org/3/library/pathlib.html</li>
+<li>import shutil. 
+<ul>
+<li>shutil.copyfile(src, dst, *, follow_symlinks=True), copiar un fichero usando descriptores.</li>
+<li>shutil.copy(src, dst, *, follow_symlinks=True), copiar un fichero usando rutas.</li>
+<li>shutil.copytree(src, dst, symlinks=False, ignore=None, copy_function=copy2.</li>
+<li>ignore_dangling_symlinks=False). Copia recursivamente un directorio entero.</li>
+<li>shutil.rmtree(path, ignore_errors=False, onerror=None). Borra un directorio entero.</li>
+<li>shutil.move(src, dst, copy_function=copy2). Mueve un fichero o directorio a otro sitio.</li>
+</ul>
+</li>
+</ul>
+<p>Tenemos que tener mucho cuidado con el uso de estas instrucciones ya que dependen del sistema operativo en las que las ejecutemos, por ejemplo, los parámetros <strong>mode</strong> de algunas instrucciones solo se utilizarán bajo Linux, no sobre Windows.</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-196">
+<header class="nodeDecoration">
+<h1 id="exenode_196_8110Ejercicios" class="nodeTitle">8.1.10 Ejercicios</h1>
+</header>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id305-196">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta305_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b305" class="block iDevice_content">
+<h3> <span>4º Ejercicio</span></h3>
+<p> Dado el siguiente fichero con información sobre pacientes:</p>
+<div>Nombre edad Diabetico</div>
+<div>Daniel 42 Si</div>
+<div>Jose 15 Si</div>
+<div>Manolo 50 No</div>
+<div>Alicia 12 No</div>
+<p>Imprimir en un nuevo fichero los pacientes que tienen más de 20 años y no son diabéticos.</p>
+<p></p>
+</section>
+<form name="feedback-form-quesFeedback0b305" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b305text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b305" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b305" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>def leer_fichero_pacientes(entrada):<br />    """Lee el fichero de pacientes</p>
+<p>    Debe ser un fichero separado por espacios o tabuladores,<br />    sin datos faltantes y con los campos: nombre, edad y diabetico.<br />    """<br />    #  una lista a la que anyadiremos los pacientes<br />    pacientes = []</p>
+<p>    for linea in open(entrada):<br />        #  la primera linea se ignora porque es la cabecera<br />        if 'nombre' in linea.lower():<br />            continue</p>
+<p>        linea = linea.strip()<br />        nombre, edad, diabetico = linea.split()</p>
+<p>        #  La edad es un enterio<br />        edad = int(edad)</p>
+<p>        diabetico = True if diabetico.lower() == 'si' else False</p>
+<p>        # creamos un diccionario para cada paciente_aux<br />        paciente_aux = {'nombre': nombre,<br />                        'edad': edad,<br />                        'diabetico': diabetico}</p>
+<p>        # anadimos el paciente_aux a la lista de pacientes<br />        pacientes.append(paciente_aux)</p>
+<p>    # esta funcion devuelve a lista de pacientes completa<br />    return pacientes</p>
+<p><br />def filtrar_pacientes(pacientes, min_edad, diabetico):<br />    """Filtra los pacientes</p>
+<p>    Esta funcion requiere una lista de pacientes y devuelve<br />    una lista nueva con los pacientes filtrados.</p>
+<p>    min_edad es la edad minima con la que se acepta un paciente_aux<br />    diabetico indica que clase de pacientes se acepta.<br />    """</p>
+<p>    # creamos una lista para los pacientes que cumplen los<br />    # requisitos<br />    pacientes_filtrados = []<br />    for paciente_aux in pacientes:<br />        if not (paciente_aux['edad'] &lt; min_edad or<br />                paciente_aux['diabetico'] != diabetico):<br />            pacientes_filtrados.append(paciente_aux)<br />    return pacientes_filtrados</p>
+<p><br />def formatear_paciente(paciente_aux):<br />    """Dado un paciente_aux devuelve la linea a imprimir"""</p>
+<p>    linea = [paciente_aux['nombre'], str(paciente_aux['edad'])]  # una lista con los str a imprimir<br />    if paciente_aux['diabetico']:<br />        linea.append('Si')<br />    else:<br />        linea.append('No')</p>
+<p>    linea = ' '.join(linea)<br />    linea += '\n'<br />    return linea</p>
+<p><br />def escribir_fichero_pacientes(fichero, pacientes):<br />    """Escribe el fichero de pacientes separado por espacios"""</p>
+<p>    fhand_aux = open(fichero, 'w')</p>
+<p>    # escribimos la cabecera<br />    fhand_aux.write('Nombre Edad Diabetico\n')</p>
+<p>    for paciente_aux in pacientes:  # recorremos todos los pacientes<br />        linea = formatear_paciente(paciente_aux)<br />        fhand_aux.write(linea)</p>
+<p><br />def escribe_pacientes_filtrados(entrada, salida):<br />    """Filtra el fichero de entrada y escribe el de salida"""</p>
+<p>    pacientes = leer_fichero_pacientes(entrada)<br />    pacientes = filtrar_pacientes(pacientes, 20, False)<br />    escribir_fichero_pacientes(salida, pacientes)</p>
+<p><br />if __name__ == '__main__':<br />    escribe_pacientes_filtrados('pacientes.txt',<br />                                'pacientes_filtrados.txt')</p>
+<p> </p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id306-196">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta306_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b306" class="block iDevice_content">
+<h3>5º Ejercicio</h3>
+<h4>Ejercicio - Máximo y mínimo</h4>
+<p>Implementa un programa que muestre por pantalla los valores máximos y mínimos del archivo ‘numeros.txt’.</p>
+<h4>Ejercicio - Notas de alumnos</h4>
+<p>El archivo ‘alumnos_notas.txt’ contiene una lista de 10 alumnos y las notas que han obtenido en cada asignatura. El número de asignaturas de cada alumno es variable. Implementa un programa que muestre por pantalla la nota media de cada alumno junto a su nombre y apellido, ordenado por nota media de mayor a menor.</p>
+<h4>Ejercicio - Ordenando archivos</h4>
+<p>Implementa un programa que pida al usuario un nombre de archivo A para lectura y otro nombre de archivo B para escritura. Leerá el contenido del archivo A (por ejemplo ‘usa_personas.txt’) y lo escribirá ordenado alfabéticamente en B (por ejemplo ‘usa_personas_sorted.txt’).</p>
+<h4>Ejercicio - Nombre y apellidos</h4>
+<p>Implementa un programa que genere aleatoriamente nombres de persona (combinando nombres y apellidos de ‘usa_nombres.txt’ y ‘usa_apellidos.txt’). Se le pedirá al usuario cuántos nombres de persona desea generar y a qué archivo <strong>añadirlos</strong> (por ejemplo ‘usa_personas_generado.txt’).</p>
+<h4>Ejercicio - Búsqueda en PI</h4>
+<p>Implementa un programa que pida al usuario un número de cualquier longitud, como por ejemplo “1234”, y le diga al usuario si dicho número aparece en el primer millón de decimales del número pi (están en el archivo ‘pi-million.txt’). No está permitido utilizar ninguna librería ni clase ni método que realice la búsqueda. Debes implementar el algoritmo de búsqueda tú.</p>
+<h4>Ejercicio - Estadísticas</h4>
+<p>Implementa un programa que lea un documento de texto y muestre por pantalla algunos datos estadísticos: número de líneas, número de palabras, número de caracteres y cuáles son las 10 palabras más comunes (y cuántas veces aparecen).</p>
+</section>
+<form name="feedback-form-quesFeedback0b306" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b306text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b306" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b306" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p><em>"""<br />Implementa un programa que muestre por pantalla los valores máximos y mínimos del archivo ‘numeros.txt’.<br />"""<br /></em>max_numero = float('-inf')<br />min_numero = float('inf')<br />with open("soluciones_21/numeros.txt") as file:<br />    while numero := file.readline():<br />        numero = int(numero)  # no se puede hacer la conversión en el while por el eof (int(eof))<br />        if numero &gt; max_numero:<br />            max_numero = numero<br />        if numero &lt; min_numero:<br />            min_numero = numero<br />print(max_numero, min_numero)<br /><br />"""<br />El archivo ‘alumnos_notas.txt’ contiene una lista de 10 alumnos y las notas que han obtenido en cada asignatura. <br />El número de asignaturas de cada alumno es variable. Implementa un programa que muestre por pantalla la nota media<br /> de cada alumno junto a su nombre y apellido, ordenado por nota media de mayor a menor.<br />"""<br />from statistics import mean<br />with open("soluciones_21/alumnos_notas.txt") as file:<br />    alumnos = []<br />    while alumno := file.readline():<br />        nombre, apellidos, *notas = alumno[:-1].split(' ')  # eliminamos el el retorno de línea y dividimos<br />        alumnos.append((mean([int(x) for x in notas]), nombre, apellidos))<br />    alumnos_ordenados = sorted(alumnos, reverse=True)<br />for alumno in alumnos_ordenados:<br />    print(f"{alumno[1]} {alumno[2]} tiene de media {alumno[0]}")<br /><br />"""<br />Implementa un programa que pida al usuario un nombre de archivo A para lectura y otro nombre de archivo B para <br />escritura. Leerá el contenido del archivo A (por ejemplo ‘usa_personas.txt’) y lo escribirá ordenado alfabéticamente<br />en B (por ejemplo ‘usa_personas_sorted.txt’).<br />"""<br />personas = []<br />with open('soluciones_21/usa_personas.txt') as file:<br />    personas.extend(tuple(x[:-1] for x in file.readlines()))  # quitamos el \n final<br />with open('soluciones_21/usa_personas_sorted.txt', "w") as file:<br />    file.writelines(x + "\n" for x in sorted(personas))  # añadimos el \n<br /><br />"""<br />Implementa un programa que genere aleatoriamente nombres de persona (combinando nombres y apellidos de <br />‘usa_nombres.txt’ y ‘usa_apellidos.txt’). Se le pedirá al usuario cuántos nombres de persona desea login y a qué <br />archivo añadirlos (por ejemplo ‘usa_personas_generado.txt’).<br />"""<br />from random import randint<br />nombres = []<br />apellidos = []<br />with open('soluciones_21/usa_nombres.txt') as file:<br />    nombres.extend(tuple(x[:-1] for x in file.readlines()))  # quitamos el \n final<br />with open('soluciones_21/usa_apellidos.txt') as file:<br />    apellidos.extend(tuple(x[:-1] for x in file.readlines()))  # quitamos el \n final<br />len_nombres = len(nombres)<br />len_apellidos = len(apellidos)<br />numero_nombres = int(input("¿Cuántos nombres?"))<br />with open('soluciones_21/usa_personas_generado.txt', "w") as file:<br />    for _ in range(numero_nombres):<br />        nombre = nombres[randint(0, len_nombres)]<br />        apellido = apellidos[randint(0, len_apellidos)]<br />        file.write(f"{nombre} {apellido}\n")  # añadimos el \n<br /><br />"""<br />Implementa un programa que pida al usuario un número de cualquier longitud, como por ejemplo “1234”, y le diga al<br />usuario si dicho número aparece en el primer millón de decimales del nº pi (están en el archivo ‘pi-million.txt’).<br />No está permitido utilizar ninguna librería ni clase ni método que realice la búsqueda. Debes implementar el<br />algoritmo de búsqueda tú.<br />"""<br />puntero = len_pi = len_numero = 0<br />pi = ""<br />encontrado = fin = False<br /><br />with open("soluciones_21/pi-million.txt") as file:<br />    pi = file.read()[2:]  # quitar el 3.<br /><br />numero_pedido = input("¿Dame el número?")<br />try:<br />    int(numero_pedido)<br />except ValueError as e:<br />    print("No es un número")<br /><br />len_pi = len(pi)<br />len_numero = len(numero_pedido)<br /><br />while not encontrado and not fin:<br />    while pi[puntero] != numero_pedido[0]:  # buscamos el inicio de la subcadena<br />        puntero += 1<br />    if pi[puntero: puntero + len_numero] == numero_pedido:   # comprobar la subcadena entera<br />        encontrado = True<br />    else:<br />        puntero += 1<br />        if puntero &gt; len_pi - len_numero - 1:  # evitar pasarnos del final<br />            fin = True<br /><br />if encontrado:<br />    print(puntero)<br />else:<br />    print("No encontrado")<br /><br />"""<br />Implementa un programa que lea un documento de texto y muestre por pantalla algunos datos estadísticos: nº de<br /> líneas, nº de palabras, nº de caracteres y cuáles son las 10 palabras más comunes (y cuántas veces aparecen). <br />"""<br />import re<br />num_caracteres = num_lineas = num_palabras = 0<br />palabras_frecuentes = {}<br />with open("soluciones_21/frases.txt", encoding='utf-8') as file:<br />    while linea := file.readline()[:-2]:  # quitamos el \r\n final al ser un fichero windows si linux \n solo -1<br />        num_lineas += 1<br />        num_caracteres += len(linea)<br />        palabras = re.split('[\\s.,:;&lt;=]+', linea)<br />        for palabra in palabras:<br />            if palabra.lower() not in palabras_frecuentes.keys():  # independientemente de mayúsculas o minúsculas<br />                palabras_frecuentes[palabra.lower()] = 0<br />            else:<br />                palabras_frecuentes[palabra.lower()] += 1<br />        num_palabras += len(palabras)<br /><br />print(num_lineas, num_palabras, num_caracteres)<br /><br /># ordenamos por el número de ocurrencias<br />palabras_frecuentes = sorted(palabras_frecuentes.items(), key=lambda t: t[1], reverse=True)<br />for ele in palabras_frecuentes[:10]:  # solo las 10 más frecuentes<br />    print(ele)</p>
+<p> </p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper CasopracticofpdIdevice em_iDevice em_iDevice_casopracticofpd" id="id310-196">
+<div class="iDevice emphasis_casopracticofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Caso práctico</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta310_147" class="block iDevice_content">
+<p>Crear una aplicación que gestione las citas de una consulta veterinaria, que se puedan almacenar en disco todos los datos. Haz el desarrollo completo, desde UML hasta la implementación final, utiliza tres  ficheros: para las citas, para los datos de los clientes y para las mascotas.</p>
+<p>La carga de los datos se realizará al comienzo de la aplicación desde los ficheros, se realizarán todas las modificaciones en memoria y cuando se cierre la aplicación salvará el estado a disco, no utilizará ficheros en el tratamiento intermedio de la información.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-197">
+<header class="nodeDecoration">
+<h1 id="exenode_197_82BasesdeDatos" class="nodeTitle">8.2. Bases de Datos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id311-197">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta311_311_2" class="block iDevice_content">
+<div class="exe-text"><p>Una base de datos es un software que te permite almacenar información de cualquier tipo de manera ordenada y estructurada, de forma que, cuando se vaya a consultar podamos escoger los diferentes fragmentos de todos esos datos almacenados y podamos consultar los que a nosotros nos interesan.</p>
+<p>Una base de datos relacional es un tipo de base de datos que almacena y proporciona acceso a datos relacionados entre sí. Las bases de datos relacionales se basan en el modelo relacional. El modelo relacional implica que las estructuras lógicas de los datos (las tablas, las vistas y los índices) estén separadas de las estructuras de almacenamiento físico. Gracias a esta separación, los administradores de bases de datos pueden gestionar el almacenamiento físico de datos sin que eso influya en el acceso a esos datos como estructura lógica. El modelo relacional es sencillo pero muy potente (Oracle, MySql, Postgre, Db2, SQLite).</p>
+<p>El modelo de base de datos orientado a objetos agrupa la información en paquetes relacionados entre sí: los datos de cada registro se combinan en un solo objeto, con todos sus atributos. De esta manera, toda la información está disponible en el objeto, ya que sus datos quedan agrupados en lugar de distribuidos en diferentes tablas. En los objetos no solo pueden guardarse los atributos, sino también los métodos, lo que refleja la afinidad de estas bases de datos con los lenguajes de programación orientados a objetos: al igual que en estos, cada objeto presenta un conjunto de acciones que pueden llevarse a cabo. Uno de los inconvenientes de este modelo es que su uso está poco extendido, pero es igual de potente que el modelo relacional.</p>
+<p>Una base de datos documental, también llamada una base de datos orientada a documentos o tienda de documentos, es un subconjunto de un tipo de base de datos no SQL. A diferencia de las bases de datos relacionales tradicionales, el modelo de datos en una base de datos de documentos no está estructurado en un formato de tabla de filas y columnas. El esquema puede variar, proporcionando mucha más flexibilidad para el modelado de datos que las bases de datos relacionales. Las bases de datos documental almacenan cada registro y sus datos asociados en un solo documento. Cada documento contiene datos semiestructurados que pueden ser consultados con el uso de varias herramientas de consulta y análisis del DBMS. Las BBDD de documentos ofrecen importantes ventajas cuando se requieren características específicas, que incluyen: Modelado flexible de datos, Rendimiento de escritura rápido, Rendimiento rápido de consultas (MongoDB, DynamoDB, Couchbase, Azure CosmosDB).</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id312-197">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Clases para el acceso a BD relacionales</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta312_312_2" class="block iDevice_content">
+<div class="exe-text"><p>Python tiene acceso a gran número de bases datos, la inmensa mayoría están implementadas como un paquete Python que se puede importar y usar. Para un correcto funcionamiento debemos leer cuidadosamente la documentación de cada paquete y ver los ejemplos. Dentro de sos SGBD más populares encontramos:</p>
+<ul>
+<li>µ       SQL Server: pymssql y pyodbc.</li>
+<li>µ       Oracle: cx_Oracle.</li>
+<li>µ       MySQL: Mysql.connector.</li>
+<li>µ       SQLite: sqlite3.</li>
+<li>µ       PostgreSQL: psycopg2.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id313-197">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Establecimiento de conexiones con diferentes SGBD</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta313_313_2" class="block iDevice_content">
+<div class="exe-text"><p style="background-color: #cccccc; padding: 5px; border-style: solid;">En Python, como en otros lenguajes, existe una propuesta de API estándar para el manejo de bases de datos, de forma que el código sea prácticamente igual independientemente de la base de datos que estemos utilizando por debajo. Esta especificación recibe el nombre de Python Database API o DB-API y se recoge en el PEP 249 (http://www.python.org/dev/peps/pep-0249/).</p>
+<p> </p>
+<p>En el entorno educativo la mayoría de veces se usa MySql como servidor de desarrollo, con lo que vamos a realizar los ejemplos sobre esa base de datos, para tal fin instalaremos el servidor desde la página de descargas (https://www.mysql.com/downloads/) y crearemos una base de datos con la siguiente estructura.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">CREATE DATABASE IF NOT EXISTS `daw_prog` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish2_ci;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">USE `daw_prog`;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">DROP TABLE IF EXISTS `personas`;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">CREATE TABLE `personas` (</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">  `cod` int(11) NOT NULL,</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">  `nombre` varchar(255) COLLATE utf8_spanish2_ci NOT NULL,</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">  `apellido_1` varchar(255) COLLATE utf8_spanish2_ci NOT NULL,</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">  `apellido_2` varchar(255) COLLATE utf8_spanish2_ci NOT NULL,</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">  `fecha_nacimiento` date NOT NULL</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">ALTER TABLE `personas`</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">  ADD PRIMARY KEY (`cod`);</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">COMMIT;</div>
+<p><br />Aunque se use MySql los conceptos se pueden extrapolar a cualquier base de datos: Conexión → Operaciones → Desconexión, similar al protocolo con un fichero.</p>
+<p><strong>Instalación del driver Python</strong></p>
+<p style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">pip install mysql-connector-python</p>
+<p><strong>Conexión con la BBDD</strong></p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import mysql.connector</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cnn = mysql.connector.connect(user='root', password='',</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                              host='127.0.0.1',</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                              database='daw_prog')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(cnn)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cnn.close()</div>
+<div><strong></strong></div>
+<p><strong>Gestión de errores de conexión</strong></p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import mysql.connector</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from mysql.connector import errorcode</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">try:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    cnx = mysql.connector.connect(user='root', password='',</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                                  host='127.0.0.1',</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                                  database='daw_prog')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">except mysql.connector.Error as err:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        print("Error de conexión")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    elif err.errno == errorcode.ER_BAD_DB_ERROR:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        print("No existe la BBDD")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    else:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        print(err)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">else:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(cnx)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    cnx.close()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"></div>
+<p><strong>Inserción de datos</strong></p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"><strong></strong></div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from datetime import date, datetime, timedelta</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import mysql.connector</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cnx = mysql.connector.connect(user='root', password='',</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                              host='127.0.0.1',</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                              database='daw_prog')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cursor = cnx.cursor()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">add_persona = ("INSERT INTO personas (nombre, apellido_1,</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    apellido_2, fecha_nacimiento) " +</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">               "VALUES ('Jose', 'Pérez', 'González', '" +</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    str(date(1977, 6, 14)) + "')")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(add_persona)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cursor.execute(add_persona)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">emp_no = cursor.lastrowid   # devuelve el id en una autonumérico</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(emp_no)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cnx.commit()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cursor.close()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cnx.close()</div>
+<p><br /><strong>Borrado de registros</strong></p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"><br />import mysql.connector</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cnx = mysql.connector.connect(user='root', password='',</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                              host='127.0.0.1',</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                              database='daw_prog')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cnx.autocommit = True</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cursor = cnx.cursor()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">del_persona = ("DELETE FROM personas WHERE cod = 1")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(del_persona)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cursor.execute(del_persona)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">emp_no = cursor.lastrowid</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(emp_no)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">#  cnx.commit()  Ya no es necesario por el autocommit</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cursor.close()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cnx.close()<br /><strong></strong></div>
+<p><strong>Sentencias de selección</strong></p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import mysql.connector</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cnx = mysql.connector.connect(user='root', password='',</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                              host='127.0.0.1',</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                              database='daw_prog')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cursor = cnx.cursor()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">query = "SELECT * FROM personas"</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cursor.execute(query)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">for cod, nombre, apellido_1, apellido_2, fecha_nacimiento in</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    cursor:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(f"({cod}) {nombre} {apellido_1} {apellido_2}</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">           nació el {fecha_nacimiento}")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cursor.close()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">cnx.close()</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-199">
+<header class="nodeDecoration">
+<h1 id="exenode_199_821Ejemplosdeconsultassobrelabasededatos" class="nodeTitle">8.2.1 Ejemplos de consultas sobre la base de datos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id314-199">
+<div class="iDevice emphasis0" >
+<div id="ta314_314_2" class="block iDevice_content">
+<div class="exe-text"><div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import mysql.connector</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class GenerarEquipo:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    _cnn = None</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    _data = None</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        try:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            self._cnn = mysql.connector.connect(user='root',</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">              password='',host='127.0.0.1',database='daw_prog')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            self._cnn.autocommit = True</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            self._data = self._cnn.cursor()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            self._data.execute("SELECT * FROM personas")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        except mysql.connector.Error as e:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            print("-", e)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __del__(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        if self._data is not None:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            self._data.close()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        if self._cnn is not None:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            self._cnn.close()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def next(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        while True:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            row = self._data.fetchone()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            if row is not None:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                yield row</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            else:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                return</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">misEquipos = GenerarEquipo()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">for eq in misEquipos.next():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(eq[0], " ", eq[1])</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">del misEquipos</div></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-200">
+<header class="nodeDecoration">
+<h1 id="exenode_200_822Ejercicios" class="nodeTitle">8.2.2. Ejercicios</h1>
+</header>
+<article class="iDevice_wrapper CasestudyIdevice em_iDevice em_iDevice_casestudy" id="id315-200">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Desarrolla</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta315_94" class="block iDevice_content">
+<p>Usando BBDD</p>
+</section>
+<section id="taquesQuestion0b315" class="block iDevice_content">
+<p>Crear una aplicación que gestione las citas de una consulta veterinaria, que se puedan almacenar en disco todos los datos. Haz el desarrollo completo, desde UML hasta la implementación final, utiliza tres  ficheros: para las citas, para los datos de los clientes y para las mascotas.</p>
+<p>La carga de los datos se realizará al comienzo de la aplicación desde los ficheros, se realizarán todas las modificaciones en memoria y cuando se cierre la aplicación salvará el estado a disco, no utilizará ficheros en el tratamiento intermedio de la información.</p>
+</section>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-201">
+<header class="nodeDecoration">
+<h1 id="exenode_201_83XML" class="nodeTitle">8.3. XML</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id316-201">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta316_316_2" class="block iDevice_content">
+<div class="exe-text"><p>XML es el acrónimo de Extensible Markup Language, es decir, es un lenguaje de marcado que define un conjunto de reglas para la codificación de documentos. El lenguaje de marcado es un conjunto de códigos que se pueden aplicar en el análisis de datos o la lectura de textos creados por computadoras o personas. El lenguaje XML proporciona una plataforma para definir elementos para crear un formato y generar un lenguaje personalizado.</p>
+<p>Un archivo XML se divide en dos partes: DTD y DATA. La parte DTD consiste en metadatos administrativos, como declaración XML, instrucción de procesamiento opcional, declaración de tipo de documento y comentarios. La parte del DATA se compone de dos partes: estructural y de contenido (presente en los textos simples).</p>
+<p>El diseño XML se centra en la simplicidad, la generalidad y la facilidad de uso y, por lo tanto, se utiliza para varios servicios web. Tanto es así que hay sistemas destinados a ayudar en la definición de lenguajes basados ​​en XML, así como APIs que ayudan en el procesamiento de datos XML – que no deben confundirse con HTML.</p>
+<p>Las interfaces de Python para procesar XML están agrupadas en el paquete xml.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id317-201">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Librerías Relacionadas con XML</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta317_317_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>SAX</strong></p>
+<p>El paquete xml.sax provee un número de módulos que implementan la API Simple para la interfaz XML (SAX) para Python. Una aplicación SAX típica usa tres tipos de objetos: lectores, gestores y fuentes de entrada. «Lector» en este contexto es otro término para analizador, por ejemplo, alguna pieza de código que lee los bytes o caracteres de la fuente de entrada, y produce una secuencia de eventos. Los eventos luego se distribuyen a los objetos gestores, por ejemplo, el lector invoca un método en el gestor. Una aplicación SAX debe por tanto obtener un objeto lector, crear o abrir una fuente de entrada, crear los gestores, y conectar esos objetos juntos. Como paso final de preparación, el lector es llamado para analizar la entrada. Durante el análisis, los métodos en los objetos gestores son llamados basados en eventos estructurales y sintácticos de los datos introducidos.</p>
+<p><a href="https://docs.python.org/es/3/library/xml.sax.html" target="_blank" title="https://docs.python.org/es/3/library/xml.sax.html" style="background-color: #cccccc; border-style: solid;" rel="noopener">https://docs.python.org/es/3/library/xml.sax.html</a></p>
+<p><strong>DOM</strong></p>
+<p>El Modelo de Objetos del Documento, o «DOM» por sus siglas en inglés, es un lenguaje API del Consorcio World Wide Web (W3C) para acceder y modificar documentos XML. Una implementación del DOM presenta los documentos XML como un árbol, o permite al código cliente construir dichas estructuras desde cero para luego darles acceso a la estructura a través de un conjunto de objetos que implementaron interfaces conocidas.</p>
+<p>El DOM es extremadamente útil para aplicaciones de acceso directo. SAX sólo te permite la vista de una parte del documento a la vez. Si estás mirando un elemento SAX, no tienes acceso a otro. Si estás viendo un nodo de texto, no tienes acceso al elemento contendor. Cuando desarrollas una aplicación SAX, necesitas registrar la posición de tu programa en el documento en algún lado de tu código. SAX no lo hace por ti. Además, desafortunadamente no podrás mirar hacia adelante (look ahead) en el documento XML</p>
+<p>Las aplicaciones DOM típicamente empiezan al diseccionar (parse) el XML en un DOM. Existe una clase objeto llamada DOMImplementation que da acceso a métodos de creación. Una vez que tengas un objeto del documento del DOM, puedes acceder a las partes de tu documento XML a través de sus propiedades y métodos. Estas propiedades están definidas en la especificación del DOM.</p>
+<p><a href="https://docs.python.org/es/3.9/library/xml.dom.html#module-xml.dom" target="_blank" rel="noopener" style="background-color: #cccccc; padding: 5px; border-style: solid;">https://docs.python.org/es/3.9/library/xml.dom.html#module-xml.dom</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id318-201">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Creación de un documento XML</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta318_318_2" class="block iDevice_content">
+<div class="exe-text"><div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">&lt;?xml version="1.0"?&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">  &lt;genre catalogue="Pop"&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">  &lt;song title="No Tears Left to Cry"&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    &lt;artist&gt;Ariana Grande&lt;/artist&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    &lt;year&gt;2018&lt;/year&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    &lt;album&gt;Sweetener&lt;/album&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">  &lt;/song&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">  &lt;song title="Delicate"&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    &lt;artist&gt;Taylor Swift&lt;/artist&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    &lt;year&gt;2018&lt;/year&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    &lt;album&gt;Reputation&lt;/album&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">  &lt;/song&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">  &lt;song title="Mrs. Potato Head"&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    &lt;artist&gt;Melanie Martinez&lt;/artist&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    &lt;year&gt;2015&lt;/year&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    &lt;album&gt;Cry Baby&lt;/album&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">  &lt;/song&gt;</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">&lt;/genre&gt;</div>
+<p><strong>SAX</strong></p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"><br />import xml.sax</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class SongHandler(xml.sax.ContentHandler):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.CurrentData=''</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.artist=''</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.year=''</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.album=''</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def startElement(self,tag,attributes):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.CurrentData=tag</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        if tag=='song':</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            print('Song:')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            title=attributes['title']</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            print(f'Title: {title}')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def endElement(self,tag):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        if self.CurrentData=='artist':</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            print(f'Artist: {self.artist}')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        elif self.CurrentData=='year':</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            print(f'Year: {self.year}')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        elif self.CurrentData=='album':</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            print(f'Album: {self.album}')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.CurrentData=''</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def Characters(self,content):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        if self.CurrentData=='artist':</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            self.artist=content</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        elif self.CurrentData=='year':</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            self.year=content</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        elif self.CurrentData=='album':</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            self.album=content</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">if __name__=='__main__':</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    parser=xml.sax.make_parser() #creating an XMLReader</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    parser.setFeature(xml.sax.handler.feature_namespaces,0)         </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    #turning off namespaces</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    Handler=SongHandler()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    parser.setContentHandler(Handler)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    #overriding default ContextHandler</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    parser.parse('songs.xml')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"><strong></strong></div>
+<p><strong>DOM</strong></p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"><br />from xml.dom.minidom import parse</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import xml.dom.minidom</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import os</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">os.chdir('C:\\Users\\lifei\\Desktop')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">DOMTree = xml.dom.minidom.parse("songs.xml") #Opening the XML document</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">genre=DOMTree.documentElement</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">if genre.hasAttribute('catalogue'):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(f'Root: {genre.getAttribute("catalogue")}')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">songs=genre.getElementsByTagName('song') #Get all songs in the</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">for song in songs: #Print each song’s details</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print('Song:')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    if song.hasAttribute('title'):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        print(f'Title: {song.getAttribute("title")}')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    artist=song.getElementsByTagName('artist')[0]</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(f'Artist: {artist.firstChild.data}')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    year=song.getElementsByTagName('year')[0]</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    print(f'Release Year: {year.firstChild.data}')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    album=song.getElementsByTagName('album')[0]<br />    print(f'Album: {album.firstChild.data}')</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-186">
+<header class="nodeDecoration">
+<h1 id="exenode_186_Resumen" class="nodeTitle">Resumen</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_objectives" id="id285-186">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_objectives.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta285_285_2" class="block iDevice_content">
+<div class="exe-text"><p>Resumen</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+
+<footer id="siteFooter">César San Juan Pastor - IES Arcipreste de Hita</footer>
+</div>
+<script type="text/javascript" src="_cedec_js.js"></script></body>
+</html>
