@@ -228,10 +228,3 @@ ordenada, pero también deberá mantener la versión sin ordenar.
 Si desea crear una nueva lista, use la función incorporada sorted() en su lugar. Esta función crea una nueva lista a 
 partir de un iterativo proporcionado, la ordena y la retorna. 
 
-#### Trasponer una matriz cuadrada
-```
-lst = [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
-a = list(zip(*lst))
-print(lst)
-```
-
