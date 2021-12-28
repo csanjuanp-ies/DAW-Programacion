@@ -1,7 +1,7 @@
 # Anexo 1
 ## Cambios en las nuevas versiones
 ### 3.10
-**Patrón estructural**
+#### Patrón estructural
 
 Hasta ahora no existían una estructura sintáctica que reflejara el caso según (switch) de otros lenguajes, 
 debíamos usar estructuras if-else andadas. A partir de esta versión aparece este patrón que aumenta las capacidades 
