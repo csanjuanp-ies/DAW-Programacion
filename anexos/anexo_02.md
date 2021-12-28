@@ -1,5 +1,5 @@
 # Anexo 2
-## Tips
+## Faqs
 ### POO avanzado
 #### Propiedades de clase
 Una propiedad de clase es aquella definida en el ámbito de la clase y es común a todas las 
