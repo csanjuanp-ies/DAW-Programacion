@@ -5,4 +5,6 @@
 
 [Anexo III - Tips](anexo_03.ipynb)
 
-[Anexo IV - Guía Markdown](anexo_04.ipynb)
+[Anexo IV - Guía Markdown - Fuente](anexo_04.txt)
+
+[Anexo IV - Guía Markdown - Resultado](anexo_04.ipynb)
