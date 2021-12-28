@@ -26,7 +26,7 @@
 
 [UT_9 Interfaces gráficos](https://htmlpreview.github.io/?https://github.com/csanjuanp-ies/DAW-Programacion/blob/main/ut_09/html/index.html)
 
-[Anexos](https://htmlpreview.github.io/?https://github.com/csanjuanp-ies/DAW-Programacion/blob/main/anexos/html/index.html)
+[Anexos](anexos/)
 
 [Licencia](https://github.com/csanjuanp-ies/DAW-Programacion/blob/main/LICENSE)
 
