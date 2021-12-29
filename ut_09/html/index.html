@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>1º DAW - Programación - UT 9</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="César San Juan Pastor" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.6 - exelearning.net" />
+<meta name="description" content="  Unidad práctica en la que se introducen los conceptos de desarrollo gráfico" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+<body class="exe-single-page"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<header id="header">
+<div id="headerContent">
+<h1>1º DAW - Programación - UT 9</h1>
+</div>
+</header>
+<section id="main">
+<article class="node level-1-node" id="exe-node-0">
+<header class="nodeDecoration">
+<h1 id="exenode_0_UT9Interfacesgrficos" class="nodeTitle">U.T. 9 Interfaces gráficos</h1>
+</header>
+</article>
+<article class="node level-2-node" id="exe-node-3">
+<header class="nodeDecoration">
+<h1 id="exenode_3_Orientaciones" class="nodeTitle">Orientaciones</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id5-3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Orientaciones</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta5_116_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Esta unidad de trabajo vamos a aprender los conceptos de creación de interfaces de usuarios gráficos (GUI) de forma introductoria.</p>
+<p style="text-align: justify;">Es necesario el conocimiento de las unidades anteriores.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-201">
+<header class="nodeDecoration">
+<h1 id="exenode_201_91Introduccin" class="nodeTitle">9.1. Introducción</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id316-201">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><h2 class="iDeviceTitle">Qué es la interfaz de usuario</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta316_316_2" class="block iDevice_content">
+<div class="exe-text"><p>La interfaz de usuario es el espacio donde se producen las interacciones entre seres humanos y máquinas. El objetivo de esta interacción es permitir el funcionamiento y control más efectivo de la máquina desde la interacción con el humano. Las interfaces básicas de usuario son aquellas que incluyen elementos como menús, ventanas, contenido gráfico, cursor, los beeps y algunos otros sonidos que la computadora hace, y en general, todos aquellos canales por los cuales se permite la comunicación entre el ser humano y la computadora. El objetivo del diseño de una interfaz es producir una interfaz que sea fácil de usar (explicarse por sí misma), eficiente y agradable para que al operar la máquina dé el resultado deseado</p>
+<p>La interfaz de usuario es el entorno de interacción persona-ordenador, la interfaz (o interfaz de usuario) es lo que permite que la interacción entre persona y ordenador ocurra. Es decir, la interfaz permite:</p>
+<ul>
+<li>Que la persona pueda controlar efectivamente las acciones de la máquina.</li>
+<li>Que la persona reciba respuestas de la máquina que le permitan saber si la interacción es correcta y cómo seguir actuando.</li>
+</ul>
+<p>Por lo tanto, el diseñador de la interfaz se tiene que asegurar de que el proceso de interacción se puede efectuar de manera fácil e intuitiva y que la persona (a la que llamaremos de ahora en adelante usuario) puede acceder a la información o ejecutar las acciones que desea, de la manera más simple posible. Así, el diseño de interfaces implica conocimientos de disciplinas muy variadas, como por ejemplo, la psicología o el diseño visual.</p>
+<p>En muchas ocasiones, la palabra interfaz se refiere en realidad a un concepto mucho más específico: la interfaz gráfica de usuario (GUI del inglés graphical user interface). La GUI es el entorno visual en el que se desarrolla la interacción entre la persona y el dispositivo y puede ser el propio del sistema operativo o bien el particular de la aplicación que se está utilizando.</p>
+<p>Aplicaciones con interfaz gráfica (GUI)</p>
+<ul>
+<li>Ventanas gráficas para entrada y salida de datos.</li>
+<li>Iconos.</li>
+<li>Dispositivos de entrada (p.ej. ratón, teclado).</li>
+<li>Interacción directa.</li>
+</ul>
+<p><strong>Elementos de una ventana</strong></p>
+<p><img src="00.png" alt="Ventana" width="600" height="306" /></p>
+<p>La GUI es una interfaz de usuario que permite a los usuarios comunicarse con el ordenador. Suele estar basada en la interacción a través del ratón y el teclado (aunque el control a través de gestos es cada vez más común): al mover el ratón, el puntero se desplaza en la pantalla. La señal del dispositivo se transmite al ordenador, que luego la traduce en un movimiento equivalente en la pantalla. Por ejemplo, si un usuario hace clic en un determinado icono de programa en el menú, se ejecuta la instrucción correspondiente y se abre el programa.</p>
+<p>La GUI es, por lo tanto, una especie de traductor en la comunicación entre el humano y la máquina. Sin la GUI, tendrías que utilizar la línea de comandos para llamar a programas y aplicaciones</p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id319-201">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Qué es el diseño GUI</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta319_319_2" class="block iDevice_content">
+<div class="exe-text"><p>La interfaz persona-ordenador (IPO) se denomina en inglés human-computer interface (HCI). Tal como vamos a ver a lo largo de la unidad, otros conceptos estrechamente relacionados son arquitectura de la información, usabilidad y diseño de interacción.</p>
+<p>El diseño de interfaz de usuario o ingeniería de la interfaz es el resultado de definir la forma, función, utilidad, ergonomía, imagen de marca y otros aspectos que afectan a la apariencia externa de las interfaces de usuario en sistemas de todo tipo (computadoras de uso general, sistemas de control, dispositivos de comunicación móviles, software de sistemas, software de aplicaciones, sitios web, etc.) El diseño de la interfaz de usuario es una disciplina asociada al diseño y se enfoca en maximizar la usabilidad y la experiencia de usuario. El objetivo final del diseño de la interfaz de usuario es hacer que la interacción entre el usuario y el sistema del que es interfaz sea tan simple y eficiente como sea posible, en términos de cumplimiento de los objetivos del usuario. Sigue por ello una filosofía de diseño centrado en el usuario.</p>
+<p>Un buen diseño de la interfaz de usuario facilita la compleción de tareas a realizar sin que el usuario vea atraída su atención hacia la forma. El diseño gráfico y la tipografía se combinan para ofrecer usabilidad, influyendo en cómo el usuario realiza ciertas interacciones y mejorando la apariencia estética del diseño; la estética del diseño puede mejorar o dificultar la capacidad de los usuarios para utilizar las funciones de la interfaz.​ El proceso de diseño debe balancear la funcionalidad técnica y los elementos visuales (es decir, el modelo mental) para crear un sistema que no solo sea operativo, sino también usable y adaptable a la evolución de las necesidades del usuario.</p>
+<p>Normalmente el diseño de interfaces de usuario es una actividad multidisciplinar que involucra a varias ramas tales como el diseño gráfico, el diseño industrial, el diseño web, el diseño de software y la ergonomía; y puede aparecer como actividad en un amplio rango de proyectos, desde el desarrollo de sistemas informáticos hasta el desarrollo de aviones comerciales. En este sentido las disciplinas del diseño industrial y diseño gráfico se encargan de que la actividad a desarrollar se comunique y aprenda lo más rápidamente, a través de recursos como los gráficos, los pictogramas, los estereotipos y la simbología, todo sin afectar un funcionamiento técnico eficiente.</p>
+<p>Elementos de un Diseño GUI.</p>
+<ul>
+<li>Contenedores. Contienen otros componentes (u otros contenedores) .Estos componentes se tienen que añadir al contenedor y para ciertas operaciones se pueden tratar como un todo. Mediante un gestor de diseño controlan la disposición (layout) de estos componentes en la pantalla.</li>
+<li>Lienzo. Superficie simple de dibujo</li>
+<li>Componentes de interfaz de usuario. Botones, listas, menús, casillas de verificación, campos de texto, etc.</li>
+<li>Componentes de construcción de ventanas. Ventanas, marcos, barras de menús, cuadros de diálogo</li>
+</ul>
+<p style="background-color: #cccccc; padding: 5px; border-style: solid;">La construcción de una GUI utiliza un modelo de programación basado en eventos.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-202">
+<header class="nodeDecoration">
+<h1 id="exenode_202_92Diseodirigidoaeventos" class="nodeTitle">9.2. Diseño dirigido a eventos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id320-202">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta320_320_2" class="block iDevice_content">
+<div class="exe-text"><p>En este modelo el orden en el cual se ejecutan las instrucciones de un programa va a quedar determinado por <strong>eventos</strong>. Un evento es <strong>una señal de que algo ha ocurrido</strong>. En esta materia consideraremos únicamente eventos generados por acciones del usuario al interactuar con la GUI.</p>
+<p>Algunas componentes de una GUI van a ser reactivas, es decir tienen la capacidad de reaccionar ante las acciones del usuario.  Una componente reactivo está asociada a un objeto fuente del evento creado por el programador. La reacción del sistema en respuesta a la acción del usuario va a quedar determinada por la clase a la que pertenece un objeto oyente. El objeto oyente está ligado al objeto fuente de evento a través de una instrucción de registro.</p>
+<p>Un objeto fuente de evento tienen la capacidad de percibir un evento externo y  disparar un evento interno, esto es, crear un objeto evento de software.  Este objeto evento de software es el argumento de un mensaje enviado al objeto oyente. El método que se ejecuta en respuesta a este mensaje forma parte de una interface y es implementado por el programador en la clase del oyente.</p>
+<p><img src="01.png" alt="Eventos" width="755" height="544" /></p>
+<p><img src="04.png" alt="eventos" width="631" height="267" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id321-202">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Creación de un GUI</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta321_321_2" class="block iDevice_content">
+<div class="exe-text"><p>La construcción de una GUI va a requerir:</p>
+<ul>
+<li>Crear objetos de las clases provistas o de las clases derivadas o implementadas.</li>
+<li>Elegir un organizador de espacio (layout) y especificar la apariencia de los componentes.</li>
+<li>Insertar los componentes en los contenedores.</li>
+<li>Crear los manejadores de eventos y asignarlos a los objetos y eventos correspondientes.</li>
+<li>Crear las clases de ayuda y de conexión con los servicios.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-203">
+<header class="nodeDecoration">
+<h1 id="exenode_203_93Componentes" class="nodeTitle">9.3. Componentes</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id322-203">
+<div class="iDevice emphasis0" >
+<div id="ta322_322_2" class="block iDevice_content">
+<div class="exe-text"><p>Una interfaz gráfica de usuario (GUI) presenta un mecanismo amigable al usuario para interactuar con una aplicación.  Las GUIs se crean a partir de componentes de la GUI, a estos se les conoce también como controles o widgets (accesorios de ventana) en otros lenguajes. Un componente de la GUI es un objeto con el cual interactúa el usuario mediante el ratón, el teclado u otra forma de entrada como el reconocimiento de voz que genera un evento que debemos capturar a través de una <strong>callback</strong> para realizar una tarea. Ejemplos de los posibles controles de una interfaz gráfica.</p>
+<p><img src="02.png" alt="Componentes" width="543" height="437" /></p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-204">
+<header class="nodeDecoration">
+<h1 id="exenode_204_94Libreras" class="nodeTitle">9.4. Librerías</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id323-204">
+<div class="iDevice emphasis0" >
+<div id="ta323_323_2" class="block iDevice_content">
+<div class="exe-text"><p>El número de librería gráficas existentes son muchas: GTK, QT, Nativas, WxWidget, etc. Podemos usar cualquiera de ellas y dependiendo de la finalidad de la aplicación son más apropiadas unas u otras. En nuestro caso vamos a ver <strong>QT</strong> pero también queremos hablar de <strong>Tkinter</strong> que es muy utilizada para aplicaciones simples.</p>
+<p>Tanto Tkinter como PyQt son dos librerías útiles para diseñar interfaces gráficas de usuario, pero al mismo tiempo difieren en términos de adaptabilidad y funcionalidad. La mayoría de las veces, Tkinter se trata de escribir GUI directamente, programar su configuración o funcionalidad en el mismo script. Por otro lado, en PyQt, se separa la interfaz gráfica de usuario en un script y se utiliza el conocimiento de Python de otro script. En lugar de crear su propio código para la interfaz de usuario, puede simplemente adoptar las funciones Qt Designer para desarrollar su aplicación.</p>
+<p>Dentro de las librerías dedicadas a QT, tenemos dos aproximaciones PyQT desarrollo independiente y PySide desarrollado por la propia creadora de la librería QT, ambas tienen conceptos similares y se puede utilizar cualquiera, pero no combinar.</p>
+<p><img src="05.png" alt="Widgets" width="830" height="501" /></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id324-204">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Qt </h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta324_324_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>Ventajas de usar PyQt - PySide</strong></p>
+<ul>
+<li>Flexibilidad de codificación - La programación GUI con Qt está diseñada alrededor del concepto de señales y slots para establecer comunicación entre objetos. Esto permite flexibilidad cuando se trata de eventos GUI y resulta en una base de código más fluida.</li>
+<li>Más que un marco de trabajo - Qt utiliza una amplia gama de APIs de plataformas nativas con el propósito de redes, creación de bases de datos y mucho más. Ofrece acceso primario a ellos a través de una API única.</li>
+<li>Varios componentes de la interfaz de usuario - Qt ofrece varios widgets, como botones o menús, todos ellos diseñados con una apariencia básica en todas las plataformas soportadas.</li>
+<li>Varios recursos de aprendizaje: dado que Qt es uno de los marcos de trabajo de interfaz de usuario más utilizados para Python, puede acceder fácilmente a una amplia gama de documentación.</li>
+<li>Fácil de dominar - Viene con una funcionalidad API sencilla y fácil de usar, junto con clases específicas vinculadas a Qt C++. Esto permite al usuario utilizar conocimientos previos de Qt o C++, haciendo que PyQt sea fácil de entender.</li>
+</ul>
+<p><strong>Desventajas de usar Qt</strong></p>
+<ul>
+<li>Requiere mucho tiempo para entender todos los detalles de Qt, lo que significa que es una curva de aprendizaje bastante elevada.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id325-204">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Tkinter </h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta325_325_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>Ventajas de usar Tkinter</strong></p>
+<ul>
+<li>Disponible sin cargo para uso comercial.</li>
+<li>Se presenta en la biblioteca Python subyacente.</li>
+<li>La creación de ejecutables para las aplicaciones de Tkinter es más accesible ya que Tkinter está incluido en Python, y, como consecuencia, no viene con ninguna otra dependencia.</li>
+<li>Simple de entender y dominar, ya que Tkinter es una librería limitada con una API simple, siendo la opción principal para crear interfaces gráficas de usuario rápidas para scripts Python.</li>
+</ul>
+<p><strong>Desventajas de usar Tkinter</strong></p>
+<ul>
+<li>Tkinter no incluye widgets avanzados.</li>
+<li>No tiene una herramienta similar a Qt Designer para Tkinter.</li>
+<li>No tiene un aspecto nativo</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id326-204">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">¿Cuál elegir? </h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta326_326_2" class="block iDevice_content">
+<div class="exe-text"><p>De todos modos, en la mayoría de los casos, la mejor solución es utilizar PyQt - PySide, teniendo en cuenta las ventajas y desventajas de ambos.</p>
+<p>La programación GUI con Qt se crea alrededor de señales y ranuras para la comunicación entre objetos. De este modo, permite flexibilidad, mientras que permite al programador acceder a una amplia gama de herramientas.</p>
+<p>Tkinter puede ser útil para aquellos que quieren diseñar una GUI fundamental y rápida para scripts Python, pero para un resultado de programación más avanzado, casi todos los programadores optan por las funcionalidades que vienen con PyQt - PySide.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-205">
+<header class="nodeDecoration">
+<h1 id="exenode_205_95ProgramacinGUIBsica" class="nodeTitle">9.5. Programación GUI Básica</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_book" id="id327-205">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_book.png)"><h2 class="iDeviceTitle">Hola mundo</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta327_327_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>PySide</strong></p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">pip install pyside6</div>
+<p> </p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import PySide6.QtCore</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># Prints PySide6 version</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(PySide6.__version__)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"></div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"># Prints the Qt version used to compile PySide6</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">print(PySide6.QtCore.__version__)</div>
+<p> </p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import sys</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import random</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from PySide6 import QtCore, QtWidgets, QtGui</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class MyWidget(QtWidgets.QWidget):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        super().__init__()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.hello = ["Hallo Welt", "Hei maailma", "Hola Mundo", <span style="font-size: 1.1em;">"Привет мир"]</span></div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.button = QtWidgets.QPushButton("Click me!")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.text = QtWidgets.QLabel("Hello World", <span style="font-size: 1.1em;">alignment=QtCore.Qt.AlignCenter)</span></div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.layout = QtWidgets.QVBoxLayout(self)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.layout.addWidget(self.text)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.layout.addWidget(self.button)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.button.clicked.connect(self.magic)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    @QtCore.Slot()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def magic(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.text.setText(random.choice(self.hello))</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">  </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">if __name__ == "__main__":</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    app = QtWidgets.QApplication([])</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    widget = MyWidget()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    widget.resize(800, 600)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    widget.show()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    sys.exit(app.exec_())</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div></div>
+<div></div>
+<div><img src="03.png" alt="Hola Mundo" width="500" height="394" /></div>
+<div>
+<p>Primero se importan las librerías necesarias, y se pasa a definir una clase MyWidget que definirá la aplicación a ejecutar. En el constructor realizamos toda la tarea de construcción de la ventana y control de eventos de la siguiente manera.</p>
+<ol>
+<li>Llamamos al constructor padre.</li>
+<li>Creamos un atributo con las frases a contener (hello)</li>
+<li>Creamos un botón con el texto “Clic me”.</li>
+<li>Creamos una etiqueta con el texto “Hello Word” centrada</li>
+<li>Creamos una disposición (layout) para contener a los controles.</li>
+<li>Añadimos al layout los controles antes creados (addWidget)</li>
+<li>Conectamos el evento clic del botón con la callback magic definida más adelante.</li>
+</ol>
+<p>Para finalizar la clase definimos la callback, en este caso simplemente cambia el texto del propio control a uno de la propiedad hello de forma aleatoria.</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-206">
+<header class="nodeDecoration">
+<h1 id="exenode_206_951PrimerospasosconelGUI" class="nodeTitle">9.5.1. Primeros pasos con el GUI</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id328-206">
+<div class="iDevice emphasis0" >
+<div id="ta328_328_2" class="block iDevice_content">
+<div class="exe-text"><p>PySide es una biblioteca de Python para crear interfaces gráficas de usuario multiplataforma. Es un enlace de Python al marco Qt. La biblioteca Qt es una de las bibliotecas GUI más poderosas. PySide se implementa como un conjunto de módulos de Python. Estos módulos proporcionan herramientas para trabajar con GUI, multimedia, documentos XML, redes o bases de datos. Trabajaremos con dos de estos módulos. Los módulos QtGui y QtCore.</p>
+<p>El módulo QtCore contiene la funcionalidad principal no GUI. Este módulo se utiliza para trabajar con tiempo, archivos y directorios, varios tipos de datos, flujos, URL, tipos de mime, subprocesos o procesos. El módulo QtGui contiene los componentes gráficos y las clases relacionadas. Estos incluyen, por ejemplo, botones, ventanas, barras de estado, barras de herramientas, controles deslizantes, mapas de bits, colores, fuentes, etc. PySide es un conjunto de herramientas de alto nivel.</p>
+<p></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id329-206">
+<div class="iDevice emphasis0" >
+<div id="ta329_329_2" class="block iDevice_content">
+<div class="exe-text"><div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import sys</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from PySide6 import QtWidgets, QtGui</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"></div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class Example(QtWidgets.QWidget):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        super().__init__()  #Inicializar la clase base</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        # Establecer la apariencia de la ventana</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setGeometry(300, 300, 250, 150)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setWindowTitle('Icon')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setWindowIcon(QtGui.QIcon('web.png'))</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def main():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    app = QtWidgets.QApplication(sys.argv)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex = Example()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex.show()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    sys.exit(app.exec_())</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">if __name__ == '__main__':</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    main()</div>
+<p><strong>Podemos añadir una sugerencia de ayuda a cualquier caja de texto.</strong></p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"></div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import sys</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from PySide6 import QtWidgets, QtGui</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class Example(QtWidgets.QWidget):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        super().__init__()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        btn = QtWidgets.QPushButton('Button', self)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        btn.setToolTip('This is a &lt;b&gt;QPushButton&lt;/b&gt; widget')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        btn.resize(btn.sizeHint())</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        btn.move(50, 50)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        btn.setToolTip('This is a &lt;b&gt;QWidget&lt;/b&gt; widget')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setGeometry(300, 300, 250, 150)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setWindowTitle('Tooltips')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def main():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    app = QtWidgets.QApplication(sys.argv)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex = Example()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex.show()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    sys.exit(app.exec_())</div>
+<p><strong>Cierre de la ventana.</strong></p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import sys</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from PySide6 import QtWidgets, QtCore</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class Example(QtWidgets.QWidget):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        super().__init__()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        qbtn = QtWidgets.QPushButton('Quit', self)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        qbtn.clicked.connect(</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                       QtCore.QCoreApplication.instance().quit)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        qbtn.resize(qbtn.sizeHint())</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        qbtn.move(50, 50)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setGeometry(300, 300, 250, 150)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setWindowTitle('Quit button')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">  </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def main():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    app = QtWidgets.QApplication(sys.argv)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex = Example()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex.show()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    sys.exit(app.exec_())</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">if __name__ == '__main__':</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    main()</div>
+<p>Con estos tres ejemplos queremos introducir los conceptos básicos de la programación GUI. En primer lugar, tendremos que crear nuestra ventana extendiendo de <strong>QtWidgets.QWidget</strong>. Dentro del constructor determinaremos el aspecto de la misma, creando todos los controles que deba tener, así como todas las uniones entre los eventos y las callback correspondientes. A continuación, en la clase, crearemos las callback correspondientes añadiendo el decorador <strong>@QtCore.Slot()</strong> o usando una acción por defecto del sistema <strong>QtCore.QCoreApplication.instance().quit</strong>.</p>
+<p>Cada control tiene un conjunto de métodos y propiedades que podremos utilizar, también tendrá un conjunto de eventos que va a generar que podemos controlar, pero no es obligatorio implementarlos todos, solo aquellos que necesitemos para nuestra programación.</p>
+<p><strong>Controlando eventos de la ventana principal</strong></p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import sys</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from PySide6 import QtWidgets</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class Example(QtWidgets.QWidget):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        super().__init__()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setGeometry(300, 300, 250, 150)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setWindowTitle('Message box')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def closeEvent(self, event):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        reply = QtWidgets.QMessageBox.question(self, 'Message',</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                  "Are you sure to quit?",</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                  QtWidgets.QMessageBox.Yes |</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                  QtWidgets.QMessageBox.No,</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                  QtWidgets.QMessageBox.No)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        if reply == QtWidgets.QMessageBox.Yes:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            event.accept()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        else:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            event.ignore()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def main():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    app = QtWidgets.QApplication(sys.argv) </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex = Example()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex.show() </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    sys.exit(app.exec_())</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">if __name__ == '__main__':</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    main()</div>
+<div></div>
+<div>Al igual que los controles, la ventana principal que definimos tiene eventos que pueden ser capturados. Estos en vez de definir una callback y utilizar el decorador, debemos sobrescribir los correspondientes métodos. En el caso anterior se captura el evento de cierre, se lanza una pregunta al usuario mediante el QMesageBox y en función de la respuesta, se cierra o no la ventana al aceptar el evento (event.accept() o rechazarlo).</div>
+<p> </p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-207">
+<header class="nodeDecoration">
+<h1 id="exenode_207_952EventosQT" class="nodeTitle">9.5.2. Eventos QT</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id330-207">
+<div class="iDevice emphasis0" >
+<div id="ta330_330_2" class="block iDevice_content">
+<div class="exe-text"><p>El número de eventos presentes en un entorno GUI es muy numeroso, los siguientes son una pequeña muestra de los que se pueden capturar.</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Evento</strong></p>
+</td>
+<td>
+<p><strong>Descripción</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>QCloseEvent</strong></p>
+</td>
+<td>
+<p>Cierre de una ventana</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>QContextMenuEvent</strong></p>
+</td>
+<td>
+<p>Apertura del menú contextual de un control</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>QEnterEvent</strong></p>
+</td>
+<td>
+<p>Al entrar en un control</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>QFocusEvent</strong></p>
+</td>
+<td>
+<p>Cuando el control coge el foco de texto</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>QHideEvent</strong></p>
+</td>
+<td>
+<p>Cuando se oculta un control</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>QHoverEvent</strong></p>
+</td>
+<td>
+<p>Cuando se pasa el puntero del ratón por encima de un control</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>QInputEvent</strong></p>
+</td>
+<td>
+<p>Cuando el Usuario hace una entrada de texto</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>QKeyEvent</strong></p>
+</td>
+<td>
+<p>Cuando el usuario pulsa una tecla</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>QMoveEvent</strong></p>
+</td>
+<td>
+<p>Cuando se mueve el puntero del ratón</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>QShowEvent</strong></p>
+</td>
+<td>
+<p>Cuando se muestra un control</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>QClickEvent</strong></p>
+</td>
+<td>
+<p>Cuando se hace clic en un elemento</p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-208">
+<header class="nodeDecoration">
+<h1 id="exenode_208_952Elementosdelaventanaprincipal" class="nodeTitle">9.5.2. Elementos de la ventana principal</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id331-208">
+<div class="iDevice emphasis0" >
+<div id="ta331_331_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>La clase <strong>QtGui.QMainWindow</strong> proporciona una ventana principal de la aplicación. Esto permite crear el esqueleto de la aplicación clásica con una barra de estado, barras de herramientas y una barra de menú.</li>
+<li>La barra de estado es un widget que se utiliza para mostrar información de estado. Para obtener la barra de estado, llamamos al método <strong>statusBar</strong>() de la clase QtGui.QMainWindow. La primera llamada del método crea una barra de estado. Las llamadas posteriores devuelven el objeto de la barra de estado. <strong>ShowMessage</strong>() muestra un mensaje en la barra de estado.</li>
+<li>Una barra de menú es una parte común de una aplicación GUI. Es un grupo de comandos ubicados en varios menús. Mientras que en las aplicaciones de consola tenemos que recordar varios comandos y sus opciones, aquí tenemos la mayoría de los comandos agrupados en partes lógicas. Estos son estándares aceptados que reducen aún más la cantidad de tiempo dedicado a aprender una nueva aplicación.</li>
+<li>Los menús agrupan todos los comandos que podemos usar en una aplicación. Las barras de herramientas proporcionan un acceso rápido a los comandos más utilizados.</li>
+</ul>
+<p><img src="06.png" alt="Menús" width="485" height="391" /></p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import sys</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from PySide6 import QtGui, QtWidgets</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class Example(QtWidgets.QMainWindow):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        super().__init__()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.initUI()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def initUI(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        textEdit = QtWidgets.QTextEdit()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setCentralWidget(textEdit)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        exitAction = QtGui.QAction('Exit', self)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        exitAction.setShortcut('Ctrl+Q')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        exitAction.setStatusTip('Exit application')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        exitAction.triggered.connect(self.close)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.statusBar()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        menubar = self.menuBar()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        fileMenu = menubar.addMenu('&amp;File')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        fileMenu.addAction(exitAction)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        toolbar = self.addToolBar('Exit')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        toolbar.addAction(exitAction)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setGeometry(300, 300, 350, 250)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setWindowTitle('Main window')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def main():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    app = QtWidgets.QApplication(sys.argv)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex = Example()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex.show()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    sys.exit(app.exec_())</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">if __name__ == '__main__':</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    main()</div>
+<p> </p>
+<p>El código es muy simple, pero sirve para ejemplificar todos los elementos explicados al comienzo del punto.</p>
+<ol>
+<li>Se crear una Ventana de aplicación al heredar de QMainWindow, en su constructor se crean los elementos de la ventana llamando a initUI.
+<ol>
+<li>Una caja de texto que ocupa toda el área.</li>
+<li>Se crea una acción del sistema (Exit) a la que se le asigna un acelerador de teclado. También cambiará el texto de la barra de estado para indicar el texto: Exit application.</li>
+<li>Se habilita en la ventana la barra de estado.</li>
+<li>Se crea un menú con un único elemento que se enlaza a la acción del sistema creada anteriormente, salir.</li>
+<li>Se crea una barra de herramientas con un único botón para salir, enlazándolo también a la misma acción.</li>
+<li>Se establece el título y el tamaño de la ventana.</li>
+</ol>
+</li>
+<li>Se crea la aplicación y se muestra.</li>
+</ol></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-209">
+<header class="nodeDecoration">
+<h1 id="exenode_209_953Eventosymensajes" class="nodeTitle">9.5.3. Eventos y mensajes</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id332-209">
+<div class="iDevice emphasis0" >
+<div id="ta332_332_2" class="block iDevice_content">
+<div class="exe-text"><p>Los eventos son una parte importante en cualquier programa de GUI. Los eventos los generan los usuarios o el sistema.</p>
+<p>Todas las aplicaciones de GUI están controladas por eventos. Una aplicación reacciona a diferentes tipos de eventos que se generan durante su vida. Los eventos son generados principalmente por el usuario de una aplicación, pero también pueden generarse por otros medios. p.ej. Conexión a Internet, administrador de ventanas, temporizador. En el modelo de eventos, hay tres elementos:</p>
+<ul>
+<li>fuente del evento</li>
+<li>objeto de evento</li>
+<li>objetivo del evento</li>
+</ul>
+<p>La fuente del evento es el objeto cuyo estado cambia, genera eventos. El objeto de evento (Evento) encapsula los cambios de estado en el origen del evento. El objetivo del evento es el componente que desea ser notificado. El objeto de origen del evento delega la tarea de manejar un evento al objetivo del evento y este usa la <strong>callback</strong> para dicha gestión.</p>
+<p>Cuando llamamos al método exec_() de la aplicación, la aplicación entra en el ciclo principal. El bucle principal busca eventos y los envía a los objetos. Las señales y las callback se utilizan para la comunicación entre objetos. Se emite una señal cuando ocurre un evento en particular, se llama a una callback cuando se emite una señal conectada a ella.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import sys</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from PySide6 import QtCore, QtWidgets</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class Example(QtWidgets.QWidget):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        super().__init__()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.initUI()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def initUI(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        lcd = QtWidgets.QLCDNumber(self)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">       </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        sld = QtWidgets.QSlider(QtCore.Qt.Horizontal, self)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        sld.valueChanged.connect(lcd.display)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        vbox = QtWidgets.QVBoxLayout()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        vbox.addWidget(lcd)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        vbox.addWidget(sld)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setLayout(vbox)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">     </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setGeometry(300, 300, 250, 150)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setWindowTitle('Signal &amp; slot')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def main():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    app = QtWidgets.QApplication(sys.argv)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex = Example()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex.show()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    sys.exit(app.exec_())</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">if __name__ == '__main__':</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    main()</div>
+<p><img src="07.png" alt="Eventos" width="252" height="182" /> </p>
+<ol>
+<li>Creamos un control lcd numérico.</li>
+<li>Creamos un control slider o barra de desplazamiento y conectamos el evento de cambio de la barra (<strong>changed</strong>) con el de visualización del lcd (<strong>display</strong>).</li>
+<li>Añadimos un layout, se verá en el siguiente punto y los widget a él.</li>
+</ol></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id333-209">
+<div class="iDevice emphasis0" >
+<div id="ta333_333_2" class="block iDevice_content">
+<div class="exe-text"><p>Las callback puede recoger parámetros, en concreto el objeto evento que se está transmitiendo para poder utilizarlo en su beneficio.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import sys</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from PySide6 import QtWidgets</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class Example(QtWidgets.QMainWindow):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        super().__init__()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.initUI()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def initUI(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        btn1 = QtWidgets.QPushButton("Button 1", self)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        btn1.move(30, 50)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        btn2 = QtWidgets.QPushButton("Button 2", self)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        btn2.move(150, 50)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        btn1.clicked.connect(self.buttonClicked)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        btn2.clicked.connect(self.buttonClicked)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.statusBar()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setGeometry(300, 300, 290, 150)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setWindowTitle('Event sender')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def buttonClicked(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        sender = self.sender()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.statusBar().showMessage(sender.text() + ' was pressed')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def main():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    app = QtWidgets.QApplication(sys.argv)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex = Example()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex.show()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    sys.exit(app.exec_())</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">if __name__ == '__main__':</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    main()</div>
+<p> <img src="08.png" alt="Callback con parámetros" width="292" height="182" /></p>
+<ol>
+<li>Creamos dos botones y los posicionamos.</li>
+<li>Conectamos el evento <strong>click</strong> con la callback <strong>buttonClicked</strong> en la que se utiliza el método <strong>sender</strong>() para acceder al control origen, en concreto se cambia el texto de la barra de estado.</li>
+</ol></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-210">
+<header class="nodeDecoration">
+<h1 id="exenode_210_954Dilogos" class="nodeTitle">9.5.4. Diálogos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id334-210">
+<div class="iDevice emphasis0" >
+<div id="ta334_334_2" class="block iDevice_content">
+<div class="exe-text"><p>Las ventanas de diálogo o los cuadros de diálogo son comunes en las aplicaciones GUI modernas. En una aplicación informática, un cuadro de diálogo es una ventana que se utiliza para "hablar" con la aplicación. Un cuadro de diálogo se utiliza para ingresar datos, modificar datos, cambiar la configuración de la aplicación, etc. Los cuadros de diálogo son medios importantes de comunicación entre un usuario y un programa.</p>
+<ul>
+<li>El <strong>QtGui.QInputDialog</strong> proporciona un diálogo de conveniencia simple para obtener un valor único de un usuario. El valor de entrada puede ser una cadena, un número o un elemento de una lista.</li>
+<li>El <strong>QtGui.QColorDialog</strong> es un diálogo para seleccionar un color.</li>
+<li>El <strong>QtGui.QFontDialog</strong> es un diálogo para seleccionar una fuente.</li>
+<li>El <strong>QtGui.QFileDialog</strong> es un diálogo para seleccionar un directorio o fichero tanto para escritura como lectura de un fichero.</li>
+</ul>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import sys</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from PySide6 import QtWidgets</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class Example(QtWidgets.QWidget):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        super().__init__()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.initUI()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def initUI(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.btn = QtWidgets.QPushButton('Dialog', self)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.btn.move(20, 20)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.btn.clicked.connect(self.showDialog)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.le = QtWidgets.QLineEdit(self)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.le.move(130, 22)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setGeometry(300, 300, 290, 150)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setWindowTitle('Input dialog')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def showDialog(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        text, ok = QtWidgets.QInputDialog.getText(self,</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">             'Input Dialog',</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">             'Enter your name:')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        if ok:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            self.le.setText(str(text))</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def main():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    app = QtWidgets.QApplication(sys.argv)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex = Example()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex.show()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    sys.exit(app.exec_())</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">if __name__ == '__main__':</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    main()</div>
+<p> </p>
+<p><img src="09.png" alt="Diálogos" width="354" height="250" /></p>
+<ol>
+<li>Creamos un botón para mostrar el diálogo, en el clic del botón se conecta con la callback .<strong>showDialog</strong>.</li>
+<li>Creamos un control de texto para mostrar el texto introducido por el usuario en el diálogo.</li>
+<li>El manejador del clic, abre el diálogo (QtWidgets.QInputDialog.getText) y recoge tanto el texto (text) como el botón que se ha pulsado (ok).</li>
+<li>Si se ha pulsado el botón ok, se muestra el texto en la caja de texto.</li>
+</ol>
+<p></p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-211">
+<header class="nodeDecoration">
+<h1 id="exenode_211_955Controles" class="nodeTitle">9.5.5. Controles</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id335-211">
+<div class="iDevice emphasis0" >
+<div id="ta335_335_2" class="block iDevice_content">
+<div class="exe-text"><p>Los widgets son componentes básicos de una aplicación. El kit de herramientas de programación PySide tiene una amplia gama de controles: botones, casillas de verificación, controles deslizantes, cuadros de lista, etc. Todo lo que un programador necesita para su trabajo.</p>
+<ul>
+<li>QtGui.QCheckBox.
+<ul>
+<li>cb = QtGui.QCheckBox('Show title', self)</li>
+<li>cb.toggle()</li>
+<li>cb.stateChanged.connect(self.changeTitle)</li>
+</ul>
+</li>
+<li>ToggleButton. PySide no tiene ningún widget para ToggleButton. Para crear un ToggleButton, usamos un QtGui.QPushButton en un modo especial. ToggleButton es un botón que tiene dos estados. Presionado y no presionado. Puede alternar entre estos dos estados haciendo clic en él.
+<ul>
+<li>greenb = QtGui.QPushButton('Green', self)</li>
+<li>greenb.setCheckable(True)</li>
+<li>greenb.clicked[bool].connect(self.setColor)</li>
+</ul>
+</li>
+<li>QtGui.QSlider. QtGui.QSlider es un widget que tiene un identificador simple. Esta manija se puede tirar hacia adelante y hacia atrás. De esta forma estamos eligiendo un valor para una tarea específica. A veces, usar un control deslizante es más natural que simplemente proporcionar un número o usar un cuadro de giro. QtGui.QLabel muestra texto o imagen.
+<ul>
+<li>sld = QtGui.QSlider(QtCore.Qt.Horizontal, self)</li>
+<li>self.label = QtGui.QLabel(self)</li>
+<li>self.label.setPixmap(QtGui.QPixmap('mute.png'))</li>
+<li>sld.valueChanged[int].connect(self.changeValue)</li>
+</ul>
+</li>
+<li>QtGui.QProgressBar. Una barra de progreso es un widget que se utiliza cuando procesamos tareas largas. Está animado para que el usuario sepa que nuestra tarea está progresando. El widget QtGui.QProgressBar proporciona una barra de progreso horizontal o vertical. El programador puede establecer los valores mínimo y máximo para la barra de progreso. Los valores predeterminados son 0, 99.
+<ul>
+<li>self.pbar = QtGui.QProgressBar(self)</li>
+<li>self.timer = QtCore.QBasicTimer()</li>
+<li>self.timer.start(100, self)</li>
+</ul>
+</li>
+<li>QtGui.QCalendarWidget. El QtGui.QCalendarWidget proporciona un widget de calendario mensual. Permite al usuario seleccionar una fecha de forma sencilla e intuitiva.
+<ul>
+<li>self.cal = QtGui.QCalendarWidget(self)</li>
+<li>cal.clicked[QtCore.QDate].connect(self.showDate)</li>
+<li>def showDate(self, date):
+<ul>
+<li>self.lbl.setText(date.toString())</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="10.png" alt="Controles" width="688" height="410" /></p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-212">
+<header class="nodeDecoration">
+<h1 id="exenode_212_956Controlesavanzados" class="nodeTitle">9.5.6. Controles avanzados</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id336-212">
+<div class="iDevice emphasis0" >
+<div id="ta336_336_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>QtGui.QPixmap. QtGui.QPixmap es uno de los widgets que se utilizan para trabajar con imágenes. Está optimizado para mostrar imágenes en pantalla.
+<ul>
+<li>o   pixmap = QtGui.QPixmap("redrock.png")</li>
+<li>o   lbl = QtGui.QLabel(self)</li>
+<li>o   lbl.setPixmap(pixmap)</li>
+</ul>
+</li>
+<li>QtGui.QLineEdit. QtGui.QLineEdit es un widget que permite ingresar y editar una sola línea de texto plano. Hay funciones de deshacer / rehacer, cortar / pegar y arrastrar y soltar disponibles para el widget QtGui.QLineEdit.
+<ul>
+<li>qle = QtGui.QLineEdit(self)</li>
+<li>qle.textChanged[str].connect(self.onChanged)</li>
+<li>def onChanged(self, text):  
+<ul>
+<li>self.lbl.setText(text)</li>
+<li>self.lbl.adjustSize() </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>QtGui.QSplitter. QtGui.QSplitter permite al usuario controlar el tamaño de los widgets secundarios arrastrando el límite entre los mismos.
+<ul>
+<li>topleft = QtGui.QFrame(self)</li>
+<li>topleft.setFrameShape(QtGui.QFrame.StyledPanel)</li>
+<li>splitter1 = QtGui.QSplitter(QtCore.Qt.Horizontal)</li>
+<li>splitter1.addWidget(topleft)</li>
+<li>splitter1.addWidget(topright)</li>
+<li>splitter2 = QtGui.QSplitter(QtCore.Qt.Vertical)</li>
+<li>splitter2.addWidget(splitter1)</li>
+<li>QtGui.QApplication.setStyle(QtGui.QStyleFactory.create('Cleanlooks'))</li>
+</ul>
+</li>
+<li>QtGui.QComboBox. El QtGui.QComboBox es un widget que permite al usuario elegir de una lista de opciones.
+<ul>
+<li>combo = QtGui.QComboBox(self)</li>
+<li>combo.addItem("Ubuntu")</li>
+<li>combo.addItem("Mandriva")</li>
+<li>combo.addItem("Fedora")</li>
+<li>combo.addItem("Red Hat")</li>
+<li>combo.addItem("Gentoo")</li>
+<li>combo.activated[str].connect(self.onActivated) </li>
+<li>def onActivated(self, text):
+<ul>
+<li>self.lbl.setText(text)</li>
+<li>self.lbl.adjustSize()</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-213">
+<header class="nodeDecoration">
+<h1 id="exenode_213_957Layouts" class="nodeTitle">9.5.7. Layouts</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id337-213">
+<div class="iDevice emphasis0" >
+<div id="ta337_337_2" class="block iDevice_content">
+<div class="exe-text"><p>Lo importante en la programación de GUI es la gestión del diseño. La gestión del diseño es la forma en que colocamos los widgets en la ventana. La gestión se puede realizar de dos formas. Podemos utilizar clases de diseño o posicionamiento absoluto.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id338-213">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Absoluto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta338_338_2" class="block iDevice_content">
+<div class="exe-text"><p>Con este mecanismo, el programador especifica la posición y el tamaño de cada widget en píxeles. Cuando utiliza el posicionamiento absoluto, debe comprender varias cosas.</p>
+<ul>
+<li>El tamaño y la posición de un widget no cambian si cambiamos el tamaño de una ventana</li>
+<li>Las aplicaciones pueden verse diferentes en varias plataformas</li>
+<li>Cambiar las fuentes en nuestra aplicación podría estropear el diseño</li>
+<li>Si decidimos cambiar nuestro diseño, debemos rehacer completamente nuestro diseño, lo cual es tedioso y requiere mucho tiempo.</li>
+</ul>
+<p>Simplemente llamamos al método <strong>move</strong>() para posicionar nuestros widgets. Los posicionamos proporcionando las coordenadas x e y. El comienzo del sistema de coordenadas está en la esquina superior izquierda. Los valores de x crecen de izquierda a derecha. Los valores de y crecen de arriba a abajo.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id339-213">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Box Layout</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta339_339_2" class="block iDevice_content">
+<div class="exe-text"><p>La gestión del diseño con clases de diseño es mucho más flexible y práctica. Es la forma preferida de colocar widgets en una ventana. Las clases de diseño básicas son QtGui.QHBoxLayout y QtGui.QVBoxLayout. Alinean los widgets horizontal y verticalmente.</p>
+<p>Imagina que quisiéramos colocar dos botones en la esquina inferior derecha. Para crear tal diseño, usaremos un cuadro horizontal y uno vertical. Para crear el espacio necesario, agregaremos un factor de estiramiento.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import sys</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from PySide6 import QtWidgets</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class Example(QtWidgets.QWidget):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        super().__init__()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.initUI()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def initUI(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        okButton = QtWidgets.QPushButton("OK")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        cancelButton = QtWidgets.QPushButton("Cancel")</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        hbox = QtWidgets.QHBoxLayout()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        hbox.addStretch(1)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        hbox.addWidget(okButton)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        hbox.addWidget(cancelButton)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        vbox = QtWidgets.QVBoxLayout()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        vbox.addStretch(1)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        vbox.addLayout(hbox)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setLayout(vbox)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setGeometry(300, 300, 300, 150)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setWindowTitle('Buttons')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def main():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    app = QtWidgets.QApplication(sys.argv)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex = Example()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex.show()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    sys.exit(app.exec_())</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">if __name__ == '__main__':</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    main()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"></div>
+<p><img src="11.png" alt="Box Layout" width="302" height="182" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id340-213">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Grid layout</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta340_340_2" class="block iDevice_content">
+<div class="exe-text"><p>La clase de diseño más universal en PySide es el diseño de cuadrícula. Este diseño divide el espacio en filas y columnas. Para crear un diseño de cuadrícula, usamos la clase QtGui.QGridLayout.</p>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import sys</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from PySide6 import QtWidgets</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class Example(QtWidgets.QWidget):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        super().__init__()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.initUI()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def initUI(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        names = ['Cls', 'Bck', '', 'Close', '7', '8', '9', '/',</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                 '4', '5', '6', '*', '1', '2', '3', '-',</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                 '0', '.', '=', '+']</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        grid = QtWidgets.QGridLayout()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        j = 0</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        pos = [(0, 0), (0, 1), (0, 2), (0, 3),</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">               (1, 0), (1, 1), (1, 2), (1, 3),</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">               (2, 0), (2, 1), (2, 2), (2, 3),</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">               (3, 0), (3, 1), (3, 2), (3, 3),</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">               (4, 0), (4, 1), (4, 2), (4, 3)]</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        for i in names:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            button = QtWidgets.QPushButton(i)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            if j == 2:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                grid.addWidget(QtWidgets.QLabel(''), 0, 2)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            else:</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">                grid.addWidget(button, pos[j][0], pos[j][1])</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">            j = j + 1</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setLayout(grid)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.move(300, 150)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setWindowTitle('Calculator')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def main():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    app = QtWidgets.QApplication(sys.argv)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex = Example()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex.show()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    sys.exit(app.exec_())</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">if __name__ == '__main__':</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    main()</div>
+<p> <img src="12.png" alt="Grid Layout" width="342" height="198" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-214">
+<header class="nodeDecoration">
+<h1 id="exenode_214_958Ejemplo" class="nodeTitle">9.5.8. Ejemplo</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id341-214">
+<div class="iDevice emphasis0" >
+<div id="ta341_341_2" class="block iDevice_content">
+<div class="exe-text"><div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">import sys</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">from PySide6 import QtWidgets</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">class Example(QtWidgets.QWidget):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def __init__(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        super().__init__()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.initUI()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    def initUI(self):</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        title = QtWidgets.QLabel('Title')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        author = QtWidgets.QLabel('Author')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        review = QtWidgets.QLabel('Review')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        titleEdit = QtWidgets.QLineEdit()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        authorEdit = QtWidgets.QLineEdit()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        reviewEdit = QtWidgets.QTextEdit()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        grid = QtWidgets.QGridLayout()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        grid.setSpacing(10)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        grid.addWidget(title, 1, 0)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        grid.addWidget(titleEdit, 1, 1)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        grid.addWidget(author, 2, 0)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        grid.addWidget(authorEdit, 2, 1)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        grid.addWidget(review, 3, 0)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        grid.addWidget(reviewEdit, 3, 1, 5, 1)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setLayout(grid)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setGeometry(300, 300, 350, 300)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">        self.setWindowTitle('Review')</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">def main():</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    app = QtWidgets.QApplication(sys.argv)</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex = Example()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    ex.show()</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    sys.exit(app.exec_())</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;"> </div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">if __name__ == '__main__':</div>
+<div style="background-color: #cccccc; padding-left: 60px; border-left-style: solid;">    main()</div>
+<p> <img src="13.png" alt="Ejemplo" width="352" height="332" /></p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-215">
+<header class="nodeDecoration">
+<h1 id="exenode_215_959Otrosrecursos" class="nodeTitle">9.5.9. Otros recursos</h1>
+</header>
+<article class="iDevice_wrapper ParasabermasfpdIdevice em_iDevice em_iDevice_parasabermasfpd" id="id342-215">
+<div class="iDevice emphasis_parasabermasfpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Para saber más</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta342_128" class="block iDevice_content">
+<p>En este capítulo hemos dado una pequeña introducción al diseño GUI, no pretende ser exhaustiva ni completa, simplemente avanzar los conceptos principales de este tipo de programación, como son el diseño orientado a eventos, la creación de GIU a través de controles y las callbacks y su uso. Podemos acceder a la mayoría de ejemplos en la siguiente dirección.</p>
+<p><a href="https://zetcode.com/gui/pysidetutorial/" target="_blank" title="https://zetcode.com/gui/pysidetutorial/" rel="noopener" style="background-color: #cccccc; padding: 5px; border-style: solid;">https://zetcode.com/gui/pysidetutorial/</a></p>
+<p> </p>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-216">
+<header class="nodeDecoration">
+<h1 id="exenode_216_96Ejercicios" class="nodeTitle">9.6. Ejercicios</h1>
+</header>
+<article class="iDevice_wrapper CasopracticofpdIdevice em_iDevice em_iDevice_casopracticofpd" id="id343-216">
+<div class="iDevice emphasis_casopracticofpd" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Caso práctico</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta343_147" class="block iDevice_content">
+<h3>Ejercicio 1 – ¿Par o impar?</h3>
+<p>Aplicación gráfica que permita introducir un número entero y luego saber si dicho número es par o impar. Utiliza un QLineEdit para introducir el valor, un QLabel para una etiqueta para anterior al QLineEdit, se determinará en el cambio del contenido de QLineEdit y un QLabel para mostrar “PAR” o “IMPAR” según el caso..</p>
+<h3>Ejercicio 2 – Mini calculadora I</h3>
+<p>Aplicación gráfica que permita introducir dos números reales y calcular el resultado de su suma, resta, multiplicación o división. Utiliza un QButton distinto para cada operación y un único QLabel para mostrar el resultado.</p>
+<h3>Ejercicio 3 – Mini calculadora II</h3>
+<p>Aplicación gráfica que permite introducir dos números enteros (A y B) y permita realizar tres cálculos distintos: sumatorio de A a B, productorio de A a B y exponencial A^B (A elevado a B). Utiliza tres QRadioButtom (uno para cada cálculo) y un botón “¡Calcula!”.</p>
+<h3>Ejercicio 4 – Validar letra NIF</h3>
+<p>Aplicación gráfica que permita introducir un NIF (8 números y una letra utilizando un QLineEdit) e indique si la letra de dicho NIF es válida. Más información en este enlace:</p>
+<p><a href="http://www.interior.gob.es/web/servicios-al-ciudadano/dni/calculo-del-digito-de-control-del-nif-nie">http://www.interior.gob.es/web/servicios-al-ciudadano/dni/calculo-del-digito-de-control-del-nif-nie</a></p>
+<h3>Ejercicio 5– Número aleatorio</h3>
+<p>Aplicación gráfica que permita obtener un número aleatorio cada vez que se pulse un botón. Deberá incluir un QSlider entre 1 y 100 que permita al usuario elegir el valor máximo del número aleatorio a generar. Así, por ejemplo, si el usuario pone el slider a 25, cada vez que le dé al botón se mostrará un número aleatorio entre 0 y 25.</p>
+<h3>Ejercicio 6 – Dados de Rol</h3>
+<p>Aplicación gráfica que permita al usuario simular que lanza un dado de juegos de rol. Podrá elegir entre dado de 6 caras (de 1 a 6), dado de 8 caras (de 1 a 8), dado de 10 caras (de 1 a 10), dado de 12 caras (de 1 a 12) y dado de 20 caras (de 1 a 20). Utiliza un botón distinto para cada tipo de dado. Muestra en cada botón una imagen de cada dado. Puedes encontrar las imágenes fácilmente haciendo una <a href="https://www.google.com/search?q=dado+de+20+caras">búsqueda en Internet</a>.</p>
+<h3>Ejercicio 7 – Tablas de multiplicar</h3>
+<p>Aplicación gráfica que muestre las tablas de multiplicar del 1 al 10. Utiliza un QTable de 10 filas por 10 columnas y muestra los valores de cada tabla de multiplicar en una fila distinta.</p>
+<p><strong>Extra 1</strong>: Inserta los valores en la tabla en tiempo de ejecución, por ejemplo al presionar un botón.</p>
+<p><strong>Extra 2</strong>: Añade dos campos de texto A y B para que el usuario pueda introducir dos números enteros y se muestren todas las tablas de multiplicar desde A hasta B. Ten en cuenta que el número de filas es variable.</p>
+<h3>Ejercicio 8 – Inicio de sesión</h3>
+<p>Aplicación gráfica que simule una ventana de inicio de sesión y registro de usuarios. El usuario podrá introducir su nombre de usuario, contraseña y apretar un botón de “Iniciar sesión”. Muestra el resultado del intento de inicio de sesión en un MenssageBox.</p>
+<p>Los usuarios registrados y sus contraseñas estarán en el archivo ‘users.txt’. Crea unos pocos usuarios de ejemplo para probar la aplicación. No está permitido utilizar espacios ni en los nombres de usuario ni en las contraseñas.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-217">
+<header class="nodeDecoration">
+<h1 id="exenode_217_961Ejercicio1" class="nodeTitle">9.6.1. Ejercicio 1</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id344-217">
+<div class="iDevice emphasis0" >
+<div id="ta344_344_2" class="block iDevice_content">
+<div class="exe-text"><p>import sys</p>
+<p>from PySide6 import QtWidgets, QtCore</p>
+<p> </p>
+<p>"""</p>
+<p>Aplicación gráfica que permita introducir un número entero y luego saber si dicho número es par o impar.</p>
+<p>Utiliza un QLineEdit para introducir el valor, un QLabel para una etiqueta para anterior al QLineEdit,</p>
+<p> se determinará en el cambio del contenido de QLineEdit y un QLabel para mostrar “PAR” o “IMPAR” según el caso.</p>
+<p>"""</p>
+<p> </p>
+<p> </p>
+<p>class Example(QtWidgets.QWidget):</p>
+<p>    def __init__(self):</p>
+<p>        super().__init__()</p>
+<p> </p>
+<p>        self.label_numero = QtWidgets.QLabel('Número')</p>
+<p>        self.numero = QtWidgets.QLineEdit()</p>
+<p>        self.numero.textChanged.connect(self.value_changed)</p>
+<p>        self.label_resultado = QtWidgets.QLabel('Par / Impar')</p>
+<p> </p>
+<p>        self.grid = QtWidgets.QGridLayout()</p>
+<p>        self.grid.setSpacing(10)</p>
+<p> </p>
+<p>        self.grid.addWidget(self.label_numero, 1, 0)</p>
+<p>        self.grid.addWidget(self.numero, 1, 1)</p>
+<p>        self.grid.addWidget(self.label_resultado, 2, 0, 2, 0, QtCore.Qt.AlignCenter)</p>
+<p> </p>
+<p>        self.setLayout(self.grid)</p>
+<p> </p>
+<p>        self.setGeometry(300, 300, 300, 100)</p>
+<p>        self.setWindowTitle('Par o impar')</p>
+<p> </p>
+<p>    def value_changed(self):</p>
+<p>        try:</p>
+<p>            value = int(self.sender().text())</p>
+<p>        except ValueError:</p>
+<p>            value = 0</p>
+<p>        texto_resultado = "Par" if value % 2 == 0 else "Impar"</p>
+<p>        self.label_resultado.setText(texto_resultado)</p>
+<p> </p>
+<p> </p>
+<p>def main():</p>
+<p>    app = QtWidgets.QApplication(sys.argv)</p>
+<p>    ex = Example()</p>
+<p>    ex.show()</p>
+<p>    sys.exit(app.exec_())</p>
+<p> </p>
+<p> </p>
+<p>if __name__ == '__main__':</p>
+<p>    main()</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-218">
+<header class="nodeDecoration">
+<h1 id="exenode_218_962Ejercicio2" class="nodeTitle">9.6.2. Ejercicio 2</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id345-218">
+<div class="iDevice emphasis0" >
+<div id="ta345_345_2" class="block iDevice_content">
+<div class="exe-text"><p>import sys</p>
+<p>from PySide6 import QtWidgets, QtCore</p>
+<p> </p>
+<p>"""</p>
+<p>Aplicación gráfica que permita introducir dos números reales y calcular el resultado de su suma, resta,</p>
+<p>multiplicación o división. Utiliza un QButton distinto para cada operación y un único QLabel para mostrar el resultado.</p>
+<p>"""</p>
+<p> </p>
+<p> </p>
+<p>class Example(QtWidgets.QWidget):</p>
+<p>    def __init__(self):</p>
+<p>        super().__init__()</p>
+<p> </p>
+<p>        self.grid = QtWidgets.QGridLayout()</p>
+<p>        self.grid.setSpacing(10)</p>
+<p> </p>
+<p>        label_numero_uno = QtWidgets.QLabel("Primer Número")</p>
+<p>        self.numero_uno = QtWidgets.QLineEdit()</p>
+<p>        label_numero_dos = QtWidgets.QLabel("Segundo Número")</p>
+<p>        self.numero_dos = QtWidgets.QLineEdit()</p>
+<p>        self.resultado = QtWidgets.QLabel(" - - ")</p>
+<p> </p>
+<p>        self.sumar = QtWidgets.QPushButton("+")</p>
+<p>        self.restar = QtWidgets.QPushButton("-")</p>
+<p>        self.multiplicar = QtWidgets.QPushButton("*")</p>
+<p>        self.dividir = QtWidgets.QPushButton("/")</p>
+<p>        self.sumar.clicked.connect(self.boton_click)</p>
+<p>        self.restar.clicked.connect(self.boton_click)</p>
+<p>        self.multiplicar.clicked.connect(self.boton_click)</p>
+<p>        self.dividir.clicked.connect(self.boton_click)</p>
+<p> </p>
+<p>        self.grid.addWidget(label_numero_uno, 0, 0, 1, 2)</p>
+<p>        self.grid.addWidget(label_numero_dos, 0, 2, 1, 2)</p>
+<p>        self.grid.addWidget(self.numero_uno, 1, 0, 1, 2)</p>
+<p>        self.grid.addWidget(self.numero_dos, 1, 2, 1, 2)</p>
+<p> </p>
+<p>        self.grid.addWidget(self.sumar, 2, 0)</p>
+<p>        self.grid.addWidget(self.restar, 2, 1)</p>
+<p>        self.grid.addWidget(self.multiplicar, 2, 2)</p>
+<p>        self.grid.addWidget(self.dividir, 2, 3)</p>
+<p> </p>
+<p>        self.grid.addWidget(self.resultado, 3, 0, 1, 4, QtCore.Qt.AlignCenter)</p>
+<p> </p>
+<p>        self.setLayout(self.grid)</p>
+<p>        self.setGeometry(300, 300, 300, 100)</p>
+<p>        self.setWindowTitle('Calculadora')</p>
+<p> </p>
+<p>    def boton_click(self):</p>
+<p>        operacion = self.sender().text()</p>
+<p>        valor = "ERROR"</p>
+<p>        try:</p>
+<p>            if operacion == '+':</p>
+<p>                valor = int(self.numero_uno.text()) + int(self.numero_dos.text())</p>
+<p>            elif operacion == '-':</p>
+<p>                valor = int(self.numero_uno.text()) - int(self.numero_dos.text())</p>
+<p>            elif operacion == '*':</p>
+<p>                valor = int(self.numero_uno.text()) * int(self.numero_dos.text())</p>
+<p>            elif operacion == '/':</p>
+<p>                valor = int(self.numero_uno.text()) / int(self.numero_dos.text())</p>
+<p>        except ValueError:</p>
+<p>            valor = "ERROR"</p>
+<p>        self.resultado.setText(str(valor))</p>
+<p> </p>
+<p> </p>
+<p>def main():</p>
+<p>    app = QtWidgets.QApplication(sys.argv)</p>
+<p>    ex = Example()</p>
+<p>    ex.show()</p>
+<p>    sys.exit(app.exec_())</p>
+<p> </p>
+<p> </p>
+<p>if __name__ == '__main__':</p>
+<p>    main()</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-219">
+<header class="nodeDecoration">
+<h1 id="exenode_219_963Ejercicio3" class="nodeTitle">9.6.3. Ejercicio 3</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id346-219">
+<div class="iDevice emphasis0" >
+<div id="ta346_346_2" class="block iDevice_content">
+<div class="exe-text"><p>import sys</p>
+<p>from PySide6 import QtWidgets, QtCore</p>
+<p> </p>
+<p>"""</p>
+<p>Aplicación gráfica que permite introducir dos números enteros (A y B) y permita realizar tres cálculos distintos:</p>
+<p>sumatorio de A a B, productorio de A a B y exponencial A^B (A elevado a B).</p>
+<p>Utiliza tres QRadioButtom (uno para cada cálculo) y un botón “¡Calcula!”.</p>
+<p>"""</p>
+<p> </p>
+<p>class Example(QtWidgets.QWidget):</p>
+<p>    def __init__(self):</p>
+<p>        super().__init__()</p>
+<p> </p>
+<p>        self.grid = QtWidgets.QGridLayout()</p>
+<p>        self.grid.setSpacing(10)</p>
+<p> </p>
+<p>        label_numero_uno = QtWidgets.QLabel("Primer Número")</p>
+<p>        self.numero_uno = QtWidgets.QLineEdit()</p>
+<p>        label_numero_dos = QtWidgets.QLabel("Segundo Número")</p>
+<p>        self.numero_dos = QtWidgets.QLineEdit()</p>
+<p>        self.resultado = QtWidgets.QLabel(" - - ")</p>
+<p> </p>
+<p>        self.sumatorio = QtWidgets.QRadioButton("Sumatorio")</p>
+<p>        self.sumatorio.setChecked(True)</p>
+<p>        self.productorio = QtWidgets.QRadioButton("Productorio")</p>
+<p>        self.exponencial = QtWidgets.QRadioButton("Exponencial")</p>
+<p> </p>
+<p>        self.calcular = QtWidgets.QPushButton("Calcular")</p>
+<p>        self.calcular.clicked.connect(self.boton_click)</p>
+<p> </p>
+<p>        self.resultado = QtWidgets.QLabel(" - - ")</p>
+<p> </p>
+<p>        self.grid.addWidget(label_numero_uno, 0, 0, 1, 2)</p>
+<p>        self.grid.addWidget(label_numero_dos, 0, 2, 1, 2)</p>
+<p>        self.grid.addWidget(self.numero_uno, 1, 0, 1, 2)</p>
+<p>        self.grid.addWidget(self.numero_dos, 1, 2, 1, 2)</p>
+<p> </p>
+<p>        self.grid.addWidget(self.sumatorio, 2, 0)</p>
+<p>        self.grid.addWidget(self.productorio, 2, 1)</p>
+<p>        self.grid.addWidget(self.exponencial, 2, 2)</p>
+<p>        self.grid.addWidget(self.calcular, 2, 3)</p>
+<p> </p>
+<p>        self.grid.addWidget(self.resultado, 3, 0, 1, 4, QtCore.Qt.AlignCenter)</p>
+<p> </p>
+<p>        self.setLayout(self.grid)</p>
+<p>        self.setGeometry(300, 300, 300, 100)</p>
+<p>        self.setWindowTitle('Calculadora')</p>
+<p> </p>
+<p>    def boton_click(self):</p>
+<p>        try:</p>
+<p>            if self.sumatorio.isChecked():</p>
+<p>                valor = int(self.numero_uno.text()) + int(self.numero_dos.text())</p>
+<p>            elif self.productorio.isChecked():</p>
+<p>                valor = int(self.numero_uno.text()) * int(self.numero_dos.text())</p>
+<p>            elif self.exponencial.isChecked():</p>
+<p>                valor = int(self.numero_uno.text()) ** int(self.numero_dos.text())</p>
+<p>        except ValueError:</p>
+<p>            valor = "ERROR"</p>
+<p>        self.resultado.setText(str(valor))</p>
+<p> </p>
+<p> </p>
+<p>def main():</p>
+<p>    app = QtWidgets.QApplication(sys.argv)</p>
+<p>    ex = Example()</p>
+<p>    ex.show()</p>
+<p>    sys.exit(app.exec_())</p>
+<p> </p>
+<p> </p>
+<p>if __name__ == '__main__':</p>
+<p>    main()</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-220">
+<header class="nodeDecoration">
+<h1 id="exenode_220_964Ejercicio4" class="nodeTitle">9.6.4. Ejercicio 4</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id347-220">
+<div class="iDevice emphasis0" >
+<div id="ta347_347_2" class="block iDevice_content">
+<div class="exe-text"><p>import sys</p>
+<p>from PySide6 import QtWidgets, QtCore</p>
+<p> </p>
+<p>"""</p>
+<p>Aplicación gráfica que permita introducir un NIF (8 números y una letra utilizando un QLineEdit)</p>
+<p>e indique si la letra de dicho NIF es válida. Más información en este enlace:</p>
+<p>http://www.interior.gob.es/web/servicios-al-ciudadano/dni/calculo-del-digito-de-control-del-nif-nie</p>
+<p>"""</p>
+<p> </p>
+<p> </p>
+<p>class Example(QtWidgets.QWidget):</p>
+<p>    def __init__(self):</p>
+<p>        self.letras = ("T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B",</p>
+<p>                       "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E")</p>
+<p>        super().__init__()</p>
+<p> </p>
+<p>        self.label_numero = QtWidgets.QLabel('DNI')</p>
+<p>        self.numero = QtWidgets.QLineEdit()</p>
+<p>        self.numero.textChanged.connect(self.value_changed)</p>
+<p>        self.label_resultado = QtWidgets.QLabel('Correcto / Incorrecto')</p>
+<p> </p>
+<p>        self.grid = QtWidgets.QGridLayout()</p>
+<p>        self.grid.setSpacing(10)</p>
+<p> </p>
+<p>        self.grid.addWidget(self.label_numero, 1, 0)</p>
+<p>        self.grid.addWidget(self.numero, 1, 1)</p>
+<p>        self.grid.addWidget(self.label_resultado, 2, 0, 2, 0, QtCore.Qt.AlignCenter)</p>
+<p> </p>
+<p>        self.setLayout(self.grid)</p>
+<p> </p>
+<p>        self.setGeometry(300, 300, 300, 100)</p>
+<p>        self.setWindowTitle('Cáclulo DNI')</p>
+<p> </p>
+<p>    def value_changed(self):</p>
+<p>        texto_resultado = "ERROR"</p>
+<p>        try:</p>
+<p>            numero, letra = int(self.sender().text()[:-1]), self.sender().text()[-1:].upper()</p>
+<p>            texto_resultado = "Correcto" if self.letras[numero % 23] == letra else "Incorrecto"</p>
+<p>        except ValueError:</p>
+<p>            pass</p>
+<p> </p>
+<p>        self.label_resultado.setText(texto_resultado)</p>
+<p> </p>
+<p> </p>
+<p>def main():</p>
+<p>    app = QtWidgets.QApplication(sys.argv)</p>
+<p>    ex = Example()</p>
+<p>    ex.show()</p>
+<p>    sys.exit(app.exec_())</p>
+<p> </p>
+<p> </p>
+<p>if __name__ == '__main__':</p>
+<p>    main()</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-221">
+<header class="nodeDecoration">
+<h1 id="exenode_221_965Ejercicio5" class="nodeTitle">9.6.5. Ejercicio 5</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id348-221">
+<div class="iDevice emphasis0" >
+<div id="ta348_348_2" class="block iDevice_content">
+<div class="exe-text"><p>import sys</p>
+<p>from PySide6 import QtWidgets, QtCore</p>
+<p>from random import randint</p>
+<p> </p>
+<p>"""</p>
+<p>Aplicación gráfica que permita obtener un número aleatorio cada vez que se pulse un botón.</p>
+<p>Deberá incluir un QSlider entre 1 y 100 que permita al usuario elegir el valor máximo del número aleatorio a login.</p>
+<p>Así, por ejemplo, si el usuario pone el slider a 25, cada vez que le dé al botón se mostrará un número aleatorio</p>
+<p>entre 0 y 25.</p>
+<p>"""</p>
+<p> </p>
+<p> </p>
+<p>class Example(QtWidgets.QWidget):</p>
+<p>    def __init__(self):</p>
+<p>        super().__init__()</p>
+<p> </p>
+<p>        self.label_numero = QtWidgets.QLabel('Valor Máximo: 1')</p>
+<p>        self.maximo = QtWidgets.QSlider(QtCore.Qt.Horizontal)</p>
+<p>        self.generar = QtWidgets.QPushButton("Generar")</p>
+<p>        self.label_resultado = QtWidgets.QLabel('Correcto / Incorrecto')</p>
+<p> </p>
+<p>        self.generar.clicked.connect(self.boton_click)</p>
+<p>        self.maximo.valueChanged.connect(self.maximo_changed)</p>
+<p> </p>
+<p>        self.grid = QtWidgets.QGridLayout()</p>
+<p>        self.grid.setSpacing(10)</p>
+<p> </p>
+<p>        self.grid.addWidget(self.label_numero, 1, 0)</p>
+<p>        self.grid.addWidget(self.maximo, 2, 0)</p>
+<p>        self.grid.addWidget(self.generar, 3, 0)</p>
+<p>        self.grid.addWidget(self.label_resultado, 4, 0)</p>
+<p> </p>
+<p>        self.setLayout(self.grid)</p>
+<p> </p>
+<p>        self.setGeometry(300, 300, 300, 100)</p>
+<p>        self.setWindowTitle('Aleatorio')</p>
+<p> </p>
+<p>    def boton_click(self):</p>
+<p>        valor = randint(1, self.maximo.value() + 1)</p>
+<p>        self.label_resultado.setText(str(valor))</p>
+<p> </p>
+<p>    def maximo_changed(self):</p>
+<p>        self.label_numero.setText("Valor Máximo: " + str(self.sender().value() + 1))</p>
+<p> </p>
+<p> </p>
+<p>def main():</p>
+<p>    app = QtWidgets.QApplication(sys.argv)</p>
+<p>    ex = Example()</p>
+<p>    ex.show()</p>
+<p>    sys.exit(app.exec_())</p>
+<p> </p>
+<p> </p>
+<p>if __name__ == '__main__':</p>
+<p>    main()</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-222">
+<header class="nodeDecoration">
+<h1 id="exenode_222_966Ejercicio6" class="nodeTitle">9.6.6. Ejercicio 6</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id349-222">
+<div class="iDevice emphasis0" >
+<div id="ta349_349_2" class="block iDevice_content">
+<div class="exe-text"><p>import sys</p>
+<p>from PySide6 import QtWidgets, QtCore, QtGui</p>
+<p>from random import randint</p>
+<p> </p>
+<p>"""</p>
+<p>Aplicación gráfica que permita al usuario simular que lanza un dado de juegos de rol.</p>
+<p>Podrá elegir entre dado de 6 caras (de 1 a 6), dado de 8 caras (de 1 a 8), dado de 10 caras (de 1 a 10),</p>
+<p>dado de 12 caras (de 1 a 12) y dado de 20 caras (de 1 a 20).</p>
+<p>Utiliza un botón distinto para cada tipo de dado. Muestra en cada botón una imagen de cada dado.</p>
+<p>Puedes encontrar las imágenes fácilmente haciendo una búsqueda en Internet.</p>
+<p>"""</p>
+<p> </p>
+<p> </p>
+<p>class Example(QtWidgets.QWidget):</p>
+<p>    def __init__(self):</p>
+<p>        super().__init__()</p>
+<p> </p>
+<p>        self.boton_6 = QtWidgets.QPushButton()</p>
+<p>        self.boton_6.setIcon(QtGui.QIcon("icons/6c.png"))</p>
+<p>        self.boton_6.setIconSize(QtCore.QSize(65, 65))</p>
+<p>        self.boton_8 = QtWidgets.QPushButton()</p>
+<p>        self.boton_8.setIcon(QtGui.QIcon("icons/8c.png"))</p>
+<p>        self.boton_8.setIconSize(QtCore.QSize(65, 65))</p>
+<p>        self.boton_10 = QtWidgets.QPushButton()</p>
+<p>        self.boton_10.setIcon(QtGui.QIcon("icons/10c.png"))</p>
+<p>        self.boton_10.setIconSize(QtCore.QSize(65, 65))</p>
+<p>        self.boton_12 = QtWidgets.QPushButton()</p>
+<p>        self.boton_12.setIcon(QtGui.QIcon("icons/12c.png"))</p>
+<p>        self.boton_12.setIconSize(QtCore.QSize(65, 65))</p>
+<p>        self.boton_20 = QtWidgets.QPushButton()</p>
+<p>        self.boton_20.setIcon(QtGui.QIcon("icons/20c.png"))</p>
+<p>        self.boton_20.setIconSize(QtCore.QSize(65, 65))</p>
+<p> </p>
+<p>        self.label_resultado = QtWidgets.QLabel('Correcto / Incorrecto')</p>
+<p> </p>
+<p>        self.boton_6.clicked.connect(self.boton_click_6)</p>
+<p>        self.boton_8.clicked.connect(self.boton_click_8)</p>
+<p>        self.boton_10.clicked.connect(self.boton_click_10)</p>
+<p>        self.boton_12.clicked.connect(self.boton_click_12)</p>
+<p>        self.boton_20.clicked.connect(self.boton_click_20)</p>
+<p> </p>
+<p>        self.grid = QtWidgets.QGridLayout()</p>
+<p>        self.grid.setSpacing(10)</p>
+<p> </p>
+<p>        self.grid.addWidget(self.boton_6, 1, 0)</p>
+<p>        self.grid.addWidget(self.boton_8, 1, 1)</p>
+<p>        self.grid.addWidget(self.boton_10, 1, 2)</p>
+<p>        self.grid.addWidget(self.boton_12, 1, 3)</p>
+<p>        self.grid.addWidget(self.boton_20, 1, 4)</p>
+<p>        self.grid.addWidget(self.label_resultado, 2, 0, 5, 0, QtCore.Qt.AlignCenter)</p>
+<p> </p>
+<p>        self.setLayout(self.grid)</p>
+<p> </p>
+<p>        self.setGeometry(300, 300, 300, 100)</p>
+<p>        self.setWindowTitle('Rol')</p>
+<p> </p>
+<p>    def boton_click_6(self):</p>
+<p>        self.label_resultado.setText(str(self.gen_value(6)))</p>
+<p> </p>
+<p>    def boton_click_8(self):</p>
+<p>        self.label_resultado.setText(str(self.gen_value(8)))</p>
+<p> </p>
+<p>    def boton_click_10(self):</p>
+<p>        self.label_resultado.setText(str(self.gen_value(10)))</p>
+<p> </p>
+<p>    def boton_click_12(self):</p>
+<p>        self.label_resultado.setText(str(self.gen_value(12)))</p>
+<p> </p>
+<p>    def boton_click_20(self):</p>
+<p>        self.label_resultado.setText(str(self.gen_value(20)))</p>
+<p> </p>
+<p>    def gen_value(self, val: int):</p>
+<p>        return str(randint(1, val))</p>
+<p> </p>
+<p> </p>
+<p>def main():</p>
+<p>    app = QtWidgets.QApplication(sys.argv)</p>
+<p>    ex = Example()</p>
+<p>    ex.show()</p>
+<p>    sys.exit(app.exec_())</p>
+<p> </p>
+<p> </p>
+<p>if __name__ == '__main__':</p>
+<p>    main()</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-223">
+<header class="nodeDecoration">
+<h1 id="exenode_223_967Ejercicio7" class="nodeTitle">9.6.7. Ejercicio 7</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id350-223">
+<div class="iDevice emphasis0" >
+<div id="ta350_350_2" class="block iDevice_content">
+<div class="exe-text"><p>import sys</p>
+<p>from PySide6 import QtWidgets, QtCore</p>
+<p>"""</p>
+<p>Aplicación gráfica que muestre las tablas de multiplicar del 1 al 10. Utiliza un QTable de 10 filas por 10 columnas</p>
+<p>y muestra los valores de cada tabla de multiplicar en una fila distinta.</p>
+<p>Extra 1: Inserta los valores en la tabla en tiempo de ejecución, por ejemplo al presionar un botón.</p>
+<p>Extra 2: Añade dos campos de texto A y B para que el usuario pueda introducir dos números enteros</p>
+<p>y se muestren todas las tablas de multiplicar desde A hasta B. Ten en cuenta que el número de filas es variable.</p>
+<p>"""</p>
+<p> </p>
+<p> </p>
+<p>class Example(QtWidgets.QWidget):</p>
+<p>    def __init__(self):</p>
+<p>        super().__init__()</p>
+<p> </p>
+<p>        label_numero_elementos = QtWidgets.QLabel("Número de elmentos")</p>
+<p>        self.numero_elementos = QtWidgets.QLineEdit()</p>
+<p>        label_tabla_numero = QtWidgets.QLabel("La tabla del:")</p>
+<p>        self.tabla_numero = QtWidgets.QLineEdit()</p>
+<p>        self.generar = QtWidgets.QPushButton("Generar")</p>
+<p> </p>
+<p>        self.tabla = QtWidgets.QTableWidget()</p>
+<p> </p>
+<p>        self.generar.clicked.connect(self.boton_click)</p>
+<p> </p>
+<p>        self.grid = QtWidgets.QGridLayout()</p>
+<p>        self.grid.setSpacing(10)</p>
+<p> </p>
+<p>        self.grid.addWidget(label_numero_elementos, 0, 0, 1, 2)</p>
+<p>        self.grid.addWidget(label_tabla_numero, 0, 2, 1, 2)</p>
+<p>        self.grid.addWidget(self.numero_elementos, 1, 0, 1, 2)</p>
+<p>        self.grid.addWidget(self.tabla_numero, 1, 2, 1, 2)</p>
+<p>        self.grid.addWidget(self.tabla, 2, 0, 1, 4, QtCore.Qt.AlignCenter)</p>
+<p>        self.grid.addWidget(self.generar, 3, 0, 1, 4, QtCore.Qt.AlignCenter)</p>
+<p> </p>
+<p>        self.setLayout(self.grid)</p>
+<p> </p>
+<p>        self.setGeometry(300, 300, 300, 300)</p>
+<p>        self.setWindowTitle('Tablas Multiplicar')</p>
+<p> </p>
+<p>    def boton_click(self):</p>
+<p>        try:</p>
+<p>            numero_elementos = int(self.numero_elementos.text())</p>
+<p>            tabla_del_numero = int(self.tabla_numero.text())</p>
+<p>        except ValueError:</p>
+<p>            pass</p>
+<p>        else:</p>
+<p>            self.tabla.setRowCount(numero_elementos)</p>
+<p>            self.tabla.setColumnCount(2)</p>
+<p> </p>
+<p>            for valor in range(0, numero_elementos):</p>
+<p>                self.tabla.setItem(valor, 0, QtWidgets.QTableWidgetItem(f"{tabla_del_numero}*{valor}"))</p>
+<p>                self.tabla.setItem(valor, 1, QtWidgets.QTableWidgetItem(str(tabla_del_numero * valor)))</p>
+<p> </p>
+<p>            self.tabla.horizontalHeader().setStretchLastSection(True)</p>
+<p>            self.tabla.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.Stretch)</p>
+<p> </p>
+<p> </p>
+<p>def main():</p>
+<p>    app = QtWidgets.QApplication(sys.argv)</p>
+<p>    ex = Example()</p>
+<p>    ex.show()</p>
+<p>    sys.exit(app.exec_())</p>
+<p> </p>
+<p> </p>
+<p>if __name__ == '__main__':</p>
+<p>    main()</p></div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-3-node" id="exe-node-224">
+<header class="nodeDecoration">
+<h1 id="exenode_224_968Ejercicio8" class="nodeTitle">9.6.8. Ejercicio 8</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id351-224">
+<div class="iDevice emphasis0" >
+<div id="ta351_351_2" class="block iDevice_content">
+<div class="exe-text"><p>import sys</p>
+<p>from PySide6 import QtWidgets, QtCore</p>
+<p> </p>
+<p>"""</p>
+<p>Aplicación gráfica que simule una ventana de inicio de sesión y registro de usuarios.</p>
+<p>El usuario podrá introducir su nombre de usuario, contraseña y apretar un botón de “Iniciar sesión”.</p>
+<p>Muestra el resultado del intento de inicio de sesión en un MenssageBox.</p>
+<p>Los usuarios registrados y sus contraseñas estarán en el archivo ‘users.csv’.</p>
+<p>Crea unos pocos usuarios de ejemplo para probar la aplicación.</p>
+<p>No está permitido utilizar espacios ni en los nombres de usuario ni en las contraseñas.</p>
+<p>"""</p>
+<p> </p>
+<p> </p>
+<p>class Example(QtWidgets.QWidget):</p>
+<p>    def __init__(self):</p>
+<p>        super().__init__()</p>
+<p>        self.usuarios = {}</p>
+<p>        with open("users.csv", encoding='utf-8') as file:</p>
+<p>            for f in file.readlines():</p>
+<p>                nombre, usuario, clave = f[:-1].split(":")</p>
+<p>                self.usuarios[usuario] = (nombre, clave)</p>
+<p> </p>
+<p>        label_usuario = QtWidgets.QLabel("Usuario:")</p>
+<p>        self.usuario = QtWidgets.QLineEdit()</p>
+<p>        lable_clave = QtWidgets.QLabel("Clave:")</p>
+<p>        self.clave = QtWidgets.QLineEdit()</p>
+<p>        self.login = QtWidgets.QPushButton("Login")</p>
+<p> </p>
+<p>        self.login.clicked.connect(self.login_click)</p>
+<p> </p>
+<p>        self.grid = QtWidgets.QGridLayout()</p>
+<p>        self.grid.setSpacing(10)</p>
+<p> </p>
+<p>        self.grid.addWidget(label_usuario, 0, 0, 1, 2)</p>
+<p>        self.grid.addWidget(self.usuario, 0, 1, 1, 2)</p>
+<p>        self.grid.addWidget(lable_clave, 1, 0, 1, 2)</p>
+<p>        self.grid.addWidget(self.clave, 1, 1, 1, 2)</p>
+<p>        self.grid.addWidget(self.login, 3, 0, 1, 3, QtCore.Qt.AlignRight)</p>
+<p> </p>
+<p>        self.setLayout(self.grid)</p>
+<p> </p>
+<p>        self.setGeometry(300, 300, 300, 100)</p>
+<p>        self.setWindowTitle('Login al sistema')</p>
+<p> </p>
+<p>    def login_click(self):</p>
+<p>        usuario = self.usuario.text()</p>
+<p>        clave = self.clave.text()</p>
+<p>        clave_almacenada = self.usuarios.get(usuario, (False, False))[1]</p>
+<p>        valida = True if clave_almacenada == clave else False</p>
+<p>        text_login = "Valida" if valida else "No valida"</p>
+<p>        mb = QtWidgets.QMessageBox()</p>
+<p>        mb.setIcon(mb.Icon.Information)</p>
+<p>        mb.setText("El usuario " + text_login)</p>
+<p>        mb.setWindowTitle("Login...")</p>
+<p>        mb.exec_()</p>
+<p> </p>
+<p> </p>
+<p>def main():</p>
+<p>    app = QtWidgets.QApplication(sys.argv)</p>
+<p>    ex = Example()</p>
+<p>    ex.show()</p>
+<p>    sys.exit(app.exec_())</p>
+<p> </p>
+<p> </p>
+<p>if __name__ == '__main__':</p>
+<p>    main()</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id352-224">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">user.csv</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta352_352_2" class="block iDevice_content">
+<div class="exe-text"><p>usu1:a:a<br />usu2:bb:bb</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+
+<footer id="siteFooter">César San Juan Pastor - IES Arcipreste de Hita</footer>
+</div>
+<script type="text/javascript" src="_cedec_js.js"></script></body>
+</html>
