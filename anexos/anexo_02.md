@@ -228,3 +228,59 @@ ordenada, pero también deberá mantener la versión sin ordenar.
 Si desea crear una nueva lista, use la función incorporada sorted() en su lugar. Esta función crea una nueva lista a 
 partir de un iterativo proporcionado, la ordena y la retorna. 
 
+
+
+#### ¿Por qué list.sort() no devuelve la lista ordenada?
+Por defecto Python no implementa el polimorfismo en los métodos, con la siguiente estructura es posible
+```
+# person.py
+ 
+ from datetime import date
+ from functools import singledispatchmethod
+ 
+ class BirthInfo:
+     @singledispatchmethod
+     def __init__(self, birth_date):
+         raise ValueError(f"No soportado: {birth_date}")
+
+    @__init__.register(date)
+    def _from_date(self, birth_date):
+        self.date = birth_date
+
+    @__init__.register(str)
+    def _from_isoformat(self, birth_date):
+        self.date = date.fromisoformat(birth_date)
+
+    @__init__.register(int)
+    @__init__.register(float)
+    def _from_timestamp(self, birth_date):
+        self.date = date.fromtimestamp(birth_date)
+
+    def age(self):
+        return date.today().year - self.date.year
+class Person:
+    def __init__(self, name, birth_date):
+        self.name = name
+        self._birth_info = BirthInfo(birth_date)
+
+    @property
+    def age(self):
+        return self._birth_info.age()
+
+    @property
+    def birth_date(self):
+        return self._birth_info.date
+
+>>> from person import Person
+>>> john = Person("John Doe", date(1998, 5, 15))
+>>> john.age
+>>> john.birth_date
+>>> jane = Person("Jane Doe", "2000-11-29")
+>>> jane.age
+>>> jane.birth_date
+>>> linda = Person("Linda Smith", 1011222000)
+>>> linda.age
+>>> linda.birth_date
+>>> david = Person("David Smith", {"year": 2000, "month": 7, "day": 25})
+
+```
