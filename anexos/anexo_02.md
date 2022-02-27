@@ -230,7 +230,7 @@ partir de un iterativo proporcionado, la ordena y la retorna.
 
 
 
-#### ¿Por qué list.sort() no devuelve la lista ordenada?
+#### Polimorfismo
 Por defecto Python no implementa el polimorfismo en los métodos, con la siguiente estructura es posible
 ```
 # person.py
