@@ -10,3 +10,7 @@
 [Anexo IV - Guía Markdown - Resultado](anexo_04.ipynb)
 
 [Anexo V - Ejercicios](anexo_05/)
+
+[Anexo VI - Ejercicios](anexo_06/)
+
+[Anexo VII - Patrones](anexo_07/)
