@@ -14,3 +14,5 @@
 [Anexo VI - Ejercicios](anexo_06/)
 
 [Anexo VII - Patrones](anexo_07/)
+
+[Anexo VIII - Refuerzo](anexo_08.py)
